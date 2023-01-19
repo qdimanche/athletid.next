@@ -1,7 +1,8 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import HeaderNetwork from "../../public/images/application-athletid-reseau-social.webp";
+import HeaderNetwork from "../assets/images/application-athletid-reseau-social.webp";
 import DownloadApp from "../components/DownloadApp";
+import Image from "next/image";
 
 const Header = (props) => {
   return (
@@ -24,7 +25,7 @@ const Header = (props) => {
           <DownloadApp justifyContent={"lg:justify-start justify-center"} />
         </div>
         <div className={"w-1/2 lg:block hidden"}>
-          <img src={HeaderNetwork} className={"w-full "} alt="" />
+          <Image src={HeaderNetwork} className={"w-full "} alt="" />
         </div>
         <div
           className={

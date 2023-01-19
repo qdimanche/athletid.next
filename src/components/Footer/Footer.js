@@ -33,10 +33,10 @@ const Footer = (props) => {
                     <div className={'flex text-black/30 lg:space-x-[30px] order-1 md:mb-0 mb-3 flex-col'}>
 
                         <div className={'w-full grid lg:grid-cols-4 grid-cols-3 gap-y-3 gap-x-6 space-x-0'}>
-                            <Link preventScrollReset={true} to={"/"}>Accueil</Link>
-                            <Link preventScrollReset={true} to={"/network"}>Network</Link>
+                            <Link href={"/"}>Accueil</Link>
+                            <Link href={"/network"}>Network</Link>
                             {/*                            <Link to={"/a-propos"}>À propos</Link>*/}
-                            <Link preventScrollReset={true} to={"/contact"}>Contact</Link>
+                            <Link href={"/contact"}>Contact</Link>
                         </div>
                         <div className={'w-full md:space-x-0 space-x-[30px]'}>
                             {/*                        <Link to={"/timer"}>Timer</Link>*/}
@@ -47,9 +47,9 @@ const Footer = (props) => {
                     <div className={'flex flex-col md:items-start lg:space-y-0 space-y-3 items-center order-2'}>
                         <div
                             className={'md:space-x-0 space-x-[30px] md:space-y-2 flex md:flex-col md:order-2 flex-row lg:!mb-3 !mb-10 '}>
-                            <Link className={'text-black/30'} to={"/politique-de-confidentialite"}>Politique de
+                            <Link className={'text-black/30'} href={"/politique-de-confidentialite"}>Politique de
                                 confidentialité</Link>
-                            <Link className={'text-black/30'} to={"/conditions-de-vente-et-d-utilisation"}>CGV/GU</Link>
+                            <Link className={'text-black/30'} href={"/conditions-de-vente-et-d-utilisation"}>CGV/GU</Link>
                         </div>
                     </div>
 

@@ -1,7 +1,6 @@
 import React from "react";
-import DownloadPlayStore from "../assets/images/downloadPlayStore.svg";
-import DownloadAppStore from "../assets/images/downloadAppStore.svg";
-import Image from "next/image";
+import {ReactComponent as DownloadPlayStore} from "../assets/images/downloadPlayStore.svg";
+import {ReactComponent as DownloadAppStore} from "../assets/images/downloadAppStore.svg";
 
 const DownloadApp = (props, ref) => {
     return (
@@ -9,7 +8,7 @@ const DownloadApp = (props, ref) => {
             ref={ref}
             className={`flex ${props.flexDirection} ${props.marginBottom} text-center items-center`}
         >
-            <h4 style={{ whiteSpace: "pre-line" }} className={"mb-10"}>
+            <h4 style={{whiteSpace: "pre-line"}} className={"mb-10"}>
                 {props.title}
             </h4>
             <div className={`flex ${props.justifyContent} space-x-4 !w-full`}>
@@ -18,7 +17,9 @@ const DownloadApp = (props, ref) => {
                     rel="noreferrer"
                     href="https://play.google.com/store/apps/details?id=com.athletid.athletid&gl=FR"
                 >
-                    <Image src={DownloadPlayStore}
+                    <DownloadPlayStore
+                        width={162}
+                        height={50}
                         className={
                             "hover:fill-white duration-300 rounded-[9px] hover:bg-black "
                         }
@@ -29,7 +30,9 @@ const DownloadApp = (props, ref) => {
                     rel="noreferrer"
                     href="https://apps.apple.com/fr/app/athletid/id6443471192"
                 >
-                    <img src={DownloadAppStore}
+                    <DownloadAppStore
+                        width={162}
+                        height={50}
                         className={
                             "hover:fill-white duration-300 rounded-[9px]  hover:bg-black  "
                         }

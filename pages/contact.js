@@ -1,7 +1,7 @@
 import React from 'react';
-import ContactForm from "../../athletid/src/components/Contact/ContactForm";
-import Footer from "../../athletid/src/components/Footer/Footer";
-import Navbar from "../../athletid/src/components/Nav/Navbar";
+import ContactForm from "../src/components/Contact/ContactForm";
+import Footer from "../src/components/Footer/Footer";
+import Navbar from "../src/components/Nav/Navbar";
 
 const Contact = () => {
 

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {BsChevronRight} from "react-icons/bs"
 import styled from 'styled-components';
 
 

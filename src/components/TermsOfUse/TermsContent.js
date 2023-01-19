@@ -2,7 +2,7 @@ import React from 'react';
 
 const TermsContent = () => {
     return (<div className={'2xl:px-32 lg:px-24 px-8 flex flex-col pt-32 pb-16'}>
-        <h1 className={'mb-[20px] !whitespace-normal'}>Conditions Générales de vente et d’utilisation de l'application
+        <h1 className={'mb-[20px] !whitespace-normal'}>Conditions Générales de vente et d’utilisation de l&apos;application
             Athletid</h1>
         <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 1 – Définitions</h2>
         <ul className={"!list-disc"}>
@@ -81,7 +81,7 @@ const TermsContent = () => {
             ce que l’utilisateur déclare, en les acceptant, comprendre.</p>
 
         <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 5 - Compte dans
-            l'application</h2>
+            l&apos;application</h2>
         <p>L’utilisateur créant un compte sur l’application (membre) a la possibilité d’y accéder en se connectant
             grâce aux identifiants fournis lors de son inscription et en utilisant des systèmes.
 
@@ -138,7 +138,7 @@ const TermsContent = () => {
             auprès de la SAS ATHLETID et de ses sociétés affiliées peuvent agir dans le but de protéger leurs
             droits en cas de violation du présent Accord.</p>
         <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>
-            Restrictions d'utilisation des contenus et services
+            Restrictions d&apos;utilisation des contenus et services
         </h2>
         <p>L’utilisateur n’êtes pas autorisé à utiliser les Contenus et Services de l’application à d’autres fins
             que l’accès autorisé par la SAS ATHLETID, de ses sociétés affiliées, concédants ou des concédants de
@@ -267,7 +267,7 @@ const TermsContent = () => {
             dommages-intérêts directs ou indirects, fortuits, consécutifs ou exemplaires qui peuvent être encourus
             par l’utilisateur à travers de son utilisation de l’application, du site ou du logiciel, y compris pour
             toute perte de données ou d’endommagement de votre appareil mobile, ordinateur, ou autre support.</p>
-        <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 12 - Accès à l'application par
+        <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 12 - Accès à l&apos;application par
             connexion
             Internet</h2>
         <p>La responsabilité de l’éditeur ne peut être engagée en raison d’une indisponibilité technique de la
@@ -329,7 +329,7 @@ const TermsContent = () => {
         <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Article 16 - Garantie des produits
             achetés
             dans
-            l'application</h2>
+            l&apos;application</h2>
         <p>Tous les produits acquis sur l’application bénéficient des garanties légales suivantes, prévues par le
             Code Civil.</p>
         <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Garantie de conformité :</h2>

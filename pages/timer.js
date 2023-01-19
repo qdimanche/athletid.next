@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "../../athletid/src/components/Nav/Navbar";
+import Navbar from "../src/components/Nav/Navbar";
 import TimerVideo from "../src/assets/videos/video.mp4";
 import TimerScreen01 from "../src/assets/images/application-timer-chronometre.webp";
 import TimerScreen02 from "../src/assets/images/application-timer-seance-sport.webp";
 import TimerScreen03 from "../src/assets/images/application-timer-creation-entrainement.webp";
-import HeaderHome from "../../athletid/src/components/HeaderHome";
-import AppFeature from "../../athletid/src/components/Timer/AppFeature";
-import FeatureSquare from "../../athletid/src/components/FeatureSquare";
-import Testimonial from "../../athletid/src/components/Testimonial/Testimonial";
-import DownloadApp from "../../athletid/src/components/DownloadApp";
-import Footer from "../../athletid/src/components/Footer/Footer";
+import HeaderHome from "../src/components/HeaderHome";
+import AppFeature from "../src/components/Timer/AppFeature";
+import FeatureSquare from "../src/components/FeatureSquare";
+import Testimonial from "../src/components/Testimonial/Testimonial";
+import DownloadApp from "../src/components/DownloadApp";
+import Footer from "../src/components/Footer/Footer";
 
 const SocialApp = () => {
   return (
@@ -21,6 +21,7 @@ const SocialApp = () => {
           title={"Title 1"}
           subTitle={"Subtitle"}
           visibilityWhiteButton={"hidden"}
+          video = {"testhome4.mp4"}
         />
         <AppFeature />
         <FeatureSquare

@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "../../athletid/src/components/Nav/Navbar";
+import Navbar from "../src/components/Nav/Navbar";
 import ImgHeaderNetwork from "../src/assets/images/application-athletid-reseau-social.webp";
 import NetworkScreen01 from "../src/assets/images/application-athletid-profil.webp";
 import NetworkScreen02 from "../src/assets/images/application-athletid-seance-sport.webp";
 import NetworkScreen03 from "../src/assets/images/application-athletid-communaute.webp";
-import SocialAppFeature from "../../athletid/src/components/SocialApp/SocialAppFeature";
-import FeatureSquare from "../../athletid/src/components/FeatureSquare";
-import Testimonial from "../../athletid/src/components/Testimonial/Testimonial";
-import DownloadApp from "../../athletid/src/components/DownloadApp";
-import Footer from "../../athletid/src/components/Footer/Footer";
-import HeaderV2 from "../../athletid/src/components/HeaderSN";
+import SocialAppFeature from "../src/components/SocialApp/SocialAppFeature";
+import FeatureSquare from "../src/components/FeatureSquare";
+import Testimonial from "../src/components/Testimonial/Testimonial";
+import DownloadApp from "../src/components/DownloadApp";
+import Footer from "../src/components/Footer/Footer";
+import HeaderV2 from "../src/components/HeaderSN";
 
-const SocialApp = () => {
+const Network = () => {
   return (
     <>
       <Navbar apparition={"apparition-from-bottom-text"} playAnimation={true} />
@@ -73,4 +73,4 @@ const SocialApp = () => {
   );
 };
 
-export default SocialApp;
+export default Network;

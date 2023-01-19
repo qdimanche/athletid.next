@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from "../../athletid/src/components/Nav/Navbar";
-import CompetitionFeature from "../../athletid/src/components/Competition/CompetitionFeature";
-import FeatureSquare from "../../athletid/src/components/FeatureSquare";
+import Navbar from "../src/components/Nav/Navbar";
+import CompetitionFeature from "../src/components/Competition/CompetitionFeature";
+import FeatureSquare from "../src/components/FeatureSquare";
 import NetworkScreen01 from "../src/assets/images/application-athletid-profil.webp";
 import NetworkScreen02 from "../src/assets/images/application-athletid-seance-sport.webp";
 import NetworkScreen03 from "../src/assets/images/application-athletid-communaute.webp";
-import Footer from "../../athletid/src/components/Footer/Footer";
+import Footer from "../src/components/Footer/Footer";
 
 const Competition = () => {
     return (

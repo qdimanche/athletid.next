@@ -1,13 +1,11 @@
 import React from "react";
-import "tw-elements";
 import { BsChevronRight } from "react-icons/bs";
 import { BsChevronLeft } from "react-icons/bs";
+import Image from 'next/image';
 
-const FeatureSquare = React.forwardRef((props, ref) => {
+const FeatureSquare = (props, ref) => {
   return (
     <div
-      data-scroll-section
-      data-scroll
       ref={ref}
       className={"min-h-[93vh] relative px-4 lg:pb-20 pb-12"}
     >
@@ -26,7 +24,7 @@ const FeatureSquare = React.forwardRef((props, ref) => {
       >
         <div className={""}>
           <div className="rounded-[30px] overflow-hidden bg-[#F2F2F2]">
-            <img
+            <Image
               src={props.imgSquare1}
               className={"object-cover w-2/3 pt-14 mx-auto"}
               alt=""
@@ -40,7 +38,7 @@ const FeatureSquare = React.forwardRef((props, ref) => {
         </div>
         <div className={""}>
           <div className="rounded-[30px] overflow-hidden bg-[#F2F2F2]">
-            <img
+            <Image
               src={props.imgSquare2}
               className={"object-cover w-2/3 pt-14 mx-auto "}
               alt=""
@@ -54,7 +52,7 @@ const FeatureSquare = React.forwardRef((props, ref) => {
         </div>
         <div className={""}>
           <div className="rounded-[30px] overflow-hidden bg-[#F2F2F2]">
-            <img
+            <Image
               src={props.imgSquare3}
               className={"object-cover w-2/3 pt-14 mx-auto "}
               alt=""
@@ -78,7 +76,7 @@ const FeatureSquare = React.forwardRef((props, ref) => {
               <div
                 className={"w-3/4 mx-auto bg-black/5 pt-8 px-8 !rounded-[30px]"}
               >
-                <img
+                <Image
                   src={props.imgSquare1}
                   className="block mx-auto w-3/4 "
                   alt="..."
@@ -124,7 +122,7 @@ const FeatureSquare = React.forwardRef((props, ref) => {
               <div
                 className={"w-3/4 mx-auto bg-black/5 pt-8 px-8 !rounded-[30px]"}
               >
-                <img
+                <Image
                   src={props.imgSquare2}
                   className="block mx-auto w-3/4 "
                   alt="..."
@@ -170,7 +168,7 @@ const FeatureSquare = React.forwardRef((props, ref) => {
               <div
                 className={"w-3/4 mx-auto bg-black/5 pt-8 px-8 !rounded-[30px]"}
               >
-                <img
+                <Image
                   src={props.imgSquare3}
                   className="block mx-auto w-3/4 "
                   alt="..."
@@ -215,6 +213,6 @@ const FeatureSquare = React.forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default FeatureSquare;

@@ -1,19 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import {useInView} from "react-intersection-observer";
-import {LazyLoadImage} from "react-lazy-load-image-component";
 import BlackBorderButton from "./Buttons/BlackBorderButton";
+import Image from 'next/image'
 
 const FullScreenBgImage = (props) => {
 
 
-    const scrollEl = document.querySelector("#main-container");
+    if (process.browser) {
+        const scrollEl = document.querySelector("#main-container");
+    }
+
     const {ref: sectionAnimation, inView: mySectionHasAnimations} = useInView({triggerOnce: true, threshold: 0.02});
 
     const [button, showButton] = useState(false);
-
-    useEffect(() => {
-        props.button === false ? showButton(false) : showButton(true);
-    },)
 
     return (
         <div id={props.idSection}>
@@ -33,12 +32,12 @@ const FullScreenBgImage = (props) => {
                 </div>
                 <div
                     className={'overflow-hidden flex self-end md:order-2 order-1 md:bg-unset md:bg-transparent bg-black/5 md:h-full h-fit rounded-[30px] w-full  lg:pt-4'}>
-                    <LazyLoadImage alt={''}
+                    <Image alt={''}
                                    className={'self-end lg:w-[89%] md:w-full w-[60%] object-cover mx-auto lg:hidden block'}
                                    src={props.src}/>
                     <video
                         className={'lg:w-full w-3/4 mx-auto lg:block hidden object-contain pointer-events-none self-end'}
-                        src={props.videoSource} loop muted autoPlay playsInline type="video/mp4"/>
+                        src={require(`../assets/videos/${props.video}`)} loop muted autoPlay playsInline/>
                 </div>
 
             </div>
