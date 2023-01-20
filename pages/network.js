@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../src/components/Nav/Navbar";
-import ImgHeaderNetwork from "../src/assets/images/application-athletid-reseau-social.webp";
+import ImgHeaderNetwork from "../src/assets/images/application-athletid-reseau-social.png";
 import NetworkScreen01 from "../src/assets/images/application-athletid-profil.webp";
 import NetworkScreen02 from "../src/assets/images/application-athletid-seance-sport.webp";
 import NetworkScreen03 from "../src/assets/images/application-athletid-communaute.webp";

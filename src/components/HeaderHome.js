@@ -26,7 +26,7 @@ const HeaderHome =  (props) => {
                             <h1 className={'md:text-left text-center text-white md:w-[80%]'}>Donne du sens à <br/> tes entraînements !</h1>
                             <p className={'mt-[10px] mb-[20px] text-white md:text-left text-center '}>{props.subTitle}</p>
                             <div className={`flex md:justify-start justify-center space-x-4 ${props.visibilityWhiteButton}`}>
-                                <WhiteBorderButton text={props.buttonText}/>
+                                <WhiteBorderButton link={'/network'} text={props.buttonText}/>
                             </div>
                             <div className={`flex md:justify-start justify-center ${props.visibilityDownloadButton} space-x-4 xl:!mt-3 !w-full`}>
                                 <a target={'_blank'} rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.athletid.athletid&gl=FR">
