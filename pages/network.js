@@ -29,7 +29,7 @@ const Network = () => {
         tagAppFeature1={"Sportif"}
         titleAppFeature1={"Inspire. Progresse.\n" + "Partage."}
         subtitleAppFeature1={
-          "Tiens régulièrement ton journal d’entraînement pour suivre ton évolution et motiver tes amis à atteindre leurs objectifs. Inspire-toi de ta communauté pour apprendre chaque jour de nouveaux exercices, séances et conseils qui vont changer ta vie de sportif. "
+          "Tiens régulièrement ton journal d’entraînement pour suivre ton évolution et motiver tes amis à atteindre leurs objectifs. Inspire-toi de ta communauté pour apprendre chaque jour de nouveaux exercices, séances et conseils qui vont changer ta vie de sportif.  "
         }
         tagAppFeature2={"Professionnel"}
         titleAppFeature2={"Conseille. Rencontre. Vends."}
