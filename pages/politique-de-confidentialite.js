@@ -2,14 +2,25 @@ import React from 'react';
 import Navbar from "../src/components/Nav/Navbar";
 import PrivacyContent from "../src/components/PrivacyPolicy/PrivacyContent";
 import Footer from "../src/components/Footer/Footer";
+import Head from "next/head";
 
 const PolitiqueDeConfidentialite = () => {
     return (
-        <div>
-            <Navbar/>
-            <PrivacyContent/>
-            <Footer/>
-        </div>
+        <>
+            <Head>
+                <title>Politique de confidentialité</title>
+            </Head>
+
+
+            <div>
+                <Navbar/>
+                <PrivacyContent/>
+                <Footer/>
+            </div>
+
+        </>
+
+
     );
 };
 

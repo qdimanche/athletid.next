@@ -46,7 +46,7 @@ const Footer = () => {
                     <div className={'flex flex-col md:items-start lg:space-y-0 space-y-3 items-center order-2'}>
                         <div
                             className={'md:space-x-0 space-x-[30px] md:space-y-2 flex md:flex-col md:order-2 flex-row lg:!mb-3 !mb-10 '}>
-                            <Link className={'text-black/30'} href={"/politique-de-confidentialité"}>Politique de
+                            <Link className={'text-black/30'} href={"/politique-de-confidentialite"}>Politique de
                                 confidentialité</Link>
                             <Link className={'text-black/30'} href={"/conditions-de-vente-et-d-utilisation"}>CGV/GU</Link>
                         </div>

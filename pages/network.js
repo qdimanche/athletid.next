@@ -10,10 +10,15 @@ import Testimonial from "../src/components/Testimonial/Testimonial";
 import DownloadApp from "../src/components/DownloadApp";
 import Footer from "../src/components/Footer/Footer";
 import HeaderV2 from "../src/components/HeaderSN";
+import Head from "next/head";
 
 const Network = () => {
   return (
     <>
+        <Head>
+            <title>Network</title>
+        </Head>
+
       <Navbar/>
       <HeaderV2
         title={"La communauté \n des sports addicts. "}
