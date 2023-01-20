@@ -2,10 +2,9 @@ import React from "react";
 import TestimonialCard from "./TestimonialCard";
 import TestimonialCardData from "./TestimonialCardData";
 
-const Testimonial = (props, ref) => {
+const Testimonial = (props) => {
     return (
         <div
-            ref={ref}
             className={"px-4 lg:pb-20 pb-16"}
         >
             <div className={"text-center px-8"}>

@@ -3,10 +3,9 @@ import DownloadPlayStore from "../assets/images/downloadPlayStore.svg";
 import DownloadAppStore from "../assets/images/downloadAppStore.svg";
 import Image from "next/image";
 
-const DownloadApp = (props, ref) => {
+const DownloadApp = (props) => {
     return (
         <div
-            ref={ref}
             className={`flex ${props.flexDirection} ${props.marginBottom} text-center items-center`}
         >
             <h4 style={{ whiteSpace: "pre-line" }} className={"mb-10"}>
@@ -18,9 +17,9 @@ const DownloadApp = (props, ref) => {
                     rel="noreferrer"
                     href="https://play.google.com/store/apps/details?id=com.athletid.athletid&gl=FR"
                 >
-                    <Image src={DownloadPlayStore}
+                    <DownloadPlayStore width={164} height={50} alt={"Télécharger Athletid sur le Play Store"}
                         className={
-                            "hover:fill-white duration-300 rounded-[9px] hover:bg-black "
+                            "hover:fill-white duration-300 rounded-[9px] hover:bg-black"
                         }
                     />
                 </a>
@@ -29,11 +28,10 @@ const DownloadApp = (props, ref) => {
                     rel="noreferrer"
                     href="https://apps.apple.com/fr/app/athletid/id6443471192"
                 >
-                    <img src={DownloadAppStore}
+                    <DownloadAppStore width={160} height={50} alt={"Télécharger Athletid sur l'App Store"}
                         className={
                             "hover:fill-white duration-300 rounded-[9px]  hover:bg-black  "
                         }
-                        alt=""
                     />
                 </a>
             </div>

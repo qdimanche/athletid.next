@@ -35,30 +35,30 @@ const MasonryGrid = (props) => {
                         myAnimationStart ? 'lg:translate-y-[-15%] translate-y-0 space-y-4 w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]'
                             : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible ? 'lg:translate-y-[-30%] translate-y-0 space-y-4 w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]' : 'lg:translate-y-[-15%] translate-y-0 space-y-4 w-1/2 md:w-1/3  lg:w-[12%] duration-1000 z-[800]'}
                 >
-                    <Image
+                    <Image placeholder={"blur"}
                         className={'object-cover h-[230px] lg:h-[400px] lg:w-full rounded-[30px] lg:block hidden'}
                         src={MasonryImages.img1} alt=""/>
-                    <Image
+                    <Image placeholder={"blur"}
                         className={'object-cover h-[230px] lg:h-[400px] lg:w-full rounded-[30px] lg:hidden md:block hidden'}
                         src={MasonryImages.img1Tablet} alt=""/>
-                    <Image className={'object-cover h-[270px] lg:h-[400px] lg:w-full rounded-[30px] '}
+                    <Image placeholder={"blur"} className={'object-cover h-[270px] lg:h-[400px] lg:w-full rounded-[30px] '}
                                    src={MasonryImages.img2} alt=""/>
-                    <Image className={'object-cover h-[225px] lg:w-full  rounded-[30px]'}
+                    <Image placeholder={"blur"} className={'object-cover h-[225px] lg:w-full  rounded-[30px]'}
                                    src={MasonryImages.img3} alt=""/>
-                    <Image className={'object-cover lg:h-[350px] lg:w-full rounded-[30px] hidden md:block'}
+                    <Image placeholder={"blur"} className={'object-cover lg:h-[350px] lg:w-full rounded-[30px] hidden md:block'}
                                    src={MasonryImages.img4} alt=""/>
                 </div>
                 <div
                     className={'space-y-4 lg:translate-y-[0px] md:translate-y-[190px] translate-y-[90px] w-1/2 md:w-[33%] lg:w-[12%] h-fit'}>
-                    <Image className={'object-cover  h-[275px] lg:w-full rounded-[30px] '}
+                    <Image placeholder={"blur"} className={'object-cover  h-[275px] lg:w-full rounded-[30px] '}
                                    src={MasonryImages.img6} alt=""/>
-                    <Image
+                    <Image placeholder={"blur"}
                         className={'object-cover  h-[180px] lg:h-[350px] lg:w-full rounded-[30px] lg:block hidden'}
                         src={MasonryImages.img7} alt=""/>
-                    <Image
+                    <Image placeholder={"blur"}
                         className={'object-cover  h-[180px] lg:h-[350px] lg:w-full rounded-[30px] lg:hidden block'}
                         src={MasonryImages.img7Tablet} alt=""/>
-                    <Image className={'object-cover lg:h-[240px] lg:w-full  rounded-[30px] hidden md:block'}
+                    <Image placeholder={"blur"} className={'object-cover lg:h-[240px] lg:w-full  rounded-[30px] hidden md:block'}
                                    src={MasonryImages.img8} alt=""/>
                 </div>
 
@@ -68,18 +68,18 @@ const MasonryGrid = (props) => {
                         myAnimationStart ? ' translate-y-[5%] space-y-4 lg:w-1/5 md:w-1/3 w-[12%] duration-1000 z-[800] md:block hidden'
                             : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible ? 'translate-y-[-10%] space-y-4 lg:w-1/5 md:w-1/3 w-[12%] duration-1000 z-[800] md:block hidden' : ' translate-y-[5%]  space-y-4 lg:w-1/5 md:w-1/3 w-[12%] duration-1000 z-[800] md:block hidden'
                 }>
-                    <Image className={'object-cover h-[350px] w-2/3 rounded-[30px] '} src={MasonryImages.img9}
+                    <Image placeholder={"blur"} className={'object-cover h-[350px] w-2/3 rounded-[30px] '} src={MasonryImages.img9}
                                    alt=""/>
-                    <Image className={'object-cover h-[420px] w-full rounded-[30px] '} src={MasonryImages.img10}
+                    <Image placeholder={"blur"} className={'object-cover h-[420px] w-full rounded-[30px] '} src={MasonryImages.img10}
                                    alt=""/>
-                    <Image className={'object-cover h-[300px] w-full  rounded-[30px] '}
+                    <Image placeholder={"blur"} className={'object-cover h-[300px] w-full  rounded-[30px] '}
                                    src={MasonryImages.img11} alt=""/>
 
                 </div>
                 <div className={'space-y-4 translate-y-[13%] w-[12%] lg:block hidden'}>
-                    <Image className={'object-cover rounded-[30px]  lg:h-[300px] '} src={MasonryImages.img12}
+                    <Image placeholder={"blur"} className={'object-cover rounded-[30px]  lg:h-[300px] '} src={MasonryImages.img12}
                                    alt=""/>
-                    <Image className={'object-cover rounded-[30px]  lg:h-[360px]'} src={MasonryImages.img13}
+                    <Image placeholder={"blur"} className={'object-cover rounded-[30px]  lg:h-[360px]'} src={MasonryImages.img13}
                                    alt=""/>
                 </div>
                 <div className={
@@ -87,25 +87,25 @@ const MasonryGrid = (props) => {
                         myAnimationStart ? 'translate-y-[3%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
                             : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible ? 'translate-y-[3%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden' : 'translate-y-[3%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
                 }>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img14} alt=""/>
-                    <Image className={'object-cover h-[200px] w-full rounded-[30px] '} src={MasonryImages.img15}
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img14} alt=""/>
+                    <Image placeholder={"blur"} className={'object-cover h-[200px] w-full rounded-[30px] '} src={MasonryImages.img15}
                                    alt=""/>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img16} alt=""/>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img17} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img16} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img17} alt=""/>
                 </div>
                 <div className={'space-y-4 translate-y-[10%] w-[20%] lg:block hidden'}>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img18} alt=""/>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img19} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img18} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img19} alt=""/>
                 </div>
                 <div className={
                     props.previousElementIsVisible ? 'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden' :
                         myAnimationStart ? 'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
                             : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible ? 'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden' : 'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
                 }>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img20} alt=""/>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img21} alt=""/>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img22} alt=""/>
-                    <Image className={'object-contain rounded-[30px] '} src={MasonryImages.img23} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img20} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img21} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img22} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img23} alt=""/>
                 </div>
 
 

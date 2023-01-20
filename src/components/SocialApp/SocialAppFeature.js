@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 
 
-const SocialAppContent = (props, ref) => {
+const SocialAppContent = (props) => {
 
 
     return (
@@ -13,7 +13,7 @@ const SocialAppContent = (props, ref) => {
             <div className={'grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 lg:w-full  md:px-0 mx-auto'}>
                 <div
                     className={'safari-overflow-fix rounded-[30px] lg:safari-overflow-fix rounded-[40px] h-fit order-1'}>
-                    <Image src={Sportif} className={'object-cover object-top lg:object-center lg:h-full w-full h-[50vh]'}
+                    <Image placeholder={"blur"} src={Sportif} className={'object-cover object-top lg:object-center lg:h-full w-full h-[50vh]'}
                          alt=""/>
                 </div>
                 <div className={'flex flex-col lg:items-start items-center justify-center order-2 2xl:px-28 lg:px-20'}>
@@ -36,12 +36,12 @@ const SocialAppContent = (props, ref) => {
                 </div>
                 <div
                     className={'safari-overflow-fix rounded-[30px] lg:safari-overflow-fix rounded-[40px] lg:order-4 order-3'}>
-                    <Image src={Pro} className={'object-cover lg:h-full w-full md:object-center object-top h-[50vh]'}
+                    <Image placeholder={"blur"} src={Pro} className={'object-cover lg:h-full w-full md:object-center object-top h-[50vh]'}
                          alt=""/>
                 </div>
 
                 <div className={'safari-overflow-fix rounded-[30px]  lg:safari-overflow-fix rounded-[40px] order-5'}>
-                    <Image src={Entreprise}
+                    <Image placeholder={"blur"} src={Entreprise}
                          className={'object-cover lg:h-full w-full lg:object-center object-top h-[50vh]'} alt=""/>
                 </div>
                 <div className={' flex flex-col justify-center order-6 lg:items-start items-center 2xl:px-28 lg:px-20'}>

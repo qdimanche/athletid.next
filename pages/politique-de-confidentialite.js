@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from "../src/components/Nav/Navbar";
-import TermsContent from "../src/components/TermsOfUse/TermsContent";
+import PrivacyContent from "../src/components/PrivacyPolicy/PrivacyContent";
 import Footer from "../src/components/Footer/Footer";
 
-const TermsOfUse = () => {
+const PolitiqueDeConfidentialite = () => {
     return (
         <div>
             <Navbar/>
-            <TermsContent/>
+            <PrivacyContent/>
             <Footer/>
         </div>
     );
 };
 
-export default TermsOfUse;
+export default PolitiqueDeConfidentialite;

@@ -33,7 +33,7 @@ const ContactSupport = (props, ref) => {
                 </div>
             </div>
             <div className={"mx-auto max-h-[93vh] md:order-2 order-1 md:mb-0 mb-4"}>
-                <Image
+                <Image placeholder={"blur"}
                     alt={""}
                     className={"self-end  md:w-full w-[70%] mx-auto"}
                     src={props.src}

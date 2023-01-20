@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from "../src/components/Nav/Navbar";
-import PrivacyContent from "../src/components/PrivacyPolicy/PrivacyContent";
+import TermsContent from "../src/components/TermsOfUse/TermsContent";
 import Footer from "../src/components/Footer/Footer";
 
-const PrivacyPolicy = () => {
+const ConditionsDeVenteEtDUtilisation = () => {
     return (
         <div>
             <Navbar/>
-            <PrivacyContent/>
+            <TermsContent/>
             <Footer/>
         </div>
     );
 };
 
-export default PrivacyPolicy;
+export default ConditionsDeVenteEtDUtilisation;

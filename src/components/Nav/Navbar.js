@@ -4,25 +4,17 @@ import RedButton from "../Buttons/RedButton";
 import HamburgerMenu from "./Burger"
 import Logo from "../../assets/images/logo-athletid.svg";
 import TextLogo from "../../assets/images/text-logo.svg";
-import {useScrollPosition} from "../hooks/useScrollPosition";
 import Image from 'next/image';
-
+import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 
 const Navbar = (props) => {
 
-    const scrollPosition = useScrollPosition();
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 
-    const [animation, setAnimation] = useState(false);
-
     useEffect(() => {
-        props.animation === false ? setAnimation(false) : setAnimation(true);
-    }, [props.animation],)
-
-    if (process.browser){
         click ? document.body.style.overflow = "hidden" : document.body.style.overflow = "visible";
-    }
+    }, [click])
 
 
 
@@ -30,12 +22,12 @@ const Navbar = (props) => {
         <div
             className={'flex fixed justify-between z-[999] w-screen lg:!py-[30px] !py-[2.5rem] px-12  top-0 duration-1000 '}>
             <div >
-                <div className={`flex space-x-2 items-center ${props.animation} z-[999]`}>
-                    <Image id={'test'} src={Logo} className={'lg:w-8 w-6'} alt=""/>
-                    <Image src={TextLogo} style={{width: "70px"}}
-                              className={scrollPosition < 100 && props.playAnimation === true ? ` hidden lg:block translate-y-0` : 'translate-y-[-300%] duration-1000 hidden lg:block'}
+                <Link href="/" className={`flex space-x-2 items-center z-[999]`}>
+                    <Logo  width={32} id={'test'} alt=""/>
+                    <TextLogo
+                              className={ 'hidden lg:block translate-y-0'}
                               alt=""/>
-                </div>
+                </Link>
             </div>
 
             <div className={`flex items-center ${props.animation}`}>
@@ -43,7 +35,7 @@ const Navbar = (props) => {
 {/*                    <li className={scrollPosition < 100 && props.playAnimation === true ? `translate-y-0` : 'translate-y-[-300%] duration-1000'}>
                         <Link href="/a-propos">À propos de nous</Link>
                     </li>*/}
-                    <li className={scrollPosition < 100 && props.playAnimation === true ? `translate-y-0 ` : 'translate-y-[-300%] duration-1000'}>
+                    <li>
                         <Link href="/contact">Support</Link>
                     </li>
                     <li className={''}>
@@ -51,12 +43,73 @@ const Navbar = (props) => {
                     </li>
                 </ul>
 
+                <div
+                    className={click ? 'fixed bg-white duration-[1300ms] w-screen h-screen heightfix-ios top-0 left-0 bottom-0 overflow-hidden z-[400]' : 'bg-white invisible opacity-0 duration-[300ms] absolute w-screen h-screen top-0 left-0 bottom-0 overflow-visible'}>
+                    <div
+                        className={click ? 'lg:fixed-center-element absolute-vertical-center flex lg:space-x-40' : 'hidden'}>
+                        <ul className={'text-left apparition-from-bottom-hamburger-menu lg:block hidden '}>
+                            <li className={'text-[14px] font-bold'}>
+                                <span>Contact</span>
+                            </li>
+                            <li className={'text-[20px] opacity-60 mb-8'}>
+                                <a href={'mailto:contact@athletid.com'}>contact@athletid.com</a>
+                            </li>
+                            <li className={'text-[14px] font-bold'}>
+                                <span>Nos réseaux</span>
+                            </li>
+                            <li className={'text-[20px] opacity-60'}>
+                                <a target="_blank" href={'https://www.instagram.com/athletid/'} rel="noreferrer">Instagram</a>
+                            </li>
+                            <li className={' text-[20px] opacity-60'}>
+                                <a target="_blank" href={'https://www.linkedin.com/company/athletid/'} rel="noreferrer">Linkedin</a>
+                            </li>
+                            <li className={' text-[20px] opacity-60'}>
+                                <a target="_blank" href={'https://www.facebook.com/TimerByAthletid'} rel="noreferrer">Facebook</a>
+                            </li>
+                        </ul>
+
+
+                        <ul className={'text-left apparition-from-bottom-hamburger-menu space-y-10'}>
+                            <li className={'text-[20px] lg:text-[14px]  font-bold lg:!-mb-4'}>
+                                Menu
+                            </li>
+                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+                                <Link href="/">Accueil</Link>
+                            </li>
+                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+                                <Link href="/network">Network</Link>
+                            </li>
+                            {/*                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+                                <Link to="/timer">Timer</Link>
+                            </li>*/}
+                            {/*                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+                                <Link to="/a-propos">À propos</Link>
+                            </li>*/}
+                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+                                <Link href="/contact">Contact</Link>
+                            </li>
+                            <li className={'lg:hidden flex justify-center space-x-8 z-300 !text-[1.3em] pt-4'}>
+                                <a target={'_blank'} href="https://www.instagram.com/athletid/" rel="noreferrer"><FaInstagram color={'black'} size={18}/></a>
+                                <a target={'_blank'} href="https://www.linkedin.com/company/athletid/" rel="noreferrer"><FaFacebook
+                                    color={'black'}
+                                    size={18}/></a>
+                                <a target={'_blank'} href="https://www.facebook.com/TimerByAthletid" rel="noreferrer"><FaLinkedin color={'black'}
+                                                                                                                 size={18}/></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
 
 
 
                 <div className={'z-[900] w-[2rem]'} onClick={handleClick}>
                     {click ? (<HamburgerMenu/>) : (<HamburgerMenu/>)}
                 </div>
+
+
             </div>
 
 

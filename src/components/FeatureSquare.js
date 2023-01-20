@@ -3,10 +3,9 @@ import { BsChevronRight } from "react-icons/bs";
 import { BsChevronLeft } from "react-icons/bs";
 import Image from 'next/image';
 
-const FeatureSquare = (props, ref) => {
+const FeatureSquare = (props) => {
   return (
     <div
-      ref={ref}
       className={"min-h-[93vh] relative px-4 lg:pb-20 pb-12"}
     >
       <div
@@ -24,7 +23,7 @@ const FeatureSquare = (props, ref) => {
       >
         <div className={""}>
           <div className="rounded-[30px] overflow-hidden bg-[#F2F2F2]">
-            <Image
+            <Image placeholder={"blur"}
               src={props.imgSquare1}
               className={"object-cover w-2/3 pt-14 mx-auto"}
               alt=""
@@ -38,7 +37,7 @@ const FeatureSquare = (props, ref) => {
         </div>
         <div className={""}>
           <div className="rounded-[30px] overflow-hidden bg-[#F2F2F2]">
-            <Image
+            <Image placeholder={"blur"}
               src={props.imgSquare2}
               className={"object-cover w-2/3 pt-14 mx-auto "}
               alt=""
@@ -52,7 +51,7 @@ const FeatureSquare = (props, ref) => {
         </div>
         <div className={""}>
           <div className="rounded-[30px] overflow-hidden bg-[#F2F2F2]">
-            <Image
+            <Image placeholder={"blur"}
               src={props.imgSquare3}
               className={"object-cover w-2/3 pt-14 mx-auto "}
               alt=""

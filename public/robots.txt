@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://athletid.com
+
+# Sitemaps
+Sitemap: https://athletid.com/sitemap.xml

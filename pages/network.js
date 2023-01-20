@@ -14,7 +14,7 @@ import HeaderV2 from "../src/components/HeaderSN";
 const Network = () => {
   return (
     <>
-      <Navbar apparition={"apparition-from-bottom-text"} playAnimation={true} />
+      <Navbar/>
       <HeaderV2
         title={"La communauté \n des sports addicts. "}
         subTitle={
