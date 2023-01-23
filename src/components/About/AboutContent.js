@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgHeaderHome from "../../assets/images/femme-entrainement-exterieur-fitness.webp";
+import ImgHeaderHome from "../../../public/assets/images/femme-entrainement-exterieur-fitness.webp";
 import Image from "next/image";
 
 const AboutContent = () => {
@@ -28,7 +28,7 @@ const AboutContent = () => {
 
             <div
                 className={'lg:h-[60vh] h-[35vh] rounded-[30px] relative overflow-hidden flex mb-0  safari-overflow-fix'}>
-                <video className={'w-full h-full object-cover lg:block hidden'} src={"/public/videos/heroVideoHome.mp4"}
+                <video className={'w-full h-full object-cover lg:block hidden'} src={"/public/videos/femme-entrainement-exterieur-fitness.mp4"}
                        autoPlay loop muted
                        playsInline type="video/mp4"/>
                 <Image src={ImgHeaderHome} alt="" className={'lg:hidden w-full h-full object-cover pointer-events-none'}/>

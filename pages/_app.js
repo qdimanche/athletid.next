@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
 import Script from "next/script"
-import Router from 'next/router'
 
 export default function App({Component, pageProps}) {
     return <>

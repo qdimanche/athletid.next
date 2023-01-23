@@ -1,7 +1,6 @@
 import React from "react";
-import DownloadPlayStore from "../assets/images/downloadPlayStore.svg";
-import DownloadAppStore from "../assets/images/downloadAppStore.svg";
-import Image from "next/image";
+import DownloadPlayStore from "../../../public/assets/images/downloadPlayStore.svg";
+import DownloadAppStore from "../../../public/assets/images/downloadAppStore.svg";
 
 const DownloadApp = (props) => {
     return (

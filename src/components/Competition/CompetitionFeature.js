@@ -1,6 +1,6 @@
 import React from 'react';
 import WhiteBorderButton from "../Buttons/WhiteBorderButton";
-import ImgHeader from "../../assets/images/femme-entrainement-exterieur-fitness.webp"
+import ImgHeader from "../../../public/assets/images/femme-entrainement-exterieur-fitness.webp"
 import Image from "next/image"
 
 const CompetitionFeature = () => {

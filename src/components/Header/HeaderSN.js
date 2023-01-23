@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import HeaderNetwork from "../assets/images/application-athletid-reseau-social.png";
-import DownloadApp from "../components/DownloadApp";
+import HeaderNetwork from "../../../public/assets/images/application-athletid-reseau-social.png";
+import DownloadApp from "../UI/DownloadApp";
 import Image from "next/image";
 
 const Header = (props) => {

@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {useInView} from "react-intersection-observer";
-import BlackBorderButton from "./Buttons/BlackBorderButton";
+import BlackBorderButton from "../Buttons/BlackBorderButton";
 import Image from 'next/image'
 
 const FullScreenBgImage = (props) => {
@@ -14,8 +14,7 @@ const FullScreenBgImage = (props) => {
 
     const [button, showButton] = useState(false);
 
-    return (
-        <div id={props.idSection}>
+    return (<div id={props.idSection}>
             <div ref={sectionAnimation}
                  className={'grid md:grid-cols-2 grid-cols-1 md:m-4 md:mb-4 mb-8 pt-4  overflow-hidden md:bg-[#F5F4F5] md:rounded-[30px] 2xl:pl-28 lg:pl-20 md:pl-12 md:pr-0 px-4'}>
                 <div
@@ -33,17 +32,20 @@ const FullScreenBgImage = (props) => {
                 <div
                     className={'overflow-hidden flex self-end md:order-2 order-1 md:bg-unset md:bg-transparent bg-black/5 md:h-full h-fit rounded-[30px] w-full  lg:pt-4'}>
                     <Image placeholder={"blur"} alt={''}
-                                   className={'self-end lg:w-[89%] md:w-full w-[60%] object-cover mx-auto lg:hidden block'}
-                                   src={props.src}/>
+                           className={'self-end lg:w-[89%] md:w-full w-[60%] object-cover mx-auto lg:hidden block'}
+                           src={props.src}/>
+
                     <video
                         className={'lg:w-full w-3/4 mx-auto lg:block hidden object-contain pointer-events-none self-end'}
-                        src={require(`../assets/videos/${props.video}`)} loop muted autoPlay playsInline/>
+                        loop muted autoPlay playsInline preload="metadata">
+                        <source src={props.video + "#t=0.5"} type="video/mp4"/>
+                    </video>
                 </div>
-
             </div>
         </div>
 
-    );
+    )
+        ;
 }
 
 export default FullScreenBgImage;

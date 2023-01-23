@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "../src/components/Nav/Navbar";
-import ImgHeaderNetwork from "../src/assets/images/application-athletid-reseau-social.png";
-import NetworkScreen01 from "../src/assets/images/application-athletid-profil.webp";
-import NetworkScreen02 from "../src/assets/images/application-athletid-seance-sport.webp";
-import NetworkScreen03 from "../src/assets/images/application-athletid-communaute.webp";
+import ImgHeaderNetwork from "../public/assets/images/application-athletid-reseau-social.png";
+import NetworkScreen01 from "../public/assets/images/application-athletid-profil.webp";
+import NetworkScreen02 from "../public/assets/images/application-athletid-seance-sport.webp";
+import NetworkScreen03 from "../public/assets/images/application-athletid-communaute.webp";
 import SocialAppFeature from "../src/components/SocialApp/SocialAppFeature";
-import FeatureSquare from "../src/components/FeatureSquare";
+import FeatureSquare from "../src/components/UI/FeatureSquare";
 import Testimonial from "../src/components/Testimonial/Testimonial";
-import DownloadApp from "../src/components/DownloadApp";
+import DownloadApp from "../src/components/UI/DownloadApp";
 import Footer from "../src/components/Footer/Footer";
-import HeaderV2 from "../src/components/HeaderSN";
+import HeaderV2 from "../src/components/Header/HeaderSN";
 import Head from "next/head";
 
 const Network = () => {

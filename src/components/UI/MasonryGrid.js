@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import MasonryImages from '../assets/images/masonry';
+import MasonryImages from '../../../public/assets/images/masonry';
 import {useInView} from "react-intersection-observer";
 import Image from 'next/image'
 

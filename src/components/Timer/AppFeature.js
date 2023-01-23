@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import Tempo from "../../assets/images/application-timer-tempo.webp";
-import Intervalle from "../../assets/images/application-timer-intervalle.webp";
-import Breath from "../../assets/images/application-timer-respiration.webp";
+import Tempo from "../../../public/assets/images/application-timer-tempo.webp";
+import Intervalle from "../../../public/assets/images/application-timer-intervalle.webp";
+import Breath from "../../../public/assets/images/application-timer-respiration.webp";
 import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
 import Image from "next/image";
 

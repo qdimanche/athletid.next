@@ -1,6 +1,6 @@
 import React from 'react';
-import Avatar from '../../assets/images/utilisateur-athletid.webp'
-import Curve from '../../assets/images/curve.webp'
+import Avatar from '../../../public/assets/images/utilisateur-athletid.webp'
+import Curve from '../../../public/assets/images/curve.webp'
 import Image from 'next/image'
 
 const HeaderAbout = () => {

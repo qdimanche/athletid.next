@@ -1,6 +1,6 @@
-import Sportif from "../../assets/images/application-athletid-reseau-sportif.webp";
-import Pro from "../../assets/images/application-athletid-reseau-professionnel.webp";
-import Entreprise from "../../assets/images/application-athletid-reseau-entreprise.webp";
+import Sportif from "../../../public/assets/images/application-athletid-reseau-sportif.webp";
+import Pro from "../../../public/assets/images/application-athletid-reseau-professionnel.webp";
+import Entreprise from "../../../public/assets/images/application-athletid-reseau-entreprise.webp";
 import React from "react";
 import Image from "next/image";
 

@@ -44,7 +44,7 @@ const ContactForm = (props) => {
     return (
 
 
-        <div data-scroll-section data-scroll className={'xl:w-[40%] md:w-1/2 w-3/4 mx-auto lg:px-20 pt-32 pb-20 '}>
+        <div className={'xl:w-[40%] md:w-1/2 w-3/4 mx-auto lg:px-20 pt-32 pb-20 '}>
             {/*            <div>
 
                 <div className={'w-full bg-[#242629] flex justify-between p-5 h-fit rounded-[10px] mb-4'}>

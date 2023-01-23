@@ -1,18 +1,18 @@
 import Head from 'next/head'
-import Link from "next/link";
 import Navbar from "../src/components/Nav/Navbar";
-import HeaderHome from "../src/components/HeaderHome";
-import FullScreenBgImage from "../src/components/FullScreenBgImage";
-import MasonryGrid from "../src/components/MasonryGrid";
+import HeaderHome from "../src/components/Header/HeaderHome";
+import FullScreenBgImage from "../src/components/UI/FullScreenBgImage";
+import MasonryGrid from "../src/components/UI/MasonryGrid";
 import ContactSupport from "../src/components/Contact/ContactSupport";
 import Newsletter from "../src/components/Footer/Newsletter";
 import Footer from "../src/components/Footer/Footer";
-import ImgHeaderHome from "../src/assets/images/femme-entrainement-exterieur-fitness.webp"
-import timerAppPreview from "../src/assets/images/application-athletid-entrainement-sportif.webp";
-import athletidAppPreview from "../src/assets/images/application-athletid.webp"
-import athletidAppPreview2 from "../src/assets/images/application-athletid-construction.webp";
-import Script from "next/script"
-
+import ImgHeaderHome from "../public/assets/images/femme-entrainement-exterieur-fitness.webp"
+import timerAppPreview from "../public/assets/images/application-athletid-entrainement-sportif.webp";
+import athletidAppPreview from "../public/assets/images/application-athletid.webp"
+import athletidAppPreview2 from "../public/assets/images/application-athletid-construction.webp";
+import femmeEntrainement from "../public/assets/videos/femme-entrainement-exterieur-fitness.mp4";
+import appSNVideo from "../public/assets/videos/application-network-athletid-fonctionnalites.mp4";
+import appTimerVideo from "../public/assets/videos/application-network-athletid-fonctionnalites.mp4";
 
 
 export default function Home() {
@@ -27,7 +27,6 @@ export default function Home() {
             />
             <title>Athletid</title>
             <meta name="google-site-verification" content="6DF2_TTqoaJp9NBltLx5nqc6ky-0pcTvxUAyS7sCRT8" />
-
         </Head>
 
 
@@ -37,14 +36,14 @@ export default function Home() {
             subTitle={"Découvre nos solutions innovantes et améliore ton expérience sportive en créant l’environnement le plus propice à ta réussite, quel que soit ton niveau, tes objectifs et ta discipline."}
             buttonText={"Découvrir"}
             img={ImgHeaderHome}
-            video = {"testhome4.mp4"}
+            video = {femmeEntrainement}
             link={"/network"}
             visibilityWhiteButton={'flex'}
             visibilityDownloadButton={'hidden'}
         />
         <FullScreenBgImage
             src={athletidAppPreview}
-            video = {"sn-video.mp4"}
+            video = {appSNVideo}
             title={"Partage ta \n passion !"}
             button={true}
             subtitle={"Enregistre tes séances et partage ta vie de sportif avec une communauté qui te ressemble. Un lieu inspirant, accessible à tous, empreint de valeurs sportives, avec un but commun : atteindre ensemble nos objectifs !"}
@@ -54,7 +53,7 @@ export default function Home() {
         />
         <FullScreenBgImage
             src={timerAppPreview}
-            video = {"timer-video.mp4"}
+            video = {appTimerVideo}
             title={"Ton temps \n est précieux !"} button={false} tag={"Bientôt disponible"}
             subtitle={"Paramètre ton entraînement et laisse toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
             link={"/network"}
