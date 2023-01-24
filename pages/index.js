@@ -27,6 +27,11 @@ export default function Home() {
             />
             <title>Athletid</title>
             <meta name="google-site-verification" content="6DF2_TTqoaJp9NBltLx5nqc6ky-0pcTvxUAyS7sCRT8" />
+            <meta property="og:title" content="Athletid" />
+            <meta property="og:description" content="Libérez votre potentiel grâce aux apps mobiles ATHLETID" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://athletid.com/" />
+            <meta property="og:image" content={'https://imgur.com/Zn3PZLD.png'} />
         </Head>
 
 
