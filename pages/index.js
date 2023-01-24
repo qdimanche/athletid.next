@@ -7,7 +7,6 @@ import ContactSupport from "../src/components/Contact/ContactSupport";
 import Newsletter from "../src/components/Footer/Newsletter";
 import Footer from "../src/components/Footer/Footer";
 import ImgHeaderHome from "../public/assets/images/femme-entrainement-exterieur-fitness.webp"
-import OgImage from "../public/assets/images/og-image.png";
 import timerAppPreview from "../public/assets/images/application-athletid-entrainement-sportif.webp";
 import athletidAppPreview from "../public/assets/images/application-athletid.webp"
 import athletidAppPreview2 from "../public/assets/images/application-athletid-construction.webp";
@@ -31,7 +30,7 @@ export default function Home() {
             <meta property="og:title" content="Athletid" />
             <meta property="og:description" content="Libérez votre potentiel grâce aux apps mobiles ATHLETID" />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content={OgImage} />
+            <meta property="og:image" content={'../public/assets/images/og-image.webp'} />
         </Head>
 
 
