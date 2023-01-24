@@ -31,7 +31,7 @@ export default function Home() {
             <meta property="og:description" content="Libérez votre potentiel grâce aux apps mobiles ATHLETID" />
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://athletid.com/" />
-            <meta property="og:image" content={'https://imgur.com/Zn3PZLD.png'} />
+            <meta property="og:image" content={'https://imgur.com/2Iq2vqJ.png'} />
         </Head>
 
 
