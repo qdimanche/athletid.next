@@ -9,7 +9,6 @@ const PolitiqueDeConfidentialite = () => {
         <>
             <Head>
                 <title>Politique de confidentialité</title>
-                <meta name="robots" content="noindex"/>
             </Head>
 
 

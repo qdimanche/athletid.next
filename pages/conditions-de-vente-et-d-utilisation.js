@@ -9,7 +9,6 @@ const ConditionsDeVenteEtDUtilisation = () => {
         <>
             <Head>
                 <title>Conditions de vente et d&apos;utilisation</title>
-                <meta name="robots" content="noindex"/>
             </Head>
 
             <div>
