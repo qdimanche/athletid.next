@@ -31,7 +31,10 @@ export default function Home() {
             <meta property="og:description" content="Libérez votre potentiel grâce aux apps mobiles ATHLETID" />
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://athletid.com/" />
-            <meta property="og:image" content={'https://imgur.com/Z2wPsBZ.png'} />
+            <meta property="og:image" content={'https://i.imgur.com/aHBOGFc.png'} />
+            <meta property="og:image:secure_url" content="https://i.imgur.com/aHBOGFc.png"/>
+            <meta property="og:image:width" content="800"/>
+            <meta property="og:image:height" content="530"/>
             <meta name="twitter:card" content="summary_large_image"/>
         </Head>
 
