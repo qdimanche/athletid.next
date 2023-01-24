@@ -14,7 +14,7 @@ const SocialAppContent = (props) => {
                 <div
                     className={'safari-overflow-fix rounded-[30px] lg:safari-overflow-fix rounded-[40px] h-fit order-1'}>
                     <Image placeholder={"blur"} src={Sportif} className={'object-cover object-top lg:object-center lg:h-full w-full h-[50vh]'}
-                         alt=""/>
+                         alt={props.altAppFeature1}/>
                 </div>
                 <div className={'flex flex-col lg:items-start items-center justify-center order-2 2xl:px-28 lg:px-20'}>
                     <div
@@ -37,12 +37,12 @@ const SocialAppContent = (props) => {
                 <div
                     className={'safari-overflow-fix rounded-[30px] lg:safari-overflow-fix rounded-[40px] lg:order-4 order-3'}>
                     <Image placeholder={"blur"} src={Pro} className={'object-cover lg:h-full w-full md:object-center object-top h-[50vh]'}
-                         alt=""/>
+                         alt={props.altAppFeature2}/>
                 </div>
 
                 <div className={'safari-overflow-fix rounded-[30px]  lg:safari-overflow-fix rounded-[40px] order-5'}>
                     <Image placeholder={"blur"} src={Entreprise}
-                         className={'object-cover lg:h-full w-full lg:object-center object-top h-[50vh]'} alt=""/>
+                         className={'object-cover lg:h-full w-full lg:object-center object-top h-[50vh]'} alt={props.altAppFeature3}/>
                 </div>
                 <div className={' flex flex-col justify-center order-6 lg:items-start items-center 2xl:px-28 lg:px-20'}>
                     <div

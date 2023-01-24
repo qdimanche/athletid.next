@@ -1,117 +1,109 @@
-import React, {useState} from 'react';
+import React from 'react';
 import MasonryImages from '../../../public/assets/images/masonry';
-import {useInView} from "react-intersection-observer";
 import Image from 'next/image'
 
 
 const MasonryGrid = (props) => {
 
 
-    const {ref: animationStart, inView: myAnimationStart} = useInView();
-    const {ref: animationMiddle, inView: mySectionReachMiddle} = useInView();
-    const {ref: animationEnd, inView: myAnimationEnd} = useInView();
-
-
-    const [loaded, setLoaded] = useState(false);
-
-
     return (
         <div className={`relative lg:mx-0 md:py-16 pt-8 pb-16 lg:pb-0  mx-4  max-w-screen overflow-hidden`}>
-            <div className={`lg:mx-8 z-1 lg:mb-48 ${props.displayTitle}`}>
+            <div className={`lg:mx-8 z-1 lg:mb-48`}>
                 <div className={'text-center '}>
                     <div className={'mb-10 lg:mb-20 flex flex-col items-center'} id={'titleMasonry'}>
                         <h2 style={{whiteSpace: "pre-line"}} className={''}>{props.titleMasonry}</h2>
                         <p style={{whiteSpace: "pre-line"}}
                            className={'mt-[10px]'}>{props.subTitleMasonry}</p>
-                        {/*<BlackBorderButton text={'À propos de nous'} link={props.link}/>*/}
                     </div>
                 </div>
             </div>
 
             <div
-                className={`flex space-x-4  absolute lg:mx-[-10%] lg:translate-y-[-8%] relative 3xl:min-h-[1400px] 2xl:h-[1250px] md:h-[1180px]  h-[560px] ${props.customMarginTop}`}>
+                className={`flex space-x-4  absolute lg:mx-[-10%] lg:translate-y-[-8%] relative 3xl:min-h-[1400px] 2xl:h-[1250px] md:h-[1180px]  h-[560px]`}>
                 <div className={
-                    props.previousElementIsVisible ? 'lg:translate-y-[-15%] translate-y-0 space-y-4  w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]' :
-                        myAnimationStart ? 'lg:translate-y-[-15%] translate-y-0 space-y-4 w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]'
-                            : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible ? 'lg:translate-y-[-30%] translate-y-0 space-y-4 w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]' : 'lg:translate-y-[-15%] translate-y-0 space-y-4 w-1/2 md:w-1/3  lg:w-[12%] duration-1000 z-[800]'}
+                    'lg:translate-y-[-15%] translate-y-0 space-y-4 w-1/2 md:w-1/3  lg:w-[12%] duration-1000 z-[800]'}
                 >
                     <Image placeholder={"blur"}
-                        className={'object-cover h-[230px] lg:h-[400px] lg:w-full rounded-[30px] lg:block hidden'}
-                        src={MasonryImages.img1} alt=""/>
+                           className={'object-cover h-[230px] lg:h-[400px] lg:w-full rounded-[30px] lg:block hidden'}
+                           src={MasonryImages.img1} alt="Entrâinement d'un sportif sur un tapis d'entraînement"/>
                     <Image placeholder={"blur"}
-                        className={'object-cover h-[230px] lg:h-[400px] lg:w-full rounded-[30px] lg:hidden md:block hidden'}
-                        src={MasonryImages.img1Tablet} alt=""/>
-                    <Image placeholder={"blur"} className={'object-cover h-[270px] lg:h-[400px] lg:w-full rounded-[30px] '}
-                                   src={MasonryImages.img2} alt=""/>
+                           className={'object-cover h-[230px] lg:h-[400px] lg:w-full rounded-[30px] lg:hidden md:block hidden'}
+                           src={MasonryImages.img1Tablet} alt="Sportives souriantes utilisant l'application Athletid"/>
+                    <Image placeholder={"blur"}
+                           className={'object-cover h-[270px] lg:h-[400px] lg:w-full rounded-[30px] '}
+                           src={MasonryImages.img2} alt=""/>
                     <Image placeholder={"blur"} className={'object-cover h-[225px] lg:w-full  rounded-[30px]'}
-                                   src={MasonryImages.img3} alt=""/>
-                    <Image placeholder={"blur"} className={'object-cover lg:h-[350px] lg:w-full rounded-[30px] hidden md:block'}
-                                   src={MasonryImages.img4} alt=""/>
+                           src={MasonryImages.img3} alt="Sportives faisant du sport en extérieur"/>
+                    <Image placeholder={"blur"}
+                           className={'object-cover lg:h-[350px] lg:w-full rounded-[30px] hidden md:block'}
+                           src={MasonryImages.img4} alt="Homme soulevant une haltère"/>
                 </div>
                 <div
                     className={'space-y-4 lg:translate-y-[0px] md:translate-y-[190px] translate-y-[90px] w-1/2 md:w-[33%] lg:w-[12%] h-fit'}>
                     <Image placeholder={"blur"} className={'object-cover  h-[275px] lg:w-full rounded-[30px] '}
-                                   src={MasonryImages.img6} alt=""/>
+                           src={MasonryImages.img6} alt="Femme faisant un étirement avant de courir"/>
                     <Image placeholder={"blur"}
-                        className={'object-cover  h-[180px] lg:h-[350px] lg:w-full rounded-[30px] lg:block hidden'}
-                        src={MasonryImages.img7} alt=""/>
+                           className={'object-cover  h-[180px] lg:h-[350px] lg:w-full rounded-[30px] lg:block hidden'}
+                           src={MasonryImages.img7} alt="Coureur sur une piste de course"/>
                     <Image placeholder={"blur"}
-                        className={'object-cover  h-[180px] lg:h-[350px] lg:w-full rounded-[30px] lg:hidden block'}
-                        src={MasonryImages.img7Tablet} alt=""/>
-                    <Image placeholder={"blur"} className={'object-cover lg:h-[240px] lg:w-full  rounded-[30px] hidden md:block'}
-                                   src={MasonryImages.img8} alt=""/>
+                           className={'object-cover  h-[180px] lg:h-[350px] lg:w-full rounded-[30px] lg:hidden block'}
+                           src={MasonryImages.img7Tablet} alt="Personne handicapée faisant du sport avec un coach"/>
+                    <Image placeholder={"blur"}
+                           className={'object-cover lg:h-[240px] lg:w-full  rounded-[30px] hidden md:block'}
+                           src={MasonryImages.img8} alt="Le sport pour tous"/>
                 </div>
 
 
                 <div className={
-                    props.previousElementIsVisible ? 'translate-y-[5%]  space-y-4 lg:w-1/5 md:w-1/3 w-[12%] duration-1000 z-[800] md:block hidden' :
-                        myAnimationStart ? ' translate-y-[5%] space-y-4 lg:w-1/5 md:w-1/3 w-[12%] duration-1000 z-[800] md:block hidden'
-                            : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible ? 'translate-y-[-10%] space-y-4 lg:w-1/5 md:w-1/3 w-[12%] duration-1000 z-[800] md:block hidden' : ' translate-y-[5%]  space-y-4 lg:w-1/5 md:w-1/3 w-[12%] duration-1000 z-[800] md:block hidden'
+                    ' translate-y-[5%]  space-y-4 lg:w-1/5 md:w-1/3 w-[12%] duration-1000 z-[800] md:block hidden'
                 }>
-                    <Image placeholder={"blur"} className={'object-cover h-[350px] w-2/3 rounded-[30px] '} src={MasonryImages.img9}
-                                   alt=""/>
-                    <Image placeholder={"blur"} className={'object-cover h-[420px] w-full rounded-[30px] '} src={MasonryImages.img10}
-                                   alt=""/>
+                    <Image placeholder={"blur"} className={'object-cover h-[350px] w-2/3 rounded-[30px] '}
+                           src={MasonryImages.img9}
+                           alt="Homme en pleine séance de crossFit."/>
+                    <Image placeholder={"blur"} className={'object-cover h-[420px] w-full rounded-[30px] '}
+                           src={MasonryImages.img10}
+                           alt="Femme à la salle de musculation soulevant une haltère"/>
                     <Image placeholder={"blur"} className={'object-cover h-[300px] w-full  rounded-[30px] '}
-                                   src={MasonryImages.img11} alt=""/>
+                           src={MasonryImages.img11} alt="Cycliste sur un terrain accidenté"/>
 
                 </div>
                 <div className={'space-y-4 translate-y-[13%] w-[12%] lg:block hidden'}>
-                    <Image placeholder={"blur"} className={'object-cover rounded-[30px]  lg:h-[300px] '} src={MasonryImages.img12}
-                                   alt=""/>
-                    <Image placeholder={"blur"} className={'object-cover rounded-[30px]  lg:h-[360px]'} src={MasonryImages.img13}
-                                   alt=""/>
+                    <Image placeholder={"blur"} className={'object-cover rounded-[30px]  lg:h-[300px] '}
+                           src={MasonryImages.img12}
+                           alt="Femme en train courir sur un tapis de course"/>
+                    <Image placeholder={"blur"} className={'object-cover rounded-[30px]  lg:h-[360px]'}
+                           src={MasonryImages.img13}
+                           alt="Une famille pratiquant du sport ensemble"/>
                 </div>
-                <div className={
-                    props.previousElementIsVisible ? 'translate-y-[3%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden' :
-                        myAnimationStart ? 'translate-y-[3%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
-                            : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible ? 'translate-y-[3%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden' : 'translate-y-[3%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
+                <div className={'translate-y-[3%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
                 }>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img14} alt=""/>
-                    <Image placeholder={"blur"} className={'object-cover h-[200px] w-full rounded-[30px] '} src={MasonryImages.img15}
-                                   alt=""/>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img16} alt=""/>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img17} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img14}
+                           alt="Adulte s'étirant après sa séance de sport"/>
+                    <Image placeholder={"blur"} className={'object-cover h-[200px] w-full rounded-[30px] '}
+                           src={MasonryImages.img15}
+                           alt="Une famille faisant un footing ensemble"/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img16}
+                           alt="Femme soulevent une haltère"/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img17}
+                           alt="Sportive en entrâinement intensif"/>
                 </div>
                 <div className={'space-y-4 translate-y-[10%] w-[20%] lg:block hidden'}>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img18} alt=""/>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img19} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img18}
+                           alt="Étirement d'une sportive en tenue de sport"/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img19}
+                           alt="Retraités regardant leur ordinateur pour faire du sport"/>
                 </div>
-                <div className={
-                    props.previousElementIsVisible ? 'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden' :
-                        myAnimationStart ? 'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
-                            : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible ? 'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden' : 'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
+                <div className={'translate-y-[-6%] space-y-4 w-[12%] duration-1000 z-[800] lg:block hidden'
                 }>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img20} alt=""/>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img21} alt=""/>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img22} alt=""/>
-                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img23} alt=""/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img20}
+                           alt="Entraînement sportif à la maison d'une débutante"/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img21}
+                           alt="Amies faisant un étirement après une séance de sport"/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img22}
+                           alt="Nageur handicapée à côté d'une piscine"/>
+                    <Image placeholder={"blur"} className={'object-contain rounded-[30px] '} src={MasonryImages.img23}
+                           alt="Boxeuse dans un ring attendant son prochain adversaire"/>
                 </div>
-
-
-                {/*                <div ref={animationStart} className={'top-[32%] lg:block hidden w-full absolute'}></div>
-                <div ref={animationMiddle} className={'top-[80%] lg:block hidden w-full absolute'}></div>
-                <div ref={animationEnd} className={'bottom-[5%] lg:block hidden w-full absolute'}></div>*/}
             </div>
         </div>
 

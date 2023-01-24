@@ -1,5 +1,5 @@
 import React from "react";
-import BlackBorderButton from "../Buttons/BlackBorderButton";
+import Button from "../UI/Button";
 import Image from 'next/image'
 
 const ContactSupport = (props, ref) => {
@@ -26,7 +26,7 @@ const ContactSupport = (props, ref) => {
                     essayerons d’y répondre au mieux.
                 </p>
                 <div className={"flex items-center space-x-4"}>
-                    <BlackBorderButton
+                    <Button variant={"black"}
                         text={"Nous contacter"}
                         link={"mailto:contact@athletid.com"}
                     />
@@ -34,7 +34,7 @@ const ContactSupport = (props, ref) => {
             </div>
             <div className={"mx-auto max-h-[93vh] md:order-2 order-1 md:mb-0 mb-4"}>
                 <Image placeholder={"blur"}
-                    alt={""}
+                    alt={"Différentes étapes de construction de l'application Athletid Network"}
                     className={"self-end  md:w-full w-[70%] mx-auto"}
                     src={props.src}
                 />

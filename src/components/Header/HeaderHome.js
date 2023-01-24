@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
-import WhiteBorderButton from "../Buttons/WhiteBorderButton";
+import Button from "../UI/Button";
 import {useInView} from "react-intersection-observer";
 import Burger from "../Nav/Burger";
 import DownloadPlayStore from "../../../public/assets/images/downloadPlayStore.svg";
@@ -28,7 +28,7 @@ const HeaderHome =  (props) => {
                             <h1 className={'md:text-left text-center text-white md:w-[80%]'}>Donne du sens à <br/> tes entraînements !</h1>
                             <p className={'mt-[10px] mb-[20px] text-white md:text-left text-center '}>{props.subTitle}</p>
                             <div className={`flex md:justify-start justify-center space-x-4 ${props.visibilityWhiteButton}`}>
-                                <WhiteBorderButton link={'/network'} text={props.buttonText}/>
+                                <Button variant={"white"} link={'/network'} text={props.buttonText}/>
                             </div>
                             <div className={`flex md:justify-start justify-center ${props.visibilityDownloadButton} space-x-4 xl:!mt-3 !w-full`}>
                                 <a target={'_blank'} rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.athletid.athletid&gl=FR">

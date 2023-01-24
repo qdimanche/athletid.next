@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Link from "next/link";
-import RedButton from "../Buttons/RedButton";
+import Button from "../UI/Button";
 import HamburgerMenu from "./Burger"
 import Logo from "../../../public/assets/images/logo-athletid.svg";
 import TextLogo from "../../../public/assets/images/text-logo.svg";
@@ -36,7 +36,7 @@ const Navbar = (props) => {
                     <Link href="/pages/contact">Support</Link>
                 </li>
                 <li className={''}>
-                    <RedButton text={'Network'} link={"/network"}/>
+                    <Button variant={"red"} text={'Network'} link={"/network"}/>
                 </li>
             </ul>
 

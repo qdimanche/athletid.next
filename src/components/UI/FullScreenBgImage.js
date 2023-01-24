@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useInView} from "react-intersection-observer";
-import BlackBorderButton from "../Buttons/BlackBorderButton";
+import Button from "./Button";
 import Image from 'next/image'
 
 const FullScreenBgImage = (props) => {
@@ -26,7 +26,7 @@ const FullScreenBgImage = (props) => {
                     <p className={'mb-[20px] md:text-left text-center'}>{props.subtitle}</p>
                     <div
                         className={props.button ? 'flex items-center space-x-4 md:pb-[20px] md:text-left text-center' : 'hidden'}>
-                        <BlackBorderButton text={"Découvrir"} link={props.link}/>
+                        <Button variant={"black"} text={"Découvrir"} link={props.link}/>
                     </div>
                 </div>
                 <div

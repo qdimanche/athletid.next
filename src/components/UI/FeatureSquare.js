@@ -20,7 +20,7 @@ const FeatureSquare = (props) => {
                     <Image placeholder={"blur"}
                            src={props.imgSquare1}
                            className={"object-cover w-2/3 pt-14 mx-auto"}
-                           alt=""
+                           alt={props.altSquare1}
                     />
                 </div>
                 <div className={"text-center mt-6 md:px-10 flex flex-col"}>
@@ -34,7 +34,7 @@ const FeatureSquare = (props) => {
                     <Image placeholder={"blur"}
                            src={props.imgSquare2}
                            className={"object-cover w-2/3 pt-14 mx-auto "}
-                           alt=""
+                           alt={props.altSquare2}
                     />
                 </div>
                 <div className={"text-center mt-6 md:px-10 flex flex-col"}>
@@ -48,7 +48,7 @@ const FeatureSquare = (props) => {
                     <Image placeholder={"blur"}
                            src={props.imgSquare3}
                            className={"object-cover w-2/3 pt-14 mx-auto "}
-                           alt=""
+                           alt={props.altSquare3}
                     />
                 </div>
                 <div className={"text-center mt-6 md:px-10 flex flex-col"}>
@@ -60,7 +60,7 @@ const FeatureSquare = (props) => {
         </div>
         <CarouselSlide imgSquare1={props.imgSquare1} titleSquare1={props.titleSquare1} imgSquare2={props.imgSquare2}
                        titleSquare2={props.titleSquare2} imgSquare3={props.imgSquare3}
-                       titleSquare3={props.titleSquare3}/>
+                       titleSquare3={props.titleSquare3} altSquare1={props.altSquare1} altSquare2={props.altSquare2} altSquare3={props.altSquare3}/>
     </div>);
 
 

@@ -25,7 +25,7 @@ const Header = (props) => {
           <DownloadApp justifyContent={"lg:justify-start justify-center"} />
         </div>
         <div className={"w-1/2 lg:block hidden"}>
-          <Image placeholder={"blur"} src={HeaderNetwork} className={"w-full "} alt="" />
+          <Image placeholder={"blur"} src={HeaderNetwork} className={"w-full "} alt="Interfaces de l'application Athletid Network" />
         </div>
         <div
           className={

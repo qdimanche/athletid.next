@@ -9,7 +9,7 @@ import FeatureSquare from "../src/components/UI/FeatureSquare";
 import Testimonial from "../src/components/Testimonial/Testimonial";
 import DownloadApp from "../src/components/UI/DownloadApp";
 import Footer from "../src/components/Footer/Footer";
-import HeaderV2 from "../src/components/Header/HeaderSN";
+import HeaderSN from "../src/components/Header/HeaderSN";
 import Head from "next/head";
 
 const Network = () => {
@@ -20,7 +20,7 @@ const Network = () => {
         </Head>
 
       <Navbar/>
-      <HeaderV2
+      <HeaderSN
         title={"La communauté \n des sports addicts. "}
         subTitle={
           "Explorez l’univers Athletid, un réseau de partage dédié à l’entraînement  sportif et au bien-être. Découvre gratuitement des séances, des conseils et améliore ton expérience sportive."
@@ -36,16 +36,19 @@ const Network = () => {
         subtitleAppFeature1={
           "Tiens régulièrement ton journal d’entraînement pour suivre ton évolution et motiver tes amis à atteindre leurs objectifs. Inspire-toi de ta communauté pour apprendre chaque jour de nouveaux exercices, séances et conseils qui vont changer ta vie de sportif.  "
         }
+        altAppFeature1={"Femme se préparant à soulever une barre de musculation"}
         tagAppFeature2={"Professionnel"}
         titleAppFeature2={"Conseille. Rencontre. Vends."}
         subtitleAppFeature2={
           "Mets en avant ton expertise et accrois rapidement ta notoriété auprès de ton audience. Communique et propose tes services à un grand nombre d’acheteurs potentiels."
         }
+        altAppFeature2={"Coach sportif expliquant son programme à un amateur de sport"}
         tagAppFeature3={"Entreprise"}
         titleAppFeature3={"Développe. Communique. Vends. "}
         subtitleAppFeature3={
           "Rejoignez l’univers dédié à l’entraînement et au bien-être pour être au plus près de votre publique. Un nouveau marché s’ouvre à vous pour acquérir de nouveaux clients.\n"
         }
+        altAppFeature3={"Vêtements et équipements pour pratiquer du sport"}
       />
       <FeatureSquare
         titleFeatureSquare={"Un réseau social. \n Une émulation collective."}
@@ -54,10 +57,13 @@ const Network = () => {
         }
         titleSquare1={"Trouve \n ce dont tu as besoin !"}
         imgSquare1={NetworkScreen01}
+        altSquare1={"Onglet profil de l'application Athletid Network"}
         titleSquare2={"Découvre \n de nouveaux entraînements et conseils !"}
         imgSquare2={NetworkScreen02}
+        altSquare2={"Onglet séance sportive de l'application Athletid Network"}
         titleSquare3={"Partage \n tes performances et objectifs !"}
         imgSquare3={NetworkScreen03}
+        altSquare3={"Onglet fil d'actualité de l'application Athletid Network"}
       />
       <Testimonial
         titleTestimonial={"Ils ont rejoins notre \n version BETA"}
