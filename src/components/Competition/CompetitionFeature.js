@@ -6,7 +6,7 @@ import Image from "next/image"
 const CompetitionFeature = () => {
     return (
         <div>
-            <div className={'lg:h-[95vh] md:h-[80vh] h-[60vh] relative overflow-hidden flex rounded-[30px] justify-center md:justify-start rounded-header-mobile-tablet m-4 mb-20 safari-overflow-fix'}>
+            <div className={'lg:h-[95vh] md:h-[80vh] h-[60vh] relative overflow-hidden flex rounded-medium justify-center md:justify-start rounded-header-mobile-tablet m-4 mb-20 safari-overflow-fix'}>
                 <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
                 <Image src={ImgHeader} alt="" className={'w-full h-full object-cover pointer-events-none'}/>
                 <div style={{whiteSpace:"pre-line"}} className={'lg:mt-0 md:mt-3 absolute-vertical-center-header absolute-vertical-center-mobile-header flex flex-col justify-center md:items-start items-center  z-[3] md:p-0 px-8 md:grid md:grid-cols-2'}>

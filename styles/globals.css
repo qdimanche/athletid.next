@@ -69,6 +69,7 @@ h3 {
 
 h4 {
     font-size: 2em;
+    line-height: 40px;
 }
 
 svg {
@@ -186,7 +187,7 @@ input:-webkit-autofill:active {
 
     h1 {
         font-size: 1.7em;
-        line-height: 35px;
+        line-height: 30px;
         white-space: normal;
     }
 
@@ -217,13 +218,13 @@ input:-webkit-autofill:active {
 
     h1 {
         font-size: 2em;
-        line-height: 40px;
+        line-height: 35px;
         white-space: normal;
     }
 
     h2, h3, h4 {
         font-size: 1.8em;
-        line-height: 30px;
+        line-height: 35px;
         white-space: normal;
     }
 

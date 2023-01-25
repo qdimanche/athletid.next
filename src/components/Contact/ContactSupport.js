@@ -6,7 +6,7 @@ const ContactSupport = (props, ref) => {
     return (
         <div
             className={
-                "lg:duration-[2000ms] lg:opacity-1 grid md:grid-cols-2 grid-cols-1 2xl:ml-32 lg:ml-24 md:ml-16 mx-4 lg:mb-20 mb-16 overflow-hidden"
+                "lg:duration-[2000ms] lg:opacity-1 grid md:grid-cols-2 grid-cols-1 2xl:ml-28 lg:ml-20 md:ml-12 mx-4 lg:mb-20 mb-16 overflow-hidden"
             }
         >
             <div
@@ -32,10 +32,10 @@ const ContactSupport = (props, ref) => {
                     />
                 </div>
             </div>
-            <div className={"mx-auto max-h-[93vh] md:order-2 order-1 md:mb-0 mb-4"}>
+            <div className={"md:order-2 order-1 md:mb-0 mb-4"}>
                 <Image placeholder={"blur"}
                     alt={"Différentes étapes de construction de l'application Athletid Network"}
-                    className={"self-end  md:w-full w-[70%] mx-auto"}
+                    className={"self-end lg:w-[80%] w-full mx-auto"}
                     src={props.src}
                 />
             </div>

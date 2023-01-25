@@ -19,6 +19,9 @@ module.exports = {
                 'timeRedHover' : '#D93A2F',
                 'blackShade' : '#242629',
                 'almostBlack' : '#25282B'
+            },
+            borderRadius: {
+                'medium': '30px'
             }
         },
     },

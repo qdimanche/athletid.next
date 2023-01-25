@@ -4,23 +4,23 @@ import HeaderNetwork from "../../../public/assets/images/application-athletid-re
 import DownloadApp from "../UI/DownloadApp";
 import Image from "next/image";
 
-const Header = (props) => {
+const Header = () => {
   return (
-    <div>
-      <div className={" relative flex px-4 pt-16 pb-20 md:w-full "}>
+    <header>
+      <div className={" relative flex pt-16 md:w-full "}>
         <div
           className={
-            "lg:mt-0 md:mt-3 flex flex-col justify-center z-[3] lg:w-1/2 md:w-2/3 mx-auto w-full lg:text-left text-center 2xl:px-28 lg:px-20"
+            "flex flex-col justify-center z-[3] lg:w-2/3 md:w-3/4 mx-auto w-full lg:text-left text-center lg:pl-8 lg:pr-20"
           }
         >
           <h1 style={{ whiteSpace: "pre-line" }} className={""}>
-            {props.title}
+            La communauté <br/> des sports addicts.
           </h1>
           <p
             style={{ whiteSpace: "pre-line" }}
             className={" mt-[10px] mb-[20px]  w-full md:block"}
           >
-            {props.subTitle}
+            Explorez l’univers Athletid, un réseau de partage dédié à l’entraînement  sportif et au bien-être. Découvre gratuitement des séances, des conseils et améliore ton expérience sportive.
           </p>
           <DownloadApp justifyContent={"lg:justify-start justify-center"} />
         </div>
@@ -55,7 +55,7 @@ const Header = (props) => {
           </a>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

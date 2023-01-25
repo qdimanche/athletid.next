@@ -1,6 +1,7 @@
 import React from 'react';
 import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 import Link from "next/link";
+import Newsletter from "@/src/components/Footer/Newsletter";
 
 
 const Footer = () => {
@@ -8,6 +9,8 @@ const Footer = () => {
     return (
 
         <div className={''}>
+    
+            <Newsletter/>
 
             <div className={'flex flex-col relative lg:mt-0 mt-0  2xl:mx-32 lg:mx-24 md:mx-16 mx-4'}>
 
@@ -30,16 +33,13 @@ const Footer = () => {
                         <p className={'text-black/30 !mr-[20px] md:mr-0'}>Lille, France</p>
                     </div>
 
-                    <div className={'flex text-black/30 lg:space-x-[30px] order-1 md:mb-0 mb-3 flex-col'}>
+                    <div className={'flex text-black/30 lg:space-x-[30px] order-1 md:mb-0 mb-3 flex-col '}>
 
-                        <div className={'w-full grid lg:grid-cols-4 grid-cols-3 gap-y-3 gap-x-6 space-x-0'}>
+                        <div className={'w-full grid grid-cols-3 gap-y-3 gap-x-6 space-x-0'}>
                             <Link href={"/"}>Accueil</Link>
                             <Link href={"/network"}>Network</Link>
                             {/*                            <Link to={"/a-propos"}>À propos</Link>*/}
                             <Link href={"/contact"}>Contact</Link>
-                        </div>
-                        <div className={'w-full md:space-x-0 space-x-[30px]'}>
-                            {/*                        <Link to={"/timer"}>Timer</Link>*/}
                         </div>
                     </div>
 
