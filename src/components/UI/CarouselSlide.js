@@ -19,7 +19,7 @@ export const CarouselSlide = (props) => {
 
     return (
         <Carousel
-            className={'w-3/4 mx-auto block md:hidden'}
+            className={'w-[80%] max-w-[400px] mx-auto block md:hidden'}
             showStatus={false}
             showThumbs={false}
             statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
