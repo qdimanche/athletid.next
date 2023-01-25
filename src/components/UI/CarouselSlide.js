@@ -66,19 +66,19 @@ export const CarouselSlide = (props) => {
         >
             <div className={'pb-16'}>
                 <div className="slide rounded-[30px] overflow-hidden bg-[#F2F2F2] px-8 pt-8">
-                    <Image alt={props.altSquare1} src={props.imgSquare1} className={'h-[400px]'}/>
+                    <Image alt={props.altSquare1} src={props.imgSquare1} className={''}/>
                 </div>
                 <p className="legend absolute !bottom-0 !text-black !bg-white !h-16">{props.titleSquare1}</p>
             </div>
             <div className={'pb-16'}>
                 <div className="slide rounded-[30px] overflow-hidden bg-[#F2F2F2] px-8 pt-8">
-                    <Image alt={props.altSquare2} src={props.imgSquare2} className={'h-[400px]'}/>
+                    <Image alt={props.altSquare2} src={props.imgSquare2} className={''}/>
                 </div>
                 <p className="legend absolute !bottom-0 !text-black !bg-white !h-16">{props.titleSquare2}</p>
             </div>
             <div className={'pb-16'}>
                 <div className="slide rounded-[30px] overflow-hidden bg-[#F2F2F2] px-8 pt-8">
-                    <Image alt={props.altSquare3} src={props.imgSquare3} className={'h-[400px]'}/>
+                    <Image alt={props.altSquare3} src={props.imgSquare3} className={''}/>
                 </div>
                 <p className="legend absolute !bottom-0 !text-black !bg-white !h-16">{props.titleSquare3}</p>
             </div>
