@@ -33,7 +33,7 @@ const Navbar = (props) => {
                         <Link href="/a-propos">À propos de nous</Link>
                     </li>*/}
                 <li>
-                    <Link href="/pages/contact">Support</Link>
+                    <Link href="/contact">Support</Link>
                 </li>
                 <li className={''}>
                     <Button variant={"red"} text={'Network'} link={"/network"}/>
@@ -77,7 +77,7 @@ const Navbar = (props) => {
                             <Link href="/">Accueil</Link>
                         </li>
                         <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                            <Link href="/pages/network">Network</Link>
+                            <Link href="/network">Network</Link>
                         </li>
                         {/*                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
                                 <Link to="/timer">Timer</Link>
@@ -86,7 +86,7 @@ const Navbar = (props) => {
                                 <Link to="/a-propos">À propos</Link>
                             </li>*/}
                         <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                            <Link href="/pages/contact">Contact</Link>
+                            <Link href="/contact">Contact</Link>
                         </li>
                         <li className={'lg:hidden flex justify-center space-x-8 z-300 !text-[1.3em] pt-4'}>
                             <a target={'_blank'} href="https://www.instagram.com/athletid/"
