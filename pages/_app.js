@@ -1,7 +1,17 @@
 import '@/styles/globals.css'
 import Script from "next/script"
+import en from "../lang/en.json";
+import fr from "../lang/fr.json";
+import { useRouter } from "next/router";
+import { IntlProvider } from "react-intl";
 
-export default function App({Component, pageProps}) {
+const messages = {
+    en,
+    fr,
+};
+
+function App({Component, pageProps}) {
+    const { locale } = useRouter();
     return <>
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-F3ZEBZ00CK"/>
@@ -19,10 +29,13 @@ export default function App({Component, pageProps}) {
         `,
             }}
         />
-
-        <>
+    
+        <IntlProvider locale={locale} messages={messages[locale]}>
             <Component {...pageProps} />
-        </>
+        </IntlProvider>
+
 
     </>
 }
+
+export default App;

@@ -13,9 +13,12 @@ import athletidAppPreview2 from "../public/assets/images/application-athletid-co
 import femmeEntrainement from "../public/assets/videos/femme-entrainement-exterieur-fitness.mp4";
 import appSNVideo from "../public/assets/videos/application-network-athletid-fonctionnalites.mp4";
 import appTimerVideo from "../public/assets/videos/application-network-athletid-fonctionnalites.mp4";
+import {FormattedMessage, useIntl} from "react-intl";
 
 
 export default function Home() {
+    
+    const intl = useIntl();
     return (<>
         <Head>
             <meta charSet="utf-8"/>
@@ -41,8 +44,6 @@ export default function Home() {
 
         <Navbar/>
         <HeaderHome
-            subTitle={"Découvre nos solutions innovantes et améliore ton expérience sportive en créant l’environnement le plus propice à ta réussite, quel que soit ton niveau, tes objectifs et ta discipline."}
-            buttonText={"Découvrir"}
             img={ImgHeaderHome}
             video = {femmeEntrainement}
             link={"/network"}
