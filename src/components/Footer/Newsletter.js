@@ -31,7 +31,7 @@ const Newsletter = () => {
 
 
     return (
-        <div className={'border-t border-black/5 pb-10 lg:pt-20 pt-16 '}>
+        <div className={'border-t border-black/5 pb-10 lg:pt-20 pt-16 lg:mt-20 mt-16 '}>
             <div className={'md:w-3/4 md:mx-auto mx-4 md:flex-col items-center text-center '}>
                 <h4 className={'text-center pb-8'}>Le mail qui te fait transpirer <br/> et qui te veut du bien !</h4>
                 <div className={result ? '' : 'hidden'}> {result ? <Result/> : null} </div>

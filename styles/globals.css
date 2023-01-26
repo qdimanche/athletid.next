@@ -76,6 +76,10 @@ svg {
     color: white;
 }
 
+img {
+    height: 100%;
+}
+
 
 input, textarea {
     border-radius: 10px;
@@ -178,6 +182,10 @@ input:-webkit-autofill:active {
 .carousel .slide .legend {
     font-size: 16px !important;
     opacity: 1 !important;
+}
+
+.loader {
+    @apply border-gray-200 rounded-full border-4 ease-linear h-10 w-10 border-t-timeRed animate-spin;
 }
 
 

@@ -2,7 +2,10 @@ import React from 'react';
 import Head from "next/head";
 import Format from "../src/layout/format"
 import HeaderBlog from "@/src/components/Blog/HeaderBlog";
+import LatestPost from "@/src/components/Blog/LatestPost";
 import {defaultFallbackInView} from "react-intersection-observer";
+import PopularPost from "@/src/components/Blog/PopularPost";
+import CategoryPost from "@/src/components/Blog/CategoryPost";
 
 const Blog = () => {
 	return (
@@ -16,6 +19,9 @@ const Blog = () => {
 			
 			<Format>
 				<HeaderBlog/>
+				<LatestPost/>
+				<PopularPost/>
+				<CategoryPost/>
 			</Format>
 			
 		</>
@@ -23,11 +29,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
-function Slide() {
-	return (
-		<div className={''}>
-		
-		</div>
-	)
-}
