@@ -15,7 +15,7 @@ const messages = {
 function App({Component, pageProps}) {
 	const {locale} = useRouter();
 	const handleAcceptCookie = () => {
-		initGA(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+		initGA("UA-254205972-1");
 	};
 	
 	const handleDeclineCookie = () => {
