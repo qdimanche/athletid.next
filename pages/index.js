@@ -3,15 +3,14 @@ import HeaderHome from "../src/components/Header/HeaderHome";
 import FullScreenBgImage from "../src/components/UI/FullScreenBgImage";
 import MasonryGrid from "../src/components/UI/MasonryGrid";
 import ContactSupport from "../src/components/Contact/ContactSupport";
-import Newsletter from "../src/components/Footer/Newsletter";
 import ImgHeaderHome from "../public/assets/images/femme-entrainement-exterieur-fitness.webp"
 import timerAppPreview from "../public/assets/images/application-athletid-entrainement-sportif.webp";
 import athletidAppPreview from "../public/assets/images/application-athletid.webp"
 import athletidAppPreview2 from "../public/assets/images/application-athletid-construction.webp";
 import femmeEntrainement from "../public/assets/videos/femme-entrainement-exterieur-fitness.mp4";
 import appSNVideo from "../public/assets/videos/application-network-athletid-fonctionnalites.mp4";
-import appTimerVideo from "../public/assets/videos/application-network-athletid-fonctionnalites.mp4";
-import {useIntl} from "react-intl";
+import appTimerVideo from "../public/assets/videos/application-timer-athletid-fonctionnalites.mp4";
+import {FormattedMessage, useIntl} from "react-intl";
 import Format from "../src/layout/format"
 
 
@@ -29,11 +28,14 @@ export default function Home() {
 		
 		<Format>
 			<HeaderHome
+				title={<FormattedMessage id="message.titleHeaderHome"/>}
+				subtitle={<FormattedMessage id="message.subtitleHeaderHome"/>}
 				img={ImgHeaderHome}
 				video={femmeEntrainement}
 				link={"/network"}
 				visibilityWhiteButton={'flex'}
 				visibilityDownloadButton={'hidden'}
+				downloadButtonvisibility={'hidden'}
 			/>
 			<FullScreenBgImage
 				src={athletidAppPreview}
