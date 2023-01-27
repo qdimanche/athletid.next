@@ -31,7 +31,7 @@ export default function Home() {
 				title={<FormattedMessage id="message.titleHeaderHome"/>}
 				subtitle={<FormattedMessage id="message.subtitleHeaderHome"/>}
 				img={ImgHeaderHome}
-				video={femmeEntrainement}
+				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674830882/femme-entrainement-exterieur-fitness_hvam4t.mp4"}
 				link={"/network"}
 				visibilityWhiteButton={'flex'}
 				visibilityDownloadButton={'hidden'}
