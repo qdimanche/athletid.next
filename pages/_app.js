@@ -56,10 +56,7 @@ function App({Component, pageProps}) {
 			<Component {...pageProps} />
 		</IntlProvider>
 		
-		<CookieConsent
-			enableDeclineButton
-			onAccept={handleAcceptCookie}>
-			onDecline={handleDeclineCookie}
+		<CookieConsent enableDeclineButton onAccept={handleAcceptCookie} onDecline={handleDeclineCookie}>
 			This website uses cookies to enhance the user
 			experience.
 		</CookieConsent>
