@@ -39,8 +39,8 @@ const ContactForm = (props) => {
 		<div className={'xl:w-[40%] md:w-1/2 w-3/4 mx-auto lg:px-20 lg:pt-28 pt-20 pb-20'}>
 			
 			<div className={'flex flex-col mb-12'}>
-				<h2 className={'md:!-mb-2 mb-2'}>Entrer en contact</h2>
-				<span>Nous sommes toujours heureux d’aider</span>
+				<h2 className={'md:!-mb-2 mb-2'}>Nous contacter.</h2>
+				<span>C’est toujours un plaisir d’échanger avec vous !</span>
 			</div>
 			
 			<div className={'rounded-medium'}>

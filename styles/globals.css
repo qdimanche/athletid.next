@@ -76,11 +76,6 @@ svg {
     color: white;
 }
 
-img {
-    height: 100%;
-}
-
-
 input, textarea {
     border-radius: 10px;
     margin-top: 0.3em;

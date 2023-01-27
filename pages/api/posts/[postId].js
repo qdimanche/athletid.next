@@ -1,11 +1,13 @@
 import data from "@/pages/api/data";
 
 export default function handler(req, res) {
-	const {postId } = req.query;
+	const {postId} = req.query;
 	const {Posts} = data;
 	
 	if(postId){
-		const post = Posts.find(value => value.id == postId)
+		const post = Posts.find(value => {
+			return value.id == postId;
+		})
 		return res.status(200).json(post)
 	}
 	

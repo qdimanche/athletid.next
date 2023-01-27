@@ -33,8 +33,8 @@ function Article({title, subtitle, img, author, description}) {
 			<div className={'post pt-10 flex flex-col items-center'}>
 				<h1 className={'font-bold text-4xl text-center pb-5'}>{title || "Titre"}</h1>
 				<p className={'text-gray-500 text-xl text-center'}>{subtitle || "Sous-titre"} </p>
-				<div className="py-10 h-[600px] w-[900px]">
-					<Image objectFit={'cover'} height={600} width={900} src={img || "/"} alt={""}/>
+				<div className="my-10 h-[600px] w-full relative overflow-hidden">
+					<Image layout={'fill'} className={'object-cover rounded-medium'}  src={img || "/"} alt={""}/>
 				</div>
 				
 				<div className="content text-gray-600 text-lg flex flex flex-col gap-4">

@@ -30,25 +30,25 @@ const AppFeature = (props) => {
                         {countTab === 1 ? (
                             <div>
                                 <p className={"text-timeRed"}>{countTab}</p>
-                                <span className={"my-3 text-xl"}>Lorem ipsum</span>:
+                                <span className={"my-3 text-xl"}>Musculaire.</span>:
                                 <p>
-                                    Lorem ipsum dolor sit <br/> amet, consectetur elit
+                                    Les meilleurs Timers pour des entraînements en puissansse !
                                 </p>
                             </div>
                         ) : countTab === 2 ? (
                             <div>
                                 <p className={"text-timeRed"}>{countTab}</p>
-                                <span className={"my-3 text-xl"}>Lorem ipsum</span>:
+                                <span className={"my-3 text-xl"}>Cardio.</span>:
                                 <p>
-                                    Lorem ipsum dolor sit <br/> amet, consectetur elit
+                                    Les meilleurs Timers pour des entraînements intenses !
                                 </p>
                             </div>
                         ) : (
                             <div>
                                 <p className={"text-timeRed"}>{countTab}</p>
-                                <span className={"my-3 text-xl"}>Lorem ipsum</span>:
+                                <span className={"my-3 text-xl"}>Bien-être.</span>:
                                 <p>
-                                    Lorem ipsum dolor sit <br/> amet, consectetur elit
+                                    Les meilleurs Timers pour des sessions relaxantes !
                                 </p>
                             </div>
                         )}
