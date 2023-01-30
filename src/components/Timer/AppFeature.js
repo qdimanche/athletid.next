@@ -11,7 +11,7 @@ const AppFeature = (props) => {
 
     return (
         <div className={" p-4"}>
-            <div className={"md:my-20 my-8 lg:w-[45%]  md:w-2/3 w-full mx-auto"}>
+            <div className={"md:mt-20 mt-8 lg:w-[45%]  md:w-2/3 w-full mx-auto"}>
                 <div className={"flex items-center space-x-16"}>
                     <div
                         className={
@@ -30,15 +30,15 @@ const AppFeature = (props) => {
                         {countTab === 1 ? (
                             <div>
                                 <p className={"text-timeRed"}>{countTab}</p>
-                                <span className={"my-3 text-xl"}>Musculaire.</span>:
+                                <span className={"my-3 text-xl"}>Musculaire.</span>
                                 <p>
-                                    Les meilleurs Timers pour des entraînements en puissansse !
+                                    Les meilleurs Timers pour des entraînements en puissance !
                                 </p>
                             </div>
                         ) : countTab === 2 ? (
                             <div>
                                 <p className={"text-timeRed"}>{countTab}</p>
-                                <span className={"my-3 text-xl"}>Cardio.</span>:
+                                <span className={"my-3 text-xl"}>Cardio.</span>
                                 <p>
                                     Les meilleurs Timers pour des entraînements intenses !
                                 </p>
@@ -46,7 +46,7 @@ const AppFeature = (props) => {
                         ) : (
                             <div>
                                 <p className={"text-timeRed"}>{countTab}</p>
-                                <span className={"my-3 text-xl"}>Bien-être.</span>:
+                                <span className={"my-3 text-xl"}>Bien-être.</span>
                                 <p>
                                     Les meilleurs Timers pour des sessions relaxantes !
                                 </p>

@@ -20,6 +20,7 @@ export default function Home() {
 	return (<>
 		<Head>
 			<title>Athletid</title>
+			<meta name="description" content="Musculation, Crossfit, Yoga, Powerlifitng, Fitness … Peu importe ta discipline nos solutions innovantes te guident vers tes objectifs !"/>
 			<meta property="og:title" content="Athletid"/>
 			<meta property="og:type" content="website" />
 		</Head>
@@ -50,12 +51,12 @@ export default function Home() {
 				src={timerAppPreview}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831668/application-timer-athletid-fonctionnalites_mszyz3.mp4"}
 				title={"Ton temps \n est précieux !"} button={false} tag={"Bientôt disponible"}
-				subtitle={"Paramètre ton entraînement et laisse toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
+				subtitle={"Paramètre ton entraînement et laisse-toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
 				link={"/network"}
 			/>
 			<MasonryGrid
 				titleMasonry={"Accompagner. \n Informer. Inspirer."}
-				subTitleMasonry={"Construisons ensemble l’univers qui vous propulsera vers vos objectifs"}
+				subTitleMasonry={"Construisons ensemble l’univers qui vous propulsera vers vos objectifs."}
 				link={"/about"}
 			/>
 			<ContactSupport src={athletidAppPreview2}

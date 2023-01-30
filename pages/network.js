@@ -50,7 +50,7 @@ const Network = () => {
 			/>
 			<Testimonial
 				titleTestimonial={"Ils ont rejoins notre \n version BETA"}
-				subTitleTestimonial={"De nombreux sportifs et professionnels nous ont déjà rejoins, ils n’attendent plus que toi ! "}
+				subTitleTestimonial={"De nombreux sportifs et professionnels nous ont déjà rejoint, ils n’attendent plus que toi ! "}
 			/>
 			<DownloadApp
 				title={"Nous avons hâte de découvrir \n tes entraînements et tes conseils !"}

@@ -62,7 +62,7 @@ function App({Component, pageProps}) {
 			onAccept={handleAcceptCookie}
 			onDecline={handleDeclineCookie}
 			flipButtons>
-			Ce site web utilise des cookies pour améliorer votre expérience &apos;utilisateur, pour en savoir plus cliquer <Link href={'/politique-de-confidentialite'} className={'font-bold'}>ici</Link>.
+			Ce site web utilise des cookies pour améliorer votre expérience utilisateur, pour en savoir plus cliquer <Link href={'/politique-de-confidentialite'} className={'font-bold'}>ici</Link>.
 		</CookieConsent>
 	
 	
