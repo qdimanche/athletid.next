@@ -1,8 +1,7 @@
-import TimerVideo from "@/public/assets/videos/application-timer-athletid-fonctionnalites.mp4";
 import TimerScreen03 from "@/public/assets/images/application-timer-chronometre.webp";
 import TimerScreen02 from "@/public/assets/images/application-timer-seance-sport.webp";
 import TimerScreen01 from "@/public/assets/images/application-timer-creation-entrainement.webp";
-import HeaderHome from "@/src/components/Header/HeaderHome";
+import HeaderTimer from "@/src/components/Header/HeaderTimer";
 import AppFeature from "@/src/components/Timer/AppFeature";
 import FeatureSquare from "@/src/components/UI/FeatureSquare";
 import Testimonial from "@/src/components/Testimonial/Testimonial";
@@ -22,13 +21,7 @@ const SocialApp = () => {
 		</Head>
 		
 		<Format>
-			<HeaderHome
-				src={TimerVideo}
-				title={"Le meilleur Timer sportif !"}
-				subtitle={"Des fonctionnalités adaptées pour les entraînements musculaires, cardio et bien-être comme tu ne trouveras nulle part ailleurs. Enchaîne tes exercices l’esprit libre et utilise chaque seconde pour te rapprocher vers ton objectif !"}
-				visibilityWhiteButton={"hidden"}
-				video={"testhome4.mp4"}
-			/>
+			<HeaderTimer/>
 			<AppFeature/>
 			<FeatureSquare
 				titleFeatureSquare={"Le meilleur de tous."}

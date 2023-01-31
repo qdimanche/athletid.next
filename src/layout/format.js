@@ -24,7 +24,7 @@ export default function format({children}) {
 			
 			
 			<Navbar/>
-			<main className={'mx-4'}>{children}</main>
+			<main className={'mx-4 '}>{children}</main>
 			<Footer/>
 		</>
 
