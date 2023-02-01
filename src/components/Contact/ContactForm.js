@@ -36,7 +36,7 @@ const ContactForm = (props) => {
 	return (
 		
 		
-		<div className={'xl:w-[40%] md:w-1/2 w-3/4 mx-auto lg:px-20 lg:pt-28 pt-20 pb-20'}>
+		<div className={'xl:w-[40%] md:w-1/2 w-3/4 mx-auto lg:px-20 lg:pt-28 pt-20'}>
 			
 			<div className={'flex flex-col mb-12'}>
 				<h2 className={'mb-3'}>Nous contacter.</h2>
