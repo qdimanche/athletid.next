@@ -4,7 +4,7 @@ import CarouselSlide from "@/src/components/UI/CarouselSlide";
 
 const FeatureSquare = (props) => {
 	return (<div
-		className={"min-h-[93vh] relative lg:my-40 mt-28"}
+		className={"lg:my-40 mt-28"}
 	>
 		<div
 			className={"flex flex-col items-center lg:w-1/2 md:w-3/4 mx-auto text-center lg:mb-12 mb-8"}
