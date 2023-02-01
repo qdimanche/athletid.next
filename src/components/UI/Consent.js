@@ -30,19 +30,19 @@ function Consent() {
 	}
 	return (
 		<div
-			className={`fixed flex justify-between items-center bottom-0 w-full px-4 py-2 bg-[#F5F4F5] z-[999] ${
+			className={`fixed flex md:flex-row flex-col justify-between lg:items-center bottom-0 w-full px-4 py-2 bg-[#F5F4F5] z-[999] ${
 				consent ? 'hidden' : ''
 			}`}
 		>
-			<div>
+			<div className={'md:text-left text-center'}>
 				Ce site utilise des cookies, veuillez les accepter si vous le souhaitez.
 			</div>
-			<div className="flex space-x-3">
+			<div className="flex md:justify-left justify-center space-x-3 w-full md:mt-0 mt-3">
 				<button
 					onClick={(e) => denyCookie()}
 					className="p-2 bg-[#E63D31] text-white rounded-md"
 				>
-					Deny All
+					Tout refuser
 				</button>
 				<button
 					onClick={() => {
@@ -50,13 +50,13 @@ function Consent() {
 					}}
 					className="p-2 bg-black text-white rounded-md"
 				>
-					Accept All
+					Tout accepter
 				</button>
 				<button
 					onClick={(e) => {
 						closeP();
 					}}
-					className={''}
+					className={'top-2 right-4 absolute'}
 				>
 					<IoCloseOutline size={30} color={"black"}/>
 				</button>
