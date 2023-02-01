@@ -21,7 +21,7 @@ const HeaderTimer = (props) => {
 					Des fonctionnalités adaptées pour les entraînements musculaires, cardio et bien-être comme tu ne trouveras nulle part ailleurs. Enchaîne tes exercices l’esprit libre et utilise chaque seconde pour te rapprocher vers ton objectif !</p>
 				<DownloadApp/>
 				<Image src={AppEntrainement} alt="Écran d'accueil de l'application Athletid"
-				       className={'lg:hidden w-full h-full pointer-events-none'}/>
+				       className={'lg:hidden w-full h-full pointer-events-none lg:mt-0 mt-3'}/>
 			</div>
 			<div className={'mx-auto lg:flex lg:self-end flex'}>
 				<video className={`pointer-events-none lg:block hidden`} preload="metadata"

@@ -16,7 +16,7 @@ const FeatureSquare = (props) => {
 			className={"md:grid hidden md:grid-cols-3 lg:gap-16 md:gap-10 gap-6 md:mb-0 mb-10 hidden"}
 		>
 			<div className={""}>
-				<div className="rounded-medium overflow-hidden bg-[#F2F2F2]">
+				<div className="rounded-medium overflow-hidden bg-[#F5F4F5]">
 					<Image placeholder={"blur"}
 					       src={props.imgSquare1}
 					       className={"object-cover w-2/3 pt-14 mx-auto"}
@@ -30,7 +30,7 @@ const FeatureSquare = (props) => {
 				</div>
 			</div>
 			<div className={""}>
-				<div className="rounded-medium overflow-hidden bg-[#F2F2F2]">
+				<div className="rounded-medium overflow-hidden bg-[#F5F4F5]">
 					<Image placeholder={"blur"}
 					       src={props.imgSquare2}
 					       className={"object-cover w-2/3 pt-14 mx-auto "}
@@ -44,7 +44,7 @@ const FeatureSquare = (props) => {
 				</div>
 			</div>
 			<div className={""}>
-				<div className="rounded-medium overflow-hidden bg-[#F2F2F2]">
+				<div className="rounded-medium overflow-hidden bg-[#F5F4F5]">
 					<Image placeholder={"blur"}
 					       src={props.imgSquare3}
 					       className={"object-cover w-2/3 pt-14 mx-auto "}

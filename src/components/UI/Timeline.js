@@ -4,7 +4,7 @@ import Image from "next/image";
 import Exemple from "../../../public/assets/images/application-athletid-reseau-professionnel.webp"
 
 const Timeline = () => {
-	return (<div className={"custom-border pt-10"}>
+	return (<div className={"custom-border pt-10 lg:mx-4 mx-8"}>
 		<div className={'grid grid-cols-[60px_4fr] lg:gap-8'}>
 			<div className={''}>
 				<div

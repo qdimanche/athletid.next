@@ -25,7 +25,7 @@ const FullScreenBgImage = (props) => {
 					</div>
 				</div>
 				<div
-					className={'overflow-hidden flex self-end md:order-2 order-1 md:bg-unset md:bg-transparent bg-black/5 md:h-full h-fit rounded-[30px] w-full  lg:pt-4'}>
+					className={'overflow-hidden flex self-end md:order-2 order-1 md:bg-unset md:bg-transparent bg-[#F5F4F5] md:h-full h-fit rounded-[30px] w-full  lg:pt-4'}>
 					<Image placeholder={"blur"} alt={''}
 					       className={'self-end lg:w-[89%] md:w-full w-[60%] object-cover mx-auto lg:hidden block'}
 					       src={props.src}/>
