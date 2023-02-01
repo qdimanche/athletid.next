@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { setCookie, hasCookie } from 'cookies-next';
+import {IoCloseOutline} from "react-icons/io5";
 
 function Consent() {
 	const [consent, setConsent] = useState(true);
@@ -29,22 +30,17 @@ function Consent() {
 	}
 	return (
 		<div
-			className={`fixed bottom-3 w-[90%] left-3 p-3 rounded-md bg-slate-200 ${
+			className={`fixed flex justify-between items-center bottom-0 w-full p-4 bg-[#F5F4F5] z-[999] ${
 				consent ? 'hidden' : ''
 			}`}
 		>
-			This Site use cookie, please accept them if you want
-			<div className="flex align-middle justify-between">
-				<button
-					onClick={(e) => {
-						closeP();
-					}}
-				>
-					Close
-				</button>
+			<div>
+				Ce site utilise des cookies, veuillez les accepter si vous le souhaitez.
+			</div>
+			<div className="flex space-x-3">
 				<button
 					onClick={(e) => denyCookie()}
-					className="p-2 bg-red-400 rounded-md"
+					className="p-2 bg-[#E63D31] text-white rounded-md"
 				>
 					Deny All
 				</button>
@@ -52,9 +48,17 @@ function Consent() {
 					onClick={() => {
 						acceptCookie();
 					}}
-					className="p-2 bg-green-400 rounded-md"
+					className="p-2 bg-black text-white rounded-md"
 				>
 					Accept All
+				</button>
+				<button
+					onClick={(e) => {
+						closeP();
+					}}
+					className={''}
+				>
+					<IoCloseOutline size={30} color={"black"}/>
 				</button>
 			</div>
 		</div>
