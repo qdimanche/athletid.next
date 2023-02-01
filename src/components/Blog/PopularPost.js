@@ -32,20 +32,20 @@ const PopularPost = () => {
 export default PopularPost;
 
 function Post({data}) {
-	const {id, title, subtitle, category, img, published, author} = data;
+	const {title, subtitle, category, img, published, author} = data;
 	return (<div className={"grid"}>
 		<div className="images">
-			<Link href={`/posts/${id}`}><Image alt={""} width={600} height={400} src={img || "/"}
+			<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}><Image alt={""} width={600} height={400} src={img || "/"}
 			                                   className={'rounded-medium'}/>
 			</Link>
 		</div>
 		<div className="info flex justify-center flex-col py-4">
 			<div className="space-x-4 mb-[10px] cat">
-				<Link href={`/posts/${id}`} className={'text-timeRed '}>{category || "Inconnue"}</Link>
-				<Link href={`/posts/${id}`} className={''}>{published || "Inconnue"}</Link>
+				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={'text-timeRed '}>{category || "Inconnue"}</Link>
+				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={''}>{published || "Inconnue"}</Link>
 			</div>
 			<div className="title">
-				<Link href={`/posts/${id}`}
+				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}
 				      className={'md:text-4xl text-3xl font-semibold hover:text-black text-gray-700 duration-300 '}>{title || "Titre"}</Link>
 			</div>
 			<p className={''}>{subtitle || "Sous-titre"}</p>

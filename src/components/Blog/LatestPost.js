@@ -15,7 +15,7 @@ const LatestPost = () => {
 	if (isError) return <Error></Error>
 	
 	return (<div className={'md:px-20 lg:pt-20 pt-16'}>
-		<h1 className={'font bold text-4xl pb-12 text-center'}>Lastest Posts</h1>
+		<h1 className={'font bold text-4xl pb-12 text-center'}>Derniers articles</h1>
 		
 		<div className={"grid md:grid-cols-2 lg:grid-cols-3 gap-14"}>
 			{
@@ -30,21 +30,21 @@ const LatestPost = () => {
 export default LatestPost;
 
 function Post({data}) {
-	const {id, title, subtitle, category, img, published, author} = data;
+	const {title, subtitle, category, img, published, author} = data;
 	
 	return (<div className={"item"}>
 		<div className="images">
-			<Link href={`/posts/${id}`}><Image alt={""} width={500} height={350}  src={img || "/"}
+			<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}><Image alt={""} width={500} height={350}  src={img || "/"}
 			                        className={'rounded-medium'}/>
 			</Link>
 		</div>
 		<div className="info flex justify-center flex-col py-4">
 			<div className="space-x-4 mb-[10px] cat">
-				<Link href={`/posts/${id}`} className={'text-timeRed '}>{category || "Inconnue"}</Link>
-				<Link href={`/posts/${id}`} className={''}>{published || "Inconnue"}</Link>
+				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={'text-timeRed '}>{category || "Inconnue"}</Link>
+				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={''}>{published || "Inconnue"}</Link>
 			</div>
 			<div className="title">
-				<Link href={`/posts/${id}`} className={'text-2xl font-semibold hover:text-black text-gray-700 duration-300 '}>{title || "Titre"}</Link>
+				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={'text-2xl font-semibold hover:text-black text-gray-700 duration-300 '}>{title || "Titre"}</Link>
 			</div>
 			<p className={''}>{subtitle || "Sous-titre"}</p>
 			{author ? <Author {...author}></Author> : <></>}

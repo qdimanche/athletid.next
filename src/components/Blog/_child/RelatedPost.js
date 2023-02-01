@@ -28,21 +28,21 @@ const RelatedPost = () => {
 export default RelatedPost;
 
 function Post({data}){
-	const {id, title, category, published} = data;
+	const {title, category, published} = data;
 	return (
 		<div className={"flex gap-5"}>
 			<div className={'h-[200px] w-[300px]'}>
-				<Link href={`/posts/${id}`}><Image alt={""} objectFit={'cove'} src={headerImage}
+				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}><Image alt={""} objectFit={'cover'} src={headerImage}
 				                        className={'rounded-medium'}/>
 				</Link>
 			</div>
 			<div className={'info flex justify-center flex-col'}>
 				<div className="space-x-4 mb-[10px] cat">
-					<Link href={"/"} className={'text-timeRed '}>{category || "Inconnue"}</Link>
-					<Link href={"/"} className={''}>{published || "Inconnue"}</Link>
+					<Link href={title.replace(/\s+/g, '-').toLowerCase()} className={'text-timeRed '}>{category || "Inconnue"}</Link>
+					<Link href={title.replace(/\s+/g, '-').toLowerCase()} className={''}>{published || "Inconnue"}</Link>
 				</div>
 				<div className="title">
-					<Link href={"/"} className={'text-xl font-semibold hover:text-black text-gray-700 duration-300 '}>{title || "Titre"}</Link>
+					<Link href={title.replace(/\s+/g, '-').toLowerCase()} className={'text-xl font-semibold hover:text-black text-gray-700 duration-300 '}>{title || "Titre"}</Link>
 				</div>
 				<Author></Author>
 			</div>

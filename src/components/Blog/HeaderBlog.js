@@ -15,7 +15,7 @@ const HeaderBlog = () => {
 	if (isLoading) return <Spinner></Spinner>
 	if (isError) return <Error></Error>
 	
-	return (<div className={'lg:pt-28 pt-20'}>
+	return (<div className={'lg:pt-28 pt-20 mx-8'}>
 		<Swiper
 			slidesPerView={1}
 			loop={true}
@@ -38,22 +38,22 @@ export default HeaderBlog;
 
 
 function Slide({data}) {
-	const {id, title, subtitle, category, img, published, author} = data;
+	const {title, subtitle, category, img, published, author} = data;
 	return (<div className={'grid md:grid-cols-2 gap-10'}>
 		<div className={'image'}>
-			<Link href={`/posts/${id}`}><Image alt={""} width={600} height={600} src={img||"/"}/>
+			<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}><Image alt={""} width={600} height={600} src={img||"/"}/>
 			</Link>
 		</div>
 		<div className="info flex flex-col justify-center">
-			<div className="space-x-4 mb-[10px] cat">
-				<Link href={`/posts/${id}`} className={'text-timeRed '}>{category || "Inconnue"}</Link>
-				<Link href={`/posts/${id}`} className={''}>{published || "Inconnue"}</Link>
+			<div className="space-x-4 mb-[10px] flex">
+				<p className={'text-timeRed '}>{category || "Inconnue"}</p>
+				<p className={''}>{published || "Inconnue"}</p>
 			</div>
 			
 			<div className="title">
-				<Link href={`/posts/${id}`} className={'text-6xl hover:text-black text-gray-700 duration-300 font-semibold'}>{title || "Titre"}</Link>
+				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={'!whitespace-normal'}><span className={'text-3xl'}>{title || "Titre"}</span></Link>
 			</div>
-			<p className={''}>{subtitle || "Sous-titre"}</p>
+			<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={''}>{subtitle || "Sous-titre"}</Link>
 			{author ? <Author {...author}></Author> : <></>}
 		
 		</div>

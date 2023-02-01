@@ -71,9 +71,10 @@ export default {
 		author: {
 			name: "Flying High", img: "/assets/images/utilisateur-athletid.webp", designation: "CEO and Founder"
 		}
-	}], Posts: [{
+	}],
+	Posts: [{
 		id: 1,
-		title: "Your most unhappy customers are your greatest source of learning",
+		title: "mot eaaa",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",

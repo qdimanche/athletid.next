@@ -7,7 +7,7 @@ function Author({name, img, designation}) {
 		<div className={'author flex py-5'}>
 			<Image width={50} height={50} src={img || "/"} alt={''} className={"rounded-full"}></Image>
 			<div className="flex flex-col justify-center px-4">
-				<Link href={"/"} className={'text-md font-semibold'}>{name || "Aucun nom"}</Link>
+				<p>{name || "Aucun nom"}</p>
 				<span className={'text-sm font-normal'}>{designation || ""}</span>
 			</div>
 		</div>

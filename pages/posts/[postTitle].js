@@ -12,8 +12,8 @@ import {SWRConfig} from "swr";
 export default function Page({fallback}) {
 	
 	const router = useRouter()
-	const {postId} = router.query
-	const {data, isLoading, isError} = fetcher(`api/posts/${postId}`);
+	const {postTitle} = router.query
+	const {data, isLoading, isError} = fetcher(`api/posts/${postTitle}`);
 	
 	if (isLoading) return <Spinner></Spinner>
 	if (isError) return <ErrorComponent></ErrorComponent>
@@ -49,7 +49,7 @@ function Article({title, subtitle, img, author, description}) {
 
 
 export async function getStaticProps({params}) {
-	const posts = await getPost(params.postId);
+	const posts = await getPost(params.postTitle);
 	
 	return {
 		props: {
@@ -66,7 +66,7 @@ export async function getStaticPaths() {
 	const paths = posts.map(value => {
 		return {
 			params: {
-				postId: value.id.toString()
+				postTitle: value.title.replace(/\s+/g, '-').toLowerCase()
 			}
 		}
 	})
