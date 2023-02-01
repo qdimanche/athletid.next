@@ -30,7 +30,7 @@ function Consent() {
 	}
 	return (
 		<div
-			className={`fixed flex justify-between items-center bottom-0 w-full p-4 bg-[#F5F4F5] z-[999] ${
+			className={`fixed flex justify-between items-center bottom-0 w-full px-4 py-2 bg-[#F5F4F5] z-[999] ${
 				consent ? 'hidden' : ''
 			}`}
 		>
