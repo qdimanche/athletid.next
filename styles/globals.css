@@ -206,6 +206,10 @@ input:-webkit-autofill:active {
     background-repeat: repeat-y;
 }
 
+.slider-wrapper {
+    padding-bottom: 10px !important;
+}
+
 
 /*Responsive*/
 

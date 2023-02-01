@@ -14,7 +14,7 @@ const HeaderTimer = (props) => {
 	                className={`lg:h-[95vh] md:h-[80vh] min-h-[60vh] relative overflow-hidden flex rounded-[30px] justify-center md:justify-start rounded-header-mobile-tablet safari-overflow-fix mt-4 bg-[#F5F4F5]`}>
 		<div style={{whiteSpace: "pre-line"}}
 		     className={'lg:mt-0 md:mt-3 flex flex-col justify-center  z-[3] md:p-0 px-8 md:grid lg:grid-cols-[1fr_600px] items-center'}>
-			<div className={'2xl:ml-28 lg:ml-20 md:ml-12 flex flex-col lg:items-start items-center lg:pt-0 pt-20'}>
+			<div className={'2xl:ml-28 lg:ml-20 md:ml-12 flex flex-col lg:items-start items-center lg:pt-0 pt-16'}>
 				<h1 className={`md:text-left text-center text-black white whitespace-pre-wrap`}>
 					Le meilleur Timer sportif !</h1>
 				<p className={`mt-[10px] mb-[20px] text-black md:text-left text-center `}>

@@ -4,7 +4,7 @@ import CarouselSlide from "@/src/components/UI/CarouselSlide";
 
 const FeatureSquare = (props) => {
 	return (<div
-		className={"min-h-[93vh] relative lg:my-40 my-28"}
+		className={"min-h-[93vh] relative lg:my-40 mt-28 mb-20"}
 	>
 		<div
 			className={"flex flex-col items-center lg:w-1/2 md:w-3/4 mx-auto text-center lg:mb-12 mb-8"}
@@ -24,9 +24,9 @@ const FeatureSquare = (props) => {
 					/>
 				</div>
 				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
-            <p style={{whiteSpace: "pre-line"}} className={"font-normal"}>
-              {props.titleSquare1}
-            </p>
+					<p style={{whiteSpace: "pre-line"}} className={"font-normal"}>
+						{props.titleSquare1}
+					</p>
 				</div>
 			</div>
 			<div className={""}>
@@ -38,9 +38,9 @@ const FeatureSquare = (props) => {
 					/>
 				</div>
 				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
-            <p style={{whiteSpace: "pre-line"}} className={"font-normal"}>
-              {props.titleSquare2}
-            </p>
+					<p style={{whiteSpace: "pre-line"}} className={"font-normal"}>
+						{props.titleSquare2}
+					</p>
 				</div>
 			</div>
 			<div className={""}>
@@ -52,9 +52,9 @@ const FeatureSquare = (props) => {
 					/>
 				</div>
 				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
-            <p style={{whiteSpace: "pre-line"}} className={"font-normal"}>
-              {props.titleSquare3}
-            </p>
+					<p style={{whiteSpace: "pre-line"}} className={"font-normal"}>
+						{props.titleSquare3}
+					</p>
 				</div>
 			</div>
 		</div>
