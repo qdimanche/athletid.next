@@ -37,10 +37,10 @@ function Consent() {
 			<div className={'md:text-left text-center'}>
 				Ce site utilise des cookies, veuillez les accepter si vous le souhaitez.
 			</div>
-			<div className="flex md:justify-left justify-center space-x-3 w-full md:mt-0 mt-3">
+			<div className="flex md:justify-end justify-center space-x-3 md:w-fit w-full md:mt-0 mt-3">
 				<button
 					onClick={(e) => denyCookie()}
-					className="p-2 bg-[#E63D31] text-white rounded-md"
+					className="px-2 py-1 bg-[#E63D31] text-white rounded-md"
 				>
 					Tout refuser
 				</button>
@@ -48,7 +48,7 @@ function Consent() {
 					onClick={() => {
 						acceptCookie();
 					}}
-					className="p-2 bg-black text-white rounded-md"
+					className="px-2 py-1 bg-black text-white rounded-md"
 				>
 					Tout accepter
 				</button>
@@ -56,7 +56,7 @@ function Consent() {
 					onClick={(e) => {
 						closeP();
 					}}
-					className={'top-2 right-4 absolute'}
+					className={'top-2 right-4 lg:static absolute'}
 				>
 					<IoCloseOutline size={30} color={"black"}/>
 				</button>
