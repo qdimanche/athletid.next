@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import HeaderHome from "../src/components/Header/HeaderHome";
+import HeaderTimer from "../src/components/Header/HeaderTimer";
 import FullScreenBgImage from "../src/components/UI/FullScreenBgImage";
 import MasonryGrid from "../src/components/UI/MasonryGrid";
 import ContactSupport from "../src/components/Contact/ContactSupport";
@@ -7,11 +7,9 @@ import ImgHeaderHome from "../public/assets/images/femme-entrainement-exterieur-
 import timerAppPreview from "../public/assets/images/application-athletid-entrainement-sportif.webp";
 import athletidAppPreview from "../public/assets/images/application-athletid.webp"
 import athletidAppPreview2 from "../public/assets/images/application-athletid-construction.webp";
-import femmeEntrainement from "../public/assets/videos/femme-entrainement-exterieur-fitness.mp4";
-import appSNVideo from "../public/assets/videos/application-network-athletid-fonctionnalites.mp4";
-import appTimerVideo from "../public/assets/videos/application-timer-athletid-fonctionnalites.mp4";
 import {FormattedMessage, useIntl} from "react-intl";
 import Format from "../src/layout/format"
+import Header from "@/src/components/Header/Header";
 
 
 export default function Home() {
@@ -21,25 +19,28 @@ export default function Home() {
 	return (<>
 		<Head>
 			<title>Athletid</title>
+			<meta name="description" content="Musculation, Crossfit, Yoga, Powerlifitng, Fitness … Peu importe ta discipline nos solutions innovantes te guident vers tes objectifs !"/>
 			<meta property="og:title" content="Athletid"/>
 			<meta property="og:type" content="website" />
 		</Head>
 		
 		
 		<Format>
-			<HeaderHome
+			<Header
 				title={<FormattedMessage id="message.titleHeaderHome"/>}
 				subtitle={<FormattedMessage id="message.subtitleHeaderHome"/>}
 				img={ImgHeaderHome}
-				video={femmeEntrainement}
+				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674830882/femme-entrainement-exterieur-fitness_hvam4t.mp4"}
 				link={"/network"}
 				visibilityWhiteButton={'flex'}
 				visibilityDownloadButton={'hidden'}
 				downloadButtonvisibility={'hidden'}
+				objectPosition={'cover'}
+				color={'white'}
 			/>
 			<FullScreenBgImage
 				src={athletidAppPreview}
-				video={appSNVideo}
+				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831669/application-network-athletid-fonctionnalites_enqkou.mp4"}
 				title={"Partage ta \n passion !"}
 				button={true}
 				subtitle={"Enregistre tes séances et partage ta vie de sportif avec une communauté qui te ressemble. Un lieu inspirant, accessible à tous, empreint de valeurs sportives, avec un but commun : atteindre ensemble nos objectifs !"}
@@ -49,14 +50,14 @@ export default function Home() {
 			/>
 			<FullScreenBgImage
 				src={timerAppPreview}
-				video={appTimerVideo}
+				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831668/application-timer-athletid-fonctionnalites_mszyz3.mp4"}
 				title={"Ton temps \n est précieux !"} button={false} tag={"Bientôt disponible"}
-				subtitle={"Paramètre ton entraînement et laisse toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
-				link={"/network"}
+				subtitle={"Paramètre ton entraînement et laisse-toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
+				link={"/timer"}
 			/>
 			<MasonryGrid
 				titleMasonry={"Accompagner. \n Informer. Inspirer."}
-				subTitleMasonry={"Construisons ensemble l’univers qui vous propulsera vers vos objectifs"}
+				subTitleMasonry={"Construisons ensemble l’univers qui vous propulsera vers vos objectifs."}
 				link={"/about"}
 			/>
 			<ContactSupport src={athletidAppPreview2}

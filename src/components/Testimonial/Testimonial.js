@@ -5,9 +5,9 @@ import TestimonialCardData from "./TestimonialCardData";
 const Testimonial = (props) => {
     return (
         <div
-            className={"px-4 lg:my-20 my-16"}
+            className={"lg:px-4 lg:my-40 lg:mb-32 my-28"}
         >
-            <div className={"text-center px-8"}>
+            <div className={"text-center"}>
                 <h2 style={{whiteSpace: "pre-line"}} className={"mb-[10px]"}>
                     {props.titleTestimonial}
                 </h2>

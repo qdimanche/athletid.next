@@ -1,19 +1,21 @@
 import React from 'react';
 import MasonryImages from '../../../public/assets/images/masonry';
 import Image from 'next/image'
+import Button from "@/src/components/UI/Button";
 
 
 const MasonryGrid = (props) => {
 
 
     return (
-        <div className={`relative md:py-20 pt-8 pb-16 lg:pb-0 lg:-mx-4 max-w-screen overflow-hidden lg:mb-[-15%]`}>
+        <div className={`relative lg:my-40 mt-28 mb-32 lg:-mx-4 max-w-screen lg:overflow-hidden lg:mb-[-15%]`}>
             <div className={`lg:mx-8 z-1`}>
                 <div className={'text-center '}>
-                    <div className={'lg:mb-20 flex flex-col items-center'} id={'titleMasonry'}>
+                    <div className={'lg:mb-20 flex flex-col items-center mb-6'} id={'titleMasonry'}>
                         <h2 style={{whiteSpace: "pre-line"}} className={''}>{props.titleMasonry}</h2>
                         <p style={{whiteSpace: "pre-line"}}
-                           className={'mt-[10px]'}>{props.subTitleMasonry}</p>
+                           className={'mt-[10px] mb-[20px]'}>{props.subTitleMasonry}</p>
+                        <Button variant={"black"} text={"Découvrir"} link={'/a-propos'}/>
                     </div>
                 </div>
             </div>

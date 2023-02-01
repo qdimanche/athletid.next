@@ -5,12 +5,12 @@ import DownloadAppStore from "../../../public/assets/images/downloadAppStore.svg
 const DownloadApp = (props) => {
     return (
         <div
-            className={`flex ${props.flexDirection} ${props.visibility} text-center items-center lg:mb-20 mb-16`}
+            className={`flex ${props.flexDirection} ${props.visibility} text-center items-center`}
         >
-            <h4 style={{ whiteSpace: "pre-line" }} className={"mb-10"}>
+            <span style={{ whiteSpace: "pre-line" }} className={"mb-10"}>
                 {props.title}
-            </h4>
-            <div className={`flex ${props.justifyContent} space-x-4 !w-full`}>
+            </span>
+            <div className={`flex ${props.justifyContent} space-x-4`}>
                 <a
                     target={"_blank"}
                     rel="noreferrer"

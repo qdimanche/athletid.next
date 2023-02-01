@@ -3,10 +3,8 @@ import en from "../lang/en.json";
 import fr from "../lang/fr.json";
 import {useRouter} from "next/router";
 import {IntlProvider} from "react-intl";
-import CookieConsent, {Cookies, getCookieConsentValue} from "react-cookie-consent";
-import {initGA} from "@/ga-utils";
-import {useEffect} from "react";
-import Link from "next/link";
+import Script from "next/script";
+import {getCookie} from "cookies-next";
 
 const messages = {
 	en, fr,
@@ -14,56 +12,48 @@ const messages = {
 
 function App({Component, pageProps}) {
 	const {locale} = useRouter();
-	const handleAcceptCookie = () => {
-		initGA("UA-254205972-1");
-	};
-	
-	const handleDeclineCookie = () => {
-		Cookies.remove("_ga");
-		Cookies.remove("_gat");
-		Cookies.remove("_gid");
-	};
-	
-	useEffect(() => {
-		const isConsent = getCookieConsentValue();
-		if (isConsent === "true") {
-			handleAcceptCookie();
-		}
-	}, []);
-	
+	const consent = getCookie('localConsent');
 	
 	return <>
 		<link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+		<Script
+			id="gtag"
+			strategy="afterInteractive"
+			dangerouslySetInnerHTML={{
+				__html: `
+			window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            
+            gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+            });
+            
+			(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MHQLFD3');`,
+			}}
+		/>
+		
+		{consent === true && (
+			<Script
+				id="consupd"
+				strategy="afterInteractive"
+				dangerouslySetInnerHTML={{
+					__html: `
+            gtag('consent', 'update', {
+              'ad_storage': 'granted',
+              'analytics_storage': 'granted'
+            });
+          `,
+				}}
+			/>
+		)}
 		
 		<IntlProvider locale={locale} messages={messages[locale]}>
 			<Component {...pageProps} />
 		</IntlProvider>
-		
-		<CookieConsent
-			style={{
-				background: '#F5F4F5', color: 'black'
-			}}
-			buttonStyle={{
-				borderRadius: '8px ',
-				backgroundColor: 'black',
-				color: 'white',
-				margin: '15px 10px'
-			}}
-			buttonText={'Accepter'}
-			declineButtonStyle={{
-				borderRadius: '8px ',
-				backgroundColor: '#E63D31',
-				color: 'white',
-				margin:'15px 20px 15px 10px'
-			}}
-			contentClasses={'!mb-0'}
-			declineButtonText={'Refuser'}
-			enableDeclineButton
-			onAccept={handleAcceptCookie}
-			onDecline={handleDeclineCookie}
-			flipButtons>
-			Ce site web utilise des cookies pour améliorer votre expérience &apos;utilisateur, pour en savoir plus cliquer <Link href={'/politique-de-confidentialite'} className={'font-bold'}>ici</Link>.
-		</CookieConsent>
 	
 	
 	</>

@@ -47,34 +47,56 @@ html {
 h1 {
     white-space: nowrap;
     font-weight: 700;
+    line-height: 1em;
+    font-size: 3.75rem;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 
-p, li {
+p, label {
+    font-weight: 400;
+    font-size: 1.125rem ;
+    line-height: 1.75rem;
+    opacity: 1;
+}
+
+
+li {
     font-weight: 400;
     font-size: 16px ;
     line-height: 30px;
     opacity: 1;
 }
 
-h2 {
-    font-size: 80px;
-    line-height: 80px;
-}
-
-h3 {
-    font-size: 3.5em;
-    line-height: 48px;
-}
-
-h4 {
-    font-size: 2em;
-    line-height: 40px;
+span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 svg {
     color: white;
 }
+
 
 input, textarea {
     border-radius: 10px;
@@ -179,27 +201,17 @@ input:-webkit-autofill:active {
     opacity: 1 !important;
 }
 
-.loader {
-    @apply border-gray-200 rounded-full border-4 ease-linear h-10 w-10 border-t-timeRed animate-spin;
+.custom-border {
+    background-image: url("../public/assets/images/dash-custom-border.svg");
+    background-repeat: repeat-y;
+}
+
+.slider-wrapper {
+    padding-bottom: 10px !important;
 }
 
 
 /*Responsive*/
-
-@media screen and (max-width: 400px) {
-
-    h1 {
-        font-size: 1.7em;
-        line-height: 30px;
-        white-space: normal;
-    }
-
-    h2, h3, h4 {
-        font-size: 1.5em;
-        line-height: 30px;
-        white-space: normal;
-    }
-}
 
 
 @media screen and (min-width: 400px) and (max-width: 728px) {
@@ -251,31 +263,32 @@ input:-webkit-autofill:active {
 }
 
 
-@media screen and (min-width: 728px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     h1 {
-        font-size: 3em;
-        line-height: 50px;
+        font-size: 2.75em;
+        line-height: 1em;
     }
 
-    h2 {
-        line-height: 45px;
-        font-size: 2.4em;
+    h2, h3, h4 {
+        line-height: 2.5rem;
+        font-size: 2.25em;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
     }
 }
 
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
 
-    h1 {
-        font-size: 3em;
-        line-height: 50px;
-    }
-
-    h2 {
-        font-size: 2.5em;
-        line-height: 40px;
-    }
 
 
     .object-custom-top-position {
@@ -405,18 +418,3 @@ input:-webkit-autofill:active {
     }
 
 }
-
-@media screen and (min-width: 1280px) {
-
-    h1 {
-        line-height: 70px;
-        font-size: 3.8em;
-    }
-
-    h2 {
-        font-size: 3em;
-        line-height: 50px;
-    }
-
-}
-
