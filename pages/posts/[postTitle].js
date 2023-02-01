@@ -8,8 +8,11 @@ import Spinner from "@/src/components/Blog/_child/Spinner";
 import ErrorComponent from "@/src/components/Blog/_child/Error";
 import {useRouter} from "next/router";
 import {SWRConfig} from "swr";
+import Head from "next/head";
 
 export default function Page({fallback}) {
+	
+
 	
 	const router = useRouter()
 	const {postTitle} = router.query
@@ -18,14 +21,26 @@ export default function Page({fallback}) {
 	if (isLoading) return <Spinner></Spinner>
 	if (isError) return <ErrorComponent></ErrorComponent>
 	
-	return (<SWRConfig value={{fallback}}>
+	return (
+		
+		<SWRConfig value={{fallback}}>
+			<Head>
+				{}
+				<title>{
+					data.title.charAt(0).toUpperCase() +  data.title.slice(1)
+				}</title>
+				<meta property="og:title" content="Athletid"/>
+				<meta property="og:type" content="article" />
+			</Head>
 			<Article {...data}></Article>
 		</SWRConfig>)
 }
 
 function Article({title, subtitle, img, author, description}) {
 	
-	return (<Format>
+	return (
+		
+		<Format>
 		<div className={'md:px-2 lg:pt-28 pt-20 w-2/3 mx-auto relative'}>
 			<div className={'flex justify-center'}>
 				{author ? <Author></Author> : <></>}
