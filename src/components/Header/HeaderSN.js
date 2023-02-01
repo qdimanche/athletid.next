@@ -7,7 +7,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header>
-      <div className={" relative flex pt-28 pb-14 md:w-full "}>
+      <div className={"relative flex pt-20 pb-14 md:w-full "}>
         <div
           className={
             "flex flex-col justify-center z-[3] lg:w-2/3 md:w-3/4 mx-auto w-full lg:text-left text-center lg:pl-8 lg:pr-20"
