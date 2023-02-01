@@ -5,7 +5,7 @@ import DownloadAppStore from "../../../public/assets/images/downloadAppStore.svg
 const DownloadApp = (props) => {
     return (
         <div
-            className={`flex ${props.flexDirection} ${props.visibility} text-center items-center`}
+            className={`flex ${props.flexDirection} ${props.justifyContent} ${props.visibility} text-center items-center`}
         >
             <span style={{ whiteSpace: "pre-line" }} className={"mb-10"}>
                 {props.title}

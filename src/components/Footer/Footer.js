@@ -35,14 +35,12 @@ const Footer = () => {
 					
 					<div className={'flex text-black/30 lg:space-x-[30px] order-1 md:mb-0 mb-4 flex-col '}>
 						
-						<div className={'w-full grid lg:grid-cols-5 md:grid-cols-3 grid-cols-3 gap-y-3 gap-x-6 space-x-0'}>
+						<div className={'w-full grid grid-cols-3 gap-y-3 gap-x-6 space-x-0'}>
 							<Link href={"/"}>Accueil</Link>
 							<Link href={"/network"}>Network</Link>
-							<Link href={"/timer"} className={'justify-center flex'}>Timer</Link>
-							<Link href={"/a-propos"}>À propos</Link>
+{/*							<Link href={"/timer"} className={'justify-center flex'}>Timer</Link>
+							<Link href={"/a-propos"}>À propos</Link>*/}
 							<Link href={"/contact"}>Contact</Link>
-							<Link className={'text-black/30 lg:hidden'}
-							      href={"/conditions-de-vente-et-d-utilisation"}>CGV/GU</Link>
 						</div>
 					</div>
 					

@@ -79,12 +79,12 @@ const Navbar = (props) => {
 						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
 							<Link href="/network">Network</Link>
 						</li>
-						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+{/*						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
 							<Link href="/timer">Timer</Link>
 						</li>
 						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
 							<Link href="/a-propos">À propos</Link>
-						</li>
+						</li>*/}
 						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
 							<Link href="/contact">Contact</Link>
 						</li>
