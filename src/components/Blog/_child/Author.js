@@ -1,14 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
 
-function Author({name, img, designation}) {
+function Author({name, img, designation, published, fontSize}) {
 	if(!name && !img) return <></>;
 	return (
-		<div className={'author flex py-5'}>
-			<Image width={50} height={50} src={img || "/"} alt={''} className={"rounded-full"}></Image>
-			<div className="flex flex-col justify-center px-4">
-				<p>{name || "Aucun nom"}</p>
-				<span className={'text-sm font-normal'}>{designation || ""}</span>
+		<div className={'w-full'}>
+			<div className={`flex flex-col justify-center`}>
+				<p className={`!text-lg ${fontSize}`}>Par {name || "Aucun nom"}</p>
+				<div className={'flex justify-between w-full'}>
+					<span className={`!text-lg ${fontSize} font-normal`}>{designation || ""}</span>
+					<span className={`!text-lg ${fontSize} font-normal opacity-50`}>{published || ""}</span>
+				</div>
+				
 			</div>
 		</div>
 	);

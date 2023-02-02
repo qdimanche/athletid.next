@@ -15,7 +15,7 @@ const HeaderBlog = () => {
 	if (isLoading) return <Spinner></Spinner>
 	if (isError) return <Error></Error>
 	
-	return (<div className={'lg:pt-28 pt-20 mx-8'}>
+	return (<div className={'lg:pt-28 pt-20 max-w-[1024px] mx-auto'}>
 		<Swiper
 			slidesPerView={1}
 			loop={true}

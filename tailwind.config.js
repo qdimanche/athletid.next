@@ -22,6 +22,10 @@ module.exports = {
             },
             borderRadius: {
                 'medium': '30px'
+            },
+            boxShadow:{
+                'medium': '0px 0px 32px 0px rgba(0,0,0,0.10)',
+                'mediumHover': '0px 0px 32px 0px rgba(0,0,0,0.20)'
             }
         },
     },

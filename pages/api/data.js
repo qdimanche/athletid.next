@@ -1,7 +1,7 @@
 export default {
 	Trending: [{
 		id: 1,
-		title: "Les bienfaits du chocolats",
+		title: "Les bienfaits du chocolats Les bienfaits du chocolats Les bienfaits du chocolats",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Nutrition",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -100,10 +100,44 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 		published: "Jun 14,  2022",
 		author: {
 			name: "Flying High", img: "/assets/images/utilisateur-athletid.webp", designation: "CEO and Founder"
-		}
-	}], Posts: [{
+		},
+		
+	}, {
+		id: 6,
+		title: "Your most unhappy customers are your greatest source of learning",
+		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+		category: "Business, Travel",
+		img: "/assets/images/application-athletid-reseau-professionnel.webp",
+		description: `
+            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind
+            text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+            `,
+		published: "Jun 14,  2022",
+		author: {
+			name: "Flying High", img: "/assets/images/utilisateur-athletid.webp", designation: "CEO and Founder"
+		},
+		
+	}, {
+		id: 7,
+		title: "Your most unhappy customers are your greatest source of learning",
+		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+		category: "Business, Travel",
+		img: "/assets/images/application-athletid-reseau-professionnel.webp",
+		description: `
+            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind
+            text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+            `,
+		published: "Jun 14,  2022",
+		author: {
+			name: "Flying High", img: "/assets/images/utilisateur-athletid.webp", designation: "CEO and Founder"
+		},
+		
+	}
+	
+	
+	], Posts: [{
 		id: 1,
-		title: "Les bienfaits du chocolat",
+		title: "Les bienfaits du chocolat Les bienfaits du chocolats",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Nutrition ",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
