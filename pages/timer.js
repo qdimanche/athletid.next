@@ -17,7 +17,7 @@ const SocialApp = () => {
 			<meta property="og:title" content="Timer"/>
 			<meta property="og:type" content="website"/>
 			<meta name="description"
-			      content="Tous les Chronomètre et Timers sportifs sur une seule application, Intervalle, Tempo, AMRAP, EMOM, For Time, Respiration et bien d’autres !"/>
+			      content="Tous les Chronomètres et Timers sportifs sur une seule application, Intervalle, Tempo, AMRAP, EMOM, For Time, Respiration et bien d’autres !"/>
 		</Head>
 		
 		<Format>
