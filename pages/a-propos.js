@@ -23,8 +23,8 @@ const APropos = () => {
 		
 		<Format>
 			<Header
-				title={<FormattedMessage id="message.titleHeaderHome"/>}
-				subtitle={<FormattedMessage id="message.subtitleHeaderHome"/>}
+				title={<FormattedMessage id="message.titleHeaderAbout"/>}
+				subtitle={<FormattedMessage id="message.subtitleHeaderAbout"/>}
 				img={ImgHeader}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1675156326/footing-homme_mdjoml.mp4"}
 				link={"/network"}

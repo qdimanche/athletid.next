@@ -20,7 +20,7 @@ const FullScreenBgImage = (props) => {
 					    className={'mb-[10px] md:text-left text-center'}>{props.title}</h2>
 					<p className={'md:text-left text-center'}>{props.subtitle}</p>
 					<div
-						className={'flex items-center space-x-4 md:pb-[20px] md:text-left mt-[20px] text-center'}>
+						className={`flex items-center space-x-4 md:pb-[20px] md:text-left mt-[20px] text-center ${props.button}`}>
 						<Button variant={"black"} text={"Découvrir"} link={props.link}/>
 					</div>
 				</div>

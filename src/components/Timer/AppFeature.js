@@ -31,21 +31,21 @@ const AppFeature = (props) => {
                             <div className={"mb-6 space-y-3"}>
                                 <span className={"font-semibold"}>Musculaire.</span>
                                 <p>
-                                    Les meilleurs Timers pour des entraînements en puissance !
+                                    Fitness, Crossfit, musculation, bodybuilding…
                                 </p>
                             </div>
                         ) : countTab === 2 ? (
                             <div className={"mb-6 space-y-3"}>
                                 <span className={"font-semibold"}>Cardio.</span>
                                 <p>
-                                    Les meilleurs Timers pour des entraînements intenses !
+                                    Running, cyclisme, natation…
                                 </p>
                             </div>
                         ) : (
                             <div className={'mb-6 space-y-3'}>
                                 <span className={"font-semibold"}>Bien-être.</span>
                                 <p>
-                                    Les meilleurs Timers pour des sessions relaxantes !
+                                    Yoga, streching, méditation, Pilates…
                                 </p>
                             </div>
                         )}

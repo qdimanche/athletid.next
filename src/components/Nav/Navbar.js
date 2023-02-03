@@ -36,7 +36,7 @@ const Navbar = (props) => {
 					<Link href="/contact">Support</Link>
 				</li>
 				<li className={''}>
-					<Button variant={"red"} text={'Network'} link={"/network"}/>
+					<Button variant={"red"} text={'Timer'} link={"/timer"}/>
 				</li>
 			</ul>
 			
@@ -77,14 +77,11 @@ const Navbar = (props) => {
 							<Link href="/">Accueil</Link>
 						</li>
 						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-							<Link href="/network">Network</Link>
-						</li>
-{/*						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
 							<Link href="/timer">Timer</Link>
 						</li>
 						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
 							<Link href="/a-propos">À propos</Link>
-						</li>*/}
+						</li>
 						<li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
 							<Link href="/contact">Contact</Link>
 						</li>

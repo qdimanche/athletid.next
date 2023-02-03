@@ -32,7 +32,7 @@ const CircleProgressBar = () => {
 			</div>
 			<div
 				className={' rounded-medium absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 left-0 text-center'}>
-				<h2 className={''}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				<h2 className={''}>Le chemin et l’objectif. Athletid t’accompagne à chaque étape.
 				</h2>
 			</div>
 		

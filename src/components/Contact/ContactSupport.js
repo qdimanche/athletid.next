@@ -18,12 +18,10 @@ const ContactSupport = (props, ref) => {
                     style={{whiteSpace: "pre-line"}}
                     className={"mb-[10px] md:text-left text-center"}
                 >
-                    Ton avis est important
+                    Vos idées sont nos priorités !
                 </h2>
                 <p className={"mb-[20px] md:text-left text-center"}>
-                    Dans le but de répondre au mieux à tes besoins, n’hésites pas à nous
-                    faire tes suggestions d’améliorations pour nos solutions. Nous
-                    essayerons d’y répondre au mieux.
+                    Soucieux de vous apporter la meilleure application, nous sommes a l’écoute de toutes vos suggestions pour faire évoluer notre solution.
                 </p>
                 <div className={"flex items-center space-x-4"}>
                     <Button variant={"black"}
