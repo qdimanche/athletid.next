@@ -21,11 +21,9 @@ const PopularPost = () => {
 		<h2 className={'pb-12 text-center'}>Articles populaires</h2>
 		<div className={'grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 gap-6'}>
 			{
-				data.map((value, index) => (
-					isMobile && index < 3 ? <Post data={value} key={index}></Post> :
-						isTablet && index < 4 ? <Post data={value} key={index}></Post> :
-							isDesktop && index < 6 ? <Post data={value} key={index}></Post> : <></>
-				))
+				isMobile ? data.slice(0, 1).map((value, index) => (
+					<Post data={value} key={index}></Post>)) : data.slice(0, 6).map((value, index) => (
+					<Post data={value} key={index}></Post>))
 			}
 		</div>
 	</div>);

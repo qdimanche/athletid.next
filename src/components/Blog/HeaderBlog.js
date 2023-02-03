@@ -1,17 +1,18 @@
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import Author from "@/src/components/Blog/_child/Author";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Autoplay} from "swiper";
 import 'swiper/css';
 import fetcher from "@/lib/fetcher";
 import Spinner from "@/src/components/Blog/_child/Spinner";
 import Error from "@/src/components/Blog/_child/Error";
+import Button from "@/src/components/UI/Button";
+
 const HeaderBlog = () => {
 	
 	SwiperCore.use([Autoplay])
-	const {data, isLoading, isError} = fetcher('api/trending');
+	const {data, isLoading, isError} = fetcher('api/posts');
 	if (isLoading) return <Spinner></Spinner>
 	if (isError) return <Error></Error>
 	
@@ -20,7 +21,7 @@ const HeaderBlog = () => {
 			slidesPerView={1}
 			loop={true}
 			autoplay={{
-				delay:3000
+				delay: 5000
 			}}
 		>
 			{
@@ -38,24 +39,31 @@ export default HeaderBlog;
 
 
 function Slide({data}) {
-	const {title, subtitle, category, img, published, author} = data;
-	return (<div className={'grid md:grid-cols-2 gap-10'}>
-		<div className={'image'}>
-			<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}><Image alt={""} width={600} height={600} src={img||"/"}/>
-			</Link>
-		</div>
-		<div className="info flex flex-col justify-center">
-			<div className="space-x-4 mb-[10px] flex">
-				<p className={'text-timeRed '}>{category || "Inconnue"}</p>
-				<p className={''}>{published || "Inconnue"}</p>
+	const {title, description, category, img, published} = data;
+	return (<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}>
+		<div className={'grid md:grid-cols-2 gap-10'}>
+			<div className={'image'}>
+				<Image alt={""} width={600} height={600}
+				       src={img || "/"}/>
 			</div>
-			
-			<div className="title">
-				<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={'!whitespace-normal'}><span className={'text-3xl'}>{title || "Titre"}</span></Link>
+			<div className="info flex flex-col justify-center">
+				<div className="space-x-4 flex">
+					<p className={'text-timeRed '}>{category || "Inconnue"}</p>
+					<p className={''}>{published || "Inconnue"}</p>
+				</div>
+				
+				<div
+					className="mt-8 mb-4 !whitespace-normal  font-semibold hover:text-black text-gray-700 duration-300 text-5xl">
+					{title || "Titre"}
+				</div>
+				<div className={'mb-8 text-xl'}>{truncate(description || "Aucune description", 34)}</div>
+				<Button variant={'black'} link={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}
+				        text={"Découvrir"}/>
 			</div>
-			<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`} className={''}>{subtitle || "Sous-titre"}</Link>
-			{author ? <Author {...author}></Author> : <></>}
-		
 		</div>
-	</div>);
+	</Link>);
+}
+
+function truncate(str, no_words) {
+	return str.split(" ").splice(0, no_words).join(" ") + " ...";
 }

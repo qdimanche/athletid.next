@@ -142,7 +142,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 		category: "Nutrition ",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
 		description: `
-            Mange du chocolat pour être en bonne santé 🍫
+            Mange du chocolat pour être en bonne santé 🍫 \n
 
 Alors tout est relatif ! Ne t’enfile pas trois tablettes entières chaque soir juste en voyant ce petit titre accrocheur 😏
 
