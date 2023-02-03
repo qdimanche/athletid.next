@@ -7,7 +7,7 @@ const Testimonial = (props) => {
         <div
             className={"lg:px-4 lg:my-40 lg:mb-32 my-28"}
         >
-            <div className={"text-center"}>
+            <div className={"text-center lg:w-1/2 md:w-3/4  mx-auto"}>
                 <h2 style={{whiteSpace: "pre-line"}} className={"mb-[10px]"}>
                     {props.titleTestimonial}
                 </h2>

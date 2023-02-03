@@ -28,7 +28,7 @@ const SocialApp = () => {
 				subTitleFeatureSquare={"Conçu en collaboration avec des sportifs et des experts du monde entier. Ton application Timer t’accompagne quel que soit ton niveau, ta discipline ou encore tes objectifs."}
 				titleSquare1={"Enregistre et adapte ta séance selon tes besoins et tes objectifs."}
 				imgSquare1={TimerScreen01}
-				titleSquare2={"12 chronomètres et timers différents : Tempo, Respiration, Intervalle, AMRAP, EMOM, For Time, Sonothérapie…"}
+				titleSquare2={"Tempo, Respiration, Intervalle, AMRAP, EMOM, For Time, Sonothérapie…"}
 				imgSquare2={TimerScreen02}
 				titleSquare3={"Découvre un design épuré, intuitif  et des sons adaptés à ton sport."}
 				imgSquare3={TimerScreen03}

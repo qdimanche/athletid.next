@@ -33,7 +33,7 @@ const Navbar = (props) => {
                         <Link href="/a-propos">À propos de nous</Link>
                     </li>*/}
 				<li>
-					<Link href="/contact">Support</Link>
+					<Link href="/a-propos">À propos</Link>
 				</li>
 				<li className={''}>
 					<Button variant={"red"} text={'Timer'} link={"/timer"}/>

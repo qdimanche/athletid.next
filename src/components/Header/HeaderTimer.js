@@ -17,7 +17,7 @@ const HeaderTimer = (props) => {
 		     className={'lg:mt-0 md:mt-3 flex flex-col justify-center  z-[3] md:p-0 px-8 md:grid lg:grid-cols-[1fr_600px] items-center'}>
 			<div className={'2xl:ml-28 lg:ml-20 md:ml-12 flex flex-col lg:items-start items-center lg:pt-0 pt-16'}>
 				<h1 className={`md:text-left text-center text-black white whitespace-pre-wrap`}>
-					La meilleur application <br/>de timer sportif.</h1>
+					Le meilleur timer <br/>de sport.</h1>
 				<p className={`mt-[10px] mb-[20px] text-black md:text-left text-center `}>
 					Ton partenaire d’entraînement, simple et élégant. Ta nouvelle application est la plus complète (12 chronomètres et timers différents), elle s’adapte à tous types d’entraînements.</p>
 				{/*<DownloadApp/>*/}
