@@ -39,6 +39,13 @@ export default function Home() {
 				color={'white'}
 			/>
 			<FullScreenBgImage
+				src={timerAppPreview}
+				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831668/application-timer-athletid-fonctionnalites_mszyz3.mp4"}
+				title={"Chaque séance. \n Une victoire."} button={false} tag={"Bientôt disponible"}
+				subtitle={"Paramètre ton entraînement et laisse-toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
+				link={"/timer"}
+			/>
+			<FullScreenBgImage
 				src={athletidAppPreview}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831669/application-network-athletid-fonctionnalites_enqkou.mp4"}
 				title={"Partage ta \n passion !"}
@@ -47,13 +54,6 @@ export default function Home() {
 				tag={"Nouveau"}
 				link={"/network"}
 				idSection={"networkHeader"}
-			/>
-			<FullScreenBgImage
-				src={timerAppPreview}
-				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831668/application-timer-athletid-fonctionnalites_mszyz3.mp4"}
-				title={"Ton temps \n est précieux !"} button={false} tag={"Bientôt disponible"}
-				subtitle={"Paramètre ton entraînement et laisse-toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
-				link={"/timer"}
 			/>
 			<MasonryGrid
 				titleMasonry={"Accompagner. \n Informer. Inspirer."}
