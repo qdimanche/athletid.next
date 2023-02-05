@@ -43,7 +43,7 @@ const Navbar = (props) => {
 			<div
 				className={click ? 'fixed bg-white duration-[1300ms] w-screen h-screen heightfix-ios top-0 left-0 bottom-0 overflow-hidden z-[400]' : 'bg-white invisible opacity-0 duration-[300ms] absolute w-screen h-screen top-0 left-0 bottom-0 overflow-visible'}>
 				<div
-					className={click ? 'lg:fixed-center-element absolute-vertical-center flex lg:space-x-40' : 'hidden'}>
+					className={click ? 'lg:fixed-center-element absolute-vertical-center flex lg:space-x-36' : 'hidden'}>
 					<ul className={'text-left apparition-from-bottom-hamburger-menu lg:block hidden '}>
 						<li className={'text-[14px] font-bold'}>
 							<span>Contact</span>
