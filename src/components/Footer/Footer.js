@@ -38,7 +38,7 @@ const Footer = () => {
 						<div className={'w-full grid lg:flex grid-cols-3 gap-y-3 gap-x-10 space-x-0'}>
 							<Link href={"/"}>Accueil</Link>
 							<Link href={"/timer"} className={'justify-center flex'}>Timer</Link>
-							<Link href={"/a-propos"}>À propos</Link>
+{/*							<Link href={"/a-propos"}>À propos</Link>*/}
 							<Link href={"/contact"}>Contact</Link>
 						</div>
 					</div>
