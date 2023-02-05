@@ -210,6 +210,10 @@ input:-webkit-autofill:active {
     padding-bottom: 10px !important;
 }
 
+html, .heightfix-ios {
+    height: -webkit-fill-available !important;
+}
+
 
 /*Responsive*/
 

@@ -29,7 +29,7 @@ const Header = (props) => {
 					{props.subtitle}</p>
 				<div
 					className={`flex md:justify-start justify-center space-x-4 ${props.visibilityWhiteButton}`}>
-					<Button variant={"white"} link={'/network'}
+					<Button variant={"white"} link={props.link}
 					        text={<FormattedMessage id="message.buttonDiscover"/>}/>
 				</div>
 				<DownloadApp visibility={props.downloadButtonvisibility}/>

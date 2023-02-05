@@ -1,11 +1,10 @@
 import TimerScreen03 from "@/public/assets/images/application-timer-chronometre.webp";
-import TimerScreen02 from "@/public/assets/images/application-timer-seance-sport.webp";
+import TimerScreen02 from "@/public/assets/images/application-timer-athletid-tempo.webp";
 import TimerScreen01 from "@/public/assets/images/application-timer-creation-entrainement.webp";
 import HeaderTimer from "@/src/components/Header/HeaderTimer";
 import AppFeature from "@/src/components/Timer/AppFeature";
 import FeatureSquare from "@/src/components/UI/FeatureSquare";
 import Testimonial from "@/src/components/Testimonial/Testimonial";
-import DownloadApp from "@/src/components/UI/DownloadApp";
 import Head from "next/head";
 import Format from "@/src/layout/format";
 
@@ -37,12 +36,6 @@ const SocialApp = () => {
 				titleTestimonial={"Toi aussi atteint tes objectifs sportifs avec Timer by Athletid."}
 				subTitleTestimonial={"De nombreux sportifs et professionnels nous ont déjà rejoins, ils n’attendent plus que toi ! "}
 			/>
-{/*			<DownloadApp
-				flexDirection={"flex-col"}
-				marginBottom={"mb-20"}
-				justifyContent={"justify-center"}
-				title={"Nous avons hâte de découvrir \n tes entraînements et tes conseils !"}
-			/>*/}
 		</Format>
 	
 	

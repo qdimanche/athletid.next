@@ -5,7 +5,7 @@ import ContactSupport from "../src/components/Contact/ContactSupport";
 import ImgHeaderHome from "../public/assets/images/femme-entrainement-exterieur-fitness.webp"
 import timerAppPreview from "../public/assets/images/application-athletid-entrainement-sportif.webp";
 import capteurAppPreview from "../public/assets/images/capteur-athletid-screenshot.png"
-import athletidAppPreview2 from "../public/assets/images/application-athletid-construction.webp";
+import statistiquesApp from "../public/assets/images/statistiques-application-athletid.webp";
 import {FormattedMessage, useIntl} from "react-intl";
 import Format from "../src/layout/format"
 import Header from "@/src/components/Header/Header";
@@ -61,7 +61,7 @@ export default function Home() {
 				subTitleMasonry={"Construisons ensemble l’univers qui vous propulsera vers vos objectifs."}
 				link={"/about"}
 			/>
-			<ContactSupport src={athletidAppPreview2}/>
+			<ContactSupport src={statistiquesApp}/>
 		</Format>
 	
 	
