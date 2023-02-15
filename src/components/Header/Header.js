@@ -13,13 +13,13 @@ const Header = (props) => {
 	return (<header
 		className={'lg:h-[95vh] md:h-[80vh] h-[60vh] relative overflow-hidden flex rounded-[30px] justify-center md:justify-start rounded-header-mobile-tablet safari-overflow-fix mt-4'}>
 		<div className={"absolute top-0 left-0 w-full h-full bg-black/20 z-[1] "}></div>
-		<video className={'w-full lg:block hidden h-full object-cover pointer-events-none'}
+		<video className={`w-full lg:block hidden ${props.displayVideo} h-full object-cover pointer-events-none`}
 		       preload="metadata"
 		       controls={false} loop muted autoPlay playsInline>
 			<source src={props.video + "#t=0.5"} type="video/mp4"/>
 		</video>
 		<Image src={props.img} alt="Femme s'entraînant gràce à l'application Timer"
-		       className={'lg:hidden w-full h-full object-cover pointer-events-none'}/>
+		       className={`lg:hidden ${props.displayImage} w-full h-full object-cover pointer-events-none`}/>
 		<div style={{whiteSpace: "pre-line"}}
 		     className={'lg:mt-0 md:mt-3 absolute-vertical-center-header absolute-vertical-center-mobile-header flex flex-col justify-center md:items-start items-center  z-[3] md:p-0 px-8 md:grid lg:grid-cols-[3fr_2fr]'}>
 			<div className={`2xl:ml-28 lg:ml-20 md:ml-12`}>
