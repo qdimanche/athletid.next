@@ -15,7 +15,7 @@ const FullScreenBgImage = (props) => {
 				<div
 					className={' flex flex-col justify-center md:items-start items-center md:order-1 order-2 md:w-full 2xl:pr-28 lg:pr-20 md:pr-12'}>
 					<div
-						className={'px-4 py-1 rounded-medium bg-black text-white mb-[10px] text-[0.9em] md:text-left text-center lg:mt-0 mt-[20px]'}>{props.tag}</div>
+						className={'px-4 py-1 rounded-medium bg-black text-white mb-[20px] text-[0.9em] md:text-left text-center lg:mt-0 mt-[20px]'}>{props.tag}</div>
 					<h2 style={{whiteSpace: "pre-line"}}
 					    className={'mb-[10px] md:text-left text-center'}>{props.title}</h2>
 					<p className={'md:text-left text-center'}>{props.subtitle}</p>

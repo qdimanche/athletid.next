@@ -21,7 +21,7 @@ const Header = (props) => {
 		<Image src={props.img} alt="Femme s'entraînant gràce à l'application Timer"
 		       className={'lg:hidden w-full h-full object-cover pointer-events-none'}/>
 		<div style={{whiteSpace: "pre-line"}}
-		     className={'lg:mt-0 md:mt-3 absolute-vertical-center-header absolute-vertical-center-mobile-header flex flex-col justify-center md:items-start items-center  z-[3] md:p-0 px-8 md:grid lg:grid-cols-[2fr_1fr] lg:grid-cols-[3fr_1fr]'}>
+		     className={'lg:mt-0 md:mt-3 absolute-vertical-center-header absolute-vertical-center-mobile-header flex flex-col justify-center md:items-start items-center  z-[3] md:p-0 px-8 md:grid lg:grid-cols-[3fr_2fr]'}>
 			<div className={`2xl:ml-28 lg:ml-20 md:ml-12`}>
 				<h1 className={`md:text-left text-center !text-${props.color} md:w-[80%] white whitespace-pre-wrap`}>
 					{props.title}</h1>

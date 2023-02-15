@@ -27,8 +27,8 @@ export default function Home() {
 		
 		<Format>
 			<Header
-				title={<FormattedMessage id="message.titleHeaderHome"/>}
-				subtitle={<FormattedMessage id="message.subtitleHeaderHome"/>}
+				title={"Une expérience sportive unique."}
+				subtitle={"Entraîne-toi avec nos applications et notre système de tracking. Des solutions spécialement conçus pour t'aider à créer une routine durable. \nProgresse et atteins tes objectifs."}
 				img={ImgHeaderHome}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674830882/femme-entrainement-exterieur-fitness_hvam4t.mp4"}
 				link={"/timer"}
@@ -41,7 +41,7 @@ export default function Home() {
 			<FullScreenBgImage
 				src={timerAppPreview}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831668/application-timer-athletid-fonctionnalites_mszyz3.mp4"}
-				title={"Un timer. \n Un objectif."} button={false} tag={"Bientôt disponible"}
+				title={"Bien plus qu'un simple timer."} button={false} tag={"Bientôt disponible"}
 				subtitle={"Paramètre ton entraînement et laisse-toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
 				link={"/timer"}
 			/>
