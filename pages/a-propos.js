@@ -21,8 +21,8 @@ const APropos = () => {
 		
 		<Format>
 			<Header
-				title={""}
-				subtitle={""}
+				title={"Athletid t’accompagne tout au long du voyage"}
+				subtitle={"Entraîne toi avec nos applications innovantes. \n Rejoins une expérience sportive unique et un environment propice à ta réussite"}
 				img={ImgHeader}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1675156326/footing-homme_mdjoml.mp4"}
 				link={"/network"}

@@ -15,10 +15,10 @@ const MasonryGrid = (props) => {
                         <h2 style={{whiteSpace: "pre-line"}} className={''}>{props.titleMasonry}</h2>
                         <p style={{whiteSpace: "pre-line"}}
                            className={'mt-[10px] mb-[20px]'}>{props.subTitleMasonry}</p>
+                        <Button variant={"black"} text={"Découvrir"} link={"/a-propos"}/>
                     </div>
                 </div>
             </div>
-
             <div
                 className={`flex gap-4  absolute lg:mx-[-10%] relative grid lg:grid-cols-[1fr_1fr_2fr_1fr_1fr_2fr_1fr] md:grid-cols-3 grid-cols-2`}>
                 <div className={

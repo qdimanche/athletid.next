@@ -49,17 +49,16 @@ export default function Home() {
 				src={capteurAppPreview}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1675439914/captor_erchao.mp4"}
 				title={"Objets connectés. \nApplication."}
-				button={""}
+				button={"hidden"}
 				subtitle={"Nous voulons permettre aux adeptes de fitness, yoga et sports connexes de progresser et d'atteindre leurs objectifs.\n" +
 					"Pour cela nous développons un univers unique et dédié à ces disciplines."}
 				tag={"À venir"}
-				link={"/a-propos"}
 				idSection={"networkHeader"}
+				link={'/'}
 			/>
 			<MasonryGrid
 				titleMasonry={"Accompagner.\n Innover. Progresser."}
 				subTitleMasonry={"Construisons ensemble l’univers qui vous propulsera vers vos objectifs."}
-				link={"/about"}
 			/>
 			<ContactSupport src={statistiquesApp}/>
 		</Format>
