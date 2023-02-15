@@ -41,7 +41,7 @@ export default function Home() {
 			<FullScreenBgImage
 				src={timerAppPreview}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831668/application-timer-athletid-fonctionnalites_mszyz3.mp4"}
-				title={"Bien plus qu'un \nsimple timer."} button={false} tag={"Bientôt disponible"}
+				title={"Bien plus qu'un \nsimple timer."} tag={"Bientôt disponible"}
 				subtitle={"Paramètre ton entraînement et laisse-toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif."}
 				link={"/timer"}
 			/>
@@ -49,11 +49,11 @@ export default function Home() {
 				src={capteurAppPreview}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1675439914/captor_erchao.mp4"}
 				title={"Objets connectés. \nApplication."}
-				button={"hidden"}
+				button={""}
 				subtitle={"Nous voulons permettre aux adeptes de fitness, yoga et sports connexes de progresser et d'atteindre leurs objectifs.\n" +
 					"Pour cela nous développons un univers unique et dédié à ces disciplines."}
 				tag={"À venir"}
-				link={""}
+				link={"/a-propos"}
 				idSection={"networkHeader"}
 			/>
 			<MasonryGrid
