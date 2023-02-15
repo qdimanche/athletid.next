@@ -28,7 +28,7 @@ export default function Home() {
 		<Format>
 			<Header
 				title={"Une expérience sportive unique."}
-				subtitle={"Entraîne-toi avec nos applications et notre système de tracking. Des solutions spécialement conçus pour t'aider à créer une routine durable. \nProgresse et atteins tes objectifs."}
+				subtitle={"Commence dès maintenant à te créer une routine d'entraînement durable avec nos applications et notre système de tracking."}
 				img={ImgHeaderHome}
 				video={"https://res.cloudinary.com/dxplbf0t0/video/upload/v1674830882/femme-entrainement-exterieur-fitness_hvam4t.mp4"}
 				link={"/timer"}
