@@ -19,7 +19,7 @@ export const CarouselSlide = (props) => {
 
     return (
         <Carousel
-            className={'w-[80%] max-w-[400px] mx-auto block md:hidden'}
+            className={`${props.customWidth} max-w-[400px] mx-auto block md:hidden`}
             showStatus={false}
             showThumbs={false}
             statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
@@ -65,22 +65,13 @@ export const CarouselSlide = (props) => {
             }}
         >
             <div className={'pb-16'}>
-                <div className="slide rounded-medium overflow-hidden bg-[#F2F2F2] px-8 pt-8">
-                    <Image alt={props.altSquare1} src={props.imgSquare1} className={''}/>
-                </div>
-                <p className="legend absolute !bottom-[-10px] !text-black !bg-white !h-16">{props.titleSquare1}</p>
+                {props.childrenSlide1}
             </div>
             <div className={'pb-16'}>
-                <div className="slide rounded-medium overflow-hidden bg-[#F2F2F2] px-8 pt-8">
-                    <Image alt={props.altSquare2} src={props.imgSquare2} className={''}/>
-                </div>
-                <p className="legend absolute !bottom-[-10px] !text-black !bg-white !h-16">{props.titleSquare2}</p>
+                {props.childrenSlide2}
             </div>
             <div className={'pb-16'}>
-                <div className="slide rounded-medium overflow-hidden bg-[#F2F2F2] px-8 pt-8">
-                    <Image alt={props.altSquare3} src={props.imgSquare3} className={''}/>
-                </div>
-                <p className="legend absolute !bottom-[-10px] !text-black !bg-white !h-16">{props.titleSquare3}</p>
+                {props.childrenSlide3}
             </div>
         </Carousel>
     );

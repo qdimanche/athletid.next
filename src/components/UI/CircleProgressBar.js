@@ -20,19 +20,19 @@ const CircleProgressBar = () => {
 			</div>
 			<div
 				className={' rounded-medium border-black border bg-white px-3 py-1 absolute top-[-25px] left-1/2 transform -translate-x-1/2'}>
-				<p className={'!text-[13px]'}>Avant</p>
+				<p className={'!text-[13px]'}>Objectifs</p>
 			</div>
 			<div
 				className={' rounded-medium border-black border bg-white px-3 py-1 absolute top-[-25px] top-3/4 transform -translate-y-3/4 right-0'}>
-				<p className={'!text-[13px]'}>Pendant</p>
+				<p className={'!text-[13px]'}>Entraînements</p>
 			</div>
 			<div
 				className={' rounded-medium border-black bg-white border px-3 py-1 absolute top-[-25px] top-3/4 transform -translate-y-3/4 left-0'}>
-				<p className={'!text-[13px]'}>Après</p>
+				<p className={'!text-[13px]'}>Progrès</p>
 			</div>
 			<div
 				className={' rounded-medium absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 left-0 text-center'}>
-				<h2 className={''}>Le chemin et l’objectif. Athletid t’accompagne à chaque étape.
+				<h2 className={''}>Bien-être. Performances. Santé. Confiance en soi.
 				</h2>
 			</div>
 		

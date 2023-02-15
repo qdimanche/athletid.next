@@ -58,13 +58,30 @@ const FeatureSquare = (props) => {
 				</div>
 			</div>
 		</div>
-		<CarouselSlide imgSquare1={props.imgSquare1} titleSquare1={props.titleSquare1} imgSquare2={props.imgSquare2}
-		               titleSquare2={props.titleSquare2} imgSquare3={props.imgSquare3}
-		               titleSquare3={props.titleSquare3} altSquare1={props.altSquare1} altSquare2={props.altSquare2}
-		               altSquare3={props.altSquare3}/>
-	</div>);
+		<CarouselSlide
+			customWidth={'w-[80%]'}
+			childrenSlide1={<div>
+				<div className="slide rounded-medium overflow-hidden bg-[#F2F2F2] px-8 pt-8">
+					<Image alt={props.altSquare1} src={props.imgSquare1} className={''}/>
+				</div>
+				<p className="legend absolute !bottom-[-10px] !text-black !bg-white !h-16">{props.titleSquare1}</p>
+			</div>}
+			childrenSlide2={<div>
+				<div className="slide rounded-medium overflow-hidden bg-[#F2F2F2] px-8 pt-8">
+					<Image alt={props.altSquare2} src={props.imgSquare2} className={''}/>
+				</div>
+				<p className="legend absolute !bottom-[-10px] !text-black !bg-white !h-16">{props.titleSquare2}</p>
+			</div>}
+			childrenSlide3={
+				<div>
+					<div className="slide rounded-medium overflow-hidden bg-[#F2F2F2] px-8 pt-8">
+						<Image alt={props.altSquare3} src={props.imgSquare3} className={''}/>
+					</div>
+					<p className="legend absolute !bottom-[-10px] !text-black !bg-white !h-16">{props.titleSquare3}</p>
+				</div>}/>
+	</div>)
 	
-	
-};
+}
+
 
 export default FeatureSquare;

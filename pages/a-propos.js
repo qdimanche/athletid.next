@@ -7,6 +7,7 @@ import Timeline from "@/src/components/UI/Timeline";
 import OurTeam from "@/src/components/About/OurTeam";
 import OurValues from "@/src/components/About/OurValues";
 import Header from "@/src/components/Header/Header";
+import IconFeature from "@/src/components/UI/IconFeature";
 
 const APropos = () => {
 	
@@ -34,12 +35,12 @@ const APropos = () => {
 			/>
 			<div className={'max-w-[1024px] mx-auto'}>
 				<CircleProgressBar/>
+				<IconFeature/>
 				<Content/>
-				<OurValues/>
 				<Timeline/>
 				<OurTeam/>
+				<OurValues/>
 			</div>
-		
 		</Format>
 	
 	</>);
@@ -63,3 +64,5 @@ function Content() {
 		</div>
 	</div>)
 }
+
+
