@@ -22,8 +22,8 @@ const APropos = () => {
 		
 		<Format>
 			<Header
-				title={"Athletid t’accompagne tout au long du voyage"}
-				subtitle={"Entraîne toi avec nos applications innovantes. \n Rejoins une expérience sportive unique et un environment propice à ta réussite"}
+				title={"Construire \nune routine sportive solide et durable."}
+				subtitle={"Athletid t’accompagne à chaque étape de ton entraînement pour t’aider à bénéficier de tous les bienfaits d’une pratique sportive régulière."}
 				img={ImgHeader}
 				video={""}
 				displayVideo={"!hidden"}
