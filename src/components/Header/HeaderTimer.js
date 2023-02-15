@@ -30,7 +30,7 @@ const HeaderTimer = (props) => {
 
 		</div>
 		<div
-			className={'absolute bottom-[2.5rem] right-[2.5rem] space-x-6 z-[900] text-[1.3em] md:flex hidden'}>
+			className={'absolute bottom-[2.5rem] right-[2.5rem]  space-y-6 z-[900] text-[1.3em] md:flex flex-col hidden'}>
 			<a target={'_blank'} href="https://www.instagram.com/athletid/" rel="noreferrer"><FaInstagram
 				size={18} color={"black"}/></a>
 			<a target={'_blank'} href="https://www.linkedin.com/company/athletid/" rel="noreferrer"><FaFacebook

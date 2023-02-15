@@ -22,7 +22,7 @@ const APropos = () => {
 		
 		<Format>
 			<Header
-				title={"Construire \nune routine sportive solide et durable."}
+				title={"Construire une\n routine sportive \nsolide et durable."}
 				subtitle={"Athletid t’accompagne à chaque étape de ton entraînement pour t’aider à bénéficier de tous les bienfaits d’une pratique sportive régulière."}
 				img={ImgHeader}
 				video={""}

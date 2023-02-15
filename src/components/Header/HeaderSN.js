@@ -29,7 +29,7 @@ const Header = () => {
         </div>
         <div
           className={
-            "absolute bottom-[1.75rem] lg:right-[2.5rem] right-[1.75rem] space-x-6 z-[900]  text-[1.3em] hidden md:flex"
+            "absolute bottom-[1.75rem] lg:right-[2.5rem] right-[1.75rem] space-y-6 z-[900]  text-[1.3em] hidden md:flex flex-col"
           }
         >
           <a

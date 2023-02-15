@@ -23,7 +23,7 @@ const Header = (props) => {
 		<div style={{whiteSpace: "pre-line"}}
 		     className={'lg:mt-0 md:mt-3 absolute-vertical-center-header absolute-vertical-center-mobile-header flex flex-col justify-center md:items-start items-center  z-[3] md:p-0 px-8 md:grid lg:grid-cols-[3fr_2fr]'}>
 			<div className={`2xl:ml-28 lg:ml-20 md:ml-12`}>
-				<h1 className={`md:text-left text-center !text-${props.color} md:w-[80%] white whitespace-pre-wrap`}>
+				<h1 className={`md:text-left text-center !text-${props.color}  white whitespace-pre-wrap`}>
 					{props.title}</h1>
 				<p className={`mt-[10px] mb-[20px] !text-${props.color} md:text-left text-center md:w-3/4`}>
 					{props.subtitle}</p>
@@ -36,7 +36,7 @@ const Header = (props) => {
 			</div>
 		</div>
 		<div
-			className={'absolute bottom-[2.5rem] right-[2.5rem] space-x-6 z-[900] text-[1.3em] md:flex hidden'}>
+			className={'absolute bottom-[2.5rem] right-[2.5rem] space-y-6 z-[900] text-[1.3em] md:flex flex-col hidden'}>
 			<a target={'_blank'} href="https://www.instagram.com/athletid/" rel="noreferrer"><FaInstagram
 				color={props.color}
 				size={18}/></a>
