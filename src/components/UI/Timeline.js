@@ -25,7 +25,7 @@ const Timeline = () => {
 					<Image className={'object-cover'} src={Exemple} alt={''}/>
 				</div>
 				<div>
-					<p className={'lg:hidden block'}>Julien rejoint Lille et son club de handball et c’est ici qu’il
+					<p className={'lg:hidden block mb-12'}>Julien rejoint Lille et son club de handball et c’est ici qu’il
 						rencontre Jimmy, le préparateur physique du club. Ils ne le savent pas encore mais cette
 						rencontre va changer leur vie puisque dans quelques mois, ce sera le début d’une grande
 						aventure. </p>
@@ -50,7 +50,7 @@ const Timeline = () => {
 					<Image className={'object-cover'} src={Exemple} alt={''}/>
 				</div>
 				<div>
-					<p className={'lg:hidden block'}>3 ans après, alors que le COVID semble s’être installé durablement,
+					<p className={'lg:hidden block mb-12'}>3 ans après, alors que le COVID semble s’être installé durablement,
 						ils commencent à échanger des problèmes que rencontrent les sportifs dans leur quotidien. C’est
 						alors que leur vient une première idée… Bien loin de ce qu’est Athletid aujourd’hui. </p>
 				</div>
@@ -75,7 +75,7 @@ const Timeline = () => {
 					<Image className={'object-cover'} src={Exemple} alt={''}/>
 				</div>
 				<div>
-					<p className={'lg:hidden block'}>Après plusieurs mois de recherche, d’échange et de rencontre,
+					<p className={'lg:hidden block mb-12'}>Après plusieurs mois de recherche, d’échange et de rencontre,
 						Athletid est né. Sa mission : Aider les pratiquants de fitness, yoga et sports connexes
 						(crossfit, bodybuilding, etc.) à créer une routine durable en augmentant leur engagement
 						sportif. Comment ? En développant un univers complet combinant hardware et digital dédié à ces
@@ -101,7 +101,7 @@ const Timeline = () => {
 					<Image className={'object-cover'} src={Exemple} alt={''}/>
 				</div>
 				<div>
-					<p className={'lg:hidden block'}>Le chrono est lancé ! Quelques mésaventures plus tard, de belles
+					<p className={'lg:hidden block mb-12'}>Le chrono est lancé ! Quelques mésaventures plus tard, de belles
 						rencontres et des perspectives qui commencent à se dessiner, la première application débarque
 						sur les stores. Timer By Athletid. Enfilez votre plus belle tenue de sport et c’est parti pour
 						de nombreuses heures d’entraînement.</p>
@@ -130,7 +130,7 @@ function Date() {
 				<Image className={'object-cover'} src={Exemple} alt={''}/>
 			</div>
 			<div>
-				<p className={'lg:hidden block'}>We started off back in 2016, by the name of Rnters, as a peer-to-peer
+				<p className={'lg:hidden block mb-12'}>We started off back in 2016, by the name of Rnters, as a peer-to-peer
 					rental marketplace for all
 					kinds of items. Our intention was to be driven by data that would lead us to create personalized
 					experiences based on the most sought-after market categories.</p>
