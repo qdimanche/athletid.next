@@ -1,10 +1,7 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from 'react-responsive-carousel';
-import Image from 'next/image'
 import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
-
-
 
 export const CarouselSlide = (props) => {
 
@@ -13,8 +10,6 @@ export const CarouselSlide = (props) => {
         props.imgSquare2,
         props.imgSquare3
     ];
-
-    console.log(props.imgSquare1)
 
 
     return (

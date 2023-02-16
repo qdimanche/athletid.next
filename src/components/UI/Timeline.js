@@ -2,6 +2,8 @@ import React from 'react';
 import Image from "next/image";
 import Exemple from "../../../public/assets/images/application-athletid-reseau-professionnel.webp"
 import {VscDebugStart} from "react-icons/vsc";
+import {FiSearch} from "react-icons/fi";
+import {MdOutlineWbSunny, MdTimer} from "react-icons/md";
 
 
 const Timeline = () => {
@@ -15,14 +17,14 @@ const Timeline = () => {
 					description={"Julien rejoint Lille et son club de handball et c’est ici qu’il rencontre Jimmy, le préparateur physique du club. Ils ne le savent pas encore mais cette rencontre va changer leur vie puisque dans quelques mois, ce sera le début d’une grande aventure. "}/>
 				<Date
 					year={"2021"}
-					icon={<VscDebugStart size={22} color={"white"}/>}
+					icon={<FiSearch size={22} color={"white"}/>}
 					description={"3 ans après, alors que le COVID semble s’être installé durablement, ils commencent à échanger des problèmes que rencontrent les sportifs dans leur quotidien. C’est alors que leur vient une première idée… Bien loin de ce qu’est Athletid aujourd’hui."}/>
 				<Date
 					year={"2022"}
-					icon={<VscDebugStart size={22} color={"white"}/>}
+					icon={<MdOutlineWbSunny size={22} color={"white"}/>}
 					description={"Après plusieurs mois de recherche, d’échange et de rencontre, Athletid est né. Sa mission : Aider les pratiquants de fitness, yoga et sports connexes (crossfit, bodybuilding, etc.) à créer une routine durable en augmentant leur engagement sportif. Comment ? En développant un univers complet combinant hardware et digital dédié à ces disciplines pour suivre, analyser et partager ses activités."}/>
 				<Date year={"2023"}
-				      icon={<VscDebugStart
+				      icon={<MdTimer
 					      size={22}
 					      color={"white"}/>}
 				          description={"Le chrono est lancé ! Quelques mésaventures plus tard, de belles rencontres et des perspectives qui commencent à se dessiner, la première application débarque sur les stores. Timer By Athletid. Enfilez votre plus belle tenue de sport et c’est parti pour de nombreuses heures d’entraînement."}/>

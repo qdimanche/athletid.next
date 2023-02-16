@@ -7,8 +7,7 @@ import Image from "next/image";
 
 const AppFeature = (props) => {
     const [countTab, setCountTab] = useState(1);
-    console.log(countTab);
-
+    
     return (
         <div className={" p-4"}>
             <div className={"lg:mt-40 mt-28 lg:w-[45%]  md:w-2/3 w-full mx-auto"}>
