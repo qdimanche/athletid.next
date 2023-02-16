@@ -2,13 +2,13 @@ import Head from 'next/head'
 import FullScreenBgImage from '../src/components/UI/FullScreenBgImage'
 import MasonryGrid from '../src/components/UI/MasonryGrid'
 import ContactSupport from '../src/components/Contact/ContactSupport'
-import ImgHeaderHome from '../public/assets/images/femme-entrainement-exterieur-fitness.webp'
 import timerAppPreview from '../public/assets/images/application-athletid-entrainement-sportif.webp'
 import capteurAppPreview from '../public/assets/images/capteur-athletid-screenshot.png'
 import statistiquesApp from '../public/assets/images/statistiques-application-athletid.webp'
 import {useIntl} from 'react-intl'
 import Format from '../src/layout/format'
-import HeaderHome from '@/src/components/Header/HeaderHome'
+import Header from '@/src/components/Header/HeaderJustifySelfEnd'
+import FemmeCasqueAudio from '@/public/assets/images/femme-casque-audio.webp'
 
 export default function Home() {
     const intl = useIntl()
@@ -25,23 +25,16 @@ export default function Home() {
                 <meta property="og:type" content="website"/>
             </Head>
 
-            <HeaderHome
-                title={'Une expérience sportive unique.'}
-                subtitle={
-                    "Commence dès maintenant à te créer une routine d'entraînement durable avec nos applications et notre système de tracking."
-                }
-                img={ImgHeaderHome}
-                video={
-                    'https://res.cloudinary.com/dxplbf0t0/video/upload/v1674830882/femme-entrainement-exterieur-fitness_hvam4t.mp4'
-                }
-                link={'/timer'}
-                visibilityWhiteButton={'flex'}
-                visibilityDownloadButton={'hidden'}
-                downloadButtonvisibility={'hidden'}
-                objectPosition={'cover'}
-                color={'white'}
-            />
             <Format>
+                <Header
+                    title={'Créer une routine d’entraînement durable.'}
+                    subTitle={
+                        'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'
+                    }
+                    imageSrc={FemmeCasqueAudio}
+                    imagewidth={1080}
+                    link={'/'}
+                />
                 <FullScreenBgImage
                     src={timerAppPreview}
                     video={
