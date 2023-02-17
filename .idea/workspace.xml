@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46ce59aa-4952-4419-b4fd-bea9b646c6a1" name="Changes" comment="[+]bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderJustifySelfEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderJustifySelfEnd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676633141269</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[+]bug fix">
+      <created>1676633327830</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676633327830</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

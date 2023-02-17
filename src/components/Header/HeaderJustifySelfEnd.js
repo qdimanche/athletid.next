@@ -48,7 +48,7 @@ const HeaderJustifySelfEnd = (props) => {
       </div>
       <div
         className={
-          'absolute bottom-[2.5rem] right-[2.5rem]  space-y-6 z-[900] text-[1.3em] lg:flex flex-col hidden'
+          'absolute bottom-[1.5rem] right-[1.5rem]  space-y-6 z-[900] text-[1.3em] lg:flex flex-col hidden'
         }
       >
         <a
