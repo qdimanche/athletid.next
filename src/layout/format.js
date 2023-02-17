@@ -32,7 +32,7 @@ export default function format({ children }) {
         />
       </Head>
 
-      <div className={'max-w-[1280px] mx-4 mx-auto'}>
+      <div className={'xl:max-w-[1280px] mx-4 xl:mx-auto'}>
         <Navbar />
         <main className={'relative'}>{children}</main>
         <Footer />
