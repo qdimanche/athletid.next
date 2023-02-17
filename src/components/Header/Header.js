@@ -32,7 +32,6 @@ const Header = (props) => {
 					<Button variant={"white"} link={props.link}
 					        text={<FormattedMessage id="message.buttonDiscover"/>}/>
 				</div>
-				<DownloadApp visibility={props.downloadButtonvisibility}/>
 			</div>
 		</div>
 		<div
@@ -40,10 +39,10 @@ const Header = (props) => {
 			<a target={'_blank'} href="https://www.instagram.com/athletid/" rel="noreferrer"><FaInstagram
 				color={props.color}
 				size={18}/></a>
-			<a target={'_blank'} href="https://www.linkedin.com/company/athletid/" rel="noreferrer"><FaFacebook
+			<a target={'_blank'} href="https://www.facebook.com/TimerByAthletid" rel="noreferrer"><FaFacebook
 				color={props.color}
 				size={18}/></a>
-			<a target={'_blank'} href="https://www.facebook.com/TimerByAthletid" rel="noreferrer"><FaLinkedin
+			<a target={'_blank'} href="https://www.linkedin.com/company/athletid/" rel="noreferrer"><FaLinkedin
 				color={props.color}
 				size={18}/></a>
 		</div>
