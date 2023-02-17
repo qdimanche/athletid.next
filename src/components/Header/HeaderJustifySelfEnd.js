@@ -14,7 +14,7 @@ const HeaderJustifySelfEnd = (props) => {
       <div
         style={{ whiteSpace: 'pre-line' }}
         className={
-          'lg:mt-0 lg:mt-3 flex flex-col justify-center  z-[3] lg:p-0 px-8 md:grid md:grid-cols-[1fr_400px] lg:grid-cols-[1fr_550px] items-center'
+          'lg:mt-0 lg:mt-3 flex flex-col justify-center  z-[3] lg:p-0 px-8 md:grid md:grid-cols-[1fr_400px] lg:grid-cols-2 items-center'
         }
       >
         <div

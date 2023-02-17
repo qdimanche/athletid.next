@@ -28,7 +28,7 @@ export default function Home() {
             
             <Format>
                 <Header
-                    title={'Créer \nune routine d’entraînement durable.'}
+                    title={'Créer une routine \nd’entraînement durable.'}
                     subTitle={'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'}
                     imageSrc={ImgHeader}
                     imageWidth={1080}
