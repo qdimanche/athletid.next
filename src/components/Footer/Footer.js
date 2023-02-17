@@ -12,7 +12,7 @@ const Footer = () => {
 			
 			<Newsletter/>
 			
-			<div className={'flex flex-col relative lg:mt-0 mt-0  2xl:mx-32 lg:mx-24 md:mx-16 mx-4'}>
+			<div className={'flex flex-col relative lg:mt-0 mt-0  2xl:mx-28 lg:mx-20 md:mx-16 mx-4'}>
 				
 				<div
 					className={'lg:mt-12  pb-16 flex md:flex-row flex-col justify-between md:items-start items-center'}>

@@ -35,12 +35,7 @@ const HeaderJustifySelfEnd = (props) => {
           <div
             className={`flex md:justify-start justify-center space-x-4 ${props.visibilityButton}`}
           >
-            <Button
-              variant={'fullblack'}
-              link={props.link}
-              text={"Rejoindre la liste d'attente"}
-            />
-            <Button variant={'grey'} link={props.link} text={'Découvrir'} />
+            <Button variant={'red'} link={props.link} text={'Découvrir'} />
           </div>
         </div>
         <div className={'mx-auto lg:flex flex self-end'}>

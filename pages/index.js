@@ -7,8 +7,8 @@ import capteurAppPreview from '../public/assets/images/capteur-athletid-screensh
 import statistiquesApp from '../public/assets/images/statistiques-application-athletid.webp'
 import {useIntl} from 'react-intl'
 import Format from '../src/layout/format'
-import Header from '@/src/components/Header/Header'
-import ImgHeader from '@/public/assets/images/femme-entrainement-exterieur-fitness.webp'
+import Header from '@/src/components/Header/HeaderJustifySelfEnd'
+import ImgHeader from '@/public/assets/images/femme-casque-audio.webp'
 
 export default function Home() {
     const intl = useIntl()
@@ -26,11 +26,11 @@ export default function Home() {
             
             <Format>
                 <Header
-                    title={'Créer une routine d’entraînement durable.'}
-                    subtitle={'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'}
-                    img={ImgHeader}
-                    video={'https://res.cloudinary.com/dxplbf0t0/video/upload/v1674830882/femme-entrainement-exterieur-fitness_hvam4t.mp4'}
-                    link={'/network'}
+                    title={'Créer \nune routine d’entraînement durable.'}
+                    subTitle={'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'}
+                    imageSrc={ImgHeader}
+                    width={1080}
+                    link={'/timer'}
                     color={'white'}
                 />
                 <FullScreenBgImage
