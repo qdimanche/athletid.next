@@ -9,9 +9,11 @@ import {useIntl} from 'react-intl'
 import Format from '../src/layout/format'
 import Header from '@/src/components/Header/HeaderJustifySelfEnd'
 import ImgHeader from '@/public/assets/images/femme-casque-audio.webp'
+import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
 
 export default function Home() {
     const intl = useIntl()
+    const isMobile = useMediaQuery('(max-width: 768px)');
     
     return (<>
             <Head>
@@ -29,7 +31,8 @@ export default function Home() {
                     title={'Créer \nune routine d’entraînement durable.'}
                     subTitle={'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'}
                     imageSrc={ImgHeader}
-                    width={1080}
+                    imageWidth={1080}
+                    parentImageWidth={"400px"}
                     link={'/timer'}
                     color={'white'}
                 />

@@ -20,7 +20,7 @@ const ContactForm = (props) => {
 	const sendEmail = (e) => {
 		e.preventDefault();
 		
-		emailjs.sendForm('service_ggnf9io', 'template_uhydw28', form.current, 'g92EDi7GAjJpn8a6u')
+		emailjs.sendForm('service_tjei9r6', 'template_uhydw28', form.current, 'g92EDi7GAjJpn8a6u')
 			.then((result) => {
 				console.log(result.text);
 			}, (error) => {

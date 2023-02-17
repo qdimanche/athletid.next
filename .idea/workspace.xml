@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ce59aa-4952-4419-b4fd-bea9b646c6a1" name="Changes" comment="[+] bug fix">
+    <list default="true" id="46ce59aa-4952-4419-b4fd-bea9b646c6a1" name="Changes" comment="[+]bug fix">
+      <change afterPath="$PROJECT_DIR$/src/components/Hooks/useMediaQuery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderJustifySelfEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderJustifySelfEnd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/format.js" afterDir="false" />
     </list>
@@ -82,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676628129058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[+]bug fix">
+      <created>1676629940635</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676629940635</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
