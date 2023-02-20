@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ce59aa-4952-4419-b4fd-bea9b646c6a1" name="Changes" comment="[+]bug fix">
+    <list default="true" id="46ce59aa-4952-4419-b4fd-bea9b646c6a1" name="Changes" comment="[+]prisma seed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderJustifySelfEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderJustifySelfEnd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

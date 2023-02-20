@@ -33,7 +33,7 @@ const SocialApp = () => {
                     imageSrc={DashBoard}
                     visibilityButton={'hidden'}
                     link={'/'}
-                    imageWidth={isMobile?200 : 370}
+                    imageWidth={isMobile?300 : 370}
                     parentImageWidth={"200px"}
                     instaLink={'https://www.instagram.com/timerbyathletid/'}
                 />
