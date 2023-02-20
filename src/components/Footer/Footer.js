@@ -60,7 +60,7 @@ const Footer = () => {
           >
             <div
               className={
-                'w-full grid lg:flex grid-cols-4 gap-y-3 gap-x-4 space-x-0'
+                'w-full grid md:flex md:flex-col lg:flex-row md:items-start grid-cols-4 gap-y-3 md:gap-x-8 gap-x-4 space-x-0'
               }
             >
               <Link href={'/'}>Accueil</Link>
