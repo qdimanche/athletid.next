@@ -7,7 +7,7 @@ export default function IconFeature() {
 		className={"lg:my-40 mt-28"}
 	>
 		<div
-			className={"flex flex-col w-3/4 items-center mx-auto text-center lg:mb-12 mb-8"}
+			className={"flex flex-col lg:w-3/4 items-center mx-auto text-center lg:mb-12 mb-8"}
 		>
 			<h2 style={{whiteSpace: "pre-line"}}>Athletid,<br/>une marque engagée.</h2>
 		</div>
@@ -18,7 +18,7 @@ export default function IconFeature() {
 				<div className="">
 					<BsShieldCheck color={"black"} size={40}/>
 				</div>
-				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
+				<div className={"text-center mt-6 md:px-10 px-14  flex flex-col"}>
 					<span className={'font-semibold mb-6'}>Protection des données.</span>
 					<p style={{whiteSpace: "pre-line", textAlign: "justify", textJustify: "auto"}}
 					   className={"font-normal"}>
@@ -31,7 +31,7 @@ export default function IconFeature() {
 				<div className="">
 					<BiRecycle color={"black"} size={40}/>
 				</div>
-				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
+				<div className={"text-center mt-6 md:px-10 px-14 flex flex-col"}>
 					<span className={'font-semibold mb-6'}>Conception de nos produits.</span>
 					<p style={{whiteSpace: "pre-line", textAlign: "justify", textJustify: "auto"}}
 					   className={"font-normal"}>
@@ -44,7 +44,7 @@ export default function IconFeature() {
 				<div className="">
 					<BiDonateHeart color={"black"} size={40}/>
 				</div>
-				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
+				<div className={"text-center mt-6 md:px-10 px-14 flex flex-col"}>
 					<span className={'font-semibold mb-6'}>Agir <br/>pour tous. <br/></span>
 					<p style={{whiteSpace: "pre-line", textAlign: "justify", textJustify: "auto"}}
 					   className={"font-normal"}>
@@ -59,7 +59,7 @@ export default function IconFeature() {
 				<div className="">
 					<BsShieldCheck color={"black"} size={40}/>
 				</div>
-				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
+				<div className={"text-center mt-6 md:px-10 px-14 flex flex-col"}>
 					<span className={'font-semibold mb-6'}>Protection des données.</span>
 					<p style={{whiteSpace: "pre-line", textAlign: "justify", textJustify: "auto"}}
 					   className={"font-normal"}>
@@ -72,7 +72,7 @@ export default function IconFeature() {
 				<div className="">
 					<BiRecycle color={"black"} size={40}/>
 				</div>
-				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
+				<div className={"text-center mt-6 md:px-10 px-14 flex flex-col"}>
 					<span className={'font-semibold mb-6'}>Conception de nos produits.</span>
 					<p style={{whiteSpace: "pre-line", textAlign: "justify", textJustify: "auto"}}
 					   className={"font-normal"}>
@@ -85,7 +85,7 @@ export default function IconFeature() {
 				<div className="">
 					<BiDonateHeart color={"black"} size={40}/>
 				</div>
-				<div className={"text-center mt-6 md:px-10 flex flex-col"}>
+				<div className={"text-center mt-6 md:px-10 px-14 flex flex-col"}>
 					<span className={'font-semibold mb-6'}>Agir <br/>pour tous. <br/></span>
 					<p style={{whiteSpace: "pre-line", textAlign: "justify", textJustify: "auto"}}
 					   className={"font-normal"}>

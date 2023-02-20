@@ -34,6 +34,7 @@ export default function Home() {
                     imageWidth={1080}
                     parentImageWidth={"400px"}
                     link={'/timer'}
+                    instaLink={'https://www.instagram.com/athletid/'}
                     color={'white'}
                 />
                 <FullScreenBgImage

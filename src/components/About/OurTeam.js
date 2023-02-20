@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import Exemple from '../../../public/assets/images/utilisateur-athletid.webp'
+import Julien from '../../../public/assets/images/julien-nivaud.webp'
+import Jimmy from '../../../public/assets/images/jimmy-mabillon.webp'
+import Quentin from '../../../public/assets/images/quentin-dimanche.webp'
+import Noe from '../../../public/assets/images/noe-chague.webp'
 
 const OurTeam = () => {
   return (
@@ -13,16 +16,16 @@ const OurTeam = () => {
       >
         <div className={'space-y-4'}>
           <div className={'aspect-square rounded-[10px] overflow-hidden'}>
-            <Image src={Exemple} alt={''} className={''} />
+            <Image src={Julien} alt={''} className={''} />
           </div>
           <div className={'space-y-2'}>
             <h4>Julien Nivaud</h4>
-            <p className={'!leading-6'}>Co-Founder & CEO</p>
+            <p className={'!leading-6'}>Directeur</p>
           </div>
         </div>
         <div className={'space-y-4'}>
           <div className={'aspect-square rounded-[10px] overflow-hidden'}>
-            <Image src={Exemple} alt={''} className={''} />
+            <Image src={Jimmy} alt={''} className={''} />
           </div>
           <div className={'space-y-2'}>
             <h4>Jimmy Mabillon</h4>
@@ -31,7 +34,7 @@ const OurTeam = () => {
         </div>
         <div className={'space-y-4'}>
           <div className={'aspect-square rounded-[10px] overflow-hidden'}>
-            <Image src={Exemple} alt={''} className={''} />
+            <Image src={Quentin} alt={''} className={''} />
           </div>
           <div className={'space-y-2'}>
             <h4>Quentin Dimanche</h4>
@@ -40,7 +43,7 @@ const OurTeam = () => {
         </div>
         <div className={'space-y-4'}>
           <div className={'aspect-square rounded-[10px] overflow-hidden'}>
-            <Image src={Exemple} alt={''} className={''} />
+            <Image src={Noe} alt={''} className={''} />
           </div>
           <div className={'space-y-2'}>
             <h4>Noé Chagué</h4>

@@ -35,6 +35,7 @@ const SocialApp = () => {
                     link={'/'}
                     imageWidth={isMobile?200 : 370}
                     parentImageWidth={"200px"}
+                    instaLink={'https://www.instagram.com/timerbyathletid/'}
                 />
                 <AppFeature/>
                 <FeatureSquare

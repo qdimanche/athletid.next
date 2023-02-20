@@ -38,7 +38,9 @@ const HeaderJustifySelfEnd = (props) => {
             <Button variant={'red'} link={props.link} text={'Découvrir'} />
           </div>
         </div>
-        <div className={`mx-auto lg:flex justify-center flex self-end lg:w-full lg:mt-0 md:mt-8 mt-0`}>
+        <div
+          className={`mx-auto lg:flex justify-center flex self-end lg:w-full lg:mt-0 md:mt-8 mt-0`}
+        >
           <Image
             src={props.imageSrc}
             width={props.imageWidth}
@@ -53,21 +55,21 @@ const HeaderJustifySelfEnd = (props) => {
       >
         <a
           target={'_blank'}
-          href="https://www.instagram.com/athletid/"
+          href={props.instaLink}
           rel="noreferrer"
         >
           <FaInstagram size={18} color={'black'} />
         </a>
         <a
           target={'_blank'}
-          href="https://www.linkedin.com/company/athletid/"
+          href="https://www.facebook.com/TimerByAthletid"
           rel="noreferrer"
         >
           <FaFacebook size={18} color={'black'} />
         </a>
         <a
           target={'_blank'}
-          href="https://www.facebook.com/TimerByAthletid"
+          href="https://www.linkedin.com/company/athletid/"
           rel="noreferrer"
         >
           <FaLinkedin size={18} color={'black'} />
