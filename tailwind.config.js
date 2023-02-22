@@ -16,13 +16,14 @@ module.exports = {
         extend: {
             colors: {
                 'timeRed': '#E63D31',
+                'greyShade' : '#F7F7F7',
                 'timeRedHover' : '#D93A2F',
                 'blackShade' : '#242629',
                 'almostBlack' : '#25282B'
             },
             borderRadius: {
                 'medium': '30px'
-            }
+            },
         },
     },
     plugins: [

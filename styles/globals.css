@@ -214,6 +214,11 @@ html, .heightfix-ios {
     height: -webkit-fill-available !important;
 }
 
+.drop-shadow-custom {
+    --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.5));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 
 /*Responsive*/
 
