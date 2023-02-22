@@ -71,7 +71,7 @@ function FirstElement () {
                     'w-full relative flex md:justify-end justify-center md:items-end md:mr-8 lg:mr-12 '
                 }
             >
-                <div className={'md:translate-y-0 translate-y-10'}>
+                <div className={'md:translate-y-0 translate-y-10 pt-40'}>
                     <Image className={'drop-shadow-custom w-fit'} src={TimerDashboard} width={isMobile ? 150 : 300} alt={''}/>
                 </div>
             </div>
