@@ -36,7 +36,7 @@ export default function format({ children }) {
 
       </div>
       <Navbar />
-      <div className={'2xl:mx-0 mx-4'}>
+      <div className={'mx-4'}>
         <main className={'relative'}>{children}</main>
       </div>
       <Footer/>

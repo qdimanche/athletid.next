@@ -10,11 +10,13 @@ import Format from '../src/layout/format'
 import Header from '@/src/components/Header/HeaderJustifySelfEnd'
 import ImgHeader from '@/public/assets/images/femme-casque-audio.webp'
 import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
+import GridLayout from "@/src/components/Home/GridLayout";
+import GridLayout2 from "@/src/components/Home/GridLayout2";
 
 export default function Home() {
-    const intl = useIntl()
-    const isMobile = useMediaQuery('(max-width: 768px)');
-    
+    const isLargeScreen = useMediaQuery('(min-width: 1024px) and (max-width: 1280px)')
+    const isXLScreen = useMediaQuery('(min-width: 1280px)')
+
     return (<>
             <Head>
                 <title>Athletid</title>
@@ -31,30 +33,16 @@ export default function Home() {
                     title={'Créer une routine \nd’entraînement durable.'}
                     subTitle={'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'}
                     imageSrc={ImgHeader}
-                    imageWidth={1080}
+                    imageWidth={isXLScreen ? 600 : isLargeScreen ? 550 : 400}
                     parentImageWidth={"400px"}
                     link={'/timer'}
                     instaLink={'https://www.instagram.com/athletid/'}
                     color={'white'}
                 />
-                <FullScreenBgImage
-                    src={timerAppPreview}
-                    video={'https://res.cloudinary.com/dxplbf0t0/video/upload/v1674831668/application-timer-athletid-fonctionnalites_mszyz3.mp4'}
-                    title={"Bien plus qu'un \nsimple timer."}
-                    tag={'Bientôt disponible'}
-                    subtitle={'Paramètre ton entraînement et laisse-toi guider. Enchaîne tes exercices l’esprit libre et respecte chaque seconde pour te rapprocher un peu plus de ton objectif.'}
-                    link={'/timer'}
-                />
-                <FullScreenBgImage
-                    src={capteurAppPreview}
-                    video={'https://res.cloudinary.com/dxplbf0t0/video/upload/v1675439914/captor_erchao.mp4'}
-                    title={'Objets connectés. \nApplication.'}
-                    button={'hidden'}
-                    subtitle={"Nous voulons permettre aux adeptes de fitness, yoga et sports connexes de progresser et d'atteindre leurs objectifs.\n" + 'Pour cela nous développons un univers unique et dédié à ces disciplines.'}
-                    tag={'À venir'}
-                    idSection={'networkHeader'}
-                    link={'/'}
-                />
+                <div className={'max-w-[1024px] 2xl:max-w-[1280px] mx-auto'}>
+                    <GridLayout/>
+                    <GridLayout2/>
+                </div>
                 <MasonryGrid
                     titleMasonry={'Accompagner.\n Innover. Progresser.'}
                     subTitleMasonry={'Construisons ensemble l’univers qui vous propulsera vers vos objectifs.'}

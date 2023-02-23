@@ -9,17 +9,17 @@ const HeaderJustifySelfEnd = (props) => {
 
     return (
         <header
-            className={`lg:h-[90vh] md:min-h-[60vh] min-h-[40vh] relative  overflow-hidden flex rounded-[30px] justify-center lg:justify-start rounded-header-mobile-tablet safari-overflow-fix mt-4 bg-[#F5F4F5]`}
+            className={`lg:h-[95vh] md:min-h-[60vh] min-h-[40vh] relative  overflow-hidden flex rounded-[30px] justify-center lg:justify-start rounded-header-mobile-tablet safari-overflow-fix mt-4 bg-[#F5F4F5]`}
         >
             <div
                 style={{whiteSpace: 'pre-line'}}
                 className={
-                    'lg:mt-0 lg:mt-3 flex flex-col justify-center  z-[3] lg:p-0 md:grid md:grid-cols-[1fr_400px] lg:grid-cols-2 items-center'
+                    'lg:mt-0 lg:mt-3 flex flex-col justify-center  z-[3] lg:p-0 items-center max-w-[1024px] 2xl:max-w-[1280px] mx-auto'
                 }
             >
                 <div
                     className={
-                        '2xl:ml-28 lg:ml-20 lg:ml-12 flex flex-col md:items-start items-center lg:pt-0 pt-16 md:pb-16 pb-8 px-8'
+                        'md:w-[55%] mr-auto lg:pt-0 pt-16 md:pb-16 pb-8 xl:pl-0 md:pl-8 md:pr-0 px-4'
                     }
                 >
                     <h1
@@ -38,15 +38,11 @@ const HeaderJustifySelfEnd = (props) => {
                         <Button variant={'red'} link={props.link} text={'Découvrir'}/>
                     </div>
                 </div>
-                <div
-                    className={`mx-auto lg:flex justify-center flex self-end lg:w-full lg:mt-0 md:mt-8 mt-0`}
-                >
-                    <Image
-                        src={props.imageSrc}
-                        width={props.imageWidth}
-                        className={`pointer-events-none lg:block`}
-                    />
-                </div>
+                <Image
+                    src={props.imageSrc}
+                    width={props.imageWidth}
+                    className={`md:absolute md:right-0 2xl:right-32 md:bottom-0`}
+                />
             </div>
             <div
                 className={

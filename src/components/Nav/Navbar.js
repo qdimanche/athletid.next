@@ -19,7 +19,7 @@ const Navbar = (props) => {
   return (
     <div
       className={
-        'flex fixed justify-between z-[999] w-screen lg:!py-[30px] px-12 py-4  top-0 '
+        'flex fixed justify-between z-[999] w-screen lg:!py-[30px] max-w-[1024px] 2xl:max-w-[1280px] lg:left-1/2 lg:transform lg:-translate-x-1/2 py-4  top-0 lg:px-0 px-8'
       }
     >
       <div>
