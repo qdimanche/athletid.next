@@ -45,12 +45,12 @@ function FirstCard() {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col lg:flex-row  relative'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col justify-between lg:flex-row  relative  h-[450px] md:h-[500px] p-4 lg:p-8 lg:pb-8 pb-0'
             }
         >
             <div
                 className={
-                    'px-4 pt-4 pb-8 flex md:items-start md:flex-col md:justify-between  lg:p-8'
+                    'flex md:items-start md:flex-col md:justify-between '
                 }
             >
                 <div className={'flex flex-col md:justify-between justify-center'}>
@@ -72,14 +72,13 @@ function FirstCard() {
             </div>
             <div
                 className={
-                    'flex lg:justify-end md:justify-start justify-center lg:items-end lg:mr-8 lg:ml-0 md:mx-4'
+                    'lg:justify-end  md:justify-start justify-center lg:mt-0 mt-4  h-full lg:h-full md:h-[180px] md:max-w-full max-w-[300px] w-full max-w-[300px] lg:w-[250px]  relative mx-auto lg:absolute lg:bottom-0 lg:right-8'
                 }
             >
-
                 <Image
-                    className={'drop-shadow-custom md:px-0 px-4 -mt-16 translate-y-16 lg:-mt-8 lg:translate-y-8 lg:absolute'}
+                    className={'drop-shadow-custom md:px-0 lg:object-contain object-cover object-top lg:object-bottom'}
                     src={TimerDashboard}
-                    width={isMobile ? 330 : 250}
+                    layout={'fill'}
                     alt={''}/>
             </div>
         </div>
@@ -91,21 +90,26 @@ function SecondCard() {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col h-[450px] md:h-[500px] p-4 lg:p-8 lg:pr-0 lg:pt-0 pr-0 pt-0'
             }
         >
-            <div
-                className={'lg:-mb-12 lg:-translate-y-12 -mb-16 -translate-y-16 flex justify-end'}>
-                <Image className={'drop-shadow-custom lg:pl-8 pl-8'} src={TimerDashboardBottom}
-                       width={330} alt={''}/>
+            <div className={'w-full flex justify-end h-full md:h-[275px] mb-4 md:ml-8 ml-4'}>
+                <div
+                    className={'h-full md:h-full md:max-w-full max-w-[300px] lg:max-w-[500px] w-full relative'}>
+                    <Image
+                        className={'drop-shadow-custom md:px-0 object-cover object-left-bottom'}
+                        src={TimerDashboardBottom}
+                        layout={'fill'}
+                        alt={''}/>
+                </div>
             </div>
             <div
                 className={
-                    'lg:p-8 p-4 lg:pt-8 flex md:flex-col lg:py-8'
+                    'flex md:flex-col'
                 }
             >
                 <div className={'space-y-4 flex flex-col md:justify-between '}>
-                    <div className={' md:mb-4 flex flex-col items-center'}>
+                    <div className={'flex flex-col items-center'}>
                         <h3 className={'md:text-left'}>
                             Lorem ipsum dolor sit amet.
                         </h3>
@@ -118,20 +122,17 @@ function SecondCard() {
         </div>
     )
 }
-
 function ThirdCard() {
-
-    const isMobile = useMediaQuery('(max-width: 768px)')
 
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col justify-between'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col lg:justify-between h-[450px] md:h-[500px] p-4 lg:p-8 lg:pr-0 lg:pb-0 pr-0 lg:pb-0 pb-0'
             }
         >
             <div
                 className={
-                    'lg:p-8 p-4 lg:pt-8 flex md:flex-col lg:py-8'
+                    'flex md:flex-col'
                 }
             >
                 <div className={'space-y-4 flex flex-col md:justify-between '}>
@@ -145,10 +146,15 @@ function ThirdCard() {
                     </div>
                 </div>
             </div>
-            <div
-                className={'flex justify-end'}>
-                <Image className={'drop-shadow-custom lg:pl-8 pl-8'} src={TimerDashboardDiagonal}
-                       width={330} alt={''}/>
+            <div className={'w-full flex justify-end md:h-[275px] h-full lg:mt-0 mt-4'}>
+                <div
+                    className={'h-full md:h-full md:max-w-full max-w-[350px] w-full relative'}>
+                    <Image
+                        className={'drop-shadow-custom md:px-0 object-cover object-left-top md:object-left-bottom'}
+                        src={TimerDashboardDiagonal}
+                        layout={'fill'}
+                        alt={''}/>
+                </div>
             </div>
         </div>
     )

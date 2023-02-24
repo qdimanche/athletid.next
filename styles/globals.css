@@ -33,14 +33,9 @@
 
 
 body {
-    background-color: white;
+    background-color: #F7F7F7;
     color: black;
     min-height: -webkit-fill-available !important;
-}
-
-
-html {
-    height: -webkit-fill-available !important;
 }
 
 
@@ -215,7 +210,7 @@ html, .heightfix-ios {
 }
 
 .drop-shadow-custom {
-    --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.5));
+    --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.3));
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import FullScreenBgImage from '@/src/components/UI/FullScreenBgImage'
 import ApcoFeatures from '@/public/assets/images/apco-features-fullscreen.webp'
-import ApcoFeaturesMobile from '@/public/assets/images/apco-features-fullscreen-bg.webp'
+import ApcoFeaturesMobile from '@/public/assets/images/apco-features-fullscreen-mobile.webp'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
-import CaptorMockup from '@/public/assets/images/captor-mockup.webp'
+import Captor from '@/public/assets/images/captor.webp'
 import ApcoRockBackground from '@/public/assets/images/apco-rock-background.webp'
 
 
@@ -29,6 +29,7 @@ const GridLayout2 = () => {
                     className={'md:col-span-2'}
                     link={'/timer'}
                     textColor={'white'}
+                    objectPosition={'md:object-right-bottom '}
                     srcBg={isMobile ? ApcoFeaturesMobile : ApcoFeatures}
                     srcMockup={TimerDashboard}
                     imageHeight={800}
@@ -38,11 +39,11 @@ const GridLayout2 = () => {
                     link={'/timer'}
                     textColor={'black'}
                     tag={'hidden'}
-                    bgColor={'bg-greyShade'}
-                    srcMockup={CaptorMockup}
+                    srcBg={Captor}
                     imageHeight={800}
                     mockupDisplay={'!block'}
                     paragraphWidth={'w-2/3'}
+                    objectPosition={'md:object-center  '}
                 />
                 <FullScreenBgImage
                     link={'/timer'}
@@ -53,6 +54,7 @@ const GridLayout2 = () => {
                     mockupDisplay={'!hidden'}
                     imageHeight={800}
                     paragraphWidth={'w-2/3'}
+                    objectPosition={'md:object-center '}
                 />
             </div>
         </div>

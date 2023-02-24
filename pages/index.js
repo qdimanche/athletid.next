@@ -33,13 +33,13 @@ export default function Home() {
                     title={'Créer une routine \nd’entraînement durable.'}
                     subTitle={'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'}
                     imageSrc={ImgHeader}
-                    imageWidth={isXLScreen ? 600 : isLargeScreen ? 550 : 400}
+                    imageWidth={isXLScreen ? 700 : 500}
                     parentImageWidth={"400px"}
                     link={'/timer'}
                     instaLink={'https://www.instagram.com/athletid/'}
                     color={'white'}
                 />
-                <div className={'max-w-[1024px] 2xl:max-w-[1280px] mx-auto'}>
+                <div className={ 'px-4 lg:px-0 container mx-auto'}>
                     <GridLayout/>
                     <GridLayout2/>
                 </div>
@@ -47,7 +47,6 @@ export default function Home() {
                     titleMasonry={'Accompagner.\n Innover. Progresser.'}
                     subTitleMasonry={'Construisons ensemble l’univers qui vous propulsera vers vos objectifs.'}
                 />
-                <ContactSupport src={statistiquesApp}/>
             </Format>
         </>)
 }

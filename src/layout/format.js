@@ -32,14 +32,11 @@ export default function format({ children }) {
         />
       </Head>
 
-      <div className={"2xl:mx-auto 2xl:max-w-[1536px]"}>
-
-      </div>
+      <div className={'2xl:mx-auto 2xl:max-w-[1536px]'}></div>
       <Navbar />
-      <div className={'mx-4'}>
-        <main className={'relative'}>{children}</main>
-      </div>
-      <Footer/>
+      <main className={'relative'}>{children}</main>
+
+      <Footer />
       <Consent />
     </>
   )

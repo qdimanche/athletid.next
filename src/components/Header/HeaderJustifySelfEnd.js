@@ -9,17 +9,17 @@ const HeaderJustifySelfEnd = (props) => {
 
     return (
         <header
-            className={`lg:h-[95vh] md:min-h-[60vh] min-h-[40vh] relative  overflow-hidden flex rounded-[30px] justify-center lg:justify-start rounded-header-mobile-tablet safari-overflow-fix mt-4 bg-[#F5F4F5]`}
+            className={`lg:min-h-[95vh] md:min-h-[60vh] min-h-[40vh] relative  overflow-hidden flex lg:rounded-medium justify-center lg:justify-start bg-greyShade lg:m-4`}
         >
             <div
                 style={{whiteSpace: 'pre-line'}}
                 className={
-                    'lg:mt-0 lg:mt-3 flex flex-col justify-center  z-[3] lg:p-0 items-center max-w-[1024px] 2xl:max-w-[1280px] mx-auto'
+                    'lg:mt-0 lg:mt-3 flex md:flex-row flex-col justify-center  z-[3] lg:p-0 items-center container mx-auto'
                 }
             >
                 <div
                     className={
-                        'md:w-[55%] mr-auto lg:pt-0 pt-16 md:pb-16 pb-8 xl:pl-0 md:pl-8 md:pr-0 px-4'
+                        'md:w-[45%] xl:w-[50%] mr-auto pt-28 md:pt-28 md:pr-8 md:pl-0 md:py-16 p-8'
                     }
                 >
                     <h1
@@ -38,11 +38,13 @@ const HeaderJustifySelfEnd = (props) => {
                         <Button variant={'red'} link={props.link} text={'Découvrir'}/>
                     </div>
                 </div>
-                <Image
-                    src={props.imageSrc}
-                    width={props.imageWidth}
-                    className={`md:absolute md:right-0 2xl:right-32 md:bottom-0`}
-                />
+                <div className={'min-h-[500px] lg:min-h-[90vh]  w-[500px] md:w-1/2  md:absolute md:bottom-0 md:right-0 relative'}>
+                    <Image
+                        src={props.imageSrc}
+                        layout={'fill'}
+                        className={`object-cover object-left-top  md:right-0 md:bottom-0`}
+                    />
+                </div>
             </div>
             <div
                 className={
