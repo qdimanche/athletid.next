@@ -9,17 +9,17 @@ const HeaderJustifySelfEnd = (props) => {
 
     return (
         <header
-            className={`lg:min-h-[95vh] md:min-h-[60vh] min-h-[40vh] relative  overflow-hidden flex lg:rounded-medium justify-center lg:justify-start bg-greyShade lg:m-4`}
+            className={`lg:min-h-[95vh] md:min-h-[60vh] min-h-[40vh] relative  overflow-hidden flex md:rounded-medium justify-center lg:justify-start bg-greyShade md:m-8`}
         >
             <div
                 style={{whiteSpace: 'pre-line'}}
                 className={
-                    'lg:mt-0 lg:mt-3 flex md:flex-row flex-col justify-center  z-[3] lg:p-0 items-center container mx-auto'
+                    'lg:mt-0 lg:mt-3 flex md:flex-row flex-col justify-center  z-[3] lg:p-0 items-center max-w-[1280px] mx-auto'
                 }
             >
                 <div
                     className={
-                        'md:w-[45%] xl:w-[50%] mr-auto pt-28 md:pt-28 md:pr-8 md:pl-0 md:py-16 p-8'
+                        'md:w-[45%] xl:w-[50%] mr-auto pt-28 md:pt-28 md:pr-8 md:py-16 2xl:p-0 p-8'
                     }
                 >
                     <h1

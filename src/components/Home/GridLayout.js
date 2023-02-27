@@ -45,7 +45,7 @@ function FirstCard() {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col justify-between lg:flex-row  relative  h-[450px] md:h-[500px] p-4 lg:p-8 lg:pb-8 pb-0'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col justify-between lg:flex-row  relative  h-[450px] p-4 pb-0 md:p-8 lg:pb-8'
             }
         >
             <div
@@ -90,7 +90,7 @@ function SecondCard() {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col h-[450px] md:h-[500px] p-4 lg:p-8 lg:pr-0 lg:pt-0 pr-0 pt-0'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col h-[450px] p-4 md:p-8 md:pr-0 md:pt-0 pr-0 pt-0'
             }
         >
             <div className={'w-full flex justify-end h-full md:h-[275px] mb-4 md:ml-8 ml-4'}>
@@ -127,7 +127,7 @@ function ThirdCard() {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col lg:justify-between h-[450px] md:h-[500px] p-4 lg:p-8 lg:pr-0 lg:pb-0 pr-0 lg:pb-0 pb-0'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col lg:justify-between h-[450px] p-4 md:p-8 md:pr-0 md:pb-0 pr-0 md:pb-0 pb-0'
             }
         >
             <div

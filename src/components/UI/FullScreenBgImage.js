@@ -8,7 +8,7 @@ const FullScreenBgImage = ({className, ...props}) => {
     return (
         <div
             className={clsx(
-                `rounded-medium overflow-hidden relative  h-[450px] md:h-[500px] relative`,
+                `rounded-medium overflow-hidden relative  h-[450px] relative`,
                 className
             )}
         >

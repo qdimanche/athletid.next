@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../UI/Button";
 import Image from 'next/image'
+import StatistiquesApplication from "@/public/assets/images/statistiques-application-athletid.webp";
 
 const ContactSupport = (props, ref) => {
     return (
@@ -31,10 +32,10 @@ const ContactSupport = (props, ref) => {
                 </div>
             </div>
             <div className={"order-2 md:mb-0 mb-4"}>
-                <Image placeholder={"blur"}
+                <Image
                     alt={"Différentes étapes de construction de l'application Athletid Network"}
                     className={"self-end lg:w-[80%] w-full mx-auto"}
-                    src={props.src}
+                    src={StatistiquesApplication}
                 />
             </div>
         </div>

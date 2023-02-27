@@ -36,11 +36,11 @@ const Navbar = (props) => {
 
     return (
         <div
-            className={`fixed z-[999]  px-8 py-5 top-0 left-1/2 transform -translate-x-1/2 w-screen ${
+            className={`fixed z-[999] md:px-16 px-8 py-5 top-0 left-1/2 transform -translate-x-1/2 w-screen ${
                 scrollDown ? 'bg-[#F7F7F7] opacity-100 transition duration-300' : 'bg-transparent transition duration-300'
             }`}
         >
-            <div className={'container mx-auto flex justify-between'}>
+            <div className={'max-w-[1280px] mx-auto flex justify-between'}>
                 <div>
                     <Link href="/" className={`flex space-x-2 items-center z-[999]`}>
                         <Logo width={32} id={'test'} alt=""/>
