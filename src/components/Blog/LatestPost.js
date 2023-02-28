@@ -37,9 +37,9 @@ export default LatestPost;
 
 
 const Post = ({data, imageHeight, marginTopAuthor, authorDisplay, marginYCategory, titleFontSize}) => {
-	const {title, category, img, published, author} = data;
+	const {title, category, img, published, author, slug} = data;
 	
-	return (<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}>
+	return (<Link href={`/posts/${slug}`}>
 			<div className={"rounded-medium md:p-6 p-4 shadow-medium hover:shadow-mediumHover duration-300 h-full"}>
 				<div className="images">
 					

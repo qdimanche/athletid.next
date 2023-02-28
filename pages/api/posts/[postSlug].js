@@ -1,12 +1,12 @@
 import data from "@/pages/api/data";
 
 export default function handler(req, res) {
-	const {postTitle} = req.query;
+	const {postSlug} = req.query;
 	const {Posts} = data;
 	
-	if(postTitle){
+	if(postSlug){
 		const post = Posts.find(value => {
-			return value.title.replace(/\s+/g, '-').toLowerCase() === postTitle;
+			return value.slug === postSlug;
 		})
 		return res.status(200).json(post);
 	}

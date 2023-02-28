@@ -39,8 +39,8 @@ export default HeaderBlog;
 
 
 function Slide({data}) {
-	const {title, description, category, img, published} = data;
-	return (<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}>
+	const {title, description, category, img, published, slug} = data;
+	return (<Link href={`/posts/${slug}`}>
 		<div className={'grid md:grid-cols-2 gap-10'}>
 			<div className={'image'}>
 				<Image alt={""} width={600} height={600}
@@ -57,7 +57,7 @@ function Slide({data}) {
 					{title || "Titre"}
 				</div>
 				<div className={'mb-8 text-xl'}>{truncate(description || "Aucune description", 34)}</div>
-				<Button variant={'black'} link={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}
+				<Button variant={'black'} link={`/posts/${slug}`}
 				        text={"Découvrir"}/>
 			</div>
 		</div>

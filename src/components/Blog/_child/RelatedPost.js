@@ -30,8 +30,8 @@ const RelatedPost = () => {
 export default RelatedPost;
 
 function Post({data}) {
-	const {title, category, published, author} = data;
-	return (<Link href={`/posts/${title.replace(/\s+/g, '-').toLowerCase()}`}>
+	const {title, category, published, author, slug} = data;
+	return (<Link href={`/posts/${slug}`}>
 		<div className={"rounded-medium md:p-6 p-4 shadow-medium hover:shadow-mediumHover duration-300 h-full"}>
 			<div className="images">
 				<div className={`w-full relative overflow-hidden h-[200px]`}>

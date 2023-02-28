@@ -21,8 +21,8 @@ export default function Page({fallback}) {
 	
 	
 	const router = useRouter()
-	const {postTitle} = router.query
-	const {data, isLoading, isError} = fetcher(`api/posts/${postTitle}`);
+	const {postSlug} = router.query
+	const {data, isLoading, isError} = fetcher(`api/posts/${postSlug}`);
 	
 	if (isLoading) return <Spinner></Spinner>
 	if (isError) return <ErrorComponent></ErrorComponent>
@@ -96,7 +96,7 @@ function Article({title, img, author, description, published, category}) {
 
 
 export async function getStaticProps({params}) {
-	const posts = await getPost(params.postTitle);
+	const posts = await getPost(params.postSlug);
 	
 	return {
 		props: {
@@ -113,7 +113,7 @@ export async function getStaticPaths() {
 	const paths = posts.map(value => {
 		return {
 			params: {
-				postTitle: value.title.replace(/\s+/g, '-').toLowerCase()
+				postSlug: value.slug
 			}
 		}
 	})

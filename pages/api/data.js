@@ -2,6 +2,7 @@ export default {
 	Trending: [{
 		id: 1,
 		title: "Les bienfaits du chocolats Les bienfaits du chocolats Les bienfaits du chocolats",
+		slug: "les-bienfaits-du-chocolats-les-bienfaits-du-chocolats-les-bienfaits-du-chocolats",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Nutrition",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -48,6 +49,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 2,
 		title: "test",
+		slug : "test",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -61,6 +63,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 		}
 	}, {
 		id: 3,
+		slug : "test",
 		title: "Your most unhappy customers are your greatest source of learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
@@ -76,6 +79,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 4,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug : "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -90,6 +94,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 5,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug : "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -105,6 +110,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 6,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -120,6 +126,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 7,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -138,6 +145,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	], Posts: [{
 		id: 1,
 		title: "Les bienfaits du chocolat Les bienfaits du chocolats",
+		slug: "les-bienfaits-du-chocolat",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Nutrition ",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -182,6 +190,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 2,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -210,6 +219,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 3,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -238,6 +248,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 4,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -266,6 +277,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 5,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -294,6 +306,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 6,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -322,6 +335,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	},], Popular: [{
 		id: 1,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slugs: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -336,6 +350,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 2,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -350,6 +365,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 3,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -364,6 +380,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 4,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
@@ -378,6 +395,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
 	}, {
 		id: 5,
 		title: "Your most unhappy customers are your greatest source of learning",
+		slug: "your-most-unhappy-customers-are-your-greatest-source-of-learning",
 		subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		category: "Business, Travel",
 		img: "/assets/images/application-athletid-reseau-professionnel.webp",
