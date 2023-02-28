@@ -2,10 +2,8 @@ import React, {useEffect, useState} from 'react'
 import Link from 'next/link'
 import Button from '../UI/Button'
 import HamburgerMenu from './Burger'
-import Logo from '../../../public/assets/images/logo-athletid.svg'
-import TextLogo from '../../../public/assets/images/text-logo.svg'
+import Image from 'next/image'
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
-import {useInView} from "react-intersection-observer";
 
 const Navbar = (props) => {
     const [click, setClick] = useState(false)
@@ -36,15 +34,20 @@ const Navbar = (props) => {
 
     return (
         <div
-            className={`fixed z-[999] md:px-16 px-8 py-5 top-0 left-1/2 transform -translate-x-1/2 w-screen ${
-                scrollDown ? 'bg-[#F7F7F7] opacity-100 transition duration-300' : 'bg-transparent transition duration-300'
+            className={`fixed z-[999] md:px-12 px-8  w-screen transition duration-1000 py-5 ${
+                scrollDown ? 'opacity-animation' : ''
             }`}
         >
             <div className={'max-w-[1280px] mx-auto flex justify-between'}>
                 <div>
                     <Link href="/" className={`flex space-x-2 items-center z-[999]`}>
-                        <Logo width={32} id={'test'} alt=""/>
-                        <TextLogo className={'hidden lg:block translate-y-0'} alt=""/>
+                        <Image
+                            src={'/assets/images/black-logo-athletid.svg'}
+                            width={110}
+                            height={40}
+                            id={'test'}
+                            alt=""
+                        />
                     </Link>
                 </div>
 

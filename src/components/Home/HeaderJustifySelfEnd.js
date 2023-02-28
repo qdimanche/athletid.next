@@ -9,7 +9,7 @@ const HeaderJustifySelfEnd = (props) => {
 
     return (
         <header
-            className={`lg:min-h-[95vh] md:min-h-[60vh] min-h-[40vh] relative  overflow-hidden flex md:rounded-medium justify-center lg:justify-start bg-greyShade md:m-8`}
+            className={`header-height relative  overflow-hidden flex md:rounded-medium justify-center lg:justify-start bg-greyShade lg:m-4 md:mt-4 mt-0`}
         >
             <div
                 style={{whiteSpace: 'pre-line'}}
@@ -19,7 +19,7 @@ const HeaderJustifySelfEnd = (props) => {
             >
                 <div
                     className={
-                        'md:w-[45%] xl:w-[50%] mr-auto pt-28 md:pt-28 md:pr-8 md:py-16 2xl:p-0 p-8'
+                        'md:w-[45%] xl:w-[50%] md:mr-auto pt-28 md:pt-28 md:pr-8 md:py-16 xl:p-0 p-8 w-screen'
                     }
                 >
                     <h1
@@ -32,16 +32,19 @@ const HeaderJustifySelfEnd = (props) => {
                     >
                         {props.subTitle}
                     </p>
-                    <div
-                        className={`flex md:justify-start justify-center space-x-4 ${props.visibilityButton}`}
-                    >
+                    <div className={`flex md:justify-start justify-center space-x-4`}>
                         <Button variant={'red'} link={props.link} text={'Découvrir'}/>
                     </div>
                 </div>
-                <div className={'min-h-[500px] lg:min-h-[90vh]  w-[500px] md:w-1/2  md:absolute md:bottom-0 md:right-0 relative'}>
+                <div
+                    className={
+                        'min-h-[500px] lg:min-h-[90vh]  w-[500px] md:w-1/2  md:absolute md:bottom-0 md:right-0 relative'
+                    }
+                >
                     <Image
                         src={props.imageSrc}
                         layout={'fill'}
+                        alt={''}
                         className={`object-cover object-left-top  md:right-0 md:bottom-0`}
                     />
                 </div>

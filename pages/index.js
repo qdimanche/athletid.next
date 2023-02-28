@@ -1,18 +1,28 @@
 import Head from 'next/head'
-import MasonryGrid from '../src/components/UI/MasonryGrid'
+import MasonryGrid from '../src/components/UI/Grid/MasonryGrid'
 import Format from '../src/layout/format'
-import Header from '@/src/components/Header/HeaderJustifySelfEnd'
+import Header from '@/src/components/Home/HeaderJustifySelfEnd'
 import ImgHeader from '@/public/assets/images/femme-casque-audio.webp'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
-import GridLayout from '@/src/components/Home/GridLayout'
-import GridLayout2 from '@/src/components/Home/GridLayout2'
 import MasonryImages from '@/public/assets/images/masonry'
-import ContactSupport from "@/src/components/Contact/ContactSupport";
+import ContactSupport from '@/src/components/Contact/ContactSupport'
+import GridSection from '@/src/components/UI/Grid/GridSection'
+import React from 'react'
+import CardImageBottomRight from '@/src/components/UI/Card/CardImageBottomRight'
+import CardImageTopLeft from '@/src/components/UI/Card/CardImageTopLeft'
+import CardImageBottomFull from '@/src/components/UI/Card/CardImageBottomFull'
+import Card from '@/src/components/UI/Card/Card'
+import ApcoFeaturesMobile from '@/public/assets/images/apco-features-fullscreen-mobile.webp'
+import ApcoFeatures from '@/public/assets/images/apco-features-fullscreen.webp'
+import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
+import Captor from '@/public/assets/images/captor.webp'
+import ApcoRockBackground from '@/public/assets/images/apco-rock-background.webp'
 
 export default function Home() {
     const isLargeScreen = useMediaQuery(
         '(min-width: 1024px) and (max-width: 1280px)'
     )
+    const isMobile = useMediaQuery('(max-width: 728px)')
     const isXLScreen = useMediaQuery('(min-width: 1280px)')
 
     return (
@@ -38,11 +48,45 @@ export default function Home() {
                     parentImageWidth={'400px'}
                     link={'/timer'}
                     instaLink={'https://www.instagram.com/athletid/'}
-                    color={'white'}
                 />
-                <div className={'px-4 md:px-8 xl:px-0 max-w-[1280px] mx-auto'}>
-                    <GridLayout/>
-                    <GridLayout2/>
+                <div className={'xl:px-0 px-4 max-w-[1280px] mx-auto '}>
+                    <GridSection
+                        gridClassName={'md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr]'}
+                    >
+                        <CardImageBottomRight/>
+                        <CardImageTopLeft/>
+                        <CardImageBottomFull/>
+                    </GridSection>
+
+                    <GridSection gridClassName={'md:grid-cols-2 md:grid-rows-2'}>
+                        <Card
+                            className={'md:col-span-2'}
+                            link={'/timer'}
+                            textColor={'white'}
+                            objectPosition={'md:object-right-bottom '}
+                            srcBg={isMobile ? ApcoFeaturesMobile : ApcoFeatures}
+                            srcMockup={TimerDashboard}
+                            paragraphWidth={'w-3/4 md:w-1/3'}
+                        />
+                        <Card
+                            link={'/timer'}
+                            textColor={'black'}
+                            tag={'hidden'}
+                            srcBg={Captor}
+                            paragraphWidth={'w-2/3'}
+                            objectPosition={'md:object-center  '}
+                        />
+                        <Card
+                            link={'/timer'}
+                            tag={'hidden'}
+                            textColor={'white'}
+                            srcBg={isMobile ? ApcoRockBackground : ApcoRockBackground}
+                            srcMockup={TimerDashboard}
+                            mockupDisplay={'!hidden'}
+                            paragraphWidth={'w-2/3'}
+                            objectPosition={'md:object-center '}
+                        />
+                    </GridSection>
                 </div>
                 <MasonryGrid
                     titleMasonry={'Accompagner.\n Innover. Progresser.'}

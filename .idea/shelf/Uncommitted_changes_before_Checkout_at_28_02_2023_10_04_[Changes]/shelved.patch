@@ -1,0 +1,26 @@
+Index: pages/api/posts/[postSlug].js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import data from \"@/pages/api/data\";\n\nexport default function handler(req, res) {\n\tconst {postTitle} = req.query;\n\tconst {Posts} = data;\n\t\n\tif(postTitle){\n\t\tconst post = Posts.find(value => {\n\t\t\treturn value.title.replace(/\\s+/g, '-').toLowerCase() === postTitle;\n\t\t})\n\t\treturn res.status(200).json(post);\n\t}\n\t\n\treturn res.status(404).json({error:\"Post not found\"})\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pages/api/posts/[postSlug].js b/pages/api/posts/[postSlug].js
+--- a/pages/api/posts/[postSlug].js	(revision d27a32d1798ae9e4d5414a50b5e208bcca999fc3)
++++ b/pages/api/posts/[postSlug].js	(date 1677575090803)
+@@ -1,12 +1,12 @@
+ import data from "@/pages/api/data";
+ 
+ export default function handler(req, res) {
+-	const {postTitle} = req.query;
++	const {postSlug} = req.query;
+ 	const {Posts} = data;
+ 	
+-	if(postTitle){
++	if(postSlug){
+ 		const post = Posts.find(value => {
+-			return value.title.replace(/\s+/g, '-').toLowerCase() === postTitle;
++			return value.slug === postSlug;
+ 		})
+ 		return res.status(200).json(post);
+ 	}

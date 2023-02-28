@@ -1,5 +1,4 @@
 import {BsShieldCheck} from "react-icons/bs";
-import CarouselSlide from "@/src/components/UI/CarouselSlide";
 import {BiRecycle, BiDonateHeart} from "react-icons/bi";
 
 export default function IconFeature() {
@@ -54,7 +53,7 @@ export default function IconFeature() {
 				</div>
 			</div>
 		</div>
-		<CarouselSlide
+		<Carousel
 			childrenSlide1={<div className={"flex flex-col items-center"}>
 				<div className="">
 					<BsShieldCheck color={"black"} size={40}/>

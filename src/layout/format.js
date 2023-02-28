@@ -31,11 +31,8 @@ export default function format({ children }) {
           content="Libérez votre potentiel grâce aux apps mobiles ATHLETID"
         />
       </Head>
-
-      <div className={'2xl:mx-auto 2xl:max-w-[1536px]'}></div>
       <Navbar />
       <main className={'relative'}>{children}</main>
-
       <Footer />
       <Consent />
     </>

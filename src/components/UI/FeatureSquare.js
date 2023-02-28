@@ -64,7 +64,7 @@ const FeatureSquare = (props) => {
           </div>
         </div>
       </div>
-      <CarouselSlide
+      <Carousel
         customWidth={'w-[80%]'}
         childrenSlide1={
           <div>

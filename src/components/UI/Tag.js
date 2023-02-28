@@ -2,7 +2,6 @@ import clsx from "clsx";
 
 import React from 'react';
 import PropTypes from "prop-types";
-import Button from "@/src/components/UI/Button";
 
 const Tag = ({ className, ...props }) => {
   const { variant } = props

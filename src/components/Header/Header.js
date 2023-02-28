@@ -3,7 +3,6 @@ import Image from 'next/image';
 import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 import Button from "../UI/Button";
 import {FormattedMessage, useIntl} from "react-intl";
-import DownloadApp from "@/src/components/UI/DownloadApp";
 
 const Header = (props) => {
 	
@@ -11,7 +10,7 @@ const Header = (props) => {
 	
 	
 	return (<header
-		className={'lg:h-[95vh] md:h-[80vh] h-[60vh] relative overflow-hidden flex rounded-[30px] justify-center md:justify-start rounded-header-mobile-tablet safari-overflow-fix mt-4'}>
+		className={'header-heigth overflow-hidden flex rounded-medium justify-center md:justify-start safari-overflow-fix  md:mt-4'}>
 		<div className={"absolute top-0 left-0 w-full h-full bg-black/20 z-[1] "}></div>
 		<video className={`w-full lg:block hidden ${props.displayVideo} h-full object-cover pointer-events-none`}
 		       preload="metadata"

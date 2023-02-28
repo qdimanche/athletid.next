@@ -15,8 +15,7 @@ const Button = ({className, ...props}) => {
                 variant === 'fullblack' && 'bg-black border-0 text-white',
                 variant === 'grey' && 'bg-gray-300 border-0 text-black',
                 variant === 'white' && 'bg-transparent border-white text-white ',
-                variant === 'red' &&
-                'bg-timeRed hover:bg-timeRedHover  circle-boxShadow z-[900] !border-0 !text-white',
+                variant === 'red' && 'bg-timeRed hover:bg-timeRedHover  circle-boxShadow z-[900] !border-0 !text-white',
                 variant === 'redOutline' && 'border border-timeRed z-[900]',
                 className
             )}
@@ -36,6 +35,7 @@ Button.propTypes = {
         'red',
         'fullblack',
         'grey',
+        "redOutline"
     ]),
 }
 

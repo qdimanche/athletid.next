@@ -11,7 +11,7 @@ const Result = () => {
 	)
 }
 
-const ContactForm = (props) => {
+const ContactForm = () => {
 	
 	const form = useRef();
 	

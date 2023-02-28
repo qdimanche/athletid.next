@@ -12,7 +12,7 @@ const ContactSupport = (props, ref) => {
         >
             <div
                 className={
-                    " flex flex-col justify-center md:items-start items-center md:mt-6 lg:mb-0 mb-6 order-2 md:order-1 md:w-full 2xl:pr-28 lg:pr-20 md:pr-12"
+                    " flex flex-col justify-center md:items-start items-center md:mt-6 lg:mb-0 mb-6 order-2 md:order-1 md:w-full md:pr-12"
                 }
             >
                 <h2
