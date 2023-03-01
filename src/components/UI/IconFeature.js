@@ -1,5 +1,6 @@
 import {BsShieldCheck} from "react-icons/bs";
 import {BiRecycle, BiDonateHeart} from "react-icons/bi";
+import {Carousel} from "react-responsive-carousel";
 
 export default function IconFeature() {
 	return (<div

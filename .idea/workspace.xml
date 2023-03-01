@@ -7,32 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] Home completed + Apco Page started">
-      <change afterPath="$PROJECT_DIR$/src/components/Apco/Feature.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Apco/ImageSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselSlide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] Apco Page mobile completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Apco/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Apco/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HeaderJustifySelfEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HeaderJustifySelfEnd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopLeft.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopLeft.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/CarouselSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/CarouselSlide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/FeatureSquare.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/FeatureSquare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/IconFeature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/IconFeature.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +97,7 @@
       <workItem from="1677068520451" duration="11939000" />
       <workItem from="1677225623166" duration="20755000" />
       <workItem from="1677486195841" duration="29943000" />
-      <workItem from="1677658938905" duration="19838000" />
+      <workItem from="1677658938905" duration="20221000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>
@@ -191,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677600187972</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[+] Apco Page mobile completed">
+      <created>1677685134140</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677685134141</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +198,7 @@
     <MESSAGE value="[+]Grid Layout" />
     <MESSAGE value="[+]Responsive design for card" />
     <MESSAGE value="[+] Home completed + Apco Page started" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Home completed + Apco Page started" />
+    <MESSAGE value="[+] Apco Page mobile completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] Apco Page mobile completed" />
   </component>
 </project>
