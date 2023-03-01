@@ -8,7 +8,7 @@ const CardImageBottomRight = () => {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col justify-between lg:flex-row  relative  h-[450px] p-4 pb-0 md:p-8 md:pb-0 lg:pb-8'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col justify-between lg:flex-row  relative  h-[500px] p-4 pb-0 md:p-8 md:pb-0 lg:pb-8'
             }
         >
             <div className={'flex md:items-start md:flex-col md:justify-between '}>
@@ -24,6 +24,7 @@ const CardImageBottomRight = () => {
                         text={'Lorem'}
                         variant={'red'}
                         link={'/timer'}
+                        content={"Découvrir"}
                     />
                 </div>
             </div>

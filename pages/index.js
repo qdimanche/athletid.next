@@ -66,6 +66,7 @@ export default function Home() {
                             objectPosition={'md:object-right-bottom '}
                             srcBg={isMobile ? ApcoFeaturesMobile : ApcoFeatures}
                             srcMockup={TimerDashboard}
+                            buttonContent={'Découvrir'}
                             paragraphWidth={'w-3/4 md:w-1/3'}
                         />
                         <Card
@@ -74,6 +75,7 @@ export default function Home() {
                             tag={'hidden'}
                             srcBg={Captor}
                             paragraphWidth={'w-2/3'}
+                            buttonContent={'Découvrir'}
                             objectPosition={'md:object-center  '}
                         />
                         <Card
@@ -84,6 +86,7 @@ export default function Home() {
                             srcMockup={TimerDashboard}
                             mockupDisplay={'!hidden'}
                             paragraphWidth={'w-2/3'}
+                            buttonContent={'Découvrir'}
                             objectPosition={'md:object-center '}
                         />
                     </GridSection>
@@ -95,7 +98,9 @@ export default function Home() {
                     }
                     items={MasonryImages}
                 />
-                <ContactSupport/>
+                <div className={'xl:px-0 px-4 max-w-[1280px] mx-auto '}>
+                    <ContactSupport/>
+                </div>
             </Format>
         </>
     )

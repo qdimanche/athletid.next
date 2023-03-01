@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import CarouselSlide from '@/src/components/UI/CarouselSlide'
+import CarouselSlide from '@/src/components/UI/Carousel/CarouselSlide'
 
 const FeatureSquare = (props) => {
   return (

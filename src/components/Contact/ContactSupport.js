@@ -7,7 +7,7 @@ const ContactSupport = (props, ref) => {
     return (
         <div
             className={
-                "lg:duration-[2000ms] lg:opacity-1 grid md:grid-cols-2 grid-cols-1 2xl:ml-28 lg:ml-20 md:ml-12 mx-4 lg:my-40 mb-24 overflow-hidden"
+                "lg:duration-[2000ms] lg:opacity-1 grid md:grid-cols-2 grid-cols-1 lg:my-40 mb-28 overflow-hidden"
             }
         >
             <div
@@ -26,7 +26,7 @@ const ContactSupport = (props, ref) => {
                 </p>
                 <div className={"flex items-center space-x-4"}>
                     <Button variant={"black"}
-                        text={"Nous contacter"}
+                        content={"Nous contacter"}
                         link={"mailto:contact@athletid.com"}
                     />
                 </div>

@@ -4,18 +4,18 @@ import Tag from '@/src/components/UI/Tag'
 import Button from '@/src/components/UI/Button'
 import clsx from 'clsx'
 
-const Card = ({className, ...props}) => {
+const Card = ({className, tagVariantOverride, ...props}) => {
     return (
         <div
             className={clsx(
-                `rounded-medium overflow-hidden relative md:h-[450px] h-[400px] relative`,
+                `rounded-medium overflow-hidden relative h-[500px] relative`,
                 className
             )}
         >
             <Image
                 className={`object-cover object-top ${props.objectPosition}`}
                 src={props.srcBg}
-                alt={""}
+                alt={''}
                 layout={'fill'}
             />
             <div
@@ -27,7 +27,7 @@ const Card = ({className, ...props}) => {
                     <Tag
                         text={'lorem'}
                         className={`${props.tag} mb-4`}
-                        variant={'white'}
+                        variant={tagVariantOverride ? tagVariantOverride : 'white'}
                     />
                     <h2 className={`text-${props.textColor} font-medium `}>
                         Lorem ipsum dolor sit amet
@@ -37,7 +37,8 @@ const Card = ({className, ...props}) => {
                     link={'/timer'}
                     text={'lorem'}
                     variant={'red'}
-                    className={'absolute right-16 bottom-16'}
+                    className={clsx('absolute right-16 bottom-16', props.buttonClassName)}
+                    content={props.buttonContent}
                 />
             </div>
         </div>

@@ -6,7 +6,7 @@ const CardImageBottomFull = () => {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col lg:justify-between h-[450px] p-4 md:p-8 md:pr-0 md:pb-0 pr-0 md:pb-0 pb-0'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col lg:justify-between h-[500px] p-4 md:p-8 md:pr-0 md:pb-0 pr-0 md:pb-0 pb-0'
             }
         >
             <div

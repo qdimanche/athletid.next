@@ -24,7 +24,7 @@ const MasonryGrid = ({items, ...props}) => {
                         <h2 style={{whiteSpace: "pre-line"}} className={''}>{props.titleMasonry}</h2>
                         <p style={{whiteSpace: "pre-line"}}
                            className={'mt-[10px] mb-[20px]'}>{props.subTitleMasonry}</p>
-                        <Button variant={"black"} text={"Découvrir"} link={"/a-propos"}/>
+                        <Button variant={"black"} content={"Découvrir"} link={"/a-propos"}/>
                     </div>
                 </div>
             </div>

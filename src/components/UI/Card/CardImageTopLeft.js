@@ -6,7 +6,7 @@ const CardImageTopLeft = () => {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col h-[450px] p-4 md:p-8 md:pr-0 md:pt-0 pr-0 pt-0'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col h-[500px] p-4 md:p-8 md:pr-0 md:pt-0 pr-0 pt-0'
             }
         >
             <div

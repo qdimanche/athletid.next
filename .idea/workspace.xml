@@ -8,63 +8,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] Home completed + Apco Page started">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_02_2023_10_04_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_02_2023_10_04__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/apco-rock-background.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/black-logo-athletid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/captor-diagonal.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/captor-reverse.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/captor-vertical.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/captor.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard-bottom.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard-diagonal.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/tinify-2023-2-28T10_49_34.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/white-logo-athletid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Apco/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopLeft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Grid/GridSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Apco/Feature.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Apco/ImageSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselSlide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/GreyCliffCF.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/GreyCliffCF/greycliffCF-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/GreyCliffCF/greycliffCF-demibold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/fonts/GreyCliffCF/greycliffcf-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/white-logo-athletid.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/CategoryPost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/LatestPost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/PopularPost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/Error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/RelatedPost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/Spinner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Apco/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Apco/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderJustifySelfEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HeaderJustifySelfEnd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/GridLayout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/GridLayout2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HeaderJustifySelfEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HeaderJustifySelfEnd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/AppFeature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/AppFeature.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopLeft.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopLeft.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/CarouselSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/CarouselSlide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/FeatureSquare.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/FeatureSquare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/FullScreenBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/IconFeature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/IconFeature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/format.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next/src/components/UI/Carousel/ArrowCarouselBgImage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,12 +84,15 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel" />
+      <recent name="$PROJECT_DIR$/src/components/UI/Carousel" />
       <recent name="$PROJECT_DIR$/src/components/Home" />
       <recent name="$PROJECT_DIR$/src/components/Header" />
       <recent name="$PROJECT_DIR$/src/components/UI/Grid" />
-      <recent name="$PROJECT_DIR$/src/components/UI/Card" />
-      <recent name="$PROJECT_DIR$/src/components/UI" />
     </key>
   </component>
   <component name="RunManager">
@@ -138,7 +110,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="46ce59aa-4952-4419-b4fd-bea9b646c6a1" name="Changes" comment="" />
+      <changelist id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] Home completed + Apco Page started" />
       <created>1676622181633</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -147,6 +119,7 @@
       <workItem from="1677068520451" duration="11939000" />
       <workItem from="1677225623166" duration="20755000" />
       <workItem from="1677486195841" duration="29943000" />
+      <workItem from="1677658938905" duration="19838000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>

@@ -33,7 +33,7 @@ const HeaderJustifySelfEnd = (props) => {
                         {props.subTitle}
                     </p>
                     <div className={`flex md:justify-start justify-center space-x-4`}>
-                        <Button variant={'red'} link={props.link} text={'Découvrir'}/>
+                        <Button variant={'red'} link={props.link} content={'Découvrir'} />
                     </div>
                 </div>
                 <div

@@ -39,7 +39,7 @@ const Footer = () => {
                             <Button
                                 variant={'red'}
                                 link={'/'}
-                                text={"Rejoignez la liste d'attente"}
+                                content={"Rejoignez la liste d'attente"}
                                 className={''}
                             />
                         </div>

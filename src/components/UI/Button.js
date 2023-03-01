@@ -3,7 +3,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
 
-const Button = ({className, ...props}) => {
+const Button = ({className, children, ...props}) => {
     const {variant} = props
 
     return (
@@ -20,7 +20,7 @@ const Button = ({className, ...props}) => {
                 className
             )}
         >
-            {props.text}
+            {props.content}
         </Link>
     )
 }
