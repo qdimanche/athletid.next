@@ -7,10 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] Apco Page mobile completed">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/FeatureSquare.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/FeatureSquare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/IconFeature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/IconFeature.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HeaderJustifySelfEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HeaderJustifySelfEnd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1677068520451" duration="11939000" />
       <workItem from="1677225623166" duration="20755000" />
       <workItem from="1677486195841" duration="29943000" />
-      <workItem from="1677658938905" duration="20221000" />
+      <workItem from="1677658938905" duration="20657000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>
@@ -176,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677685134141</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[+] bug fix">
+      <created>1677685345943</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677685345943</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[+] bug fix">
+      <created>1677685397255</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677685397256</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +212,7 @@
     <MESSAGE value="[+]Responsive design for card" />
     <MESSAGE value="[+] Home completed + Apco Page started" />
     <MESSAGE value="[+] Apco Page mobile completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Apco Page mobile completed" />
+    <MESSAGE value="[+] bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] bug fix" />
   </component>
 </project>
