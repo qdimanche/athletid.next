@@ -9,7 +9,7 @@ const HeaderJustifySelfEnd = (props) => {
 
     return (
         <header
-            className={`header-height relative  overflow-hidden flex md:rounded-medium justify-center lg:justify-start bg-greyShade m-4 mt-0`}
+            className={`header-height relative  overflow-hidden flex md:rounded-medium justify-center lg:justify-start bg-greyShade md:m-4 md:mt-4 mt-0`}
         >
             <div
                 style={{whiteSpace: 'pre-line'}}

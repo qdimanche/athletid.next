@@ -164,7 +164,7 @@ input:-webkit-autofill:active {
 }
 
 .header-height {
-    @apply lg:h-[95vh] h-[80vh];
+    @apply lg:h-[95vh] md:h-[80vh];
 }
 
 
