@@ -56,13 +56,13 @@ const Navbar = (props) => {
                         className={`justify-end items-center px-10 w-full  lg:flex hidden space-x-10`}
                     >
                         <Link href={'/'}>Accueil</Link>
-                        <Link href={'/'}>App Timer</Link>
-                        <Link href={'/'}>App Athletid</Link>
-                        <Link href={'/'}>Contact</Link>
+                        <Link href={'/timer'}>App Timer</Link>
+                        <Link href={'#'}>App Athletid</Link>
+                        <Link href={'/contact'}>Contact</Link>
                         <Button
                             variant={'redOutline'}
                             content={'Obtenir Apco'}
-                            link={'/timer'}
+                            link={'/apco'}
                         />
                     </div>
 
@@ -85,7 +85,7 @@ const Navbar = (props) => {
                                     'text-left apparition-from-bottom-hamburger-menu lg:block hidden '
                                 }
                             >
-                                <li className={'text-[14px] font-bold'}>
+                                <li className={'text-[14px] font-medium'}>
                                     <span>Contact</span>
                                 </li>
                                 <li className={'text-[20px] opacity-60 mb-8'}>
@@ -93,7 +93,7 @@ const Navbar = (props) => {
                                         contact@athletid.com
                                     </a>
                                 </li>
-                                <li className={'text-[14px] font-bold'}>
+                                <li className={'text-[14px] font-medium'}>
                                     <span>Nos réseaux</span>
                                 </li>
                                 <li className={'text-[20px] opacity-60'}>
@@ -131,7 +131,7 @@ const Navbar = (props) => {
                                 }
                             >
                                 <li
-                                    className={'text-[20px] lg:text-[14px]  font-bold lg:!-mb-4'}
+                                    className={'text-[20px] lg:text-[14px]  font-medium lg:!-mb-4'}
                                 >
                                     Menu
                                 </li>
@@ -140,6 +140,9 @@ const Navbar = (props) => {
                                 </li>
                                 <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
                                     <Link href="/timer">Timer</Link>
+                                </li>
+                                <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+                                    <Link href="/apco">Apco</Link>
                                 </li>
                                 <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
                                     <Link href="/a-propos">À propos</Link>

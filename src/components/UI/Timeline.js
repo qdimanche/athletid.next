@@ -10,7 +10,7 @@ const Timeline = () => {
 	return (<div>
 			<h2 style={{whiteSpace: 'pre-line'}}
 			    className={'flex flex-col w-3/4 items-center mx-auto text-center md:mb-12 mb-8'}>Notre histoire</h2>
-			<div className={"custom-border pt-10 md:mx-4 mx-8"}>
+			<div className={"custom-border pt-10 mx-8"}>
 				<Date
 					year={"2018"}
 					icon={<VscDebugStart size={22} color={"white"}/>}

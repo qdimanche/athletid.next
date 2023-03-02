@@ -10,36 +10,38 @@ const Carousel = () => {
     const [isNext, setIsNext] = useState(false)
 
     return (
-        <div className={'lg:my-40 my-28'}>
+        <div className={'lg:my-40 my-28 relative'}>
             <CarouselSlide
                 title={CarouselItems[currentItemIndex].title}
                 description={CarouselItems[currentItemIndex].description}
                 image={CarouselItems[currentItemIndex].image}
+                className={'relative'}
             />
 
-            <div className={'flex justify-between items-center mt-8'}>
+            <div
+                className={
+                    'flex justify-between items-center mt-8 md:mt-0 md:absolute md:transform md:top-1/2 md:-translate-y-1/2 md:w-full'
+                }
+            >
                 <div
-                    className={
-                        `w-[55px] h-[55px] border ${isPrevious ? 'border-timeRed' : 'border-black'} rounded-full flex items-center justify-center`
-                    }
+                    className={`w-[55px] h-[55px] border ${
+                        isPrevious ? 'border-timeRed' : 'border-black'
+                    } rounded-full flex items-center justify-center`}
+                    onClick={() => {
+                        if (currentItemIndex > 0) {
+                            setCurrentItemIndex(currentItemIndex - 1)
+                            setCount(count - 1)
+                        } else {
+                            setCurrentItemIndex(CarouselItems.length - 1)
+                            setCount(CarouselItems.length - 1)
+                        }
+                        setIsPrevious(true)
+                        setIsNext(false)
+                    }}
                 >
-                    <BsArrowLeft
-                        size={20}
-                        color={'black'}
-                        onClick={() => {
-                            if (currentItemIndex > 0) {
-                                setCurrentItemIndex(currentItemIndex - 1)
-                                setCount(count - 1)
-                            } else {
-                                setCurrentItemIndex(CarouselItems.length - 1)
-                                setCount(CarouselItems.length - 1)
-                            }
-                            setIsPrevious(true)
-                            setIsNext(false)
-                        }}
-                    />
+                    <BsArrowLeft size={20} color={'black'}/>
                 </div>
-                <div className={'flex space-x-4'}>
+                <div className={'flex space-x-4 md:hidden'}>
                     {CarouselItems.map((item, index) => (
                         <div
                             key={index}
@@ -57,23 +59,22 @@ const Carousel = () => {
                     ))}
                 </div>
                 <div
-                    className={`w-[55px] h-[55px] border ${isNext ? 'border-timeRed' : 'border-black'}  rounded-full flex items-center justify-center`}
+                    className={`w-[55px] h-[55px] border ${
+                        isNext ? 'border-timeRed' : 'border-black'
+                    }  rounded-full flex items-center justify-center`}
+                    onClick={() => {
+                        if (currentItemIndex < CarouselItems.length - 1) {
+                            setCurrentItemIndex(currentItemIndex + 1)
+                            setCount(count + 1)
+                        } else {
+                            setCurrentItemIndex(0)
+                            setCount(0)
+                        }
+                        setIsPrevious(false)
+                        setIsNext(true)
+                    }}
                 >
-                    <BsArrowRight
-                        size={20}
-                        color={'black'}
-                        onClick={() => {
-                            if (currentItemIndex < CarouselItems.length - 1) {
-                                setCurrentItemIndex(currentItemIndex + 1)
-                                setCount(count + 1)
-                            } else {
-                                setCurrentItemIndex(0)
-                                setCount(0)
-                            }
-                            setIsPrevious(false)
-                            setIsNext(true)
-                        }}
-                    />
+                    <BsArrowRight size={20} color={'black'}/>
                 </div>
             </div>
         </div>

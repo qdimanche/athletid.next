@@ -1,10 +1,21 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Image from 'next/image'
 import Tag from '@/src/components/UI/Tag'
 import Button from '@/src/components/UI/Button'
 import clsx from 'clsx'
 
 const Card = ({className, tagVariantOverride, ...props}) => {
+    const [isClick, setIsClick] = useState(false)
+    const [count, setCount] = useState(0)
+
+    useEffect(() => {
+        if (count % 2 === 0) {
+            setIsClick(false)
+        } else {
+            setIsClick(true)
+        }
+    }, [count])
+
     return (
         <div
             className={clsx(
@@ -13,34 +24,58 @@ const Card = ({className, tagVariantOverride, ...props}) => {
             )}
         >
             <Image
-                className={`object-cover object-top ${props.objectPosition}`}
+                className={
+                    isClick ? 'hidden' : `object-cover object-top ${props.objectPosition}`
+                }
                 src={props.srcBg}
                 alt={''}
                 layout={'fill'}
             />
             <div
                 className={
-                    'flex flex-col justify-between absolute h-full w-full top-8 left-8'
+                    isClick
+                        ? 'hidden'
+                        : `${props.paragraphWidth} flex flex-col justify-between absolute h-full w-full top-8 left-8`
                 }
             >
-                <div className={`${props.paragraphWidth} `}>
-                    <Tag
-                        text={'lorem'}
-                        className={`${props.tag} mb-4`}
-                        variant={tagVariantOverride ? tagVariantOverride : 'white'}
-                    />
-                    <h2 className={`text-${props.textColor} font-medium `}>
-                        Lorem ipsum dolor sit amet
-                    </h2>
-                </div>
-                <Button
-                    link={'/timer'}
+                <Tag
                     text={'lorem'}
-                    variant={'red'}
-                    className={clsx('absolute right-16 bottom-16', props.buttonClassName)}
-                    content={props.buttonContent}
+                    className={`${props.tag} mb-4`}
+                    variant={tagVariantOverride ? tagVariantOverride : 'white'}
                 />
+                <h2 className={`text-${props.textColor} font-medium `}>
+                    Lorem ipsum dolor sit amet
+                </h2>
             </div>
+            <div
+                className={
+                `absolute h-full w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 
+                ${isClick ? 'opacity-1' : 'opacity-0' }
+                `
+                }
+            >
+                <p className={`${isClick ? 'opacity-1 transition delay-[100ms] duration-300': 'opacity-0'}`}>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci
+                    at beatae doloribus eaque eum ex fuga, fugit mollitia nihil nulla
+                    numquam pariatur, perspiciatis praesentium sed suscipit tenetur vero
+                    voluptatibus!
+                </p>
+            </div>
+            <Button
+                link={'/timer'}
+                text={'lorem'}
+                variant={'red'}
+                className={clsx(
+                    `absolute right-8 bottom-8 z-[100] ${isClick ? 'rotate-45' : '' }`,
+                    props.buttonClassName
+                )}
+                content={props.buttonContent}
+                onClick={() => {
+                    setIsClick(true)
+                    setCount(count + 1)
+
+                }}
+            />
         </div>
     )
 }

@@ -19,7 +19,6 @@ body {
 
 
 h1 {
-    white-space: nowrap;
     line-height: 1em;
     font-size: 3.75rem;
 }
@@ -117,7 +116,7 @@ input:-webkit-autofill:active {
 }
 
 .white-inner-shadow {
-    background: linear-gradient(0deg, white, transparent 50%);
+    background: linear-gradient(0deg, #F7F7F7, transparent 50%);
 }
 
 .video-rounded-webkit video {
@@ -164,7 +163,7 @@ input:-webkit-autofill:active {
 }
 
 .header-height {
-    @apply lg:h-[95vh] md:h-[80vh];
+    @apply lg:h-[95vh] min-h-[60vh];
 }
 
 

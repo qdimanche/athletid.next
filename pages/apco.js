@@ -31,9 +31,10 @@ const Apco = () => {
             <Format>
                 <Header/>
                 <div className={"xl:px-0 px-4 max-w-[1280px] mx-auto"}>
-                    <GridSection gridClassName={'grid rows-4'}>
+                    <GridSection gridClassName={'grid md:grid-cols-3 rows-4'}>
                         <Card
-                            className={'md:col-span-2'}
+                            className={'md:col-span-1'}
+                            tag={"hidden"}
                             link={'/timer'}
                             textColor={'white'}
                             objectPosition={'md:object-right-bottom '}
@@ -45,6 +46,7 @@ const Apco = () => {
                         <Card
                             className={'md:col-span-2'}
                             link={'/timer'}
+                            tag={"hidden"}
                             textColor={'black'}
                             objectPosition={'md:object-right-bottom '}
                             srcBg={Captor}
@@ -62,9 +64,11 @@ const Apco = () => {
                             paragraphWidth={'w-3/4 md:w-1/3'}
                             buttonContent={<AiOutlinePlus size={30}/>}
                             buttonClassName={'!rounded-full !p-3'}
+                            tag={"hidden"}
                         />
                         <Card
-                            className={'md:col-span-2'}
+                            className={'md:col-span-1'}
+                            tag={"hidden"}
                             link={'/timer'}
                             textColor={'white'}
                             objectPosition={'object-bottom'}

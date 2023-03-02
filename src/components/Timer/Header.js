@@ -4,22 +4,22 @@ import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import {useIntl} from 'react-intl'
 import Button from '@/src/components/UI/Button'
 
-const HeaderJustifySelfEnd = (props) => {
+const Header = (props) => {
     const intl = useIntl()
 
     return (
         <header
-            className={`header-height relative  overflow-hidden flex md:rounded-medium justify-center lg:justify-start bg-greyShade md:m-4 md:mt-4 mt-0`}
+            className={`lg:h-[90vh] md:min-h-[60vh] min-h-[40vh] relative  overflow-hidden flex md:rounded-medium justify-center lg:justify-start rounded-header-mobile-tablet safari-overflow-fix md:mt-4 bg-[#F5F4F5] md:mx-4`}
         >
             <div
                 style={{whiteSpace: 'pre-line'}}
                 className={
-                    'lg:mt-0 lg:mt-3 flex md:flex-row flex-col justify-center  z-[3] lg:p-0 items-center max-w-[1280px] mx-auto'
+                    'lg:mt-0 lg:mt-3 flex flex-col justify-center  z-[3] lg:p-0 md:grid md:grid-cols-[1fr_400px] lg:grid-cols-2 items-center'
                 }
             >
                 <div
                     className={
-                        'md:w-[45%] xl:w-[50%] md:mr-auto pt-28 md:pt-28 md:pr-8 md:py-16 xl:p-0 p-8 w-screen'
+                        '2xl:ml-28 lg:ml-20 lg:ml-12 flex flex-col md:items-start items-center lg:pt-0 pt-28 md:pb-16 pb-8 px-8'
                     }
                 >
                     <h1
@@ -32,20 +32,19 @@ const HeaderJustifySelfEnd = (props) => {
                     >
                         {props.subTitle}
                     </p>
-                    <div className={`flex md:justify-start justify-center space-x-4`}>
-                        <Button variant={'red'} link={props.link} content={'Découvrir'} />
+                    <div
+                        className={`flex md:justify-start justify-center space-x-4 ${props.visibilityButton}`}
+                    >
+                        <Button variant={'red'} link={props.link} text={'Découvrir'}/>
                     </div>
                 </div>
                 <div
-                    className={
-                        'min-h-[500px] lg:min-h-[90vh]  w-[500px] md:w-1/2  md:absolute md:bottom-0 md:right-0 relative'
-                    }
+                    className={`mx-auto lg:flex justify-center flex self-end lg:w-full lg:mt-0 md:mt-8 mt-0`}
                 >
                     <Image
                         src={props.imageSrc}
-                        layout={'fill'}
-                        alt={''}
-                        className={`object-cover object-left-top  md:right-0 md:bottom-0`}
+                        width={props.imageWidth}
+                        className={`pointer-events-none lg:block`}
                     />
                 </div>
             </div>
@@ -77,4 +76,4 @@ const HeaderJustifySelfEnd = (props) => {
 }
 
 
-export default HeaderJustifySelfEnd;
+export default Header;

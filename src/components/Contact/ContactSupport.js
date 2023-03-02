@@ -7,7 +7,7 @@ const ContactSupport = (props, ref) => {
     return (
         <div
             className={
-                "lg:duration-[2000ms] lg:opacity-1 grid md:grid-cols-2 grid-cols-1 lg:my-40 mb-28 overflow-hidden"
+                "lg:duration-[2000ms] lg:opacity-1 grid md:grid-cols-2 grid-cols-1 lg:my-40 my-28 overflow-hidden"
             }
         >
             <div

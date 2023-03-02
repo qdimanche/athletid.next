@@ -4,10 +4,10 @@ import Head from "next/head";
 import ImgHeader from "@/public/assets/images/femme-fitness-sur-tapis.webp";
 import CircleProgressBar from "@/src/components/UI/CircleProgressBar";
 import Timeline from "@/src/components/UI/Timeline";
-import OurTeam from "@/src/components/About/OurTeam";
-import OurValues from "@/src/components/About/OurValues";
-import Header from "@/src/components/Header/Header";
-import IconFeature from "@/src/components/UI/IconFeature";
+import OurTeam from "@/src/components/About/OurTeam/OurTeam";
+import OurValues from "@/src/components/About/OurValues/OurValues";
+import Header from "@/src/components/About/Header";
+import OurResponsabilities from "@/src/components/About/OurResponsabilities/OurResponsabilities";
 
 const APropos = () => {
 	
@@ -22,22 +22,19 @@ const APropos = () => {
 		
 		<Format>
 			<Header
-				title={"Construire une\n routine sportive \nsolide et durable."}
+				title={"Construire une\nroutine sportive\nsolide et durable."}
 				subtitle={"Athletid t’accompagne à chaque étape de ton entraînement pour t’aider à bénéficier de tous les bienfaits d’une pratique sportive régulière."}
 				img={ImgHeader}
 				video={""}
 				displayVideo={"!hidden"}
 				displayImage={"!block"}
 				link={"/network"}
-				visibilityWhiteButton={'hidden'}
-				visibilityDownloadButton={'hidden'}
-				downloadButtonvisibility={'hidden'}
 				objectPosition={'cover'}
 				color={'white'}
 			/>
-			<div className={'max-w-[1024px] mx-auto'}>
+			<div className={'max-w-[1024px] xl:px-0 px-4  mx-auto'}>
 				<CircleProgressBar/>
-				<IconFeature/>
+				<OurResponsabilities/>
 				<Timeline/>
 				<OurTeam/>
 				<OurValues/>

@@ -6,7 +6,7 @@ import Tag from '@/src/components/UI/Tag'
 
 const Header = () => {
     return (
-        <div className={'h-[1050px] relative'}>
+        <div className={'lg:h-[1000px] md:min-h-[60vh] h-[1050px] max-w-[1280px] mx-auto relative'}>
             <Image
                 layout={'fill'}
                 src={CaptorReverse}
@@ -15,7 +15,7 @@ const Header = () => {
             />
             <div
                 className={
-                    'pt-28 md:pt-28 md:pr-8 md:py-16 xl:p-0 p-8 max-w-[1280px] mx-auto absolute space-y-4 flex flex-col items-center'
+                    'pt-28 max-w-[1280px] w-full mx-auto absolute space-y-4 flex flex-col items-center'
                 }
             >
                 <Tag text={'Nouveau'} variant={'black'}/>

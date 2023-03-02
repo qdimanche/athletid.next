@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import MasonryGrid from '../src/components/UI/Grid/MasonryGrid'
 import Format from '../src/layout/format'
-import Header from '@/src/components/Home/HeaderJustifySelfEnd'
+import Header from '@/src/components/Home/Header'
 import ImgHeader from '@/public/assets/images/femme-casque-audio.webp'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import MasonryImages from '@/public/assets/images/masonry'
@@ -44,8 +44,9 @@ export default function Home() {
                         'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'
                     }
                     imageSrc={ImgHeader}
-                    imageWidth={isXLScreen ? 700 : 500}
-                    parentImageWidth={'400px'}
+                    imageHeight={"min-h-[500px] lg:min-h-[90vh]"}
+                    imageWidth={" w-[500px] md:w-1/2 "}
+                    imageObjectPosition={'object-left-top'}
                     link={'/timer'}
                     instaLink={'https://www.instagram.com/athletid/'}
                 />

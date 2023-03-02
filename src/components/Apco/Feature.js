@@ -4,8 +4,8 @@ import ConstuctionEntrainement from "@/public/assets/images/construction-seance.
 
 const Feature = () => {
     return (
-        <div className={'md:my-40 mt-28'}>
-            <div className={'flex flex-col md:mb-8 text-left space-y-8'}>
+        <div className={'md:my-40 mt-28 md:w-[80%] md:mx-auto md:grid md:grid-cols-[1fr_340px] md:items-center'}>
+            <div className={'flex flex-col md:mb-8 text-left space-y-8 md:w-3/4 md:mx-auto'}>
                 <h2 style={{whiteSpace: 'pre-line'}}>Lorem ipsum dolor sit amet.</h2>
                 <p className={'w-full mt-[10px]'}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt,
