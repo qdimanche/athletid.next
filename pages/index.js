@@ -69,6 +69,7 @@ export default function Home() {
                             srcMockup={TimerDashboard}
                             buttonContent={'Découvrir'}
                             paragraphWidth={'w-3/4 md:w-1/3'}
+                            playAnimation={"false"}
                         />
                         <Card
                             link={'/timer'}
@@ -78,6 +79,7 @@ export default function Home() {
                             paragraphWidth={'w-2/3'}
                             buttonContent={'Découvrir'}
                             objectPosition={'md:object-center  '}
+                            playAnimation={"false"}
                         />
                         <Card
                             link={'/timer'}
@@ -89,6 +91,7 @@ export default function Home() {
                             paragraphWidth={'w-2/3'}
                             buttonContent={'Découvrir'}
                             objectPosition={'md:object-center '}
+                            playAnimation={"false"}
                         />
                     </GridSection>
                 </div>

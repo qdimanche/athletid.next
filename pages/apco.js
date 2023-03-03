@@ -45,7 +45,6 @@ const Apco = () => {
                         />
                         <Card
                             className={'md:col-span-2'}
-                            link={'/timer'}
                             tag={"hidden"}
                             textColor={'black'}
                             objectPosition={'md:object-right-bottom '}

@@ -8,11 +8,17 @@ const Button = ({className, children, ...props}) => {
 
     return (
         <Link
-            href={props.link}
-            onClick={props.onClick}
+            href={props.link ? props.link : ''}
+            onClick={(event) => {
+                if (!props.link) {
+                    event.preventDefault()
+                } else if (props.onClick) {
+                    props.onClick(event)
+                }
+            }}
             className={clsx(
                 `duration-300 px-6 transition py-3 rounded-medium border-[1px] w-fit`,
-                variant === 'black' && 'bg-transparent  border-black ',
+                variant === 'black' && 'bg-transparent  border-black',
                 variant === 'fullblack' && 'bg-black border-0 text-white',
                 variant === 'grey' && 'bg-gray-300 border-0 text-black',
                 variant === 'white' && 'bg-transparent border-white text-white ',

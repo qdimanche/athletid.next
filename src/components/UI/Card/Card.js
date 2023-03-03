@@ -48,13 +48,17 @@ const Card = ({className, tagVariantOverride, ...props}) => {
                 </h2>
             </div>
             <div
-                className={
-                `absolute h-full w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 
-                ${isClick ? 'opacity-1' : 'opacity-0' }
-                `
-                }
+                className={`absolute h-full w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 
+                ${isClick ? 'opacity-1' : 'opacity-0'}
+                `}
             >
-                <p className={`${isClick ? 'opacity-1 transition delay-[100ms] duration-300': 'opacity-0'}`}>
+                <p
+                    className={`${
+                        isClick
+                            ? 'opacity-1 transition delay-[100ms] duration-300'
+                            : 'opacity-0'
+                    }`}
+                >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci
                     at beatae doloribus eaque eum ex fuga, fugit mollitia nihil nulla
                     numquam pariatur, perspiciatis praesentium sed suscipit tenetur vero
@@ -62,18 +66,17 @@ const Card = ({className, tagVariantOverride, ...props}) => {
                 </p>
             </div>
             <Button
-                link={'/timer'}
+                href={props.link}
                 text={'lorem'}
                 variant={'red'}
                 className={clsx(
-                    `absolute right-8 bottom-8 z-[100] ${isClick ? 'rotate-45' : '' }`,
+                    `absolute right-8 bottom-8 z-[100] ${isClick ? 'rotate-45' : ''}`,
                     props.buttonClassName
                 )}
                 content={props.buttonContent}
                 onClick={() => {
                     setIsClick(true)
                     setCount(count + 1)
-
                 }}
             />
         </div>
