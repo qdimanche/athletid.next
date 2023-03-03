@@ -34,7 +34,7 @@ const Navbar = (props) => {
 
     return (
         <div
-            className={`fixed top-0 z-[999] md:px-12 px-8  w-screen transition duration-1000 py-5 ${
+            className={`fixed top-0 z-[999] md:px-16 px-8  w-screen transition duration-1000 py-5 ${
                 scrollDown ? 'opacity-animation' : ''
             }`}
         >

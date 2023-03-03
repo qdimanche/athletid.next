@@ -28,7 +28,6 @@ const APropos = () => {
 				video={""}
 				displayVideo={"!hidden"}
 				displayImage={"!block"}
-				link={"/network"}
 				objectPosition={'cover'}
 				color={'white'}
 			/>

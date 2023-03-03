@@ -7,12 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Bug fix in responsive + Apco page completed">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Bug fix responsive JS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/a-propos.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/a-propos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
