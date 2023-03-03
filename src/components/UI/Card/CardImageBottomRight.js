@@ -16,7 +16,7 @@ const CardImageBottomRight = () => {
                     <div className={' md:mb-4 flex flex-col lg:w-full'}>
                         <Tag text={'Bientôt disponible'} variant={'black'}/>
                         <h2 className={'font-medium whitespace-no-wrap mt-4 '}>Timer by Athletid</h2>
-                        <h2 className={'font-medium text-black/20 whitespace-no-wrap'}>S&apos;entraîner l&apos;esprit libre</h2>
+                        <h2 className={'font-medium text-black/20 whitespace-no-wrap'}>S&apos;entraîner l&apos;esprit libre.</h2>
                     </div>
                 </div>
                 <div>

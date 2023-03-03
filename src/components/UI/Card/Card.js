@@ -35,7 +35,7 @@ const Card = ({className, tagVariantOverride, ...props}) => {
                 className={
                     isClick
                         ? 'hidden'
-                        : `${props.paragraphWidth} flex flex-col  absolute h-full w-full md:top-8 md:left-8 top-4 left-4`
+                        : `${props.paragraphWidth} flex flex-col  absolute h-full lg:w-full md:top-8 md:left-8 top-4 left-4`
                 }
             >
                 <Tag
@@ -46,10 +46,10 @@ const Card = ({className, tagVariantOverride, ...props}) => {
                 <h2 className={`text-${props.textColor} whitespace-pre-line font-medium text-[2em]`}>
                     {props.title}
                 </h2>
-                <h2 className={`text-${props.subTitleColor} mt-2 whitespace-pre-line text-[2em]`}>{props.subtitle}</h2>
+                <h2 className={`mt-2 whitespace-pre-line text-[2em] ${props.subTitleColor}`}>{props.subtitle}</h2>
             </div>
             <div
-                className={`absolute h-full w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 
+                className={`absolute h-full lg:w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 
                 ${isClick ? 'opacity-1' : 'opacity-0'}
                 `}
             >

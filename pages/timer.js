@@ -7,7 +7,7 @@ import Feature from '@/src/components/Timer/Feature'
 import Testimonial from '@/src/components/Testimonial/Testimonial'
 import Head from 'next/head'
 import Format from '@/src/layout/format'
-import DashBoard from '@/public/assets/images/timer-athletid-dashboard.webp'
+import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 
 const SocialApp = () => {
@@ -30,12 +30,12 @@ const SocialApp = () => {
                     subTitle={
                         'Ton partenaire d’entraînement, simple et élégant. Ta nouvelle application est la plus complète (12 chronomètres et timers différents), elle s’adapte à tous types d’entraînements.'
                     }
-                    imageSrc={DashBoard}
+                    imageSrc={TimerDashboard}
                     link={'/'}
                     imageHeight={"h-[400px] lg:h-[500px]"}
                     imageWidth={"w-[400px] lg:w-[500px]"}
-                    imagePosition={"bottom-0 right-12"}
-                    imageObjectPosition={'md:object-right'}
+                    imagePosition={"bottom-0 md:right-12"}
+                    imageObjectPosition={'md:object-center object-right'}
                     imageClassName={"!relative flex items-self-end justify-center"}
                     paragraphClassName={"md:mr-auto"}
                     instaLink={'https://www.instagram.com/timerbyathletid/'}

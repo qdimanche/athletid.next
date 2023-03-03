@@ -14,9 +14,10 @@ import CardImageBottomFull from '@/src/components/UI/Card/CardImageBottomFull'
 import Card from '@/src/components/UI/Card/Card'
 import ApcoFeaturesMobile from '@/public/assets/images/apco-features-fullscreen-mobile.webp'
 import ApcoFeatures from '@/public/assets/images/apco-features-fullscreen.webp'
-import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
 import Captor from '@/public/assets/images/captor.webp'
 import ApcoRockBackground from '@/public/assets/images/apco-rock-background.webp'
+import ApcoRockBackgroundMobile from '@/public/assets/images/apco-rock-background-mobile.webp'
+import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
 
 export default function Home() {
     const isLargeScreen = useMediaQuery(
@@ -65,7 +66,7 @@ export default function Home() {
                         gridClassName={'md:grid-cols-2 md:grid-rows-2'}
                         subTitle={'Make the difference'}
                         title={
-                            'Il n’a jamais été aussi \nsimple de tenir son journal d’entraînement. '
+                            'Il n’a jamais été aussi simple de \ntenir son journal d’entraînement. '
                         }
                     >
                         <Card
@@ -85,7 +86,7 @@ export default function Home() {
                             link={'/timer'}
                             title={"La puissance des données."}
                             subtitle={"Mesure tes progrès."}
-                            subTitleColor={"black/40"}
+                            subTitleColor={"text-black/40"}
                             textColor={'black'}
                             tag={'hidden'}
                             srcBg={Captor}
@@ -101,8 +102,8 @@ export default function Home() {
                             title={"Motivation & inspiration."}
                             subtitle={"Un environnement propice \n" +
                                 "à ta réussite."}
-                            subTitleColor={"white/40"}
-                            srcBg={isMobile ? ApcoRockBackground : ApcoRockBackground}
+                            subTitleColor={"text-white/40"}
+                            srcBg={isMobile ? ApcoRockBackgroundMobile : ApcoRockBackground}
                             srcMockup={TimerDashboard}
                             mockupDisplay={'!hidden'}
                             paragraphWidth={'w-2/3'}

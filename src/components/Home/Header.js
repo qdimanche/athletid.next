@@ -44,7 +44,7 @@ const Header = ({imageClassName, ...props }) => {
         <div className={clsx('h-full md:flex md:items-end', imageClassName)}>
           <div
             className={clsx(
-              'md:absolute relative md:bottom-0 h-full',
+              'md:absolute relative md:bottom-0 md:h-full md:mt-0 mt-16',
               props.imageHeight,
               props.imageWidth,
               props.imageClassName

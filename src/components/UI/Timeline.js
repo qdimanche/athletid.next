@@ -53,7 +53,7 @@ const Timeline = () => {
                         'Le chrono est lancé ! Quelques mésaventures plus tard, de belles rencontres et des perspectives qui commencent à se dessiner, la première application débarque sur les stores. Timer By Athletid. Enfilez votre plus belle tenue de sport et c’est parti pour de nombreuses heures d’entraînement.'
                     }
                 />
-                <Date description={'La suite, on la construit ensemble ?'}/>
+                <Date descriptionStyle={"font-medium text-3xl"} description={'La suite, on la construit ensemble ?'}/>
             </div>
         </div>
     )
@@ -85,21 +85,22 @@ function Date(props) {
                     </div>
 
                     <div className={"flex flex-col ml-[70px]"}>
-                        <p className={''}>{props.description}</p>
+                        <p className={props.descriptionStyle}>{props.description}</p>
                     </div>
                 </div> :
                 <div className={'flex flex-col transform -translate-x-2'}>
                     <div className={"flex flex-col ml-[70px]"}>
-                        <p className={''}>{props.description}</p>
+                        <p className={props.descriptionStyle}>{props.description}</p>
                     </div>
                 </div>
 
 
             }
-            <div
+            {props.image ?             <div
                 className={'h-[215px] relative overflow-hidden rounded-medium md:mb-0 mb-6 md:ml-0 ml-[70px] md:block hidden'}>
                 <Image className={'object-cover'} src={props.image} alt={''}/>
-            </div>
+            </div> : <></> }
+
         </div>
 
     )
