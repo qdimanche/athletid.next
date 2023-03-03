@@ -3,7 +3,7 @@ import TimerScreen02 from '@/public/assets/images/application-timer-athletid-tem
 import TimerScreen01 from '@/public/assets/images/application-timer-creation-entrainement.webp'
 import Header from '@/src/components/Home/Header'
 import AppFeature from '@/src/components/Timer/AppFeature'
-import FeatureSquare from '@/src/components/timer/FeatureSquare'
+import Feature from '@/src/components/Timer/Feature'
 import Testimonial from '@/src/components/Testimonial/Testimonial'
 import Head from 'next/head'
 import Format from '@/src/layout/format'
@@ -24,6 +24,8 @@ const SocialApp = () => {
                 />
             </Head>
 
+
+
             <Format>
                 <Header
                     title={'Le meilleur timer \nde sport.'}
@@ -42,7 +44,7 @@ const SocialApp = () => {
                 />
                 <div className={'xl:px-0 px-4 max-w-[1280px] mx-auto '}>
                     <AppFeature/>
-                    <FeatureSquare
+                    <Feature
                         titleSquare1={
                             'Enregistre et adapte ta séance selon tes besoins et tes objectifs.'
                         }

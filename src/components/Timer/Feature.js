@@ -5,7 +5,7 @@ import TimerScreen01 from "@/public/assets/images/application-timer-creation-ent
 import TimerScreen02 from "@/public/assets/images/application-timer-athletid-tempo.webp";
 import TimerScreen03 from "@/public/assets/images/application-timer-chronometre.webp";
 
-const FeatureSquare = (props) => {
+const Feature = (props) => {
     return (
         <div className={'lg:my-40 mt-28'}>
             <div
@@ -77,4 +77,4 @@ const FeatureSquare = (props) => {
 }
 
 
-export default FeatureSquare;
+export default Feature;
