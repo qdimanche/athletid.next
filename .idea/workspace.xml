@@ -1,37 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="FILTER_RESOLVED_ITEMS" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0033d54-ea0b-486c-865d-871e8002990b" name="Changes" comment="Bug fix responsive JS">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Bug fix in responsive">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/CircleStats.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/apco-rock-background.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/application-apco-dashboard-full.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/black-logo-athletid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/captor-diagonal.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/captor-reverse.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/captor-vertical.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/captor.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/construction-entrainement-apco.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/construction-seance.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/post.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/sportif-sur-banc.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/statistiques.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard-bottom.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard-diagonal.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/tinify-2023-2-28T10_49_34.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/white-logo-athletid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/OurResponsabilities/OurResponsabilities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/OurResponsabilities/Responsability.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/OurTeam/Member.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/OurTeam/OurTeam.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/OurValues/OurValues.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/OurValues/Value.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopLeft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Grid/GridSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/a-propos.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/a-propos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/masonry/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/masonry/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/OurTeam.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/OurValues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/CircleProgressBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CircleProgressBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/MasonryGrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="apco" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2MMMfaR6xqVAmJuHooNLPQxNSCW" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2LrHFpofZrI2dCPLfLKSE7pCNAB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next/src/components/UI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/UI" />
+      <recent name="$PROJECT_DIR$/public/assets/images" />
+      <recent name="$PROJECT_DIR$/src/components/Home" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/About" />
+      <recent name="$PROJECT_DIR$/src/components/Timer" />
+      <recent name="$PROJECT_DIR$/src/components/UI/Carousel/FeatureCarousel" />
+      <recent name="$PROJECT_DIR$/src/components/About/OurValues" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -47,13 +143,132 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d0033d54-ea0b-486c-865d-871e8002990b" name="Changes" comment="" />
-      <created>1677573106179</created>
+      <changelist id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] Home completed + Apco Page started" />
+      <created>1676622181633</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677573106179</updated>
-      <workItem from="1677573108702" duration="148000" />
+      <updated>1676622181633</updated>
+      <workItem from="1676622186578" duration="1115000" />
+      <workItem from="1677068520451" duration="11939000" />
+      <workItem from="1677225623166" duration="20755000" />
+      <workItem from="1677486195841" duration="29943000" />
+      <workItem from="1677658938905" duration="22608000" />
+      <workItem from="1677745044331" duration="22114000" />
+      <workItem from="1677831231470" duration="2925000" />
     </task>
+    <task id="LOCAL-00001" summary="[+]bug fix">
+      <created>1676628129058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676628129058</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[+]bug fix">
+      <created>1676629940635</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676629940635</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[+]bug fix">
+      <created>1676633141268</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676633141269</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[+]bug fix">
+      <created>1676633327830</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676633327830</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[+]bug fix">
+      <created>1676636667394</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676636667394</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[+]bug fix">
+      <created>1677081605279</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677081605279</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[+]bug fix">
+      <created>1677081789169</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677081789169</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[+]Grid Layout">
+      <created>1677171300405</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677171300406</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[+]Responsive design for card">
+      <created>1677254199136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677254199136</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[+] Home completed + Apco Page started">
+      <created>1677600187972</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677600187972</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[+] Apco Page mobile completed">
+      <created>1677685134140</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677685134141</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[+] bug fix">
+      <created>1677685345943</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677685345943</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[+] bug fix">
+      <created>1677685397255</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677685397256</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[+] bug fix">
+      <created>1677685731395</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677685731395</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[+] bug fix">
+      <created>1677686568482</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677686568483</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Bug fix in responsive + Apco page completed">
+      <created>1677772811031</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1677772811031</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,42 +279,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/blog" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/blog" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="HEAD" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[+]bug fix" />
+    <MESSAGE value="[+]Grid Layout" />
+    <MESSAGE value="[+]Responsive design for card" />
+    <MESSAGE value="[+] Home completed + Apco Page started" />
+    <MESSAGE value="[+] Apco Page mobile completed" />
+    <MESSAGE value="[+] bug fix" />
+    <MESSAGE value="Bug fix in responsive + Apco page completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix in responsive + Apco page completed" />
   </component>
 </project>
