@@ -5,7 +5,7 @@ const OurValues = () => {
   return (
     <div
       className={
-        'flex flex-col lg:mb-40 mb-28 grid md:grid-cols-[2fr_3fr] gap-4 md:mx-8'
+        'flex flex-col lg:mb-40 mb-28 grid md:grid-cols-[2fr_3fr] gap-4'
       }
     >
       <h2

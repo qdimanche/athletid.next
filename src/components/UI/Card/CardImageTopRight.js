@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import TimerDashboardBottom from '@/public/assets/images/timer-athletid-dashboard-bottom.webp'
 
-const CardImageTopLeft = () => {
+const CardImageTopRight = () => {
     return (
         <div
             className={
@@ -30,11 +30,9 @@ const CardImageTopLeft = () => {
             <div className={'flex md:flex-col'}>
                 <div className={'space-y-4 flex flex-col md:justify-between '}>
                     <div className={'flex flex-col items-center'}>
-                        <h3 className={'md:text-left font-medium'}>
-                            Lorem ipsum dolor sit amet.
-                        </h3>
-                        <h3 className={'md:text-left text-black/[16%]'}>
-                            Lorem ipsum dolor sit amet.
+                        <h3 className={'md:text-left font-medium w-full'}>S&apos;adapter</h3>
+                        <h3 className={'md:text-left text-black/[16%] w-full'}>
+                            L&apos;app qui <br/>regroupe tous <br/>les timers.
                         </h3>
                     </div>
                 </div>
@@ -43,4 +41,4 @@ const CardImageTopLeft = () => {
     )
 }
 
-export default CardImageTopLeft;
+export default CardImageTopRight;

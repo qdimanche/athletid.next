@@ -74,7 +74,7 @@ const Navbar = (props) => {
                   <li className={'text-[20px] opacity-60'}>
                     <a
                         target="_blank"
-                        href={'https://www.instagram.com/athletid/'}
+                        href={'https://www.instagram.com/timerbyathletid/'}
                         rel="noreferrer"
                     >
                       Instagram

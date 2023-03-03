@@ -22,7 +22,7 @@ const Footer = () => {
             <div className={'flex space-x-4 !text-[1.2em]'}>
               <a
                 target={'_blank'}
-                href="https://www.instagram.com/athletid/"
+                href="https://www.instagram.com/timerbyathletid/"
                 className={'lg:mb-0 mb-2 '}
                 rel="noreferrer"
               >

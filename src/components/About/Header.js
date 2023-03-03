@@ -34,7 +34,7 @@ const Header = (props) => {
         >
           <a
               target={'_blank'}
-              href="https://www.instagram.com/athletid/"
+              href="https://www.instagram.com/timerbyathletid/"
               rel="noreferrer"
           >
             <FaInstagram color={"black"} size={18}/>

@@ -15,8 +15,8 @@ const OurTeam = () => {
       <div
         className={'grid md:grid-cols-4 grid-cols-2 gap-12 mx-auto'}
       >
-        <Member name={"Julien \nNivaud"} position={"Président"} image={Julien}/>
-        <Member name={"Jimmy \nMabillon"} position={"Fondateur \n& CEO"} image={Jimmy}/>
+        <Member name={"Julien \nNivaud"} position={"Président \n& Co-fondateur"} image={Julien}/>
+        <Member name={"Jimmy \nMabillon"} position={"CEO \n& Co-fondateur"} image={Jimmy}/>
         <Member name={"Quentin \nDimanche"} position={"Développeur \nWeb"} image={Quentin}/>
         <Member name={"Noé \nChagué"} position={"Designer \nGraphique"} image={Noe}/>
 

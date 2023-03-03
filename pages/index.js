@@ -9,7 +9,7 @@ import ContactSupport from '@/src/components/Contact/ContactSupport'
 import GridSection from '@/src/components/UI/Grid/GridSection'
 import React from 'react'
 import CardImageBottomRight from '@/src/components/UI/Card/CardImageBottomRight'
-import CardImageTopLeft from '@/src/components/UI/Card/CardImageTopLeft'
+import CardImageTopRight from '@/src/components/UI/Card/CardImageTopRight'
 import CardImageBottomFull from '@/src/components/UI/Card/CardImageBottomFull'
 import Card from '@/src/components/UI/Card/Card'
 import ApcoFeaturesMobile from '@/public/assets/images/apco-features-fullscreen-mobile.webp'
@@ -41,7 +41,7 @@ export default function Home() {
                 <Header
                     title={'Créer une routine \nd’entraînement durable.'}
                     subTitle={
-                        'Atteins tes objectifs et découvre les bienfaits du sport avec l’univers Athletid. Des applications mobiles et objets connectés qui s’adaptent à vos besoins. La régularité est la clé, construisons-la ensemble.'
+                        'Une expérience unique pour tirer le meilleur parti de tes entraînements, atteindre tes objectifs et profiter des bienfaits du sport. '
                     }
                     imageSrc={ImgHeader}
                     imageHeight={'min-h-[500px] lg:min-h-[90vh]'}
@@ -57,16 +57,20 @@ export default function Home() {
                         subTitle={'Timer by Athletid'}
                     >
                         <CardImageBottomRight/>
-                        <CardImageTopLeft/>
+                        <CardImageTopRight/>
                         <CardImageBottomFull/>
                     </GridSection>
 
                     <GridSection
                         gridClassName={'md:grid-cols-2 md:grid-rows-2'}
-                        title={'Le premier système de tracking dédié au fitness et au yoga'}
+                        subTitle={'Make the difference'}
+                        title={
+                            'Il n’a jamais été aussi \nsimple de tenir son journal d’entraînement. '
+                        }
                     >
                         <Card
                             className={'md:col-span-2'}
+                            title={'Reconnaissance \nintelligente des \nmouvements.'}
                             link={'/timer'}
                             textColor={'white'}
                             objectPosition={'md:object-right-bottom '}
@@ -75,9 +79,13 @@ export default function Home() {
                             buttonContent={'Découvrir'}
                             paragraphWidth={'w-3/4 md:w-1/3'}
                             playAnimation={'false'}
+                            tagContent={"Bientôt disponible"}
                         />
                         <Card
                             link={'/timer'}
+                            title={"La puissance des données."}
+                            subtitle={"Mesure tes progrès."}
+                            subTitleColor={"black/40"}
                             textColor={'black'}
                             tag={'hidden'}
                             srcBg={Captor}
@@ -90,6 +98,10 @@ export default function Home() {
                             link={'/timer'}
                             tag={'hidden'}
                             textColor={'white'}
+                            title={"Motivation & inspiration."}
+                            subtitle={"Un environnement propice \n" +
+                                "à ta réussite."}
+                            subTitleColor={"white/40"}
                             srcBg={isMobile ? ApcoRockBackground : ApcoRockBackground}
                             srcMockup={TimerDashboard}
                             mockupDisplay={'!hidden'}
@@ -107,7 +119,7 @@ export default function Home() {
                     }
                     items={MasonryImages}
                 />
-                <div className={'xl:px-0 px-4 max-w-[1280px] mx-auto '}>
+                <div className={'xl:px-0 md:px-12 px-4 max-w-[1280px] mx-auto '}>
                     <ContactSupport/>
                 </div>
             </Format>

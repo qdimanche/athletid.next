@@ -5,11 +5,11 @@ import Breath from "../../../public/assets/images/application-timer-respiration.
 import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
 import Image from "next/image";
 
-const AppFeature = (props) => {
+const AppFeature = () => {
     const [countTab, setCountTab] = useState(1);
     
     return (
-        <div className={" p-4"}>
+        <div className={""}>
             <div className={"lg:mt-40 mt-28 lg:w-[45%]  md:w-2/3 w-full mx-auto"}>
                 <div className={"flex items-center space-x-16"}>
                     <div

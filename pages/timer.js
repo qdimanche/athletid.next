@@ -1,9 +1,9 @@
 import TimerScreen03 from '@/public/assets/images/application-timer-chronometre.webp'
 import TimerScreen02 from '@/public/assets/images/application-timer-athletid-tempo.webp'
 import TimerScreen01 from '@/public/assets/images/application-timer-creation-entrainement.webp'
-import Header from '@/src/components/Header/HeaderJustifySelfEnd'
+import Header from '@/src/components/Home/Header'
 import AppFeature from '@/src/components/Timer/AppFeature'
-import FeatureSquare from '@/src/components/UI/FeatureSquare'
+import FeatureSquare from '@/src/components/timer/FeatureSquare'
 import Testimonial from '@/src/components/Testimonial/Testimonial'
 import Head from 'next/head'
 import Format from '@/src/layout/format'
@@ -31,39 +31,40 @@ const SocialApp = () => {
                         'Ton partenaire d’entraînement, simple et élégant. Ta nouvelle application est la plus complète (12 chronomètres et timers différents), elle s’adapte à tous types d’entraînements.'
                     }
                     imageSrc={DashBoard}
-                    visibilityButton={'hidden'}
                     link={'/'}
-                    imageWidth={isMobile?300 : 370}
-                    parentImageWidth={"200px"}
+                    imageHeight={"h-[400px] lg:h-[500px]"}
+                    imageWidth={"w-[400px] lg:w-[500px]"}
+                    imagePosition={"bottom-0 right-12"}
+                    imageObjectPosition={'md:object-right'}
+                    imageClassName={"!relative flex items-self-end justify-center"}
+                    paragraphClassName={"md:mr-auto"}
                     instaLink={'https://www.instagram.com/timerbyathletid/'}
                 />
-                <AppFeature/>
-                <FeatureSquare
-                    titleFeatureSquare={'Accessible à tous.'}
-                    subTitleFeatureSquare={
-                        'Conçu en collaboration avec des sportifs et des experts du monde entier. Ton application Timer t’accompagne quel que soit ton niveau, ta discipline ou encore tes objectifs.'
-                    }
-                    titleSquare1={
-                        'Enregistre et adapte ta séance selon tes besoins et tes objectifs.'
-                    }
-                    imgSquare1={TimerScreen01}
-                    titleSquare2={
-                        'Tempo, Respiration, Intervalle, AMRAP, EMOM, For Time, Sonothérapie…'
-                    }
-                    imgSquare2={TimerScreen02}
-                    titleSquare3={
-                        'Découvre un design épuré, intuitif  et des sons adaptés à ton sport.'
-                    }
-                    imgSquare3={TimerScreen03}
-                />
-                <Testimonial
-                    titleTestimonial={
-                        'Toi aussi atteint tes objectifs sportifs avec Timer by Athletid.'
-                    }
-                    subTitleTestimonial={
-                        'De nombreux sportifs et professionnels nous ont déjà rejoins, ils n’attendent plus que toi ! '
-                    }
-                />
+                <div className={'xl:px-0 px-4 max-w-[1280px] mx-auto '}>
+                    <AppFeature/>
+                    <FeatureSquare
+                        titleSquare1={
+                            'Enregistre et adapte ta séance selon tes besoins et tes objectifs.'
+                        }
+                        imgSquare1={TimerScreen01}
+                        titleSquare2={
+                            'Tempo, Respiration, Intervalle, AMRAP, EMOM, For Time, Sonothérapie…'
+                        }
+                        imgSquare2={TimerScreen02}
+                        titleSquare3={
+                            'Découvre un design épuré, intuitif  et des sons adaptés à ton sport.'
+                        }
+                        imgSquare3={TimerScreen03}
+                    />
+                    <Testimonial
+                        titleTestimonial={
+                            'Toi aussi atteint tes objectifs sportifs avec Timer by Athletid.'
+                        }
+                        subTitleTestimonial={
+                            'De nombreux sportifs et professionnels nous ont déjà rejoins, ils n’attendent plus que toi ! '
+                        }
+                    />
+                </div>
             </Format>
         </>
     )
