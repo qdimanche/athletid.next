@@ -7,18 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Redesign homepage">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/apco-rock-background-mobile.webp" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Redesign homepage responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/a-propos.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/a-propos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/OurResponsabilities/Responsability.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/OurResponsabilities/Responsability.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677857044369</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Redesign homepage responsive">
+      <created>1677858990662</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1677858990662</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +277,7 @@
     <MESSAGE value="[+] bug fix" />
     <MESSAGE value="Bug fix in responsive + Apco page completed" />
     <MESSAGE value="Redesign homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesign homepage" />
+    <MESSAGE value="Redesign homepage responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign homepage responsive" />
   </component>
 </project>
