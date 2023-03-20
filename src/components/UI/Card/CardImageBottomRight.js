@@ -13,14 +13,15 @@ const CardImageBottomRight = () => {
         >
             <div className={'flex md:items-start md:flex-col md:justify-between '}>
                 <div className={'flex flex-col md:justify-between justify-center'}>
-                    <div className={'space-y-4 md:mb-4 flex flex-col lg:w-2/3'}>
-                        <Tag text={'Lorem'} variant={'black'}/>
-                        <h2 className={'font-medium'}>Lorem ipsum dolor sit amet.</h2>
+                    <div className={' md:mb-4 flex flex-col lg:w-full'}>
+                        <Tag text={'Bientôt disponible'} variant={'black'}/>
+                        <h2 className={'font-medium whitespace-no-wrap mt-4 '}>Timer by Athletid</h2>
+                        <h2 className={'font-medium text-black/20 whitespace-no-wrap'}>S&apos;entraîner l&apos;esprit libre.</h2>
                     </div>
                 </div>
                 <div>
                     <Button
-                        className={'md:static absolute bottom-8 right-8'}
+                        className={'md:static absolute md:bottom-0 bottom-8 md:right-0 right-8'}
                         text={'Lorem'}
                         variant={'red'}
                         link={'/timer'}

@@ -7,17 +7,17 @@ const MasonryImages = [
   require('./etirement-sport-femme.webp'),
   require('./entrainement-sportive-exterieur.webp'),
   require('./coureur-professionnel.webp'),
-  require('./cours-sport-adapte.webp'),
+  require('./homme-meditant.webp'),
   require('./sportifs-divers.webp'),
   require('./homme-crossfit.webp'),
   require('./homme-musculation.webp'),
-  require('./effort-cycliste.webp'),
+  require('./homme-corde-sport.webp'),
   require('./femme-entrainement-cardio.webp'),
   require('./pause-apres-effort-sport.webp'),
   require('./etirement-sport-exterieur.webp'),
   require('./course-pied.webp'),
   require('./femme-haltere-sport.webp'),
-  require('./femme-surpassement-sport.webp'),
+  require('./coureurs.webp'),
   require('./femme-tenue-sport.webp'),
   require('./entrainement-sport-maison.webp'),
   require('./entrainement-quotidien-sport .webp'),
@@ -26,4 +26,5 @@ const MasonryImages = [
   require('./boxeuse.webp'),
   require('./entrainement-senior-sport-exterieur.webp'),
 ]
+
 export default MasonryImages

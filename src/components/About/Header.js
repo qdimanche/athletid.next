@@ -17,8 +17,8 @@ const Header = (props) => {
             alt="Femme s'entraînant gràce à l'application Timer"
             className={`w-full h-full object-cover `}
         />
-        <div className={' absolute transform top-[40%] -translate-y-[40%] w-full md:px-12 px-4'}>
-          <div className={'max-w-[1280px] mx-auto'}>
+        <div className={' absolute transform top-1/3 -translate-y-1/3 w-full'}>
+          <div className={'max-w-[1280px] lg:px-8 px-12 mx-auto'}>
             <div className={'space-y-4 md:w-1/2 '}>
               <h1 className={`md:text-left text-center whitespace-pre-line`}>
                 {props.title}
@@ -34,24 +34,24 @@ const Header = (props) => {
         >
           <a
               target={'_blank'}
-              href="https://www.instagram.com/athletid/"
+              href="https://www.instagram.com/timerbyathletid/"
               rel="noreferrer"
           >
-            <FaInstagram color={props.color} size={18}/>
+            <FaInstagram color={"black"} size={18}/>
           </a>
           <a
               target={'_blank'}
               href="https://www.facebook.com/TimerByAthletid"
               rel="noreferrer"
           >
-            <FaFacebook color={props.color} size={18}/>
+            <FaFacebook color={"black"} size={18}/>
           </a>
           <a
               target={'_blank'}
               href="https://www.linkedin.com/company/athletid/"
               rel="noreferrer"
           >
-            <FaLinkedin color={props.color} size={18}/>
+            <FaLinkedin color={"black"} size={18}/>
           </a>
         </div>
       </header>

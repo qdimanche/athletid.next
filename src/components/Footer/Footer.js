@@ -1,115 +1,105 @@
 import React from 'react'
-import Button from '@/src/components/UI/Button'
-import Image from 'next/image'
-import CaptorVertical from '@/public/assets/images/captor-vertical.webp'
-import CaptorDiagonal from '@/public/assets/images/captor-diagonal.webp'
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
-import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import Newsletter from '@/src/components/Footer/Newsletter'
 
 const Footer = () => {
-    const isTablet = useMediaQuery('(min-width: 768px)')
+  return (
+    <div className={'lg:mt-40 mt-28'}>
+      <Newsletter />
 
-    return (
-        <footer className={'lg:mt-40 mt-28'}>
-            <Newsletter/>
-
-            <div className={'bg-black text-white flex items-end md:p-12 p-8'}>
-                <div
-                    className={
-                        'max-w-[1280px] mx-auto flex flex-col items-center pt-20  md:pt-0'
-                    }
-                >
-                    <div
-                        className={
-                            'grid md:grid-cols-2 h-full items-center md:min-h-[70vh] w-full'
-                        }
-                    >
-                        <div
-                            className={
-                                'flex flex-col md:items-start items-center md:text-left text-center mb-8'
-                            }
-                        >
-                            <h2 className={'font-medium'}>Rejoignez la liste d&apos;attente</h2>
-                            <p className={'!my-8'}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Dignissimos minima, sequi. Dolor fuga libero provident quas
-                                reiciendis ut voluptate.
-                            </p>
-                            <Button
-                                variant={'red'}
-                                link={'/'}
-                                content={"Rejoignez la liste d'attente"}
-                                className={''}
-                            />
-                        </div>
-                        <div
-                            className={
-                                'h-[300px] w-[300px] xl:w-[550px] xl:h-[550px] relative mb-8 mx-auto'
-                            }
-                        >
-                            <div
-                                className={
-                                    'absolute z-[3] h-full w-full gradient-linear-background-black md:hidden'
-                                }
-                            ></div>
-                            <Image
-                                src={isTablet ? CaptorDiagonal : CaptorVertical}
-                                layout={'fill'}
-                                className={
-                                    'absolute object-cover z-[1] md:scale-110 2xl:scale-[120%]'
-                                }
-                                alt={''}
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        className={
-                            'flex md:flex-row flex-col items-center col-span-2 justify-between md:mb-8 w-full'
-                        }
-                    >
-                        <Image
-                            className={'md:mb-0 mb-8'}
-                            src={"/assets/images/white-logo-athletid.svg"}
-                            alt={''}
-                            width={110}
-                            height={40}
-                        />
-                        <div className={'flex flex-col space-y-4'}>
-                            <div
-                                className={
-                                    'flex md:flex md:flex-row flex-col md:space-x-8 md:space-y-0 space-y-4 md:items-left items-center'
-                                }
-                            >
-                                <Link href={'/timer'}>Timer</Link>
-                                <Link href={'/a-propos'}>À propos</Link>
-                                <Link href={'/contact'}>Contact</Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={'flex md:flex-row flex-col justify-between w-full text-white/40 mt-4 md:mt-0'}>
-                        <p className={'text-center md:text-left md:order-first order-last mt-12 md:mt-0 md:text-[1em] text-sm'}>
-                            Copyright © 2022 ATHLETID Inc. All rights reserved.
-                        </p>
-                        <div
-                            className={
-                                'flex md:flex lg:flex-row flex-col lg:space-x-8 lg:space-y-0 space-y-4  md:items-end items-center'
-                            }
-                        >
-                            <Link href={'/contact'}>Support</Link>
-                            <Link href={'/conditions-de-vente-et-d-utilisation'}>
-                                Conditions d&apos;utilisation
-                            </Link>
-                            <Link href={'/politique-de-confidentialité'}>
-                                Poltique de confidentialité
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+      <div
+        className={
+          'flex flex-col relative lg:mt-0 mt-0  max-w-[1280px] mx-auto px-8'
+        }
+      >
+        <div
+          className={
+            'lg:mt-12  pb-16 flex md:flex-row flex-col justify-between md:items-start items-center'
+          }
+        >
+          <div className={'flex flex-col md:order-1 order-5 lg:mt-0 space-y-2'}>
+            <div className={'flex space-x-4 !text-[1.2em]'}>
+              <a
+                target={'_blank'}
+                href="https://www.instagram.com/timerbyathletid/"
+                className={'lg:mb-0 mb-2 '}
+                rel="noreferrer"
+              >
+                <FaInstagram size={18} color={'black'} />
+              </a>
+              <a
+                target={'_blank'}
+                href="https://www.facebook.com/TimerByAthletid "
+                rel="noreferrer"
+              >
+                <FaFacebook size={18} color={'black'} />
+              </a>
+              <a
+                target={'_blank'}
+                href="https://www.linkedin.com/company/athletid/"
+                rel="noreferrer"
+              >
+                <FaLinkedin size={18} color={'black'} />
+              </a>
             </div>
-        </footer>
-    )
+            <a
+              className={'text-[1.2em] md:block hidden'}
+              style={{ textDecoration: 'underline' }}
+              href="mailto:contact@athletid.com"
+            >
+              contact@athletid.com
+            </a>
+            <p className={'text-black/30 !mr-[20px] md:mr-0'}>Lille, France</p>
+          </div>
+
+          <div
+            className={
+              'flex text-black/30 lg:space-x-[30px] order-1 md:mb-0 mb-4 flex-col '
+            }
+          >
+            <div
+              className={
+                'w-full grid md:flex md:flex-col lg:flex-row md:items-start grid-cols-4 gap-y-3 md:gap-x-8 gap-x-4 space-x-0'
+              }
+            >
+              <Link href={'/'}>Accueil</Link>
+              <Link href={'/timer'} className={'justify-center flex'}>
+                Timer
+              </Link>
+              <Link href={'/a-propos'}>À propos</Link>
+              <Link href={'/contact'}>Contact</Link>
+            </div>
+          </div>
+
+          <div
+            className={
+              'flex flex-col md:items-start lg:space-y-0 space-y-3 items-center order-2'
+            }
+          >
+            <div
+              className={
+                'md:space-x-0 space-x-[30px] md:space-y-2 flex md:flex-col md:order-2 flex-row lg:!mb-3 !mb-10 '
+              }
+            >
+              <Link
+                className={'text-black/30'}
+                href={'/politique-de-confidentialite'}
+              >
+                Politique de confidentialité
+              </Link>
+              <Link
+                className={'text-black/30'}
+                href={'/conditions-de-vente-et-d-utilisation'}
+              >
+                CGV/GU
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Footer

@@ -31,12 +31,10 @@ const APropos = () => {
 				objectPosition={'cover'}
 				color={'white'}
 			/>
-			<div className={'max-w-[1024px] xl:px-0 px-4  mx-auto'}>
-				<CircleProgressBar/>
+			<div className={'max-w-[1024px] px-8 mx-auto'}>
 				<OurResponsabilities/>
 				<Timeline/>
 				<OurTeam/>
-				<OurValues/>
 			</div>
 		</Format>
 	

@@ -163,7 +163,7 @@ input:-webkit-autofill:active {
 }
 
 .header-height {
-    @apply lg:h-[95vh] min-h-[60vh];
+    @apply md:min-h-[95vh] min-h-[60vh];
 }
 
 
@@ -201,11 +201,6 @@ input:-webkit-autofill:active {
     h2, h3, h4 {
         line-height: 2.5rem;
         font-size: 2.25em;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-        line-height: 2rem;
     }
 
     h4 {

@@ -32,7 +32,9 @@ export default function format({ children }) {
         />
       </Head>
       <Navbar />
-      <main className={'relative'}>{children}</main>
+      <div className={''}>
+        <main className={'relative'}>{children}</main>
+      </div>
       <Footer />
       <Consent />
     </>

@@ -7,12 +7,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Bug fix responsive JS">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Redesign homepage responsive">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_03_2023_11_13_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_03_2023_11_13__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/a-propos.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/a-propos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/conditions-de-vente-et-d-utilisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/conditions-de-vente-et-d-utilisation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/politique-de-confidentialite.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/politique-de-confidentialite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="blog" />
+        <entry key="$PROJECT_DIR$" value="apco" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,34 +54,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/quentindimanche/Projects/Travail/athletid.next/src/components/UI/Carousel/ArrowCarouselBgImage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/About" />
       <recent name="$PROJECT_DIR$/src/components/Timer" />
       <recent name="$PROJECT_DIR$/src/components/UI/Carousel/FeatureCarousel" />
-      <recent name="$PROJECT_DIR$/src/components/About/OurValues" />
-      <recent name="$PROJECT_DIR$/src/components/About/OurTeam" />
+      <recent name="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel" />
+      <recent name="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage" />
+      <recent name="$PROJECT_DIR$/src/components/UI" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/images" />
+      <recent name="$PROJECT_DIR$/src/components/UI/Carousel" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/About" />
+      <recent name="$PROJECT_DIR$/src/components/Timer" />
     </key>
   </component>
   <component name="RunManager">
@@ -102,6 +115,9 @@
       <workItem from="1677658938905" duration="22608000" />
       <workItem from="1677745044331" duration="22114000" />
       <workItem from="1677831231470" duration="2925000" />
+      <workItem from="1679249778848" duration="88000" />
+      <workItem from="1679300551838" duration="121000" />
+      <workItem from="1679300675396" duration="1457000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>
@@ -215,7 +231,49 @@
       <option name="project" value="LOCAL" />
       <updated>1677772811031</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Redesign homepage">
+      <created>1677851196820</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677851196820</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Redesign homepage">
+      <created>1677856632816</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1677856632816</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Redesign homepage">
+      <created>1677856819445</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1677856819445</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Redesign homepage">
+      <created>1677857044369</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1677857044369</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Redesign homepage responsive">
+      <created>1677858990662</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1677858990662</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Redesign homepage responsive">
+      <created>1677859347234</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1677859347234</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +298,8 @@
     <MESSAGE value="[+] Apco Page mobile completed" />
     <MESSAGE value="[+] bug fix" />
     <MESSAGE value="Bug fix in responsive + Apco page completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix in responsive + Apco page completed" />
+    <MESSAGE value="Redesign homepage" />
+    <MESSAGE value="Redesign homepage responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign homepage responsive" />
   </component>
 </project>

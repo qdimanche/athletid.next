@@ -12,7 +12,7 @@ const ConditionsDeVenteEtDUtilisation = () => {
             </Head>
 
             <Format>
-                <div className={'px-8 flex flex-col lg:pt-32 pt-20'}>
+                <div className={'max-w-[1280px] mx-auto px-8 flex flex-col lg:pt-32 pt-20'}>
                     <h1 className={'mb-[20px] !whitespace-normal'}>Conditions Générales de vente et d’utilisation de l&apos;application
                         Athletid</h1>
                     <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 1 – Définitions</h2>

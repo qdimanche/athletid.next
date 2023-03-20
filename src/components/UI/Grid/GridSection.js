@@ -1,19 +1,16 @@
 import React from 'react';
 import clsx from "clsx";
 
-const GridSection = ({children, gridClassName}) => {
+const GridSection = ({children, gridClassName, ...props}) => {
     return (
         <div className={'md:my-40 mt-28'}>
             <div
                 className={
-                    'flex flex-col items-center md:w-1/2 md:w-3/4 mx-auto md:mb-8 mb-8 text-center'
+                    'flex flex-col items-center md:w-1/2 md:w-3/4 mx-auto md:mb-24 mb-8 text-center'
                 }
             >
-                <h2 style={{whiteSpace: 'pre-line'}}>Lorem ipsum dolor sit amet.</h2>
-                <p className={'w-full mt-[10px]'}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt,
-                    tenetur!
-                </p>
+                <p className={'text-sm mb-4 text-black/20'}>{props.subTitle}</p>
+                <h2 style={{whiteSpace: 'pre-line'}}>{props.title}</h2>
             </div>
 
             <div

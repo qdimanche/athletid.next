@@ -19,15 +19,15 @@ const ContactSupport = (props, ref) => {
                     style={{whiteSpace: "pre-line"}}
                     className={"mb-[10px] md:text-left text-center"}
                 >
-                    Vos idées sont nos priorités !
+                    Vos idées sont nos <br/>priorités !
                 </h2>
                 <p className={"mb-[20px] md:text-left text-center"}>
                     Soucieux de vous apporter la meilleure application, nous sommes à l’écoute de toutes vos suggestions pour faire évoluer notre solution.
                 </p>
                 <div className={"flex items-center space-x-4"}>
                     <Button variant={"black"}
-                        content={"Nous contacter"}
-                        link={"mailto:contact@athletid.com"}
+                            content={"Nous contacter"}
+                            link={"mailto:contact@athletid.com"}
                     />
                 </div>
             </div>
