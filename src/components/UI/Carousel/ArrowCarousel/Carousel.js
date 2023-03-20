@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import CarouselSlide from '@/src/components/UI/Carousel/ArrowCarousel/CarouselSlide'
 import {CarouselItems} from '@/src/components/UI/Carousel/ArrowCarousel/CarouselItems'
 
-const Carousel = () => {
+const Carousel = (props) => {
     const [currentItemIndex, setCurrentItemIndex] = useState(0)
     const [count, setCount] = useState(0)
     const [isPrevious, setIsPrevious] = useState(false)
@@ -11,6 +11,16 @@ const Carousel = () => {
 
     return (
         <div className={'lg:my-40 my-28 relative'}>
+
+            <div
+                className={
+                    'flex flex-col items-center px-8 mx-auto mb-24 text-center'
+                }
+            >
+                <p className={'text-sm mb-4 text-black/20'}>{props.subTitle}</p>
+                <h2 style={{whiteSpace: 'pre-line'}}>{props.title}</h2>
+            </div>
+
             <CarouselSlide
                 title={CarouselItems[currentItemIndex].title}
                 description={CarouselItems[currentItemIndex].description}

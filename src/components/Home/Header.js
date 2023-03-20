@@ -4,6 +4,7 @@ import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import {useIntl} from 'react-intl'
 import Button from '@/src/components/UI/Button'
 import clsx from 'clsx'
+import Tag from "@/src/components/UI/Tag";
 
 const Header = ({imageClassName, ...props }) => {
   const intl = useIntl()
@@ -24,19 +25,20 @@ const Header = ({imageClassName, ...props }) => {
             props.paragraphClassName
           )}
         >
-          <div className={''}>
+          <div className={'space-y-6 flex flex-col items-center'}>
+            <Tag variant={"black"} text={"Disponible"}/>
             <h1
-              className={`md:text-left text-center text-black white whitespace-no-wrap`}
+              className={`md:text-left text-center text-black white whitespace-pre-line`}
             >
               {props.title}
             </h1>
             <p
-              className={`my-6 text-black md:text-left text-center `}
+              className={`text-black md:text-left text-center `}
             >
               {props.subTitle}
             </p>
-            <div className={`flex md:justify-start justify-center space-x-4`}>
-              <Button variant={'red'} link={props.link} content={'Découvrir'} />
+            <div className={`flex space-x-4`}>
+              {props.buttons}
             </div>
           </div>
         </div>
@@ -44,7 +46,7 @@ const Header = ({imageClassName, ...props }) => {
         <div className={clsx('h-full md:flex md:items-end', imageClassName)}>
           <div
             className={clsx(
-              'md:absolute relative md:bottom-0 md:h-full md:mt-0 mt-16',
+              'md:absolute relative md:bottom-0 md:h-full',
               props.imageHeight,
               props.imageWidth,
               props.imageClassName
@@ -52,9 +54,8 @@ const Header = ({imageClassName, ...props }) => {
           >
             <Image
               src={props.imageSrc}
-              layout={'fill'}
+              width={1000}
               alt={''}
-              className={clsx(`object-cover`, props.imageObjectPosition)}
             />
           </div>
         </div>

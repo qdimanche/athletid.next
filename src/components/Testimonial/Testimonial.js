@@ -1,6 +1,10 @@
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
 import TestimonialCardData from "./TestimonialCardData";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay} from "swiper";
+import 'swiper/css';
+import 'swiper/css/autoplay';
 
 const Testimonial = (props) => {
     return (
@@ -14,26 +18,36 @@ const Testimonial = (props) => {
                 <p>{props.subTitleTestimonial}</p>
             </div>
 
-            <div className={"h-[60vh] overflow-hidden white-inner-shadow "}>
-                <div
-                    className={
-                        "lg:columns-4 md:columns-3 columns-2 gap-4 relative z-[-2] px-0 p-8"
-                    }
+            <div className={"h-[60vh] w-full overflow-hidden relative"}>
+                <Swiper
+                    modules={[Autoplay]}
+                    className={'w-[200%] absolute transform -translate-x-1/2 left-1/2'}
+                    spaceBetween={30}
+                    slidesPerView={3}
+                    slidesPerGroup={1}
+                    navigation
+                    autoplay={{delay:2000}}
+                    speed={1000}
+                    loop={true}
+                    loopPreventsSliding={true}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
                 >
                     {TestimonialCardData.slice(0, 12).map((val, ind) => {
                         return (
-                            <TestimonialCard
-                                key={ind}
-                                name={val.name}
-                                surname={val.surname}
-                                publicationDate={val.publicationDate}
-                                title={val.title}
-                                comment={val.comment}
-                                star={val.star}
-                            />
+                            <SwiperSlide key={ind}>
+                                <TestimonialCard
+                                    name={val.name}
+                                    surname={val.surname}
+                                    publicationDate={val.publicationDate}
+                                    title={val.title}
+                                    comment={val.comment}
+                                    star={val.star}
+                                />
+                            </SwiperSlide>
                         );
                     })}
-                </div>
+                </Swiper>
             </div>
         </div>
     );

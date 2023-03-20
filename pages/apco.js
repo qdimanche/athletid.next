@@ -13,7 +13,7 @@ import {AiOutlinePlus} from 'react-icons/ai';
 import ImageSection from "@/src/components/Apco/ImageSection";
 import Carousel from "@/src/components/UI/Carousel/ArrowCarousel/Carousel";
 import CarouselBgImage from "@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage";
-import Feature from "@/src/components/Apco/Feature";
+import Feature from "@/src/components/Feature";
 
 const Apco = () => {
     return (
@@ -79,10 +79,11 @@ const Apco = () => {
                         </Card>
                     </GridSection>
                     <ImageSection/>
-                    <Carousel/>
+                    <Carousel
+                    />
                 </div>
                 <CarouselBgImage/>
-                <div className={'xl:px-0 px-4 max-w-[1280px] mx-auto'}>
+                <div className={'px-8 max-w-[1280px] mx-auto'}>
                     <Feature/>
                 </div>
             </Format>
