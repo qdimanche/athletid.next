@@ -17,8 +17,8 @@ const Header = (props) => {
             alt="Femme s'entraînant gràce à l'application Timer"
             className={`w-full h-full object-cover `}
         />
-        <div className={' absolute transform top-1/3 -translate-y-1/3 w-full md:px-8 px-4'}>
-          <div className={'max-w-[1280px] mx-auto'}>
+        <div className={' absolute transform top-1/3 -translate-y-1/3 w-full'}>
+          <div className={'max-w-[1280px] lg:px-8 px-12 mx-auto'}>
             <div className={'space-y-4 md:w-1/2 '}>
               <h1 className={`md:text-left text-center whitespace-pre-line`}>
                 {props.title}

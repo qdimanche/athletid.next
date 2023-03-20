@@ -51,7 +51,7 @@ export default function Home() {
                     link={'/timer'}
                     instaLink={'https://www.instagram.com/athletid/'}
                 />
-                <div className={'xl:px-0 px-4 max-w-[1280px] mx-auto '}>
+                <div className={'px-8 max-w-[1280px] mx-auto '}>
                     <GridSection
                         gridClassName={'md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr]'}
                         title={'La régularité est la clé, \n' + 'construisons la ensemble.'}
@@ -120,7 +120,7 @@ export default function Home() {
                     }
                     items={MasonryImages}
                 />
-                <div className={'xl:px-0 md:px-12 px-4 max-w-[1280px] mx-auto '}>
+                <div className={'px-8 max-w-[1280px] mx-auto '}>
                     <ContactSupport/>
                 </div>
             </Format>

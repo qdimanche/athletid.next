@@ -8,8 +8,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Redesign homepage responsive">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_03_2023_11_13_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_03_2023_11_13__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/OurResponsabilities/Responsability.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/OurResponsabilities/Responsability.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/a-propos.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/a-propos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/conditions-de-vente-et-d-utilisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/conditions-de-vente-et-d-utilisation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/politique-de-confidentialite.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/politique-de-confidentialite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next/src/components/Timer",
+    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,6 +115,9 @@
       <workItem from="1677658938905" duration="22608000" />
       <workItem from="1677745044331" duration="22114000" />
       <workItem from="1677831231470" duration="2925000" />
+      <workItem from="1679249778848" duration="88000" />
+      <workItem from="1679300551838" duration="121000" />
+      <workItem from="1679300675396" duration="1457000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>
@@ -251,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677858990662</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Redesign homepage responsive">
+      <created>1677859347234</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1677859347234</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

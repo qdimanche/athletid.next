@@ -163,7 +163,7 @@ input:-webkit-autofill:active {
 }
 
 .header-height {
-    @apply lg:min-h-[95vh] min-h-[60vh];
+    @apply md:min-h-[95vh] min-h-[60vh];
 }
 
 

@@ -31,7 +31,7 @@ const APropos = () => {
 				objectPosition={'cover'}
 				color={'white'}
 			/>
-			<div className={'max-w-[1024px] lg:px-0 md:px-12 px-4 mx-auto'}>
+			<div className={'max-w-[1024px] px-8 mx-auto'}>
 				<OurResponsabilities/>
 				<Timeline/>
 				<OurTeam/>

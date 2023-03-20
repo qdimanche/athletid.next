@@ -40,7 +40,7 @@ const SocialApp = () => {
                     paragraphClassName={"md:mr-auto"}
                     instaLink={'https://www.instagram.com/timerbyathletid/'}
                 />
-                <div className={'xl:px-0 px-4 max-w-[1280px] mx-auto '}>
+                <div className={'px-8 max-w-[1280px] mx-auto '}>
                     <AppFeature/>
                     <Feature
                         titleSquare1={

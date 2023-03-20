@@ -19,10 +19,10 @@ const Navbar = (props) => {
   return (
       <div
           className={
-            ' fixed z-[999] w-screen md:px-12 px-4 py-4  top-0 '
+            ' fixed z-[999] w-screen  py-4  top-0 '
           }
       >
-        <div className={'flex max-w-[1280px] mx-auto justify-between'}>
+        <div className={'flex max-w-[1280px] px-8 mx-auto justify-between'}>
           <div>
             <Link href="/" className={`flex space-x-2 items-center z-[999]`}>
               <Logo width={32} id={'test'} alt="" />

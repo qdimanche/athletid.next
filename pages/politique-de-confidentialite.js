@@ -12,7 +12,7 @@ const PolitiqueDeConfidentialite = () => {
 			
 			
 			<Format>
-				<div className={'px-8 flex flex-col lg:pt-32 pt-20 '}>
+				<div className={'max-w-[1280px] mx-auto px-8 flex flex-col lg:pt-32 pt-20 '}>
 					<h1 className={'mb-[20px] !whitespace-normal'}>Politique de confidentialité</h1>
 					<p className={''}>Chez ATHLETID, la protection de vos données personnelles est une priorité.
 						Lors de votre utilisation du site internet www.athletid.com (ci-après le « Site »), nous sommes

@@ -10,7 +10,7 @@ const Footer = () => {
 
       <div
         className={
-          'flex flex-col relative lg:mt-0 mt-0  2xl:mx-28 lg:mx-20 md:mx-16 mx-4'
+          'flex flex-col relative lg:mt-0 mt-0  max-w-[1280px] mx-auto px-8'
         }
       >
         <div

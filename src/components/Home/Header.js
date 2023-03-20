@@ -20,7 +20,7 @@ const Header = ({imageClassName, ...props }) => {
       >
         <div
           className={clsx(
-            'pt-28  md:pr-8 md:py-16  md:flex md:flex-col md:justify-center xl:px-0 md:px-8 px-4',
+            'pt-28  md:pr-8 md:py-16  md:flex md:flex-col md:justify-center px-8',
             props.paragraphClassName
           )}
         >
