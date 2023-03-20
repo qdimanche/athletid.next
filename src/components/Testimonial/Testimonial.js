@@ -11,14 +11,16 @@ const Testimonial = (props) => {
         <div
             className={"lg:px-4 lg:my-40 lg:mb-32 my-28"}
         >
-            <div className={"text-center lg:w-1/2 md:w-3/4  mx-auto"}>
-                <h2 style={{whiteSpace: "pre-line"}} className={"mb-[10px]"}>
-                    {props.titleTestimonial}
-                </h2>
-                <p>{props.subTitleTestimonial}</p>
+            <div
+                className={
+                    'flex flex-col items-center px-8 mx-auto mb-24 text-center'
+                }
+            >
+                <p className={'text-sm mb-4 text-black/20'}>{props.subTitle}</p>
+                <h2 style={{whiteSpace: 'pre-line'}}>{props.title}</h2>
             </div>
 
-            <div className={"h-[60vh] w-full overflow-hidden relative"}>
+            <div className={"w-full overflow-hidden relative"}>
                 <Swiper
                     modules={[Autoplay]}
                     className={'w-[200%] absolute transform -translate-x-1/2 left-1/2'}
@@ -30,13 +32,12 @@ const Testimonial = (props) => {
                     speed={1000}
                     loop={true}
                     loopPreventsSliding={true}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                 >
                     {TestimonialCardData.slice(0, 12).map((val, ind) => {
                         return (
                             <SwiperSlide key={ind}>
                                 <TestimonialCard
+                                    image={val.image}
                                     name={val.name}
                                     surname={val.surname}
                                     publicationDate={val.publicationDate}

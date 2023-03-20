@@ -7,28 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Redesign homepage responsive">
-      <change afterPath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] mobile responsive for page timer">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_02_2023_10_04_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_02_2023_10_04__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Apco/Feature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Feature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SocialApp/PlusIcon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SocialApp/SocialAppFeature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Testimonial/TestimonialCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/TestimonialCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/AppFeature.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/Feature.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/FeatureTab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testimonial/TestimonialCardData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/TestimonialCardData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +112,7 @@
       <workItem from="1679249778848" duration="88000" />
       <workItem from="1679300551838" duration="121000" />
       <workItem from="1679300675396" duration="1457000" />
+      <workItem from="1679325575701" duration="2272000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>
@@ -280,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677859347234</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="[+] mobile responsive for page timer">
+      <created>1679324092379</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679324092379</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +302,7 @@
     <MESSAGE value="Bug fix in responsive + Apco page completed" />
     <MESSAGE value="Redesign homepage" />
     <MESSAGE value="Redesign homepage responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesign homepage responsive" />
+    <MESSAGE value="[+] mobile responsive for page timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] mobile responsive for page timer" />
   </component>
 </project>

@@ -105,7 +105,10 @@ const Timer = () => {
                     <ImageSection/>
                     <Feature/>
                 </div>
-                <Testimonial/>
+                <Testimonial
+                    title={"Lorem ipsum dolor sit elit amet, lorem"}
+                    subTitle={"Applications Haut de Gamme"}
+                />
             </Format>
         </>
     )
