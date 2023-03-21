@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '@/src/components/Apco/Header'
+import Header from '@/src/components/Header/Header'
 import Format from '@/src/layout/format'
 import Head from 'next/head'
 import GridSection from '@/src/components/UI/Grid/GridSection'
@@ -10,10 +10,10 @@ import Statistiques from '@/public/assets/images/statistiques.webp'
 import Captor from '@/public/assets/images/captor.webp'
 import ConstructionEntrainementApco from '@/public/assets/images/construction-entrainement-apco.webp'
 import {AiOutlinePlus} from 'react-icons/ai';
-import ImageSection from "@/src/components/Apco/ImageSection";
+import ImageSection from "@/src/components/ImageSection/ImageSection";
 import Carousel from "@/src/components/UI/Carousel/ArrowCarousel/Carousel";
 import CarouselBgImage from "@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage";
-import Feature from "@/src/components/Feature";
+import Feature from "@/src/components/Feature/Feature";
 
 const Apco = () => {
     return (
@@ -84,7 +84,9 @@ const Apco = () => {
                 </div>
                 <CarouselBgImage/>
                 <div className={'px-8 max-w-[1280px] mx-auto'}>
-                    <Feature/>
+                    <Feature
+                        subscriptionsApco={"apco"}
+                    />
                 </div>
             </Format>
         </>

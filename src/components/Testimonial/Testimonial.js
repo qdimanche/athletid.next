@@ -23,7 +23,7 @@ const Testimonial = (props) => {
             <div className={"w-full overflow-hidden relative"}>
                 <Swiper
                     modules={[Autoplay]}
-                    className={'w-[200%] absolute transform -translate-x-1/2 left-1/2'}
+                    className={'w-[200%] md:w-full absolute transform -translate-x-1/2 left-1/2'}
                     spaceBetween={30}
                     slidesPerView={3}
                     slidesPerGroup={1}

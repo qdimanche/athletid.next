@@ -1,17 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
-import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
-import {useIntl} from 'react-intl'
+import { useIntl } from 'react-intl'
+import Tag from '@/src/components/UI/Tag'
+import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import Button from '@/src/components/UI/Button'
-import clsx from 'clsx'
-import Tag from "@/src/components/UI/Tag";
+import { FaApple } from 'react-icons/fa'
+import { TiVendorAndroid } from 'react-icons/ti'
 
-const Header = ({imageClassName, ...props }) => {
+const Header = ({ imageClassName, ...props }) => {
   const intl = useIntl()
+  const isMobile = useMediaQuery('(max-width: 768px)')
 
   return (
     <header
-      className={`header-height relative  overflow-hidden flex md:rounded-medium justify-center lg:justify-start bg-greyShade md:m-4 mt-0`}
+      className={`header-height relative  overflow-hidden flex justify-center lg:justify-start bg-greyShade`}
     >
       <div
         style={{ whiteSpace: 'pre-line' }}
@@ -20,72 +22,65 @@ const Header = ({imageClassName, ...props }) => {
         }
       >
         <div
-          className={clsx(
-            'pt-28  md:pr-8 md:py-16  md:flex md:flex-col md:justify-center px-8',
-            props.paragraphClassName
-          )}
+          className={
+            'pt-28  md:py-16  md:flex md:flex-col md:justify-center px-8 md:pl-12'
+          }
         >
-          <div className={'space-y-6 flex flex-col items-center'}>
-            <Tag variant={"black"} text={"Disponible"}/>
+          <div
+            className={
+              'space-y-6 flex flex-col items-center md:items-start z-[900]'
+            }
+          >
+            <Tag variant={'black'} text={'Available'} />
             <h1
               className={`md:text-left text-center text-black white whitespace-pre-line`}
             >
               {props.title}
             </h1>
-            <p
-              className={`text-black md:text-left text-center `}
-            >
+            <p className={`text-black md:text-left text-center md:block hidden`}>
               {props.subTitle}
             </p>
-            <div className={`flex space-x-4`}>
-              {props.buttons}
+            <div className={`flex space-x-4 whitespace-nowrap`}>
+              <Button
+                variant={'black'}
+                link={''}
+                content={
+                  <div className={'flex space-x-2 items-center'}>
+                    <FaApple color={'black'} size={20} />
+                    <div>App Store</div>
+                  </div>
+                }
+              />
+              <Button
+                variant={'black'}
+                link={''}
+                content={
+                  <div className={'flex space-x-2 items-center'}>
+                    <TiVendorAndroid color={'black'} size={22} />
+                    <div>Play Store</div>
+                  </div>
+                }
+              />
             </div>
           </div>
         </div>
 
-        <div className={clsx('h-full md:flex md:items-end', imageClassName)}>
-          <div
-            className={clsx(
-              'md:absolute relative md:bottom-0 md:h-full',
-              props.imageHeight,
-              props.imageWidth,
-              props.imageClassName
-            )}
-          >
+        <div
+          className={
+            'h-full md:w-[500px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute md:right-0'
+          }
+        >
+          {isMobile ? (
+            <Image src={props.imageSrc} width={1000} alt={''} />
+          ) : (
             <Image
               src={props.imageSrc}
-              width={1000}
+              layout={'fill'}
+              className={'object-cover object-left'}
               alt={''}
             />
-          </div>
+          )}
         </div>
-      </div>
-      <div
-        className={
-          'absolute bottom-[1.5rem] right-[1.5rem]  space-y-6 z-[900] text-[1.3em] lg:flex flex-col hidden'
-        }
-      >
-        <a
-          target={'_blank'}
-          href={'https://www.instagram.com/timerbyathletid/'}
-          rel="noreferrer"
-        >
-          <FaInstagram size={18} color={'black'} />
-        </a>
-        <a
-          target={'_blank'}
-          href="https://www.facebook.com/TimerByAthletid"
-          rel="noreferrer"
-        >
-          <FaFacebook size={18} color={'black'} />
-        </a>
-        <a
-          target={'_blank'}
-          href="https://www.linkedin.com/company/athletid/"
-          rel="noreferrer"
-        >
-          <FaLinkedin size={18} color={'black'} />
-        </a>
       </div>
     </header>
   )

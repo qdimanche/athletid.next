@@ -1,17 +1,26 @@
 import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 import React, {useState} from 'react'
 import CarouselSlide from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide'
-import {CarouselItems} from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems'
+import {timerImages}  from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems'
 
-const CarouselBgImage = () => {
+const CarouselBgImage = (props) => {
     const [currentItemIndex, setCurrentItemIndex] = useState(0)
     const [count, setCount] = useState(0)
     const [isPrevious, setIsPrevious] = useState(false)
     const [isNext, setIsNext] = useState(false)
 
+    let images = [];
+
+    const {imageData : imageDataProps } = props ;
+
+    if (imageDataProps === "timer"){
+        images = [...timerImages];
+    }
+
+
     return (
         <div className={'lg:my-40 my-28 h-[800px] relative'}>
-            <CarouselSlide image={CarouselItems[currentItemIndex].image}/>
+            <CarouselSlide image={images[currentItemIndex]}/>
 
             <div
                 className={
@@ -27,8 +36,8 @@ const CarouselBgImage = () => {
                             setCurrentItemIndex(currentItemIndex - 1)
                             setCount(count - 1)
                         } else {
-                            setCurrentItemIndex(CarouselItems.length - 1)
-                            setCount(CarouselItems.length - 1)
+                            setCurrentItemIndex(images.length - 1)
+                            setCount(images.length - 1)
                         }
                         setIsPrevious(true)
                         setIsNext(false)
@@ -41,7 +50,7 @@ const CarouselBgImage = () => {
                         isNext ? 'border-timeRed' : 'border-white'
                     }  rounded-full flex items-center justify-center`}
                     onClick={() => {
-                        if (currentItemIndex < CarouselItems.length - 1) {
+                        if (currentItemIndex < images.length - 1) {
                             setCurrentItemIndex(currentItemIndex + 1)
                             setCount(count + 1)
                         } else {

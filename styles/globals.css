@@ -19,18 +19,15 @@ body {
 
 
 h1 {
-    line-height: 1em;
-    font-size: 3.75rem;
+    @apply text-7xl;
 }
 
 h2 {
-    font-size: 3em;
-    line-height: 1em;
+    @apply text-6xl
 }
 
 h3 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    @apply text-5xl
 }
 
 h4 {
@@ -41,8 +38,8 @@ h4 {
 
 p, label {
     font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     opacity: 1;
 }
 
@@ -170,45 +167,19 @@ input:-webkit-autofill:active {
 /*Responsive*/
 
 
-@media screen and (min-width: 400px) and (max-width: 728px) {
+@media screen and (max-width: 768px) {
 
     h1 {
-        font-size: 2em;
-        line-height: 35px;
-        white-space: normal;
+        @apply text-5xl
     }
 
-    h2, h3, h4 {
-        font-size: 1.8em;
-        line-height: 35px;
-        white-space: normal;
+    h2 {
+        @apply text-4xl
     }
 
-
-    .navbar li a {
-        font-size: 1.3rem;
+    h3 {
+        @apply text-3xl
     }
-}
-
-
-@media screen and (max-width: 1024px) {
-
-    h1 {
-        font-size: 2.75em;
-        line-height: 1em;
-    }
-
-    h2, h3, h4 {
-        line-height: 2.5rem;
-        font-size: 2.25em;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-    }
-
-
 }
 
 

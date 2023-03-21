@@ -4,7 +4,7 @@ import Image from 'next/image'
 const KeyNumbers = () => {
   return (
     <div>
-      <div className={'max-w-[300px] mx-auto lg:my-40 my-28'}>
+      <div className={'max-w-[300px] md:max-w-full mx-auto lg:my-40 my-28 md:flex md:justify-between md:space-x-8 md:border md:border-black/2 md:px-8 md:rounded-[20px]'}>
         <Number
           src={'/assets/icons/arrowleftright.svg'}
           text={'Lorem ipsum'}
@@ -32,11 +32,11 @@ export default KeyNumbers
 
 function Number(props) {
   return (
-    <div className="flex justify-center space-x-8 py-8 border-b border-black/6">
+    <div className="flex justify-center space-x-6 py-8 border-b border-black/6 md:border-none">
       <Image src={props.src} height={30} width={props.width} alt={''} />
       <div className={'flex flex-col space-y-2'}>
         <p className={'text-sm'}>{props.text}</p>
-        <span className={'text-4xl'}>{props.number}</span>
+        <span className={'text-4xl md:text-3xl'}>{props.number}</span>
       </div>
     </div>
   )

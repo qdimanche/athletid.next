@@ -17,7 +17,7 @@ const Button = ({className, children, ...props}) => {
                 }
             }}
             className={clsx(
-                `duration-300 px-6 transition py-2 rounded-medium border-[1px] w-fit`,
+                `duration-300 px-6 md:px-6 transition py-2 rounded-medium border-[1px] w-fit`,
                 variant === 'black' && 'bg-transparent  border-black',
                 variant === 'fullblack' && 'bg-black border-0 text-white',
                 variant === 'grey' && 'bg-gray-300 border-0 text-black',

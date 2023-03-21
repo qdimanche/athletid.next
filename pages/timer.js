@@ -1,19 +1,17 @@
 import Header from '@/src/components/Home/Header'
-import Feature from '@/src/components/Feature'
+import Feature from '@/src/components/Feature/Feature'
 import Testimonial from '@/src/components/Testimonial/Testimonial'
 import Head from 'next/head'
 import Format from '@/src/layout/format'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
-import ImgHeader from '@/public/assets/images/timer-v2-header.webp'
-import Button from '@/src/components/UI/Button'
+import ImgHeaderMobile from '@/public/assets/images/timer-v2-header.webp'
+import ImgHeader from '@/public/assets/images/timer-v2-header-desktop.webp'
 import React from 'react'
-import {FaApple} from 'react-icons/fa'
-import {TiVendorAndroid} from 'react-icons/ti'
 import KeyNumbers from '@/src/components/Timer/KeyNumbers'
 import FullHeightBgImage from '@/src/components/Timer/FullHeightBgImage'
 import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage'
 import Carousel from '@/src/components/UI/Carousel/ArrowCarousel/Carousel'
-import ImageSection from "@/src/components/Apco/ImageSection";
+import ImageSection from '@/src/components/ImageSection/ImageSection'
 
 const Timer = () => {
     const isMobile = useMediaQuery('(max-width: 768px)')
@@ -31,84 +29,48 @@ const Timer = () => {
 
             <Format>
                 <Header
-                    title={'Le meilleur timer\nde sport'}
-                    imageSrc={ImgHeader}
-                    imageHeight={'lg:min-h-[90vh]'}
-                    link={'/timer'}
-                    instaLink={'https://www.instagram.com/athletid/'}
-                    buttons={
-                        <>
-                            <Button
-                                variant={'black'}
-                                link={''}
-                                content={
-                                    <div className={'flex space-x-2 items-center'}>
-                                        <FaApple color={'black'} size={20}/>
-                                        <div>App Store</div>
-                                    </div>
-                                }
-                            />
-                            <Button
-                                variant={'black'}
-                                link={''}
-                                content={
-                                    <div className={'flex space-x-2 items-center'}>
-                                        <TiVendorAndroid color={'black'} size={22}/>
-                                        <div>Play Store</div>
-                                    </div>
-                                }
-                            />
-                        </>
+                    title={'The best sport\n' + 'timer app.'}
+                    subTitle={
+                        'Your training partner, simple and elegant. Your new application is \nthe most complete (12 different timers and stopwatches), it \nadapts to all types of training.'
                     }
+                    imageSrc={isMobile ? ImgHeaderMobile : ImgHeader}
+                    link={'/timer'}
                 />
-                <div className={'px-8 max-w-[1280px] mx-auto '}>
+                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
                     <KeyNumbers/>
                 </div>
-                <FullHeightBgImage
-                    title={
-                        'Atteignez vos \n' + 'objectifs sportifs grâce à nos solutions.'
-                    }
-                    subTitle={'Applications Haut de Gamme'}
-                    buttons={
-                        <>
-                            <Button
-                                variant={'white'}
-                                link={''}
-                                content={
-                                    <div className={'flex space-x-2 items-center'}>
-                                        <FaApple color={'white'} size={20}/>
-                                        <div>App Store</div>
-                                    </div>
-                                }
-                            />
-                            <Button
-                                variant={'white'}
-                                link={''}
-                                content={
-                                    <div className={'flex space-x-2 items-center'}>
-                                        <TiVendorAndroid color={'white'} size={22}/>
-                                        <div>Play Store</div>
-                                    </div>
-                                }
-                            />
-                        </>
-                    }
-                />
-                <div className={'px-8 max-w-[1280px] mx-auto '}>
-                    <Carousel
-                    title={"Lorem ipsum dolor sit elit amet, lorem"}
-                    subTitle={"Applications Haut de Gamme"}
+                <div className={'md:px-12 max-w-[1280px] mx-auto '}>
+                    <FullHeightBgImage
+                        title={'Designed by athletes \nfor athletes.'}
+                        subTitle={'Simplified workout follow-up.'}
                     />
                 </div>
-                <CarouselBgImage/>
-                <div className={'px-8 max-w-[1280px] mx-auto'}>
-                    <ImageSection/>
-                    <Feature/>
+                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
+                    <Carousel
+                        title={'Our timers adapt to \n' +
+                            'your objective.'}
+                        subTitle={'Applications Haut de Gamme'}
+                    />
                 </div>
-                <Testimonial
-                    title={"Lorem ipsum dolor sit elit amet, lorem"}
-                    subTitle={"Applications Haut de Gamme"}
-                />
+                <CarouselBgImage imageData={'timer'}/>
+                <div className={'px-8 md:px-12 max-w-[1024px] mx-auto'}>
+                    <ImageSection imageData={'timer'}/>
+                    <Feature
+                        title={'The most powerfull\n' + 'and complet.'}
+                        subTitle={
+                            'Try it for free now and discover the complete workout \n' +
+                            'builder. Build and save your workout quickly and easily.'
+                        }
+                        titleFeatures={'Timer By Athletid 2023'}
+                        subscriptions={'timer'}
+                    />
+                </div>
+                <div className={'md:px-12 max-w-[1280px] mx-auto '}>
+                    <Testimonial
+                        title={'Many of you already \n' + 'love the app! '}
+                        subTitle={'Together to build the best app.'}
+                    />
+                </div>
             </Format>
         </>
     )
