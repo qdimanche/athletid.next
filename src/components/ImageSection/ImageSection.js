@@ -38,13 +38,13 @@ const ImageSection = (props) => {
                 />
                 <div
                     className={
-                        'relative h-[300px] md:w-full md:h-full w-[400px] mx-auto md:order-first'
+                        'relative h-[300px] md:w-full md:h-full mx-auto md:order-first'
                     }
                 >
                     <Image
                         src={images[1]}
                         width={160}
-                        height={218}
+                        height={200}
                         className={
                             'absolute top-0 left-0 md:left-auto md:top-32 md:right-0 rounded-[8px]'
                         }
@@ -52,8 +52,8 @@ const ImageSection = (props) => {
                     />
                     <Image
                         src={images[2]}
-                        width={180}
-                        height={218}
+                        width={160}
+                        height={200}
                         className={'absolute bottom-0 right-0 md:bottom-32 rounded-[8px]'}
                         alt={''}
                     />
