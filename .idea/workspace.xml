@@ -7,37 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] bug fix">
-      <change afterPath="$PROJECT_DIR$/src/components/Feature/Feature.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Feature/Subscription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Feature/SubscriptionsData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ImageSection/ImageSectionData.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] desktop responsive page timer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/logo-athletid.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/text-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/tinify-2023-2-28T10_49_34.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/utilisateur-athletid.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/white-logo-athletid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Apco/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Apco/ImageSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Feature.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderSN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Feature/Feature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Feature/Feature.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselSlide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +111,7 @@
       <workItem from="1679300551838" duration="121000" />
       <workItem from="1679300675396" duration="1457000" />
       <workItem from="1679325575701" duration="2517000" />
-      <workItem from="1679385971756" duration="22835000" />
+      <workItem from="1679385971756" duration="23849000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>
@@ -319,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679386673348</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="[+] desktop responsive page timer">
+      <created>1679413865209</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1679413865210</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +331,7 @@
     <MESSAGE value="[+] mobile responsive for page timer" />
     <MESSAGE value="[+] testimonial slider" />
     <MESSAGE value="[+] bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] bug fix" />
+    <MESSAGE value="[+] desktop responsive page timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] desktop responsive page timer" />
   </component>
 </project>

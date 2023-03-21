@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import ConstuctionEntrainement from '@/public/assets/images/construction-seance.webp'
+import ConstuctionEntrainement from '@/public/assets/images/training-recap.webp'
 import Subscription from "@/src/components/Feature/Subscription";
 import {timerSubscriptions} from "@/src/components/Feature/SubscriptionsData";
 import {apcoSubscriptions} from "@/src/components/Feature/SubscriptionsData";

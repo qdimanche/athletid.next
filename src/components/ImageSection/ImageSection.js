@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
-import {timerImages} from "@/src/components/ImageSection/ImageSectionData";
+import {timerImages} from '@/src/components/ImageSection/ImageSectionData'
 
 const ImageSection = (props) => {
     const isMobile = useMediaQuery('(max-width: 768px)')
@@ -10,7 +10,7 @@ const ImageSection = (props) => {
 
     const {imageData: propsImageData} = props
 
-    if (propsImageData === "timer"){
+    if (propsImageData === 'timer') {
         images = [...timerImages]
     }
 
@@ -23,9 +23,9 @@ const ImageSection = (props) => {
             >
                 <h2 style={{whiteSpace: 'pre-line'}}>Accessible to everyone</h2>
                 <p className={'w-full mt-[10px]'}>
-                    Designed in collaboration with athletes and experts from around <br/>
-                    world. Your Timer application accompanies you whatever your <br/>
-                    level, your discipline or your goals.
+                    Designed in collaboration with athletes and experts from around world.
+                    Your Timer application accompanies you whatever your level, your
+                    discipline or your goals.
                 </p>
             </div>
             <div className={'md:grid md:grid-cols-[1fr_470px_1fr] h-full'}>

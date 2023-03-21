@@ -36,7 +36,7 @@ const Navbar = (props) => {
 
 
     return (
-        <div className={`fixed z-[999] w-screen  py-6  top-0 ${isDesktop && isScrolled ? 'bg-white': ''} duration-500`}>
+        <div className={`fixed z-[999] w-screen lg:py-6 py-4  top-0 ${isScrolled ? 'bg-white': ''} duration-500`}>
             <div
                 className={'flex max-w-[1280px] px-8 md:px-12 mx-auto justify-between'}
             >
@@ -44,8 +44,8 @@ const Navbar = (props) => {
                     <Link href="/" className={``}>
                         <Image
                             src={'/assets/icons/logo-athletid.svg'}
-                            width={isDesktop ? 100 : 130}
-                            height={isDesktop ? 100 : 130}
+                            width={isDesktop ? 100 : 120}
+                            height={isDesktop ? 100 : 120}
                             alt=""
                         />
                     </Link>

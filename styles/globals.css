@@ -167,7 +167,7 @@ input:-webkit-autofill:active {
 /*Responsive*/
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     h1 {
         @apply text-5xl
@@ -184,22 +184,6 @@ input:-webkit-autofill:active {
 
 
 @media screen and (min-width: 1024px) {
-
-    .opacity-animation {
-        animation: opacityChange 500ms;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes opacityChange {
-        0% {
-            background-color: rgba(247, 247, 247, 0);
-        }
-        100% {
-            background-color: rgba(247, 247, 247, 100);
-        }
-
-    }
-
 
     .custom-grid-column:first-child, .custom-grid-column:nth-child(7) {
         width: 5% !important;
