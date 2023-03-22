@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import ConstuctionEntrainement from '@/public/assets/images/training-recap.webp'
 import Subscription from "@/src/components/Feature/Subscription";
 import {timerSubscriptions} from "@/src/components/Feature/SubscriptionsData";
 import {apcoSubscriptions} from "@/src/components/Feature/SubscriptionsData";
@@ -11,6 +10,7 @@ const Feature = (props) => {
     let title;
     let subTitle;
     let titleFeatures;
+    let imageSrc;
 
     const { subscriptions: propsSubscriptions } = props;
 
@@ -19,8 +19,16 @@ const Feature = (props) => {
         title = "The most powerfull \nand complet."
         subTitle = "Try it for free now and discover the complete workout \nbuilder. Build and save your workout quickly and easily."
         titleFeatures = "Timer By Athletid 2023"
+        imageSrc = "/assets/images/training-recap.webp"
     } else if (props.subscriptions === "apco") {
         subscriptions = [...apcoSubscriptions];
+        title = "Our app and \n" +
+            "tracking system."
+        subTitle = "Lorem ipsum dolor sit amet, consectetur \n" +
+            "adipiscing elit. Aliquam sit amet tortoriac\n" +
+            "culis, posuere enim at."
+        titleFeatures = "Athletid system 2023"
+        imageSrc = "/assets/images/session-constructor-cut.webp"
     }
 
     return (
@@ -50,9 +58,10 @@ const Feature = (props) => {
                 </div>
             </div>
             <Image
-                src={ConstuctionEntrainement}
+                src={imageSrc}
                 width={340}
-                className={'mx-auto rounded-medium'}
+                height={340}
+                className={'mx-auto rounded-medium bg-[#F2F2F2]'}
                 alt="Application Apco Dashboard Full"
             />
         </div>

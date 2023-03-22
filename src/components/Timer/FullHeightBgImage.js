@@ -3,7 +3,7 @@ import Image from 'next/image'
 import IphoneFullHeightMobile from '@/public/assets/images/iphone-full-height-timer.webp'
 import IphoneFullHeight from '@/public/assets/images/iphone-full-height-timer-desktop.webp'
 import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
-import Button from "@/src/components/UI/Button";
+import Button from "@/src/components/UI/Button/Button";
 import {FaApple} from "react-icons/fa";
 import {TiVendorAndroid} from "react-icons/ti";
 

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Link from 'next/link'
-import Button from '../UI/Button'
+import Button from '../UI/Button/Button'
 import HamburgerMenu from './Burger'
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import Image from 'next/image'

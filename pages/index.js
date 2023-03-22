@@ -11,10 +11,10 @@ import React from 'react'
 import CardImageBottomRight from '@/src/components/UI/Card/CardImageBottomRight'
 import CardImageTopRight from '@/src/components/UI/Card/CardImageTopRight'
 import CardImageBottomFull from '@/src/components/UI/Card/CardImageBottomFull'
-import Card from '@/src/components/UI/Card/Card'
+import BasicCard from '@/src/components/UI/Card/BasicCard/BasicCard'
 import ApcoFeaturesMobile from '@/public/assets/images/apco-features-fullscreen-mobile.webp'
 import ApcoFeatures from '@/public/assets/images/apco-features-fullscreen.webp'
-import Captor from '@/public/assets/images/captor.webp'
+import Captor from '@/public/assets/images/captor-card.webp'
 import ApcoRockBackground from '@/public/assets/images/apco-rock-background.webp'
 import ApcoRockBackgroundMobile from '@/public/assets/images/apco-rock-background-mobile.webp'
 import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
@@ -69,7 +69,7 @@ export default function Home() {
                             'Il n’a jamais été aussi simple de \ntenir son journal d’entraînement. '
                         }
                     >
-                        <Card
+                        <BasicCard
                             className={'md:col-span-2'}
                             title={'Reconnaissance \nintelligente des \nmouvements.'}
                             link={'/timer'}
@@ -82,7 +82,7 @@ export default function Home() {
                             playAnimation={'false'}
                             tagContent={"Bientôt disponible"}
                         />
-                        <Card
+                        <BasicCard
                             link={'/timer'}
                             title={"La puissance des données."}
                             subtitle={"Mesure tes progrès."}
@@ -95,7 +95,7 @@ export default function Home() {
                             objectPosition={'md:object-center  '}
                             playAnimation={'false'}
                         />
-                        <Card
+                        <BasicCard
                             link={'/timer'}
                             tag={'hidden'}
                             textColor={'white'}

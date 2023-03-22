@@ -3,19 +3,16 @@ import Header from '@/src/components/Header/Header'
 import Format from '@/src/layout/format'
 import Head from 'next/head'
 import GridSection from '@/src/components/UI/Grid/GridSection'
-import Card from '@/src/components/UI/Card/Card'
-import ApcoFeatures from '@/public/assets/images/apco-features-fullscreen.webp'
-import ApcoRockBackground from '@/public/assets/images/apco-rock-background.webp'
-import Statistiques from '@/public/assets/images/statistiques.webp'
-import Captor from '@/public/assets/images/captor.webp'
-import ConstructionEntrainementApco from '@/public/assets/images/construction-entrainement-apco.webp'
-import {AiOutlinePlus} from 'react-icons/ai';
-import ImageSection from "@/src/components/ImageSection/ImageSection";
-import Carousel from "@/src/components/UI/Carousel/ArrowCarousel/Carousel";
-import CarouselBgImage from "@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage";
-import Feature from "@/src/components/Feature/Feature";
+import BasicCard from '@/src/components/UI/Card/BasicCard/BasicCard'
+import ImageSection from '@/src/components/ImageSection/ImageSection'
+import Carousel from '@/src/components/UI/Carousel/ArrowCarousel/Carousel'
+import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage'
+import Feature from '@/src/components/Feature/Feature'
+import {apcoCardContent} from '@/src/components/UI/Card/BasicCard/BasicCardData'
+import BackgroundHeader from "@/src/components/Header/BackgroundHeader";
 
 const Apco = () => {
+
     return (
         <>
             <Head>
@@ -29,63 +26,37 @@ const Apco = () => {
             </Head>
 
             <Format>
+                <BackgroundHeader/>
                 <Header/>
-                <div className={"xl:px-0 px-4 max-w-[1280px] mx-auto"}>
-                    <GridSection gridClassName={'grid md:grid-cols-3 rows-4'}>
-                        <Card
-                            className={'md:col-span-1'}
-                            tag={"hidden"}
-                            link={'/timer'}
-                            textColor={'white'}
-                            objectPosition={'md:object-right-bottom '}
-                            srcBg={ApcoRockBackground}
-                            paragraphWidth={'w-3/4 md:w-1/3'}
-                            buttonContent={<AiOutlinePlus size={30}/>}
-                            buttonClassName={'!rounded-full !p-3'}
-                        />
-                        <Card
-                            className={'md:col-span-2'}
-                            tag={"hidden"}
-                            textColor={'black'}
-                            objectPosition={'md:object-right-bottom '}
-                            srcBg={Captor}
-                            tagVariantOverride={'black'}
-                            paragraphWidth={'w-3/4 md:w-1/3'}
-                            buttonContent={<AiOutlinePlus size={30}/>}
-                            buttonClassName={'!rounded-full !p-3'}
-                        />
-                        <Card
-                            className={'md:col-span-2'}
-                            link={'/timer'}
-                            textColor={'white'}
-                            objectPosition={'object-top '}
-                            srcBg={ConstructionEntrainementApco}
-                            paragraphWidth={'w-3/4 md:w-1/3'}
-                            buttonContent={<AiOutlinePlus size={30}/>}
-                            buttonClassName={'!rounded-full !p-3'}
-                            tag={"hidden"}
-                        />
-                        <Card
-                            className={'md:col-span-1'}
-                            tag={"hidden"}
-                            link={'/timer'}
-                            textColor={'white'}
-                            objectPosition={'object-bottom'}
-                            srcBg={Statistiques}
-                            paragraphWidth={'w-3/4 md:w-1/3'}
-                            buttonContent={<AiOutlinePlus size={30}/>}
-                            buttonClassName={'!rounded-full !p-3'}
-                        >
-                        </Card>
+                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto  relative'}>
+                    <GridSection
+                        gridClassName={'grid md:grid-cols-3 rows-4 '}
+                        title={'The most powerful training tracking and analysis system'}
+                        subTitle={'Progress every day'}
+                    >
+                        {apcoCardContent.map((value, index) => {
+                            return (
+                                <BasicCard
+                                    key={index}
+                                    title={value.title}
+                                    subTitle={value.subTitle}
+                                    srcBg={value.imageSrc}
+                                    className={value.className}
+                                    flipContent={value.flipContent}
+                                />
+                            )
+                        })}
                     </GridSection>
-                    <ImageSection/>
+                    <div className={"px-8 md:px-12 max-w-[1024px] mx-auto"}>
+                        <ImageSection imageData={'apco'}/>
+                    </div>
                     <Carousel
-                    />
+                        imageData={'apco'}/>
                 </div>
-                <CarouselBgImage/>
-                <div className={'px-8 max-w-[1280px] mx-auto'}>
+                <CarouselBgImage imageData={'apco'}/>
+                <div className={'px-8 md:px-12 max-w-[1024px] mx-auto'}>
                     <Feature
-                        subscriptionsApco={"apco"}
+                        subscriptions={'apco'}
                     />
                 </div>
             </Format>

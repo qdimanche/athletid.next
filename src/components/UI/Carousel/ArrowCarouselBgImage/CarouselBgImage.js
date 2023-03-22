@@ -1,7 +1,7 @@
 import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 import React, {useState} from 'react'
 import CarouselSlide from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide'
-import {timerImages}  from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems'
+import {apcoImages, timerImages} from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems'
 
 const CarouselBgImage = (props) => {
     const [currentItemIndex, setCurrentItemIndex] = useState(0)
@@ -15,6 +15,8 @@ const CarouselBgImage = (props) => {
 
     if (imageDataProps === "timer"){
         images = [...timerImages];
+    }else if (imageDataProps === "apco"){
+        images = [...apcoImages];
     }
 
 

@@ -57,6 +57,7 @@ const Timer = () => {
                     <Carousel
                         title={'Our timers adapt to your objective.'}
                         subTitle={'Applications Haut de Gamme'}
+                        imageData={'timer'}
                     />
                 </div>
                 <CarouselBgImage imageData={'timer'}/>

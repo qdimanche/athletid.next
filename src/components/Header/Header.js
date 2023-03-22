@@ -1,31 +1,32 @@
 import React from 'react'
 import Image from 'next/image'
-import CaptorReverse from '@/public/assets/images/captor-reverse.webp'
-import Button from '@/src/components/UI/Button'
+import CaptorReverse from '@/public/assets/images/captor-reverse-mobile.webp'
+import CaptorReverseDesktop from '@/public/assets/images/captor-reverse-desktop.webp'
+import Button from '@/src/components/UI/Button/Button'
 import Tag from '@/src/components/UI/Tag'
+import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
+import {use} from "i18next";
 
 const Header = () => {
+
+    const isMobile = useMediaQuery("(max-width:768px)");
+    const isTabletAndDesktop = useMediaQuery("(min-width:768px)")
+
     return (
-        <div className={'lg:h-[1000px] md:min-h-[60vh] h-[1050px] max-w-[1280px] mx-auto relative'}>
-            <Image
-                layout={'fill'}
-                src={CaptorReverse}
-                className={'object-cover'}
-                alt={''}
-            />
+        <div className={'h-[900px] max-w-[1280px] mx-auto relative'}>
             <div
                 className={
-                    'pt-28 max-w-[1280px] w-full mx-auto absolute space-y-4 flex flex-col items-center'
+                    'pt-28 max-w-[1280px] w-full mx-auto absolute space-y-4 flex flex-col items-center px-8 z-[50]'
                 }
             >
-                <Tag text={'Nouveau'} variant={'black'}/>
+                <Tag text={'Soon available'} variant={'black'}/>
                 <h1
-                    className={`md:text-left text-center text-black white whitespace-pre-wrap`}
+                    className={`text-center text-black white whitespace-pre-wrap`}
                 >
-                    Lorem ipsum dolor sit amet.
+                    The futur of fitness <br/>and wellness
                 </h1>
                 <div className={`flex md:justify-start justify-center space-x-4`}>
-                    <Button variant={'red'} link={'/'} content={"Découvrir"}/>
+                    <Button className={'text-[12px]'} variant={'red'} link={'/'} content={"Join the waiting list"}/>
                 </div>
             </div>
         </div>

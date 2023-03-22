@@ -1,7 +1,7 @@
 import React from 'react'
 import Masonry from 'react-masonry-css'
 import Image from 'next/image'
-import Button from "@/src/components/UI/Button";
+import Button from "@/src/components/UI/Button/Button";
 import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
 
 const breakpointColumnsObj = {

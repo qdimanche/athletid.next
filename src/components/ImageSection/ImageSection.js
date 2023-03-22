@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
-import {timerImages} from '@/src/components/ImageSection/ImageSectionData'
+import {apcoImages, timerImages} from '@/src/components/ImageSection/ImageSectionData'
 
 const ImageSection = (props) => {
     const isMobile = useMediaQuery('(max-width: 1024px)')
@@ -12,6 +12,8 @@ const ImageSection = (props) => {
 
     if (propsImageData === 'timer') {
         images = [...timerImages]
+    }else if (propsImageData === 'apco'){
+        images = [...apcoImages]
     }
 
     return (

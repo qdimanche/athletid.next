@@ -15,13 +15,13 @@ export const timerSubscriptions = [
 
 export const apcoSubscriptions = [
     {
-        subscriptionTitle: "Lorem ipsum",
-        subscriptionType: "Dolor sit"
+        subscriptionTitle: "500+ exercices ",
+        subscriptionType: "Available"
     }, {
-        subscriptionTitle: "Lorem ipsum",
-        subscriptionType: "Dolor sit"
+        subscriptionTitle: "200+ free workout",
+        subscriptionType: "Available"
     }, {
-        subscriptionTitle: "Lorem ipsum",
-        subscriptionType: "Dolor sit"
+        subscriptionTitle: "Crossfit training",
+        subscriptionType: "Soon"
     },
 ]

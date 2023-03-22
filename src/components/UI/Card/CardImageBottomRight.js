@@ -1,6 +1,6 @@
 import React from 'react'
 import Tag from '@/src/components/UI/Tag'
-import Button from '@/src/components/UI/Button'
+import Button from '@/src/components/UI/Button/Button'
 import Image from 'next/image'
 import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
 
