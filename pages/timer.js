@@ -33,7 +33,8 @@ const Timer = () => {
                     subTitle={
                         'Your training partner, simple and elegant. \nYour new application is the most complete (12 different timers and stopwatches), it adapts to all types of training.'
                     }
-                    imageSrc={isMobile ? ImgHeaderMobile : ImgHeader}
+                    imageSrcMobile={ImgHeaderMobile}
+                    imageSrcDesktop={ImgHeader}
                     link={'/timer'}
                 />
                 <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
