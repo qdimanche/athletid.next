@@ -9,7 +9,7 @@ const TestimonialCard = (props) => {
     return (
         <div className={'p-8 bg-white rounded-medium flex flex-col justify-center h-[280px]' }>
             <div className={'flex flex-col items-center space-y-4'}>
-                <Image src={props.image} width={110} height={110} alt={""}/>
+                <Image priority={true} src={props.image} width={110} height={110} alt={""}/>
                 <span className={'font-semibold'}>{props.name}</span>
                 <div className={'flex items-center space-x-2 text-[#D86A59]'}>
                     <IoStar className={"text-[#D86A59] text-xl"}/>

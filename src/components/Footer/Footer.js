@@ -5,7 +5,7 @@ import Newsletter from '@/src/components/Footer/Newsletter'
 
 const Footer = () => {
   return (
-    <div className={'lg:mt-40 mt-28'}>
+    <div className={'md:mt-40 mt-28'}>
       <Newsletter />
 
       <div

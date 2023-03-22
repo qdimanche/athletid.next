@@ -8,7 +8,7 @@ export const timerSubscriptions = [
         subscriptionType: 'Free',
     },
     {
-        subscriptionTitle: 'Advanced Timers & Full Session',
+        subscriptionTitle: 'Advanced Timers \n& Full Session',
         subscriptionType: 'Premium',
     },
 ]

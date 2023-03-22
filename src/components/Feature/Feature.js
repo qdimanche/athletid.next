@@ -26,12 +26,12 @@ const Feature = (props) => {
     return (
         <div
             className={
-                'md:my-40 mt-28 md:grid md:grid-cols-[1fr_340px] md:items-center'
+                'md:mt-40 mt-28 md:grid md:grid-cols-[1fr_340px] md:items-center'
             }
         >
             <div
                 className={
-                    'flex flex-col md:mb-8 text-left space-y-8 md:w-3/4 md:mx-auto'
+                    'flex flex-col text-left space-y-8 lg:w-3/4 lg:mx-auto md:pr-12 lg:pr-0'
                 }
             >
                 <h2 style={{whiteSpace: 'pre-line'}}>{title}</h2>

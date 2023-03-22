@@ -31,7 +31,7 @@ const Timer = () => {
                 <Header
                     title={'The best sport\n' + 'timer app.'}
                     subTitle={
-                        'Your training partner, simple and elegant. Your new application is \nthe most complete (12 different timers and stopwatches), it \nadapts to all types of training.'
+                        'Your training partner, simple and elegant. \nYour new application is the most complete (12 different timers and stopwatches), it adapts to all types of training.'
                     }
                     imageSrc={isMobile ? ImgHeaderMobile : ImgHeader}
                     link={'/timer'}

@@ -9,7 +9,7 @@ import {TiVendorAndroid} from "react-icons/ti";
 
 const FullHeightBgImage = (props) => {
 
-    const isMobile = useMediaQuery('(max-width: 768px)')
+    const isMobile = useMediaQuery('(max-width: 1024px)')
     return (
         <div className={'lg:mb-40 mb-28'}>
             <div
@@ -21,12 +21,12 @@ const FullHeightBgImage = (props) => {
                 <h2 style={{whiteSpace: 'pre-line'}}>{props.title}</h2>
             </div>
 
-            <div className={'h-[820px] md:h-[535px] relative md:rounded-medium md:overflow-hidden'}>
-                <div className={'absolute top-8 md:top-0  z-[5] flex flex-col items-center md:items-center md:justify-center w-full px-8 md:h-full md:grid md:grid-cols-2'}>
+            <div className={'h-[820px] md:h-[750px]  lg:h-[535px] relative md:rounded-medium md:overflow-hidden'}>
+                <div className={'absolute top-8 lg:top-0  z-[5] flex flex-col items-center lg:items-center lg:justify-center w-full px-8 lg:h-full lg:grid lg:grid-cols-2'}>
                     <div></div>
-                    <div className={'space-y-6 px-8 md:pl-12 md:pr-0'}>
+                    <div className={'space-y-6 px-8 lg:pr-0'}>
                         <h3
-                            className={`md:text-left text-center text-white whitespace-pre-line`}
+                            className={`lg:text-left text-center text-white whitespace-pre-line`}
                         >
                             You too can reach<br/>
                             your sports goals!
@@ -58,7 +58,7 @@ const FullHeightBgImage = (props) => {
                 <Image
                     layout={'fill'}
                     src={isMobile ? IphoneFullHeightMobile : IphoneFullHeight}
-                    className={'object-cover object-center md:object-left'}
+                    className={'object-cover object-center lg:object-left'}
                     alt={''}
                 />
             </div>

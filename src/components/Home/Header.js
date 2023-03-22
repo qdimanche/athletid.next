@@ -67,7 +67,7 @@ const Header = ({ imageClassName, ...props }) => {
 
         <div
           className={
-            'h-full md:w-[500px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute md:right-0'
+            'h-full md:w-[480px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute md:right-0'
           }
         >
           {isMobile ? (

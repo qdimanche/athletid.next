@@ -7,7 +7,7 @@ export default function Subscription(props) {
                 <div
                     className={'h-[10px] w-[10px] bg-timeRed rounded-full'}
                 ></div>
-                <p>{props.subscriptionTitle}</p>
+                <p className={'whitespace-pre-line'}>{props.subscriptionTitle}</p>
             </div>
             <p>{props.subscriptionType}</p>
         </div>

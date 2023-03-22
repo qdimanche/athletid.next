@@ -4,7 +4,7 @@ import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import {timerImages} from '@/src/components/ImageSection/ImageSectionData'
 
 const ImageSection = (props) => {
-    const isMobile = useMediaQuery('(max-width: 768px)')
+    const isMobile = useMediaQuery('(max-width: 1024px)')
 
     let images = []
 
@@ -28,7 +28,7 @@ const ImageSection = (props) => {
                     discipline or your goals.
                 </p>
             </div>
-            <div className={'md:grid md:grid-cols-[1fr_470px_1fr] h-full'}>
+            <div className={'md:grid md:grid-cols-[1fr_370px_1fr] lg:grid-cols-[1fr_470px_1fr] h-full'}>
                 <Image
                     src={images[0]}
                     width={isMobile ? 230 : 360}
@@ -38,7 +38,7 @@ const ImageSection = (props) => {
                 />
                 <div
                     className={
-                        'relative h-[300px] md:w-full md:h-full mx-auto md:order-first'
+                        'relative h-[300px] md:w-full md:h-[570px] lg:h-full mx-auto md:order-first'
                     }
                 >
                     <Image
@@ -46,7 +46,7 @@ const ImageSection = (props) => {
                         width={160}
                         height={200}
                         className={
-                            'absolute top-0 left-0 md:left-auto md:top-32 md:right-0 rounded-[8px]'
+                            'absolute top-0 left-0 md:left-auto md:top-16 lg:top-32 md:right-0 rounded-[8px]'
                         }
                         alt={''}
                     />
@@ -54,7 +54,7 @@ const ImageSection = (props) => {
                         src={images[2]}
                         width={160}
                         height={200}
-                        className={'absolute bottom-0 right-0 md:bottom-32 rounded-[8px]'}
+                        className={'absolute bottom-0 right-0 md:bottom-0 lg:bottom-32 rounded-[8px]'}
                         alt={''}
                     />
                 </div>
@@ -68,7 +68,7 @@ const ImageSection = (props) => {
                         width={160}
                         height={218}
                         className={
-                            'absolute top-0 right-0 md:right-auto md:top-8 md:left-0 rounded-[8px]'
+                            'absolute top-0 right-0 md:right-auto md:top-0 lg:top-8 md:left-0 rounded-[8px]'
                         }
                         alt={''}
                     />
@@ -76,7 +76,7 @@ const ImageSection = (props) => {
                         src={images[4]}
                         width={180}
                         height={218}
-                        className={'absolute bottom-0 left-0 md:bottom-40 rounded-[8px]'}
+                        className={'absolute bottom-0 left-0 md:bottom-12 lg:bottom-40 rounded-[8px]'}
                         alt={''}
                     />
                 </div>
