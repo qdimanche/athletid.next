@@ -67,19 +67,15 @@ const Header = ({ imageClassName, ...props }) => {
 
         <div
           className={
-            'h-full md:w-[480px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute md:right-0 relative'
+            'h-[500px] md:h-full w-screen md:w-[480px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute md:right-0 relative'
           }
         >
-          {isMobile ? (
-            <Image src={props.imageSrc} width={768} alt={''} priority={true}/>
-          ) : (
             <Image
               src={props.imageSrc}
               layout={'fill'}
               className={'object-cover object-left'}
               alt={''}
             />
-          )}
         </div>
       </div>
     </header>
