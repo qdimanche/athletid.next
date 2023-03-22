@@ -23,6 +23,6 @@ export const CarouselItems = [
       'For the practices of yoga, pilates, \n' +
         'meditation, stretching... \n' +
         'Breathing, Sonotherapy, Timer, Stopwatch.',
-    image: '/assets/images/timer-interval.webp',
+    image: '/assets/images/timer-breathing.webp',
   },
 ]

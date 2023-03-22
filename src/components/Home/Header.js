@@ -71,7 +71,7 @@ const Header = ({ imageClassName, ...props }) => {
           }
         >
           {isMobile ? (
-            <Image src={props.imageSrc} width={1000} alt={''} />
+            <Image src={props.imageSrc} width={768} alt={''} />
           ) : (
             <Image
               src={props.imageSrc}
