@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { useIntl } from 'react-intl'
 import Tag from '@/src/components/UI/Tag'
@@ -10,8 +10,6 @@ import { TiVendorAndroid } from 'react-icons/ti'
 const Header = ({ imageClassName, ...props }) => {
   const intl = useIntl()
   const isMobile = useMediaQuery('(max-width: 768px)')
-
-  const [isLoaded, setIsLoaded] = useState(false)
 
   return (
     <header
@@ -39,9 +37,7 @@ const Header = ({ imageClassName, ...props }) => {
             >
               {props.title}
             </h1>
-            <p
-              className={`text-black md:text-left text-center md:block hidden`}
-            >
+            <p className={`text-black md:text-left text-center md:block hidden`}>
               {props.subTitle}
             </p>
             <div className={`flex space-x-4 whitespace-nowrap`}>
@@ -74,17 +70,13 @@ const Header = ({ imageClassName, ...props }) => {
             'h-[500px] md:h-full w-screen md:w-[480px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute md:right-0 relative'
           }
         >
-          {!isLoaded && (
             <Image
               src={props.imageSrc}
               layout={'fill'}
-              className={
-                'object-contain md:object-cover object-top md:object-left'
-              }
+              className={'object-contain md:object-cover object-top md:object-left'}
               alt={''}
-              onLoad={() => setIsLoaded(true)}
+              priority={true}
             />
-          )}
         </div>
       </div>
     </header>
