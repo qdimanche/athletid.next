@@ -73,7 +73,7 @@ const Header = ({ imageClassName, ...props }) => {
             <Image
               src={props.imageSrc}
               layout={'fill'}
-              className={'object-cover object-top md:object-left'}
+              className={'object-contain md:object-cover object-top md:object-left'}
               alt={''}
             />
         </div>
