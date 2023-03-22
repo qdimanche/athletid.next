@@ -13,7 +13,7 @@ const Header = ({ imageClassName, ...props }) => {
 
   return (
     <header
-      className={`header-height relative  overflow-hidden flex justify-center lg:justify-start bg-greyShade`}
+      className={`header-height relative flex justify-center lg:justify-start bg-greyShade`}
     >
       <div
         style={{ whiteSpace: 'pre-line' }}
