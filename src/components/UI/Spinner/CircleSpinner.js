@@ -11,7 +11,8 @@ const Container = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
+  margin-left:auto;
+  margin-right: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

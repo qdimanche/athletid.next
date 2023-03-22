@@ -68,6 +68,7 @@ const Header = ({imageClassName, ...props}) => {
                         'h-[500px] md:h-full w-screen md:w-[480px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute md:right-0 relative'
                     }
                 >
+                    <CircleSpinner/>
                     {props.imageSrc === '' ? (
                         <CircleSpinner/>
                     ) : (
