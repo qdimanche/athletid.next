@@ -163,6 +163,11 @@ input:-webkit-autofill:active {
     @apply md:min-h-[95vh] min-h-[60vh];
 }
 
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 
 /*Responsive*/
 

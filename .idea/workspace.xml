@@ -8,8 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="image bug fix (responsive)">
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/CircleSpinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +114,7 @@
       <workItem from="1679325575701" duration="2517000" />
       <workItem from="1679385971756" duration="25334000" />
       <workItem from="1679472688534" duration="32000" />
-      <workItem from="1679472775033" duration="4839000" />
+      <workItem from="1679472775033" duration="11284000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>
@@ -405,7 +410,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679478611986</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="image bug fix (responsive)">
+      <created>1679478997823</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1679478997823</updated>
+    </task>
+    <task id="LOCAL-00044" summary="image bug fix (responsive)">
+      <created>1679479099594</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1679479099594</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

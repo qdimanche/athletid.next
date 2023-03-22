@@ -6,7 +6,7 @@ import Format from '@/src/layout/format'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import ImgHeaderMobile from '@/public/assets/images/header-timer-cut.webp'
 import ImgHeader from '@/public/assets/images/timer-v2-header-desktop.webp'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import KeyNumbers from '@/src/components/Timer/KeyNumbers'
 import FullHeightBgImage from '@/src/components/Timer/FullHeightBgImage'
 import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage'
@@ -15,6 +15,14 @@ import ImageSection from '@/src/components/ImageSection/ImageSection'
 
 const Timer = () => {
     const isMobile = useMediaQuery('(max-width: 768px)')
+    const isTabletAndDesktop = useMediaQuery('(min-width: 768px)')
+    const [imageSrc, setImageSrc] = useState(null);
+
+    useEffect(() => {
+        setImageSrc(isMobile ? ImgHeaderMobile : ImgHeader);
+    }, [isMobile]);
+
+
     return (
         <>
             <Head>
@@ -33,7 +41,7 @@ const Timer = () => {
                     subTitle={
                         'Your training partner, simple and elegant. \nYour new application is the most complete (12 different timers and stopwatches), it adapts to all types of training.'
                     }
-                    imageSrc={isMobile ? ImgHeaderMobile : ImgHeader}
+                    imageSrc={isMobile ? ImgHeaderMobile : isTabletAndDesktop ? ImgHeader :""}
                     link={'/timer'}
                 />
                 <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
