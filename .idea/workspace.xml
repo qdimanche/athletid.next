@@ -7,25 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Responsive bug fixes home page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderApco.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderApco.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/GridSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/GridSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="new sizes and new styles">
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/white-logo.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,14 +113,7 @@
       <workItem from="1679385971756" duration="25334000" />
       <workItem from="1679472688534" duration="32000" />
       <workItem from="1679472775033" duration="26421000" />
-      <workItem from="1679558791802" duration="24193000" />
-    </task>
-    <task id="LOCAL-00001" summary="[+]bug fix">
-      <created>1676628129058</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1676628129058</updated>
+      <workItem from="1679558791802" duration="24287000" />
     </task>
     <task id="LOCAL-00002" summary="[+]bug fix">
       <created>1676629940635</created>
@@ -475,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679576792242</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="new sizes and new styles">
+      <created>1679586976424</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1679586976428</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,6 +492,7 @@
     <MESSAGE value="image bug fix (responsive)" />
     <MESSAGE value="bug fixes apco page" />
     <MESSAGE value="Responsive bug fixes home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Responsive bug fixes home page" />
+    <MESSAGE value="new sizes and new styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="new sizes and new styles" />
   </component>
 </project>
