@@ -15,8 +15,7 @@ const CompanyDescription = () => {
           to build a solid routine.
         </p>
         <p>
-          {' '}
-          Athletid's mission is to accompany you in this direction thanks to a
+          Athletid&apos;s mission is to accompany you in this direction thanks to a
           complete and connected universe. Thanks to our technological
           innovations, everyone will be able to follow their evolution, find the
           motivation, the expertise and the tools they need at each stage of
