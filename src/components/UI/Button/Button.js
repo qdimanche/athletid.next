@@ -10,7 +10,7 @@ const Button = ({className, children, ...props}) => {
         <Link
             href={props.link}
             className={clsx(
-                `duration-300 px-6 transition py-3 rounded-[30px] border-[1px] w-fit`,
+                `duration-300  px-6 py-3 lg:px-8 transition lg:py-4 rounded-[30px] border-[1px] w-fit !text-base`,
                 variant === 'black' && 'bg-transparent  border-black',
                 variant === 'fullblack' && 'bg-black border-0 text-white',
                 variant === 'grey' && 'bg-gray-300 border-0 text-black',

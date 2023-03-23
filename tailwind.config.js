@@ -24,6 +24,9 @@ module.exports = {
             borderRadius: {
                 'medium': '20px'
             },
+            margin: {
+                'medium': "72px",
+            }
         },
     },
     plugins: [

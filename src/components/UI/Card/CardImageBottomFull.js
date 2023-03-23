@@ -16,20 +16,20 @@ const CardImageBottomFull = () => {
             >
                 <div className={'space-y-4 flex flex-col md:justify-between '}>
                     <div className={' md:mb-4 flex flex-col items-center'}>
-                        <h2 className={'md:text-left font-medium w-full md:text-4xl' }>
+                        <span className={'md:text-left font-medium w-full lg:text-[30px] lg:leading-[34px]' }>
                             Simple & intuitive.
-                        </h2>
-                        <h2 className={'md:text-left text-black/[16%] w-full md:text-4xl'}>
+                        </span>
+                        <span className={'md:text-left text-black/[16%] w-full lg:text-[30px] lg:leading-[34px]'}>
                             A pure design.
-                        </h2>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div className={'w-full flex justify-end md:h-[275px] h-full lg:mt-0 mt-4'}>
+            <div className={'w-full flex justify-end md:h-[310px] h-full lg:mt-0 mt-4'}>
                 <div
-                    className={'h-full md:h-full md:max-w-full max-w-[350px] w-full relative'}>
+                    className={'h-full md:h-full max-w-[350px] w-full relative'}>
                     <Image
-                        className={'md:px-0 object-cover object-left-top md:object-left-top'}
+                        className={'object-cover object-left-top md:object-left-top'}
                         src={TimerDashboardDiagonal}
                         layout={'fill'}
                         alt={''}/>

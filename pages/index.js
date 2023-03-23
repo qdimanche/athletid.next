@@ -33,7 +33,7 @@ export default function Home() {
                 <Header
                     title={'A unique sport \nexperience.'}
                     subTitle={
-                        'Create a solid training routine with our applications and tracking system.'
+                        'Create a solid training routine with \nour applications and tracking system.'
                     }
                     imageSrc={ImgHeader}
                     imageHeight={'min-h-[500px] lg:min-h-[90vh]'}

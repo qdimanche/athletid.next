@@ -12,19 +12,19 @@ const CardImageTopRight = () => {
             <Image
                 className={'absolute top-0 right-0'}
                 src={TimerDashboardBottom}
-                height={350}
-                width={350}
+                height={310}
+                width={310}
                 alt={''}
             />
             <div className={'flex md:flex-col absolute left-4 bottom-4'}>
                 <div className={'space-y-4 flex flex-col md:justify-between '}>
                     <div className={'flex flex-col items-center'}>
-                        <h2 className={'md:text-left font-medium w-full md:text-4xl'}>Adapting.</h2>
-                        <h2 className={'md:text-left text-black/[16%] w-full md:text-4xl'}>
+                        <span className={'md:text-left font-medium w-full lg:text-[30px] lg:leading-[34px]'}>Adapting.</span>
+                        <span className={'md:text-left text-black/[16%] w-full lg:text-[30px] lg:leading-[34px]'}>
                             The app that<br/>
                             all the sports<br/>
                             timers.
-                        </h2>
+                        </span>
                     </div>
                 </div>
             </div>

@@ -1,105 +1,110 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import Button from '../UI/Button/Button'
+import Image from 'next/image'
+import CaptorVertical from '@/public/assets/images/captor-vertical.webp'
+import CaptorDiagonal from '@/public/assets/images/captor-diagonal.webp'
 import Link from 'next/link'
+import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import Newsletter from '@/src/components/Footer/Newsletter'
 
 const Footer = () => {
-  return (
-    <div className={'md:mt-40 mt-28'}>
-      <Newsletter />
+    const isTablet = useMediaQuery('(min-width: 768px)')
 
-      <div
-        className={
-          'flex flex-col relative lg:mt-0 mt-0  max-w-[1280px] mx-auto  px-8 md:px-12'
-        }
-      >
-        <div
-          className={
-            'lg:mt-12  pb-16 flex md:flex-row flex-col justify-between md:items-start items-center'
-          }
-        >
-          <div className={'flex flex-col md:order-1 order-5 lg:mt-0 space-y-2'}>
-            <div className={'flex space-x-4 !text-[1.2em]'}>
-              <a
-                target={'_blank'}
-                href="https://www.instagram.com/timerbyathletid/"
-                className={'lg:mb-0 mb-2 '}
-                rel="noreferrer"
-              >
-                <FaInstagram size={18} color={'black'} />
-              </a>
-              <a
-                target={'_blank'}
-                href="https://www.facebook.com/TimerByAthletid "
-                rel="noreferrer"
-              >
-                <FaFacebook size={18} color={'black'} />
-              </a>
-              <a
-                target={'_blank'}
-                href="https://www.linkedin.com/company/athletid/"
-                rel="noreferrer"
-              >
-                <FaLinkedin size={18} color={'black'} />
-              </a>
-            </div>
-            <a
-              className={'text-[1.2em] md:block hidden'}
-              style={{ textDecoration: 'underline' }}
-              href="mailto:contact@athletid.com"
-            >
-              contact@athletid.com
-            </a>
-            <p className={'text-black/30 !mr-[20px] md:mr-0'}>Lille, France</p>
-          </div>
+    return (
+        <footer className={'mt-[92px] lg:mt-[120px]'}>
+            <Newsletter/>
 
-          <div
-            className={
-              'flex text-black/30 lg:space-x-[30px] order-1 md:mb-0 mb-4 flex-col '
-            }
-          >
-            <div
-              className={
-                'w-full grid md:flex md:flex-col lg:flex-row md:items-start grid-cols-4 gap-y-3 md:gap-x-8 gap-x-4 space-x-0'
-              }
-            >
-              <Link href={'/'}>Accueil</Link>
-              <Link href={'/timer'} className={'justify-center flex'}>
-                Timer
-              </Link>
-              <Link href={'/a-propos'}>À propos</Link>
-              <Link href={'/contact'}>Contact</Link>
-            </div>
-          </div>
+            <div className={'bg-black text-white flex items-end md:p-12 p-[34px]'}>
+                <div
+                    className={
+                        'max-w-[1280px] mx-auto flex flex-col items-center pt-[90px] lg:pt-[150px]  md:pt-0'
+                    }
+                >
+                    <div
+                        className={
+                            'grid md:grid-cols-2 h-full items-center md:min-h-[70vh] w-full mb-[50px]'
+                        }
+                    >
+                        <div
+                            className={
+                                'flex flex-col md:items-start items-center md:text-left text-center mb-8 lg:w-3/4'
+                            }
+                        >
+                            <h2 className={''}>Join the waiting list.</h2>
+                            <p className={'mt-4 mb-6'}>
+                                Our sensors are under development. If you are interested, you
+                                can register for free on the waiting list and receive
+                                information about the launch date.
+                            </p>
+                            <Button
+                                variant={'red'}
+                                link={'/'}
+                                content={'Join the waiting list'}
+                                className={'!w-full md:!w-fit'}
+                            />
+                        </div>
+                        <div
+                            className={
+                                'h-[400px] lg:h-[600px] lg: w-full relative mb-8 mx-auto'
+                            }
+                        >
+                            <div
+                                className={
+                                    'absolute z-[3] h-full w-full gradient-linear-background-black md:hidden'
+                                }
+                            ></div>
+                            <Image
+                                src={isTablet ? CaptorDiagonal : CaptorVertical}
+                                layout={'fill'}
+                                className={
+                                    'absolute object-cover z-[1] object-top'
+                                }
+                                alt={''}
+                            />
+                        </div>
+                    </div>
 
-          <div
-            className={
-              'flex flex-col md:items-start lg:space-y-0 space-y-3 items-center order-2'
-            }
-          >
-            <div
-              className={
-                'md:space-x-0 space-x-[30px] md:space-y-2 flex md:flex-col md:order-2 flex-row lg:!mb-3 !mb-10 '
-              }
-            >
-              <Link
-                className={'text-black/30'}
-                href={'/politique-de-confidentialite'}
-              >
-                Politique de confidentialité
-              </Link>
-              <Link
-                className={'text-black/30'}
-                href={'/conditions-de-vente-et-d-utilisation'}
-              >
-                CGV/GU
-              </Link>
+                    <div
+                        className={
+                            'flex md:flex-row flex-col items-center md:items-start col-span-2 justify-between md:mb-8 w-full space-y-4'
+                        }
+                    >
+                        <Image
+                            className={'md:mb-0 mb-8'}
+                            src={'/assets/icons/white-logo.svg'}
+                            alt={''}
+                            width={isTablet ? 110 : 90}
+                            height={isTablet ? 40 : 30}
+                        />
+                        <div className={'flex space-x-6'}>
+                            <p
+                                className={
+                                    'text-center text-white/40'
+                                }
+                            >
+                                Copyright © 2022 ATHLETID Inc. All rights reserved.
+                            </p>
+                            <div className={'flex flex-col space-y-6'}>
+                                <div className={'flex space-x-6'}>
+                                    <Link href={'/'}>Home</Link>
+                                    <Link href={'/timer'}>Timer</Link>
+                                    <Link href={'/apco'}>Apco</Link>
+                                    <Link href={'/about'}>About</Link>
+                                    <Link href={'/contact'}>Contact</Link>
+                                </div>
+                                <div className={'flex space-x-6'}>
+                                    <Link href={'#'}>Support</Link>
+                                    <Link href={'#'}>Privacy Policy</Link>
+                                    <Link href={'#'}>Terms of Service</Link>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+        </footer>
+    )
 }
 
 export default Footer

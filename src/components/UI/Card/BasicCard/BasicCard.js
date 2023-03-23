@@ -41,17 +41,17 @@ const BasicCard = ({className, ...props}) => {
                 {props.tag && (
                     <Tag variant={'white'} text={'Soon available !'} className={'mb-4'}/>
                 )}
-                <h2 className={`whitespace-pre-line font-medium md:!text-4xl`}>
+                <span className={`whitespace-pre-line text-4xl font-medium`}>
                     {props.title}
-                </h2>
-                <h2
+                </span>
+                <span
                     className={clsx(
-                        `whitespace-pre-line text-white/40 md:!text-4xl`,
+                        `whitespace-pre-line text-white/40 font-medium md:!text-4xl`,
                         props.subTitleClassName
                     )}
                 >
                     {props.subTitle}
-                </h2>
+                </span>
             </div>
             <div
                 className={`absolute h-full lg:w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 

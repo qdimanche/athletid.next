@@ -6,8 +6,12 @@ import {FaApple} from 'react-icons/fa'
 import {TiVendorAndroid} from 'react-icons/ti'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
 import clsx from "clsx";
+import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
 
 const Header = (props) => {
+
+    const isMobile = useMediaQuery("(max-width:768px)")
+
     return (
         <header
             className={`header-height relative flex justify-center lg:justify-start bg-greyShade overflow-hidden`}
@@ -25,7 +29,7 @@ const Header = (props) => {
                 >
                     <div
                         className={
-                            'space-y-6 flex flex-col items-center md:items-start z-[900]'
+                            'space-y-6 lg:space-y-8 flex flex-col items-center md:items-start z-[900]'
                         }
                     >
                         {props.buttons === 'downloadButton' && (
@@ -37,7 +41,7 @@ const Header = (props) => {
                             {props.title}
                         </h1>
                         <p
-                            className={`text-black md:text-left text-center md:block hidden`}
+                            className={`text-black md:text-left text-center text-xs md:text-base`}
                         >
                             {props.subTitle}
                         </p>
@@ -66,9 +70,10 @@ const Header = (props) => {
                             </div>
                         ) : (
                             <Button
-                                variant={'red'}
+                                variant={isMobile ? 'redOutline' : 'red'}
                                 link={props.link}
-                                content={'Discover our apps'}
+                                content={'Discover our apps '}
+                                className={'md:!mt-[62px]'}
                             />
                         )}
                     </div>

@@ -44,8 +44,8 @@ const Navbar = (props) => {
                     <Link href="/" className={``}>
                         <Image
                             src={'/assets/icons/logo-athletid.svg'}
-                            width={isDesktop ? 100 : 120}
-                            height={isDesktop ? 100 : 120}
+                            width={isDesktop ? 110 : 120}
+                            height={isDesktop ? 38 : 120}
                             alt=""
                         />
                     </Link>
@@ -54,7 +54,7 @@ const Navbar = (props) => {
                 <div
                     className={`justify-end items-center w-full flex`}
                 >
-                    <div className={"lg:block hidden space-x-12"}>
+                    <div className={"lg:block hidden space-x-[60px]"}>
                         <Link href="/">Home</Link>
                         <Link href="/timer">App Timer</Link>
                         <Link href="/apco">App Athletid</Link>

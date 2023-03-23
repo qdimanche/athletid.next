@@ -18,7 +18,7 @@ const HeaderApco = () => {
                     The futur of fitness <br/>and wellness
                 </h1>
                 <div className={`flex md:justify-start justify-center space-x-4`}>
-                    <Button className={'text-[12px]'} variant={'red'} link={'/'} content={"Join the waiting list"}/>
+                    <Button className={'text-[16px]'} variant={'red'} link={'/'} content={"Join the waiting list"}/>
                 </div>
             </div>
         </div>

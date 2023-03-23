@@ -15,8 +15,8 @@ const CardImageBottomRight = () => {
                 <div className={'flex flex-col md:justify-between justify-center'}>
                     <div className={' md:mb-4 flex flex-col lg:w-full'}>
                         <Tag text={'Available'} variant={'black'}/>
-                        <h3 className={'font-medium whitespace-no-wrap mt-4  md:text-4xl lg:text-5xl'}>Timer by Athletid</h3>
-                        <h3 className={'font-medium text-black/20 whitespace-no-wrap md:text-4xl lg:text-5xl'}>Train with a free mind.</h3>
+                        <span className={'font-medium whitespace-no-wrap mt-4  md:text-4xl lg:text-5xl'}>Timer by Athletid</span>
+                        <span className={'font-medium text-black/20 whitespace-no-wrap md:text-4xl lg:text-5xl'}>Train with a free mind.</span>
                     </div>
                 </div>
                 <div>
