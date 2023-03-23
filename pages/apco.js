@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '@/src/components/Header/Header'
+import HeaderApco from '@/src/components/Header/HeaderApco'
 import Format from '@/src/layout/format'
 import Head from 'next/head'
 import GridSection from '@/src/components/UI/Grid/GridSection'
@@ -9,9 +9,15 @@ import Carousel from '@/src/components/UI/Carousel/ArrowCarousel/Carousel'
 import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage'
 import Feature from '@/src/components/Feature/Feature'
 import {apcoCardContent} from '@/src/components/UI/Card/BasicCard/BasicCardData'
-import BackgroundHeader from "@/src/components/Header/BackgroundHeader";
+import Image from "next/image";
+import CaptorReverse from "@/public/assets/images/captor-reverse-mobile.webp";
+import CaptorReverseDesktop from "@/public/assets/images/captor-reverse-desktop.webp";
+import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
 
 const Apco = () => {
+
+    const isMobile = useMediaQuery("(max-width:768px)");
+    const isTabletAndDesktop = useMediaQuery("(min-width:768px)")
 
     return (
         <>
@@ -26,9 +32,18 @@ const Apco = () => {
             </Head>
 
             <Format>
-                <BackgroundHeader/>
-                <Header/>
-                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto  relative'}>
+                <div className={'absolute w-full transform left-1/2 -translate-x-1/2 max-w-[1280px] mx-auto'}>
+                    <div className={'h-[1300px] relative '}>
+                        <Image
+                            layout={'fill'}
+                            src={isMobile ? CaptorReverse : isTabletAndDesktop ? CaptorReverseDesktop : ''}
+                            className={'object-cover absolute w-full '}
+                            alt={''}
+                        />
+                    </div>
+                </div>
+                <HeaderApco/>
+                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto  relative '}>
                     <GridSection
                         gridClassName={'grid md:grid-cols-3 rows-4 '}
                         title={'The most powerful training tracking and analysis system'}

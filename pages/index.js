@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import MasonryGrid from '../src/components/UI/Grid/MasonryGrid'
 import Format from '../src/layout/format'
-import Header from '@/src/components/Home/Header'
+import Header from '@/src/components/Header/Header'
 import ImgHeader from '@/public/assets/images/femme-casque-audio.webp'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import MasonryImages from '@/public/assets/images/masonry'
@@ -15,11 +15,7 @@ import BasicCard from '@/src/components/UI/Card/BasicCard/BasicCard'
 import {homeCardContent} from '@/src/components/UI/Card/BasicCard/BasicCardData'
 
 export default function Home() {
-    const isLargeScreen = useMediaQuery(
-        '(min-width: 1024px) and (max-width: 1280px)'
-    )
     const isMobile = useMediaQuery('(max-width: 728px)')
-    const isXLScreen = useMediaQuery('(min-width: 1280px)')
 
     return (
         <>
@@ -44,6 +40,7 @@ export default function Home() {
                     imageWidth={' w-[500px] md:w-1/2 '}
                     imageObjectPosition={'object-left-top'}
                     link={'/timer'}
+                    imageClassName={'object-contain'}
                 />
                 <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
                     <GridSection

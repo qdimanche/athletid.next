@@ -35,7 +35,7 @@ const BasicCard = ({className, ...props}) => {
                 className={
                     isClick
                         ? 'hidden'
-                        : `w-3/4 md:w-1/3 flex flex-col  absolute h-full lg:w-full top-8 left-8`
+                        : ` flex flex-col  absolute h-full lg:w-full top-8 left-8 right-8`
                 }
             >
                 {props.tag && (

@@ -1,4 +1,4 @@
-import Header from '@/src/components/Home/Header'
+import Header from '@/src/components/Header/Header'
 import Feature from '@/src/components/Feature/Feature'
 import Testimonial from '@/src/components/Testimonial/Testimonial'
 import Head from 'next/head'
@@ -6,7 +6,7 @@ import Format from '@/src/layout/format'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 import ImgHeaderMobile from '@/public/assets/images/header-timer-cut.webp'
 import ImgHeader from '@/public/assets/images/timer-v2-header-desktop.webp'
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import KeyNumbers from '@/src/components/Timer/KeyNumbers'
 import FullHeightBgImage from '@/src/components/Timer/FullHeightBgImage'
 import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage'
@@ -37,6 +37,7 @@ const Timer = () => {
                     }
                     imageSrc={isMobile ? ImgHeaderMobile : isTabletAndDesktop ? ImgHeader :""}
                     buttons={"downloadButton"}
+                    imageClassName={'object-cover'}
                 />
                 <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
                     <KeyNumbers/>

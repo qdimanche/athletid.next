@@ -10,21 +10,21 @@ const KeyNumbers = () => {
         >
             <Number
                 src={'/assets/icons/arrowleftright.svg'}
-                text={'Lorem ipsum'}
+                text={'The first objective of our project is to help more than ten million athletes create a solid routine through our innovative solutions.'}
                 width={30}
-                number={'7,520,568'}
+                number={'10M+'}
             />{' '}
             <Number
                 src={'/assets/icons/download.svg'}
-                text={'Lorem ipsum'}
+                text={'Create the first universe dedicated to fitness and yoga which are today abandoned of all solutions to facilitate their practice.'}
                 width={20}
-                number={'7,520,568'}
+                number={'1st'}
             />{' '}
             <Number
                 src={'/assets/icons/messages.svg'}
-                text={'Lorem ipsum'}
+                text={'The number of exercises that our intelligent recognition system will be able to recognize.'}
                 width={30}
-                number={'7,520,568'}
+                number={'2k+'}
             />
         </div>
     )
@@ -34,11 +34,10 @@ export default KeyNumbers
 
 function Number(props) {
     return (
-        <div className="flex justify-center space-x-6 py-8 border-b border-black/6 md:border-none">
-            <Image src={props.src} height={30} width={props.width} alt={''}/>
+        <div className="flex flex-col space-y-6 py-8 border-b border-black/6 md:border-none">
             <div className={'flex flex-col space-y-2'}>
-                <p className={'text-sm'}>{props.text}</p>
                 <span className={'text-4xl md:text-3xl'}>{props.number}</span>
+                <p className={'text-sm'}>{props.text}</p>
             </div>
         </div>
     )
