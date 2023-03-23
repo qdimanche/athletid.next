@@ -2,7 +2,7 @@ import React from 'react'
 import Tag from '@/src/components/UI/Tag'
 import Button from '@/src/components/UI/Button/Button'
 import Image from 'next/image'
-import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
+import TimerDashboard from '@/public/assets/images/homeTimer.webp'
 
 const CardImageBottomRight = () => {
     return (
@@ -14,9 +14,9 @@ const CardImageBottomRight = () => {
             <div className={'flex md:items-start md:flex-col md:justify-between '}>
                 <div className={'flex flex-col md:justify-between justify-center'}>
                     <div className={' md:mb-4 flex flex-col lg:w-full'}>
-                        <Tag text={'Bientôt disponible'} variant={'black'}/>
-                        <h2 className={'font-medium whitespace-no-wrap mt-4 '}>Timer by Athletid</h2>
-                        <h2 className={'font-medium text-black/20 whitespace-no-wrap'}>S&apos;entraîner l&apos;esprit libre.</h2>
+                        <Tag text={'Available'} variant={'black'}/>
+                        <h3 className={'font-medium whitespace-no-wrap mt-4  md:text-4xl lg:text-5xl'}>Timer by Athletid</h3>
+                        <h3 className={'font-medium text-black/20 whitespace-no-wrap md:text-4xl lg:text-5xl'}>Train with a free mind.</h3>
                     </div>
                 </div>
                 <div>
@@ -25,7 +25,7 @@ const CardImageBottomRight = () => {
                         text={'Lorem'}
                         variant={'red'}
                         link={'/timer'}
-                        content={"Découvrir"}
+                        content={"Discover"}
                     />
                 </div>
             </div>

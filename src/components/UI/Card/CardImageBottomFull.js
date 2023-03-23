@@ -16,12 +16,12 @@ const CardImageBottomFull = () => {
             >
                 <div className={'space-y-4 flex flex-col md:justify-between '}>
                     <div className={' md:mb-4 flex flex-col items-center'}>
-                        <h3 className={'md:text-left font-medium w-full' }>
-                            Simple & intuitif.
-                        </h3>
-                        <h3 className={'md:text-left text-black/[16%] w-full'}>
-                            Un design épuré.
-                        </h3>
+                        <h2 className={'md:text-left font-medium w-full md:text-4xl' }>
+                            Simple & intuitive.
+                        </h2>
+                        <h2 className={'md:text-left text-black/[16%] w-full md:text-4xl'}>
+                            A pure design.
+                        </h2>
                     </div>
                 </div>
             </div>

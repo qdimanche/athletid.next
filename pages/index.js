@@ -12,12 +12,7 @@ import CardImageBottomRight from '@/src/components/UI/Card/CardImageBottomRight'
 import CardImageTopRight from '@/src/components/UI/Card/CardImageTopRight'
 import CardImageBottomFull from '@/src/components/UI/Card/CardImageBottomFull'
 import BasicCard from '@/src/components/UI/Card/BasicCard/BasicCard'
-import ApcoFeaturesMobile from '@/public/assets/images/apco-features-fullscreen-mobile.webp'
-import ApcoFeatures from '@/public/assets/images/apco-features-fullscreen.webp'
-import Captor from '@/public/assets/images/captor-card.webp'
-import ApcoRockBackground from '@/public/assets/images/apco-rock-background.webp'
-import ApcoRockBackgroundMobile from '@/public/assets/images/apco-rock-background-mobile.webp'
-import TimerDashboard from '@/public/assets/images/timer-athletid-dashboard.webp'
+import {homeCardContent} from '@/src/components/UI/Card/BasicCard/BasicCardData'
 
 export default function Home() {
     const isLargeScreen = useMediaQuery(
@@ -40,21 +35,20 @@ export default function Home() {
 
             <Format>
                 <Header
-                    title={'Créer une routine \nd’entraînement durable.'}
+                    title={'A unique sport \nexperience.'}
                     subTitle={
-                        'Une expérience unique pour tirer le meilleur parti de tes entraînements, atteindre tes objectifs et profiter des bienfaits du sport. '
+                        'Create a solid training routine with our applications and tracking system.'
                     }
                     imageSrc={ImgHeader}
                     imageHeight={'min-h-[500px] lg:min-h-[90vh]'}
                     imageWidth={' w-[500px] md:w-1/2 '}
                     imageObjectPosition={'object-left-top'}
                     link={'/timer'}
-                    instaLink={'https://www.instagram.com/athletid/'}
                 />
-                <div className={'px-8 max-w-[1280px] mx-auto '}>
+                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
                     <GridSection
                         gridClassName={'md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr]'}
-                        title={'La régularité est la clé, \n' + 'construisons la ensemble.'}
+                        title={'Consistency is the key, \n' + "let's build it together."}
                         subTitle={'Timer by Athletid'}
                     >
                         <CardImageBottomRight/>
@@ -65,52 +59,28 @@ export default function Home() {
                     <GridSection
                         gridClassName={'md:grid-cols-2 md:grid-rows-2'}
                         subTitle={'Make the difference'}
-                        title={
-                            'Il n’a jamais été aussi simple de \ntenir son journal d’entraînement. '
-                        }
+                        title={'Keeping a training log \nhas never been easier.'}
                     >
-                        <BasicCard
-                            className={'md:col-span-2'}
-                            title={'Reconnaissance \nintelligente des \nmouvements.'}
-                            link={'/timer'}
-                            textColor={'white'}
-                            objectPosition={'md:object-right-bottom '}
-                            srcBg={isMobile ? ApcoFeaturesMobile : ApcoFeatures}
-                            srcMockup={TimerDashboard}
-                            buttonContent={'Découvrir'}
-                            paragraphWidth={'w-3/4 md:w-1/3'}
-                            playAnimation={'false'}
-                            tagContent={"Bientôt disponible"}
-                        />
-                        <BasicCard
-                            link={'/timer'}
-                            title={"La puissance des données."}
-                            subtitle={"Mesure tes progrès."}
-                            subTitleColor={"text-black/40"}
-                            textColor={'black'}
-                            tag={'hidden'}
-                            srcBg={Captor}
-                            paragraphWidth={'w-2/3'}
-                            buttonContent={'Découvrir'}
-                            objectPosition={'md:object-center  '}
-                            playAnimation={'false'}
-                        />
-                        <BasicCard
-                            link={'/timer'}
-                            tag={'hidden'}
-                            textColor={'white'}
-                            title={"Motivation & inspiration."}
-                            subtitle={"Un environnement propice \n" +
-                                "à ta réussite."}
-                            subTitleColor={"text-white/40"}
-                            srcBg={isMobile ? ApcoRockBackgroundMobile : ApcoRockBackground}
-                            srcMockup={TimerDashboard}
-                            mockupDisplay={'!hidden'}
-                            paragraphWidth={'w-2/3'}
-                            buttonContent={'Découvrir'}
-                            objectPosition={'md:object-center '}
-                            playAnimation={'false'}
-                        />
+                        {homeCardContent.map((value, index) => {
+                            return (
+                                <BasicCard
+                                    key={index}
+                                    link={value.link}
+                                    tag={value.tag}
+                                    title={value.title}
+                                    subTitle={value.subTitle}
+                                    srcBg={
+                                        value.imageSrcMobile && isMobile
+                                            ? value.imageSrcMobile
+                                            : value.imageSrc
+                                    }
+                                    paragraphWidth={value.paragraphWidth}
+                                    className={value.className}
+                                    subTitleClassName={value.subTitleClassName}
+                                    buttonClassName={value.buttonClassName}
+                                />
+                            )
+                        })}
                     </GridSection>
                 </div>
                 <MasonryGrid
@@ -120,7 +90,7 @@ export default function Home() {
                     }
                     items={MasonryImages}
                 />
-                <div className={'px-8 max-w-[1280px] mx-auto '}>
+                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
                     <ContactSupport/>
                 </div>
             </Format>

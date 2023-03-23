@@ -7,42 +7,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="image bug fix (responsive)">
-      <change afterPath="$PROJECT_DIR$/src/components/Header/BackgroundHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="bug fixes apco page">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/homeTimer.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/CircleStats.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/CircleStats.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/apco-rock-background.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/apco-rock-background.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/application-apco-dashboard-full.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/application-apco-dashboard-full.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/captor-reverse.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/captor-reverse.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/captor.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/captor-card.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/construction-entrainement-apco.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/construction-entrainement-apco.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/sportif-sur-banc.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/statistiques.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/statistiques.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactSupport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Feature/Feature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Feature/Feature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Feature/SubscriptionsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Feature/SubscriptionsData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/apco-rock-background-mobile.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard-bottom.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/timer-athletid-dashboard-bottom.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageSection/ImageSectionData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSection/ImageSectionData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomFull.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageBottomRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopRight.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/GridSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/GridSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +52,16 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2LrHFpofZrI2dCPLfLKSE7pCNAB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -142,7 +127,8 @@
       <workItem from="1679325575701" duration="2517000" />
       <workItem from="1679385971756" duration="25334000" />
       <workItem from="1679472688534" duration="32000" />
-      <workItem from="1679472775033" duration="25748000" />
+      <workItem from="1679472775033" duration="26421000" />
+      <workItem from="1679558791802" duration="7421000" />
     </task>
     <task id="LOCAL-00001" summary="[+]bug fix">
       <created>1676628129058</created>
@@ -466,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679485832950</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="bug fixes apco page">
+      <created>1679503059607</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1679503059608</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,6 +477,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="[+]bug fix" />
     <MESSAGE value="[+]Grid Layout" />
     <MESSAGE value="[+]Responsive design for card" />
@@ -497,6 +491,7 @@
     <MESSAGE value="[+] bug fix" />
     <MESSAGE value="[+] desktop responsive page timer" />
     <MESSAGE value="image bug fix (responsive)" />
-    <option name="LAST_COMMIT_MESSAGE" value="image bug fix (responsive)" />
+    <MESSAGE value="bug fixes apco page" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes apco page" />
   </component>
 </project>

@@ -3,8 +3,10 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import {AiOutlinePlus} from 'react-icons/ai'
+import Button from '@/src/components/UI/Button/Button'
+import Tag from '@/src/components/UI/Tag'
 
-const BasicCard = ({className, tagVariantOverride, ...props}) => {
+const BasicCard = ({className, ...props}) => {
     const [isClick, setIsClick] = useState(false)
     const [count, setCount] = useState(0)
 
@@ -24,9 +26,7 @@ const BasicCard = ({className, tagVariantOverride, ...props}) => {
             )}
         >
             <Image
-                className={
-                    isClick ? 'hidden' : `object-cover object-top`
-                }
+                className={isClick ? 'hidden' : `object-cover  ${props.objectPosition}`}
                 src={props.srcBg}
                 alt={''}
                 layout={'fill'}
@@ -38,12 +38,18 @@ const BasicCard = ({className, tagVariantOverride, ...props}) => {
                         : `w-3/4 md:w-1/3 flex flex-col  absolute h-full lg:w-full top-8 left-8`
                 }
             >
-                <h2
-                    className={`whitespace-pre-line font-medium text-[2em]`}
-                >
+                {props.tag && (
+                    <Tag variant={'white'} text={'Soon available !'} className={'mb-4'}/>
+                )}
+                <h2 className={`whitespace-pre-line font-medium md:!text-4xl`}>
                     {props.title}
                 </h2>
-                <h2 className={`whitespace-pre-line text-[2em] !text-white/40`}>
+                <h2
+                    className={clsx(
+                        `whitespace-pre-line text-white/40 md:!text-4xl`,
+                        props.subTitleClassName
+                    )}
+                >
                     {props.subTitle}
                 </h2>
             </div>
@@ -62,18 +68,30 @@ const BasicCard = ({className, tagVariantOverride, ...props}) => {
                     {props.flipContent}
                 </p>
             </div>
-            <ToggleButton
-                text={'lorem'}
-                variant={'red'}
-                className={`absolute right-8 bottom-8 z-[100] !rounded-full !p-3 ${
-                    isClick ? 'rotate-45' : ''
-                }`}
-                content={<AiOutlinePlus size={30}/>}
-                onClick={() => {
-                    setIsClick(true)
-                    setCount(count + 1)
-                }}
-            />
+            {props.buttons === 'toggleButton' ? (
+                <ToggleButton
+                    text={'lorem'}
+                    variant={'red'}
+                    className={`absolute right-8 bottom-8 z-[100] !rounded-full !p-3 ${
+                        isClick ? 'rotate-45' : ''
+                    }`}
+                    content={<AiOutlinePlus size={30}/>}
+                    onClick={() => {
+                        setIsClick(true)
+                        setCount(count + 1)
+                    }}
+                />
+            ) : (
+                <Button
+                    variant={'red'}
+                    link={props.link}
+                    className={clsx(
+                        'absolute right-8 bottom-8 z-[100]',
+                        props.buttonClassName
+                    )}
+                    content={'Discover'}
+                />
+            )}
         </div>
     )
 }

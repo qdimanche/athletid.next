@@ -9,7 +9,7 @@ import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
 const Header = ({imageClassName, ...props}) => {
     return (
         <header
-            className={`header-height relative flex justify-center lg:justify-start bg-greyShade`}
+            className={`header-height relative flex justify-center lg:justify-start bg-greyShade overflow-hidden`}
         >
             <div
                 style={{whiteSpace: 'pre-line'}}
@@ -27,7 +27,9 @@ const Header = ({imageClassName, ...props}) => {
                             'space-y-6 flex flex-col items-center md:items-start z-[900]'
                         }
                     >
-                        <Tag variant={'black'} text={'Available'}/>
+                        {props.buttons === 'downloadButton' && (
+                            <Tag variant={'black'} text={'Available'}/>
+                        )}
                         <h1
                             className={`md:text-left text-center text-black white whitespace-pre-line`}
                         >
@@ -38,44 +40,51 @@ const Header = ({imageClassName, ...props}) => {
                         >
                             {props.subTitle}
                         </p>
-                        <div className={`flex space-x-4 whitespace-nowrap`}>
+                        {props.buttons === 'downloadButton' ? (
+                            <div className={`flex space-x-4 whitespace-nowrap`}>
+                                <Button
+                                    variant={'black'}
+                                    link={''}
+                                    content={
+                                        <div className={'flex space-x-2 items-center'}>
+                                            <FaApple color={'black'} size={20}/>
+                                            <div>App Store</div>
+                                        </div>
+                                    }
+                                />
+                                <Button
+                                    variant={'black'}
+                                    link={''}
+                                    content={
+                                        <div className={'flex space-x-2 items-center'}>
+                                            <TiVendorAndroid color={'black'} size={22}/>
+                                            <div>Play Store</div>
+                                        </div>
+                                    }
+                                />
+                            </div>
+                        ) : (
                             <Button
-                                variant={'black'}
-                                link={''}
-                                content={
-                                    <div className={'flex space-x-2 items-center'}>
-                                        <FaApple color={'black'} size={20}/>
-                                        <div>App Store</div>
-                                    </div>
-                                }
+                                variant={'red'}
+                                link={props.link}
+                                content={'Discover our apps'}
                             />
-                            <Button
-                                variant={'black'}
-                                link={''}
-                                content={
-                                    <div className={'flex space-x-2 items-center'}>
-                                        <TiVendorAndroid color={'black'} size={22}/>
-                                        <div>Play Store</div>
-                                    </div>
-                                }
-                            />
-                        </div>
+                        )}
                     </div>
                 </div>
 
                 <div
                     className={
-                        'h-[500px] md:h-full w-screen md:w-[480px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute md:right-0 relative'
+                        'h-[500px] md:h-full w-screen md:w-[600px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute lg:-right-12 md:-right-40 md:bottom-0 relative'
                     }
                 >
-                    <CircleSpinner/>
                     {props.imageSrc === '' ? (
                         <CircleSpinner/>
                     ) : (
                         <Image
                             src={props.imageSrc}
                             layout={'fill'}
-                            className={'object-cover object-top md:object-left'}
+                            className={'object-contain object-top md:object-bottom '}
                             alt={''}
                         />
                     )}

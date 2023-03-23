@@ -16,12 +16,6 @@ import ImageSection from '@/src/components/ImageSection/ImageSection'
 const Timer = () => {
     const isMobile = useMediaQuery('(max-width: 768px)')
     const isTabletAndDesktop = useMediaQuery('(min-width: 768px)')
-    const [imageSrc, setImageSrc] = useState(null);
-
-    useEffect(() => {
-        setImageSrc(isMobile ? ImgHeaderMobile : ImgHeader);
-    }, [isMobile]);
-
 
     return (
         <>
@@ -42,7 +36,7 @@ const Timer = () => {
                         'Your training partner, simple and elegant. \nYour new application is the most complete (12 different timers and stopwatches), it adapts to all types of training.'
                     }
                     imageSrc={isMobile ? ImgHeaderMobile : isTabletAndDesktop ? ImgHeader :""}
-                    link={'/timer'}
+                    buttons={"downloadButton"}
                 />
                 <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
                     <KeyNumbers/>
