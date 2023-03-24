@@ -9,13 +9,14 @@ const CardImageTopRight = () => {
                 'rounded-medium overflow-hidden bg-greyShade  flex flex-col h-[500px] p-4 md:p-8 md:pr-0 md:pt-0 pr-0 pt-0 relative'
             }
         >
-            <Image
-                className={'absolute top-0 right-0'}
-                src={TimerDashboardBottom}
-                height={310}
-                width={310}
-                alt={''}
-            />
+            <div className={'w-full h-[400px] relative'}>
+                <Image
+                    className={'object-cover object-center'}
+                    src={TimerDashboardBottom}
+                    layout={"fill"}
+                    alt={''}
+                />
+            </div>
             <div className={'flex md:flex-col absolute left-4 bottom-4'}>
                 <div className={'space-y-4 flex flex-col md:justify-between '}>
                     <div className={'flex flex-col items-center'}>

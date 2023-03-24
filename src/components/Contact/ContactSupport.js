@@ -21,7 +21,7 @@ const ContactSupport = (props, ref) => {
                 >
                     Vos idées sont <br/>nos priorités !
                 </h2>
-                <p className={"my-6 md:text-left text-center"}>
+                <p className={"mt-3 mb-6 md:text-left text-center"}>
                     Soucieux de vous apporter la meilleure application, nous sommes à l’écoute de toutes vos suggestions pour faire évoluer notre solution.
                 </p>
                 <div className={"flex items-center space-x-4"}>

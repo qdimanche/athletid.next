@@ -26,7 +26,7 @@ const BasicCard = ({className, ...props}) => {
             )}
         >
             <Image
-                className={isClick ? 'hidden' : `object-cover  ${props.objectPosition}`}
+                className={`object-cover  ${props.objectPosition}`}
                 src={props.srcBg}
                 alt={''}
                 layout={'fill'}
@@ -35,58 +35,60 @@ const BasicCard = ({className, ...props}) => {
                 className={
                     isClick
                         ? 'hidden'
-                        : ` flex flex-col  absolute h-full lg:w-full top-8 left-8 right-8`
+                        : ` flex flex-col  absolute h-full lg:w-full top-4 left-4 right-4`
                 }
             >
                 {props.tag && (
                     <Tag variant={'white'} text={'Soon available !'} className={'mb-4'}/>
                 )}
                 <span className={`whitespace-pre-line text-4xl font-medium`}>
-                    {props.title}
-                </span>
+          {props.title}
+        </span>
                 <span
                     className={clsx(
                         `whitespace-pre-line text-white/40 font-medium md:!text-4xl`,
                         props.subTitleClassName
                     )}
                 >
-                    {props.subTitle}
-                </span>
-            </div>
-            <div
-                className={`absolute h-full lg:w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 
-                ${isClick ? 'opacity-1' : 'opacity-0'}
-                `}
-            >
-                <p
-                    className={`${
-                        isClick
-                            ? 'opacity-1 transition delay-[100ms] duration-300'
-                            : 'opacity-0'
-                    }`}
-                >
-                    {props.flipContent}
-                </p>
+          {props.subTitle}
+        </span>
             </div>
             {props.buttons === 'toggleButton' ? (
-                <ToggleButton
-                    text={'lorem'}
-                    variant={'red'}
-                    className={`absolute right-8 bottom-8 z-[100] !rounded-full !p-3 ${
-                        isClick ? 'rotate-45' : ''
-                    }`}
-                    content={<AiOutlinePlus size={30}/>}
-                    onClick={() => {
-                        setIsClick(true)
-                        setCount(count + 1)
-                    }}
-                />
+                <>
+                    <div
+                        className={`absolute h-full lg:w-full bg-white flex flex-col justify-center p-4 pt-0 transition duration-300 
+                ${isClick ? 'opacity-1' : 'opacity-0'}
+                `}
+                    >
+                        <p
+                            className={`${
+                                isClick
+                                    ? 'opacity-1 transition delay-[100ms] duration-300'
+                                    : 'opacity-0'
+                            }`}
+                        >
+                            {props.flipContent}
+                        </p>
+                    </div>
+                    <ToggleButton
+                        text={'lorem'}
+                        variant={'red'}
+                        className={`absolute right-4 bottom-4 z-[100] !rounded-full !p-3 ${
+                            isClick ? 'rotate-45' : ''
+                        }`}
+                        content={<AiOutlinePlus size={30}/>}
+                        onClick={() => {
+                            setIsClick(true)
+                            setCount(count + 1)
+                        }}
+                    />
+                </>
             ) : (
                 <Button
                     variant={'red'}
                     link={props.link}
                     className={clsx(
-                        'absolute right-8 bottom-8 z-[100]',
+                        'absolute right-4 bottom-4 z-[100]',
                         props.buttonClassName
                     )}
                     content={'Discover'}

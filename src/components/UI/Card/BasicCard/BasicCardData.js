@@ -45,19 +45,19 @@ export const apcoCardContent = [
 export const homeCardContent = [
   {
     title: 'Intelligent motion\n' + 'recognition.',
-    imageSrcMobile: '/assets/images/apco-rock-background.webp',
+    imageSrcMobile: '/assets/images/apco-features-fullscreen-mobile.webp',
     imageSrc: '/assets/images/apco-features-fullscreen.webp',
     tag: true,
     textButton:true,
     link:"/apco",
     paragraphWidth:"w-3/4 md:w-1/3",
     className: 'md:col-span-2',
-    buttonClassName:"!left-8 !right-0"
+    buttonClassName:""
   },
   {
     title: 'The power of data.',
     subTitle: 'Mesure your progress.',
-    subTitleClassName: "text-black/10",
+    subTitleClassName: "!text-black opacity-[16%]",
     imageSrc: '/assets/images/captor-card.webp',
     textButton:true,
     link:"/apco",
@@ -68,7 +68,7 @@ export const homeCardContent = [
     title: 'Motivation & inspiration.',
     subTitle: 'An environment for your success.',
     imageSrc: "/assets/images/apco-rock-background.webp",
-    textButton:true,
+    buttonClassName: "hidden",
     link:"",
   },
 ]

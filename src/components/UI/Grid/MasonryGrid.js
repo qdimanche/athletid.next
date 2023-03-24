@@ -18,12 +18,12 @@ const MasonryGrid = ({items, ...props}) => {
 
     return (
         <div className={'lg:px-0 px-4 md:px-8'}>
-            <div className={`lg:-mb-[2%] mt-[92px] lg:mt-[120px] `}>
+            <div className={`lg:-mb-[2%] mt-[92px] lg:mt-[120px] mb-[72px]`}>
                 <div className={'text-center '}>
                     <div className={'flex flex-col items-center'} id={'titleMasonry'}>
                         <h2 style={{whiteSpace: "pre-line"}} className={''}>{props.titleMasonry}</h2>
                         <p style={{whiteSpace: "pre-line"}}
-                           className={'my-6'}>{props.subTitleMasonry}</p>
+                           className={'mt-3 mb-6'}>{props.subTitleMasonry}</p>
                         <Button variant={"black"} content={"Découvrir"} link={"/a-propos"}/>
                     </div>
                 </div>

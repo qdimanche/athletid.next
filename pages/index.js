@@ -40,9 +40,9 @@ export default function Home() {
                     imageWidth={' w-[500px] md:w-1/2 '}
                     imageObjectPosition={'object-left-top'}
                     link={'/timer'}
-                    imageClassName={'object-contain'}
+                    imageClassName={'object-cover md:object-contain'}
                 />
-                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
+                <div className={'px-8 md:px-12 max-w-[440px] lg:max-w-[1280px] mx-auto '}>
                     <GridSection
                         gridClassName={'md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr]'}
                         title={'Consistency is the key, \n' + "let's build it together."}
