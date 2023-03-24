@@ -6,7 +6,7 @@ const CardImageBottomFull = () => {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col lg:justify-between h-[500px] p-4 md:p-8 md:pr-0 md:pb-0 pr-0 md:pb-0 pb-0 relative'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col lg:justify-between h-[500px] md:h-[400px] p-4 md:p-8 md:pr-0 md:pb-0 pr-0 md:pb-0 pb-0 relative'
             }
         >
             <div
@@ -26,7 +26,7 @@ const CardImageBottomFull = () => {
                 </div>
             </div>
             <div className={'absolute bottom-0 w-full'}>
-                <div className={'w-full flex justify-end  h-[380px] relative'}>
+                <div className={'w-full flex justify-end  h-[380px] md:h-[250px] lg:h-[300px] relative'}>
                     <Image
                         className={'object-cover object-top'}
                         src={TimerDashboardDiagonal}

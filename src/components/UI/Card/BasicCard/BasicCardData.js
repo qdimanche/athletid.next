@@ -52,7 +52,7 @@ export const homeCardContent = [
     link:"/apco",
     paragraphWidth:"w-3/4 md:w-1/3",
     className: 'md:col-span-2',
-    buttonClassName:""
+    buttonClassName:"md:left-4"
   },
   {
     title: 'The power of data.',
@@ -62,7 +62,8 @@ export const homeCardContent = [
     textButton:true,
     link:"/apco",
     className : "!text-black",
-    paragraphWidth: "w-2/3"
+    paragraphWidth: "w-2/3",
+    buttonClassName:"md:left-4"
   },
   {
     title: 'Motivation & inspiration.',

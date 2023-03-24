@@ -38,7 +38,7 @@ const Navbar = (props) => {
     return (
         <div className={`fixed z-[999] w-screen lg:py-6 py-4  top-0 ${isScrolled ? 'bg-white': ''} duration-500`}>
             <div
-                className={'flex max-w-[1280px] px-8 md:px-12 mx-auto justify-between'}
+                className={'flex max-w-[1170px] px-4 mx-auto justify-between'}
             >
                 <div>
                     <Link href="/" className={``}>

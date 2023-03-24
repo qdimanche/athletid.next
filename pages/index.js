@@ -31,18 +31,17 @@ export default function Home() {
 
             <Format>
                 <Header
-                    title={'A unique sport \nexperience.'}
+                    title={'A unique sport experience.'}
                     subTitle={
                         'Create a solid training routine with \nour applications and tracking system.'
                     }
                     imageSrc={ImgHeader}
-                    imageHeight={'min-h-[500px] lg:min-h-[90vh]'}
                     imageWidth={' w-[500px] md:w-1/2 '}
                     imageObjectPosition={'object-left-top'}
                     link={'/timer'}
                     imageClassName={'object-cover md:object-contain'}
                 />
-                <div className={'px-4 md:px-12 max-w-[440px] lg:max-w-[1280px] mx-auto '}>
+                <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <GridSection
                         gridClassName={'md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr]'}
                         title={'Consistency is the key, \n' + "let's build it together."}
@@ -87,7 +86,7 @@ export default function Home() {
                     }
                     items={MasonryImages}
                 />
-                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
+                <div className={'px-4  max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <ContactSupport/>
                 </div>
             </Format>

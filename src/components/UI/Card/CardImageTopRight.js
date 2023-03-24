@@ -6,12 +6,12 @@ const CardImageTopRight = () => {
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col h-[500px] p-4 md:p-8 md:pr-0 md:pt-0 pr-0 pt-0 relative'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col h-[500px] md:h-[400px] md:pr-0 md:pt-0 pr-0 pt-0 relative'
             }
         >
             <div className={'w-full h-[400px] relative'}>
                 <Image
-                    className={'object-cover object-center'}
+                    className={'object-cover md:object-contain object-center md:object-top'}
                     src={TimerDashboardBottom}
                     layout={"fill"}
                     alt={''}

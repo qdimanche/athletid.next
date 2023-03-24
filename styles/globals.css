@@ -127,7 +127,7 @@ input:-webkit-autofill:active {
 /*Responsive*/
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 
     h1 {
         font-size: 48px;
@@ -147,8 +147,28 @@ input:-webkit-autofill:active {
 
 }
 
+@media screen and (min-width:768px) and (max-width: 1280px) {
 
-@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 58px;
+        line-height: 58px;
+    }
+
+    h2 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    span {
+        font-size: 38px;
+        line-height: 42px;
+        font-weight: 500;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
 
     h1 {
         font-size: 84px;

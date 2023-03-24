@@ -17,7 +17,7 @@ const MasonryGrid = ({items, ...props}) => {
     const isMobile = useMediaQuery('(max-width: 768px)');
 
     return (
-        <div className={'lg:px-0 px-4 md:px-8'}>
+        <div className={'lg:px-0 px-4 md:px-8 max-w-[350px] md:max-w-[1280px] lg:max-w-[100vw] mx-auto'}>
             <div className={`lg:-mb-[2%] mt-[92px] lg:mt-[120px] mb-[72px]`}>
                 <div className={'text-center '}>
                     <div className={'flex flex-col items-center'} id={'titleMasonry'}>

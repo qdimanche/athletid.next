@@ -5,83 +5,75 @@ import Button from '@/src/components/UI/Button/Button'
 import {FaApple} from 'react-icons/fa'
 import {TiVendorAndroid} from 'react-icons/ti'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
-import clsx from "clsx";
-import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
+import clsx from 'clsx'
+import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 
 const Header = (props) => {
-
-    const isMobile = useMediaQuery("(max-width:768px)")
+    const isMobile = useMediaQuery('(max-width:768px)')
 
     return (
         <header
-            className={`header-height relative flex justify-center lg:justify-start bg-greyShade overflow-hidden`}
+            className={`relative flex justify-center bg-greyShade overflow-hidden  xl:h-[850px] md:h-[600px] pt-[140px] md:pt-0`}
         >
             <div
-                style={{whiteSpace: 'pre-line'}}
                 className={
-                    'lg:mt-0 lg:mt-3 flex md:grid md:grid-cols-2 flex-col  z-[3] lg:p-0 items-center w-screen max-w-[1280px] mx-auto'
+                    'flex md:grid md:grid-cols-2 flex-col  items-center w-screen max-w-[1170px] mx-auto justify-between md:justify-start'
                 }
             >
                 <div
                     className={
-                        'pt-28  md:py-16  md:flex md:flex-col md:justify-center px-8 md:pl-12'
+                        'flex flex-col items-center md:items-start md:justify-center max-w-[350px] md:max-w-full px-4'
                     }
                 >
-                    <div
-                        className={
-                            'space-y-6 lg:space-y-8 flex flex-col items-center md:items-start z-[900]'
-                        }
+                    {props.buttons === 'downloadButton' && (
+                        <Tag variant={'black'} text={'Available'}/>
+                    )}
+                    <h1
+                        className={`md:text-left text-center text-black white whitespace-pre-line`}
                     >
-                        {props.buttons === 'downloadButton' && (
-                            <Tag variant={'black'} text={'Available'}/>
-                        )}
-                        <h1
-                            className={`md:text-left text-center text-black white whitespace-pre-line`}
-                        >
-                            {props.title}
-                        </h1>
-                        <p
-                            className={`text-black md:text-left text-center text-xs md:text-base`}
-                        >
-                            {props.subTitle}
-                        </p>
-                        {props.buttons === 'downloadButton' ? (
-                            <div className={`flex space-x-4 whitespace-nowrap`}>
-                                <Button
-                                    variant={'black'}
-                                    link={''}
-                                    content={
-                                        <div className={'flex space-x-2 items-center'}>
-                                            <FaApple color={'black'} size={20}/>
-                                            <div>App Store</div>
-                                        </div>
-                                    }
-                                />
-                                <Button
-                                    variant={'black'}
-                                    link={''}
-                                    content={
-                                        <div className={'flex space-x-2 items-center'}>
-                                            <TiVendorAndroid color={'black'} size={22}/>
-                                            <div>Play Store</div>
-                                        </div>
-                                    }
-                                />
-                            </div>
-                        ) : (
+                        {props.title}
+                    </h1>
+                    <p
+                        className={`text-black md:text-left text-center text-xs md:text-base mt-3 md:mt-8`}
+                    >
+                        {props.subTitle}
+                    </p>
+                    {props.buttons === 'downloadButton' ? (
+                        <div className={`flex space-x-4 whitespace-nowrap`}>
                             <Button
-                                variant={isMobile ? 'redOutline' : 'red'}
-                                link={props.link}
-                                content={'Discover our apps '}
-                                className={'md:!mt-[62px]'}
+                                variant={'black'}
+                                link={''}
+                                content={
+                                    <div className={'flex space-x-2 items-center'}>
+                                        <FaApple color={'black'} size={20}/>
+                                        <div>App Store</div>
+                                    </div>
+                                }
                             />
-                        )}
-                    </div>
+                            <Button
+                                variant={'black'}
+                                link={''}
+                                content={
+                                    <div className={'flex space-x-2 items-center'}>
+                                        <TiVendorAndroid color={'black'} size={22}/>
+                                        <div>Play Store</div>
+                                    </div>
+                                }
+                            />
+                        </div>
+                    ) : (
+                        <Button
+                            variant={isMobile ? 'redOutline' : 'red'}
+                            link={props.link}
+                            content={'Discover our apps '}
+                            className={'mt-6 md:!mt-16'}
+                        />
+                    )}
                 </div>
 
                 <div
                     className={
-                        'h-[500px] md:h-full w-screen md:w-[600px] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px] md:absolute lg:-right-12 md:-right-40 md:bottom-0 relative'
+                        'h-[500px] md:h-full w-screen md:w-[52%] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px]  lg:-right-12 md:bottom-0 md:right-0 relative md:absolute'
                     }
                 >
                     {props.imageSrc === '' ? (
@@ -90,7 +82,10 @@ const Header = (props) => {
                         <Image
                             src={props.imageSrc}
                             layout={'fill'}
-                            className={clsx('object-top md:object-bottom', props.imageClassName)}
+                            className={clsx(
+                                'object-top md:object-bottom',
+                                props.imageClassName
+                            )}
                             alt={''}
                         />
                     )}

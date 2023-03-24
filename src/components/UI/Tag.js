@@ -8,7 +8,7 @@ const Tag = ({ className, ...props }) => {
   return (
     <div
       className={clsx(
-        `duration-300 px-[16px] py-[7px] transition py-1 rounded-medium border-[1px] w-fit text-[16px]`,
+        `duration-300 px-[16px] py-[5px] transition py-1 rounded-medium border-[1px] w-fit text-[16px]`,
         variant === 'black' && 'bg-transparent !border-black',
         variant === 'white' && 'bg-transparent  border-white text-white'
       , className)}

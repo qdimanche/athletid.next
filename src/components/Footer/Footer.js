@@ -12,21 +12,21 @@ const Footer = () => {
     return (
         <footer
             className={
-                'mt-[92px] lg:mt-[120px] bg-black text-white flex items-end pt-[90px] lg:pt-[150px] pb-[34px] px-4'
+                'mt-[92px] md:mt-[120px] bg-black text-white flex items-end pt-[90px] md:pt-[75px] lg:pt-[150px] pb-[34px]'
             }
         >
             <div
                 className={
-                    'max-w-[1280px] mx-auto flex flex-col items-center'
+                    ' px-4 max-w-[350px] md:max-w-[1170px] mx-auto flex flex-col items-center'
                 }
             >
-                <div className={'grid md:grid-cols-2'}>
+                <div className={'grid md:grid-cols-2 md:mb-[50px]'}>
                     <div
                         className={
-                            'flex flex-col md:items-start items-center md:text-left text-center mb-[70px]'
+                            'flex flex-col md:items-start md:justify-center items-center md:text-left text-center'
                         }
                     >
-                        <h2 className={''}>Join the waiting list.</h2>
+                        <h2 className={''}>Join the <br/>waiting list.</h2>
                         <p className={'mt-4 mb-6'}>
                             Our sensors are under development. If you are interested, you can
                             register for free on the waiting list and receive information
@@ -40,7 +40,7 @@ const Footer = () => {
                         />
                     </div>
                     <div
-                        className={'h-[300px] lg:h-[600px] w-full relative mb-8 mx-auto'}
+                        className={'h-[300px] md:h-[400px] lg:h-[600px] w-full relative mb-8 mx-auto'}
                     >
                         <div
                             className={
@@ -58,7 +58,7 @@ const Footer = () => {
 
                 <div
                     className={
-                        'flex md:flex-row flex-col items-center md:items-start col-span-2 justify-between md:mb-8 w-full space-y-4'
+                        'flex md:flex-row flex-col items-center md:items-start col-span-2 justify-between w-full space-y-4 md:space-y-0'
                     }
                 >
                     <Image
@@ -70,7 +70,7 @@ const Footer = () => {
                     />
                     <div
                         className={
-                            'flex md:flex-row flex-col items-center space-y-3 md:space-y-0 md:space-x-6'
+                            'flex  flex-col items-center md:items-end md:justify-end space-y-3 md:space-x-6'
                         }
                     >
                         <div className={'flex space-x-6'}>
@@ -80,7 +80,7 @@ const Footer = () => {
                             <Link href={'/about'}>About</Link>
                             <Link href={'/contact'}>Contact</Link>
                         </div>
-                        <div className={'flex space-x-6 text-white/40'}>
+                        <div className={'flex space-x-6 text-white/40 text-sm md:text-base'}>
                             <Link href={'#'}>Support</Link>
                             <Link href={'#'}>Privacy Policy</Link>
                             <Link href={'#'}>Terms of Service</Link>
