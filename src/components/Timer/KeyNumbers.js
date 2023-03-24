@@ -5,7 +5,7 @@ const KeyNumbers = () => {
     return (
         <div
             className={
-                'max-w-[400px] md:max-w-full mx-auto lg:my-32 my-20 md:flex md:justify-between md:space-x-8 md:border md:border-black/2 md:px-8 md:rounded-[20px]'
+                'mx-auto mt-[92px] md:mt-[120px] md:flex md:justify-between md:space-x-8 md:border md:border-black/2 md:px-8 md:rounded-[20px]'
             }
         >
             <Number

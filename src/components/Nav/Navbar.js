@@ -58,8 +58,8 @@ const Navbar = (props) => {
                         <Link href="/">Home</Link>
                         <Link href="/timer">App Timer</Link>
                         <Link href="/apco">App Athletid</Link>
-                        <Link href="/contact">Contact</Link>
-                        <Button variant={'redOutline'} content={'Get Apco'} link={'/apco'}/>
+                        <Link href="/about">About</Link>
+                        <Button variant={'redOutline'} content={'Contact'} link={'/contact'}/>
                     </div>
 
                     <div

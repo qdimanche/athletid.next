@@ -21,12 +21,12 @@ const Carousel = (props) => {
 
 
     return (
-        <div className={'md:my-40 my-28'}>
+        <div className={'mt-[92px] md:mt-[120px]'}>
 
             {props.title && (
                 <div
                     className={
-                        'flex flex-col items-center px-8 mx-auto mb-16 text-center'
+                        'flex flex-col items-center mx-auto mb-[72px] text-center'
                     }
                 >
                     <p className={'text-sm mb-4 text-black/20'}>{props.subTitle}</p>

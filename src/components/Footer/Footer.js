@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className={'grid md:grid-cols-2 md:mb-[50px]'}>
                     <div
                         className={
-                            'flex flex-col md:items-start md:justify-center items-center md:text-left text-center'
+                            'flex flex-col md:items-start md:justify-center items-center md:text-left text-center mb-[72px] md:mb-0'
                         }
                     >
                         <h2 className={''}>Join the <br/>waiting list.</h2>

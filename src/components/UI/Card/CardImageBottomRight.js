@@ -31,7 +31,7 @@ const CardImageBottomRight = () => {
             </div>
             <div
                 className={
-                    'lg:justify-end  md:justify-start justify-center h-full lg:h-full md:h-[400px] md:max-w-full w-full lg:w-[300px] lg:h-[220px]  relative mx-auto lg:absolute lg:bottom-0 lg:right-8 transform -translate-x-8 md:-translate-x-4'
+                    'lg:justify-end  md:justify-start justify-center h-full  md:h-[400px] md:max-w-full w-full lg:w-[300px] lg:h-[220px]  relative mx-auto lg:absolute lg:bottom-0 lg:right-8 transform -translate-x-8 md:-translate-x-4'
                 }
             >
                 <Image

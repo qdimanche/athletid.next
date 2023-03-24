@@ -11,27 +11,27 @@ const FullHeightBgImage = (props) => {
 
     const isMobile = useMediaQuery('(max-width: 1024px)')
     return (
-        <div className={'lg:mb-40 mb-28'}>
+        <div className={'mt-[92px] md:mt-[120px]'}>
             <div
                 className={
-                    'flex flex-col items-center px-8 mx-auto mb-20 text-center'
+                    'flex flex-col items-center mb-[92px] md:mb-[120px] text-center'
                 }
             >
                 <p className={'text-sm mb-4 text-black/20'}>{props.subTitle}</p>
                 <h2 style={{whiteSpace: 'pre-line'}}>{props.title}</h2>
             </div>
 
-            <div className={'h-[820px] md:h-[750px]  lg:h-[535px] relative md:rounded-medium md:overflow-hidden'}>
-                <div className={'absolute top-8 lg:top-0  z-[5] flex flex-col items-center lg:items-center lg:justify-center w-full px-8 lg:h-full lg:grid lg:grid-cols-2'}>
+            <div className={'h-[820px]  lg:h-[535px] relative md:rounded-medium md:overflow-hidden'}>
+                <div className={'absolute  z-[5] flex flex-col items-center lg:items-center lg:justify-center w-full px-4 pt-[72px] md:pt-4 lg:h-full lg:grid lg:grid-cols-2'}>
                     <div></div>
-                    <div className={'space-y-6 px-8 lg:pr-0'}>
-                        <h3
-                            className={`lg:text-left text-center text-white whitespace-pre-line`}
+                    <div className={'lg:pr-0'}>
+                        <span
+                            className={`lg:text-left text-center text-white whitespace-pre-line `}
                         >
                             You too can reach<br/>
                             your sports goals!
-                        </h3>
-                        <div className={`flex space-x-4`}>
+                        </span>
+                        <div className={`flex space-x-4 mt-6`}>
                             <Button
                                 variant={'white'}
                                 link={''}

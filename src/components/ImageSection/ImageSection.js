@@ -5,6 +5,7 @@ import {apcoImages, timerImages} from '@/src/components/ImageSection/ImageSectio
 
 const ImageSection = (props) => {
     const isMobile = useMediaQuery('(max-width: 1024px)')
+    const isTablet = useMediaQuery('(min-width: 768px)')
 
     let images = []
 
@@ -17,14 +18,14 @@ const ImageSection = (props) => {
     }
 
     return (
-        <div className={'md:my-40 mt-28'}>
+        <div className={'mt-[92px] md:mt-[120px]'}>
             <div
                 className={
-                    'flex flex-col items-center md:w-1/2 md:w-3/4 mx-auto mb-20 text-center'
+                    'flex flex-col items-center md:w-1/2 md:w-3/4 mx-auto mb-[72px] text-center'
                 }
             >
                 <h2 style={{whiteSpace: 'pre-line'}}>Accessible to everyone</h2>
-                <p className={'w-full mt-[10px]'}>
+                <p className={'w-full mt-4'}>
                     Designed in collaboration with athletes and experts from around world.
                     Your Timer application accompanies you whatever your level, your
                     discipline or your goals.
@@ -45,7 +46,7 @@ const ImageSection = (props) => {
                 >
                     <Image
                         src={images[1]}
-                        width={160}
+                        width={isTablet  ? 160 : 130}
                         height={200}
                         className={
                             'absolute top-0 left-0 md:left-auto md:top-16 lg:top-32 md:right-0 rounded-[8px]'
@@ -54,7 +55,7 @@ const ImageSection = (props) => {
                     />
                     <Image
                         src={images[2]}
-                        width={160}
+                        width={isTablet  ? 160 : 130}
                         height={200}
                         className={'absolute bottom-0 right-0 md:bottom-0 lg:bottom-32 rounded-[8px]'}
                         alt={''}

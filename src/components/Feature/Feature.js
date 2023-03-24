@@ -34,16 +34,16 @@ const Feature = (props) => {
     return (
         <div
             className={
-                'md:mt-40 mt-28 md:grid md:grid-cols-[1fr_340px] md:items-center'
+                'mt-[92px] md:mt-[120px] md:grid md:grid-cols-[1fr_340px] md:items-center'
             }
         >
             <div
                 className={
-                    'flex flex-col text-left space-y-8 lg:w-3/4 lg:mx-auto md:pr-12 lg:pr-0'
+                    'flex flex-col text-left space-y-8 lg:mx-auto pr-[27px]'
                 }
             >
                 <h2 style={{whiteSpace: 'pre-line'}}>{title}</h2>
-                <p className={'w-full mt-[10px]'}>{subTitle}</p>
+                <p className={'w-full mt-4 mb-6'}>{subTitle}</p>
                 <div className={'flex flex-col'}>
                     <p className={'font-medium text-xl mb-4'}>{titleFeatures}</p>
                     {subscriptions.map((value, index) => {
@@ -61,7 +61,7 @@ const Feature = (props) => {
                 src={imageSrc}
                 width={340}
                 height={340}
-                className={'mx-auto rounded-medium bg-[#F2F2F2]'}
+                className={'mx-auto rounded-medium bg-[#F2F2F2] mt-8'}
                 alt="Application Apco Dashboard Full"
             />
         </div>

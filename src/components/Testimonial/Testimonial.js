@@ -9,11 +9,11 @@ import 'swiper/css/autoplay';
 const Testimonial = (props) => {
     return (
         <div
-            className={"lg:px-4 lg:my-40 lg:mb-32 my-28"}
+            className={"lg:px-4 mt-[92px] md:mt-[120px]"}
         >
             <div
                 className={
-                    'flex flex-col items-center px-8 mx-auto mb-24 text-center'
+                    'flex flex-col items-center mx-auto mb-[72px] text-center'
                 }
             >
                 <p className={'text-sm mb-4 text-black/20'}>{props.subTitle}</p>

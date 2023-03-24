@@ -5,7 +5,6 @@ import Button from '@/src/components/UI/Button/Button'
 import {FaApple} from 'react-icons/fa'
 import {TiVendorAndroid} from 'react-icons/ti'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
-import clsx from 'clsx'
 import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
 
 const Header = (props) => {
@@ -13,7 +12,7 @@ const Header = (props) => {
 
     return (
         <header
-            className={`relative flex justify-center bg-greyShade overflow-hidden  xl:h-[850px] md:h-[600px] pt-[140px] md:pt-0`}
+            className={`relative flex justify-center bg-greyShade overflow-hidden  md:h-screen pt-[140px] md:pt-0`}
         >
             <div
                 className={
@@ -29,12 +28,12 @@ const Header = (props) => {
                         <Tag variant={'black'} text={'Available'}/>
                     )}
                     <h1
-                        className={`md:text-left text-center text-black white whitespace-pre-line`}
+                        className={`md:text-left text-center text-black white whitespace-pre-line my-3`}
                     >
                         {props.title}
                     </h1>
                     <p
-                        className={`text-black md:text-left text-center text-xs md:text-base mt-3 md:mt-8`}
+                        className={`text-black md:text-left text-center text-xs md:text-base mb-6`}
                     >
                         {props.subTitle}
                     </p>
@@ -82,10 +81,7 @@ const Header = (props) => {
                         <Image
                             src={props.imageSrc}
                             layout={'fill'}
-                            className={clsx(
-                                'object-top md:object-bottom',
-                                props.imageClassName
-                            )}
+                            className={props.imageClassName}
                             alt={''}
                         />
                     )}

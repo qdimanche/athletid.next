@@ -37,18 +37,18 @@ const Timer = () => {
                     }
                     imageSrc={isMobile ? ImgHeaderMobile : isTabletAndDesktop ? ImgHeader :""}
                     buttons={"downloadButton"}
-                    imageClassName={'object-cover'}
+                    imageClassName={'object-cover object-top md:object-left'}
                 />
-                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
+                <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <KeyNumbers/>
                 </div>
-                <div className={'md:px-12 max-w-[1280px] mx-auto '}>
+                <div className={'md:px-4 md:max-w-[1170px] mx-auto '}>
                     <FullHeightBgImage
                         title={'Designed by athletes \nfor athletes.'}
                         subTitle={'Simplified workout follow-up.'}
                     />
                 </div>
-                <div className={'px-8 md:px-12 max-w-[1280px] mx-auto '}>
+                <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <Carousel
                         title={'Our timers adapt to your objective.'}
                         subTitle={'Applications Haut de Gamme'}
@@ -56,7 +56,7 @@ const Timer = () => {
                     />
                 </div>
                 <CarouselBgImage imageData={'timer'}/>
-                <div className={'px-8 md:px-12 max-w-[1024px] mx-auto'}>
+                <div className={'px-8 md:px-12 max-w-[350px] md:max-w-[1024px] mx-auto'}>
                     <ImageSection imageData={'timer'}/>
                     <Feature
                         title={'The most powerfull\n' + 'and complet.'}
@@ -68,7 +68,7 @@ const Timer = () => {
                         subscriptions={'timer'}
                     />
                 </div>
-                <div className={'md:px-12 max-w-[1280px] mx-auto '}>
+                <div className={'md:px-4 md:max-w-[1170px] mx-auto '}>
                     <Testimonial
                         title={'Many of you already \n' + 'love the app! '}
                         subTitle={'Together to build the best app.'}

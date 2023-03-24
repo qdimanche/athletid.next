@@ -39,7 +39,7 @@ const BasicCard = ({className, ...props}) => {
                 }
             >
                 {props.tag && (
-                    <Tag variant={'white'} text={'Soon available !'} className={'mb-4'}/>
+                    <Tag variant={'white'} text={'Soon available'} className={'mb-4'}/>
                 )}
                 <span className={`whitespace-pre-line text-4xl font-medium`}>
           {props.title}

@@ -21,12 +21,12 @@ const CarouselBgImage = (props) => {
 
 
     return (
-        <div className={'lg:my-40 my-28 h-[600px] relative'}>
+        <div className={'mt-[92px] md:mt-[120px] h-[800px] md:h-[1000px] relative'}>
             <CarouselSlide image={images[currentItemIndex]}/>
 
             <div
                 className={
-                    'absolute bottom-8 right-8 flex w-full justify-end space-x-8'
+                    'absolute bottom-4 right-4 flex w-full justify-end space-x-4'
                 }
             >
                 <div

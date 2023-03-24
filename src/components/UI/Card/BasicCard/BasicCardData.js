@@ -67,7 +67,7 @@ export const homeCardContent = [
   },
   {
     title: 'Motivation & inspiration.',
-    subTitle: 'An environment for your success.',
+    subTitle: 'An environment for your \nsuccess.',
     imageSrc: "/assets/images/apco-rock-background.webp",
     buttonClassName: "hidden",
     link:"",
