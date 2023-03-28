@@ -2,8 +2,12 @@ import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 import React, {useState} from 'react'
 import CarouselSlide from '@/src/components/UI/Carousel/ArrowCarousel/CarouselSlide'
 import {apcoCarouselItems, timerCarouselItems} from "@/src/components/UI/Carousel/ArrowCarousel/CarouselItems";
+import {useIsLargeScreen} from "@/src/components/Hooks/useMediaQuery";
 
 const Carousel = (props) => {
+
+    const isLargeScreen = useIsLargeScreen();
+
     const [currentItemIndex, setCurrentItemIndex] = useState(0)
     const [count, setCount] = useState(0)
     const [isPrevious, setIsPrevious] = useState(false)
@@ -49,7 +53,7 @@ const Carousel = (props) => {
                     }
                 >
                     <div
-                        className={`w-[55px] h-[55px] border ${
+                        className={`w-[56px] h-[56px] lg:w-[80px] lg:h-[80px] border ${
                             isPrevious ? 'border-timeRed' : 'border-black'
                         } rounded-full flex items-center justify-center`}
                         onClick={() => {
@@ -64,7 +68,7 @@ const Carousel = (props) => {
                             setIsNext(false)
                         }}
                     >
-                        <BsArrowLeft size={20} color={'black'}/>
+                        <BsArrowLeft size={isLargeScreen ? 24: 16 } color={'black'}/>
                     </div>
                     <div className={'flex space-x-4 md:hidden'}>
                         {slidesContent.map((item, index) => (
@@ -84,7 +88,7 @@ const Carousel = (props) => {
                         ))}
                     </div>
                     <div
-                        className={`w-[55px] h-[55px] border ${
+                        className={`w-[56px] h-[56px] lg:w-[80px] lg:h-[80px] border ${
                             isNext ? 'border-timeRed' : 'border-black'
                         }  rounded-full flex items-center justify-center`}
                         onClick={() => {
@@ -99,7 +103,7 @@ const Carousel = (props) => {
                             setIsNext(true)
                         }}
                     >
-                        <BsArrowRight size={20} color={'black'}/>
+                        <BsArrowRight size={isLargeScreen ? 24: 16 } color={'black'}/>
                     </div>
                 </div>
             </div>

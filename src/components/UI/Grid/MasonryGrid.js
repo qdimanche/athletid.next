@@ -2,7 +2,7 @@ import React from 'react'
 import Masonry from 'react-masonry-css'
 import Image from 'next/image'
 import Button from "@/src/components/UI/Button/Button";
-import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
+import useMediaQuery, {useIsMobile, useIsTablet} from "@/src/components/Hooks/useMediaQuery";
 
 const breakpointColumnsObj = {
     default: 7,
@@ -13,8 +13,8 @@ const breakpointColumnsObj = {
 
 const MasonryGrid = ({items, ...props}) => {
 
-    const isTablet = useMediaQuery('(min-width:768px} and (max-width: 1024px)');
-    const isMobile = useMediaQuery('(max-width: 768px)');
+    const isTablet = useIsTablet();
+    const isMobile = useIsMobile();
 
     return (
         <div className={'lg:px-0 px-4 md:px-8 max-w-[350px] md:max-w-[1280px] lg:max-w-[100vw] mx-auto'}>
@@ -24,7 +24,7 @@ const MasonryGrid = ({items, ...props}) => {
                         <h2 style={{whiteSpace: "pre-line"}} className={''}>{props.titleMasonry}</h2>
                         <p style={{whiteSpace: "pre-line"}}
                            className={'mt-3 mb-6'}>{props.subTitleMasonry}</p>
-                        <Button variant={"black"} content={"Découvrir"} link={"/a-propos"}/>
+                        <Button variant={"black"} content={"Discover"} link={"/about"}/>
                     </div>
                 </div>
             </div>

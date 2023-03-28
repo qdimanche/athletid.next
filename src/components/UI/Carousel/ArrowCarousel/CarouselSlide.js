@@ -16,7 +16,7 @@ export default function CarouselSlide({className, ...props }) {
         />
       </div>
       <div className={'space-y-4 md:space-y-8 flex flex-col md:justify-center md:h-full mt-8 md:mt-0'}>
-        <p className={'text-center md:text-left w-full text-3xl md:mx-auto whitespace-pre-line'}>{title}</p>
+        <p className={'text-center md:text-left w-full md:mx-auto whitespace-pre-line text-[42px] leading-[42px] lg:text-[54px] lg:leading-[54px]'}>{title}</p>
         <p className={'text-black w-full  text-center md:text-left md:mx-auto whitespace-pre-line'}>{description}</p>
       </div>
     </div>

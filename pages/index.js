@@ -3,7 +3,7 @@ import MasonryGrid from '../src/components/UI/Grid/MasonryGrid'
 import Format from '../src/layout/format'
 import Header from '@/src/components/Header/Header'
 import ImgHeader from '@/public/assets/images/femme-casque-audio.webp'
-import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
+import {useIsMobile} from '@/src/components/Hooks/useMediaQuery'
 import MasonryImages from '@/public/assets/images/masonry'
 import ContactSupport from '@/src/components/Contact/ContactSupport'
 import GridSection from '@/src/components/UI/Grid/GridSection'
@@ -15,7 +15,8 @@ import BasicCard from '@/src/components/UI/Card/BasicCard/BasicCard'
 import {homeCardContent} from '@/src/components/UI/Card/BasicCard/BasicCardData'
 
 export default function Home() {
-    const isMobile = useMediaQuery('(max-width: 728px)')
+
+    const isMobile = useIsMobile();
 
     return (
         <>
@@ -80,9 +81,9 @@ export default function Home() {
                     </GridSection>
                 </div>
                 <MasonryGrid
-                    titleMasonry={'Accompagner.\n Innover. Progresser.'}
+                    titleMasonry={'Accompanying. \nInnovating. Progress'}
                     subTitleMasonry={
-                        'Construisons ensemble l’univers qui vous propulsera vers vos objectifs.'
+                        'Let\'s build together the universe that will propel you towards your goals.'
                     }
                     items={MasonryImages}
                 />

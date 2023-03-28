@@ -5,10 +5,10 @@ import Button from '@/src/components/UI/Button/Button'
 import {FaApple} from 'react-icons/fa'
 import {TiVendorAndroid} from 'react-icons/ti'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
-import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
+import {useIsMobile} from '@/src/components/Hooks/useMediaQuery'
 
 const Header = (props) => {
-    const isMobile = useMediaQuery('(max-width:768px)')
+    const isMobile = useIsMobile()
 
     return (
         <header

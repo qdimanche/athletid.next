@@ -4,14 +4,13 @@ import AthletidFounders from '@/public/assets/images/fondateurs-athletid.webp'
 
 const CoFounderCitation = () => {
   return (
-    <div className={'lg:mt-40 mt-28'}>
-      <div className={'flex flex-col space-y-10'}>
-        <span className={'text-4xl'}>
+      <div className={'mt-[72px] md:mt-[126px] flex flex-col md:grid md:grid-cols-2 md:gap-[30px] space-y-8 md:space-y-0'}>
+        <span className={'!font-[400] md:order-last md:!text-[28px] md:!leading-[28px] lg:!text-[44px] lg:!leading-[44px]'}>
           &quot;Athletid was created to increase the regularity and athletic
           commitment of fitness, yoga and related sports enthusiasts, so they
           can get the full benefits of the sport.&quot;
         </span>
-        <div className={'flex space-x-6'}>
+        <div className={'flex space-x-3 items-center md:items-start'}>
           <Image
             src={AthletidFounders}
             height={50}
@@ -25,7 +24,7 @@ const CoFounderCitation = () => {
           </div>
         </div>
       </div>
-    </div>
+
   )
 }
 

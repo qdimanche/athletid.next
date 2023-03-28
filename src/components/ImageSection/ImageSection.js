@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
+import {useIsMobile, useIsTablet} from '@/src/components/Hooks/useMediaQuery'
 import {apcoImages, timerImages} from '@/src/components/ImageSection/ImageSectionData'
 
 const ImageSection = (props) => {
-    const isMobile = useMediaQuery('(max-width: 1024px)')
-    const isTablet = useMediaQuery('(min-width: 768px)')
+
+    const isMobile = useIsMobile();
+    const isTablet = useIsTablet();
 
     let images = []
 
@@ -46,7 +47,7 @@ const ImageSection = (props) => {
                 >
                     <Image
                         src={images[1]}
-                        width={isTablet  ? 160 : 130}
+                        width={isTablet ? 160 : 130}
                         height={200}
                         className={
                             'absolute top-0 left-0 md:left-auto md:top-16 lg:top-32 md:right-0 rounded-[8px]'

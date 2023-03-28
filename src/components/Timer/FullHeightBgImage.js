@@ -2,19 +2,19 @@ import React from 'react'
 import Image from 'next/image'
 import IphoneFullHeightMobile from '@/public/assets/images/iphone-full-height-timer.webp'
 import IphoneFullHeight from '@/public/assets/images/iphone-full-height-timer-desktop.webp'
-import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
+import {useIsMobile} from "@/src/components/Hooks/useMediaQuery";
 import Button from "@/src/components/UI/Button/Button";
 import {FaApple} from "react-icons/fa";
 import {TiVendorAndroid} from "react-icons/ti";
 
 const FullHeightBgImage = (props) => {
 
-    const isMobile = useMediaQuery('(max-width: 1024px)')
+    const isMobile = useIsMobile();
     return (
         <div className={'mt-[92px] md:mt-[120px]'}>
             <div
                 className={
-                    'flex flex-col items-center mb-[92px] md:mb-[120px] text-center'
+                    'flex flex-col items-center mb-[92px] md:mb-[120px] text-center px-4 max-w-[350px] md:max-w-full mx-auto'
                 }
             >
                 <p className={'text-sm mb-4 text-black/20'}>{props.subTitle}</p>

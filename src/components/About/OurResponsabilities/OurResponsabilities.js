@@ -3,7 +3,7 @@ import {responsabilyContent} from '@/src/components/About/OurResponsabilities/Re
 
 export default function OurResponsabilities() {
     return (
-        <div className={'lg:mt-40 mt-28'}>
+        <div className={'mt-[92px] md:mt-[80px] md:grid md:grid-cols-3 md:gap-[72px] lg:p-8 lg:border lg:border-black/6 lg:rounded-medium'}>
             {responsabilyContent.map((value, index) => {
                 return (
                     <Responsability

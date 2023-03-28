@@ -56,7 +56,7 @@ const Timer = () => {
                     />
                 </div>
                 <CarouselBgImage imageData={'timer'}/>
-                <div className={'px-8 md:px-12 max-w-[350px] md:max-w-[1024px] mx-auto'}>
+                <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto'}>
                     <ImageSection imageData={'timer'}/>
                     <Feature
                         title={'The most powerfull\n' + 'and complet.'}

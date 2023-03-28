@@ -17,7 +17,9 @@ const Contact = () => {
             
             
             <Format>
-                <ContactForm/>
+                <div className={'max-w-[350px] md:max-w-[630px] px-4 mx-auto'}>
+                    <ContactForm/>
+                </div>
             </Format>
 
         </>

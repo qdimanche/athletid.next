@@ -3,22 +3,33 @@ import Image from 'next/image'
 
 const Responsability = (props) => {
     return (
-        <div className={'grid grid-cols-[50px_1fr] gap-x-6 gap-y-3 mt-12'}>
-            <div className="flex items-center space-x-6">
-                <Image src={props.icon} alt={''} height={40} width={40}/>
+        <div className="flex md:flex-col lg:flex-row w-full space-x-4 md:space-x-0 lg:space-x-4 items-start md:items-center lg:items-start py-8 md:py-0 border-b border-black/6 md:border-none">
+            <Image
+                src={props.icon}
+                alt={''}
+                height={40}
+                width={40}
+                className={'mt-2 md:mb-4 lg:mt-2'}
+            />
+            <div className={'flex flex-col'}>
+        <span
+            className={
+                'whitespace-pre-line !font-[400] md:text-center lg:text-left md:text-3xl lg:text-[38px] lg:leading-[42px] mb-[20px]'
+            }
+        >
+          {props.title}
+        </span>
+                <p
+                    style={{
+                        whiteSpace: 'pre-line',
+                        textAlign: 'justify',
+                        textJustify: 'auto',
+                    }}
+                    className={'text-center'}
+                >
+                    {props.subtitle}
+                </p>
             </div>
-            <h2 className={'font-medium whitespace-pre-line'}>{props.title}</h2>
-            <div></div>
-            <p
-                style={{
-                    whiteSpace: 'pre-line',
-                    textAlign: 'justify',
-                    textJustify: 'auto',
-                }}
-                className={'font-normal'}
-            >
-                {props.subtitle}
-            </p>
         </div>
     )
 }

@@ -22,12 +22,15 @@ svg {
     color: white;
 }
 
+p{
+    font-size: 12px;
+}
 
 input, textarea {
     border-radius: 10px;
     margin-top: 0.3em;
     padding: 10px;
-    color: black !important;
+    color: white !important;
     border: 1px solid rgb(0, 0, 0, 10%);
 }
 
@@ -37,15 +40,8 @@ input:focus, textarea:focus {
 }
 
 
-input[data-autocompleted] {
+input[data-autocompleted], input:autofill, input:-webkit-autofill, input:-internal-autofill-selected  {
     background-color: transparent !important;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 *::-webkit-media-controls-start-playback-button {
@@ -155,8 +151,8 @@ input:-webkit-autofill:active {
     }
 
     h2 {
-        font-size: 42px;
-        line-height: 42px;
+        font-size: 54px;
+        line-height: 54px;
     }
 
     span {
@@ -165,6 +161,13 @@ input:-webkit-autofill:active {
         font-weight: 500;
     }
 
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 16px;
+        line-height: 23px;
+    }
 }
 
 

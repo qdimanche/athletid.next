@@ -4,7 +4,7 @@ import Button from '../UI/Button/Button'
 import HamburgerMenu from './Burger'
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import Image from 'next/image'
-import useMediaQuery from "@/src/components/Hooks/useMediaQuery";
+import {useIsLargeScreen} from "@/src/components/Hooks/useMediaQuery";
 
 const Navbar = (props) => {
     const [click, setClick] = useState(false)
@@ -12,7 +12,7 @@ const Navbar = (props) => {
 
     const handleClick = () => setClick(!click)
 
-    const isDesktop = useMediaQuery('(min-width: 1024px)')
+    const isLargeScreen = useIsLargeScreen();
 
 
     useEffect(() => {
@@ -44,8 +44,8 @@ const Navbar = (props) => {
                     <Link href="/" className={``}>
                         <Image
                             src={'/assets/icons/logo-athletid.svg'}
-                            width={isDesktop ? 110 : 120}
-                            height={isDesktop ? 38 : 120}
+                            width={isLargeScreen ? 110 : 120}
+                            height={isLargeScreen ? 38 : 120}
                             alt=""
                         />
                     </Link>
@@ -138,7 +138,7 @@ const Navbar = (props) => {
                                     <Link href="/timer">Timer</Link>
                                 </li>
                                 <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                    <Link href="/a-propos">À propos</Link>
+                                    <Link href="/about">À propos</Link>
                                 </li>
                                 <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
                                     <Link href="/contact">Contact</Link>

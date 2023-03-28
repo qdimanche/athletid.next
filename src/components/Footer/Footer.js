@@ -4,10 +4,11 @@ import Image from 'next/image'
 import CaptorVertical from '@/public/assets/images/captor-vertical.webp'
 import CaptorDiagonal from '@/public/assets/images/captor-diagonal.webp'
 import Link from 'next/link'
-import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
+import {useIsFromTablet} from '@/src/components/Hooks/useMediaQuery'
+import Newsletter from "@/src/components/Footer/Newsletter";
 
 const Footer = () => {
-    const isTablet = useMediaQuery('(min-width: 768px)')
+    const isFromTablet = useIsFromTablet();
 
     return (
         <footer
@@ -32,12 +33,7 @@ const Footer = () => {
                             register for free on the waiting list and receive information
                             about the launch date.
                         </p>
-                        <Button
-                            variant={'red'}
-                            link={'/'}
-                            content={'Join the waiting list'}
-                            className={'!w-full md:!w-fit'}
-                        />
+                        <Newsletter/>
                     </div>
                     <div
                         className={'h-[300px] md:h-[400px] lg:h-[600px] w-full relative mb-8 mx-auto'}
@@ -48,7 +44,7 @@ const Footer = () => {
                             }
                         ></div>
                         <Image
-                            src={isTablet ? CaptorDiagonal : CaptorVertical}
+                            src={isFromTablet ? CaptorDiagonal : CaptorVertical}
                             layout={'fill'}
                             className={'absolute object-cover z-[1] object-top'}
                             alt={''}
@@ -65,8 +61,8 @@ const Footer = () => {
                         className={'md:mb-0 mb-8'}
                         src={'/assets/icons/white-logo.svg'}
                         alt={''}
-                        width={isTablet ? 110 : 90}
-                        height={isTablet ? 40 : 30}
+                        width={isFromTablet ? 110 : 90}
+                        height={isFromTablet ? 40 : 30}
                     />
                     <div
                         className={
@@ -81,9 +77,9 @@ const Footer = () => {
                             <Link href={'/contact'}>Contact</Link>
                         </div>
                         <div className={'flex space-x-6 text-white/40 text-sm md:text-base'}>
-                            <Link href={'#'}>Support</Link>
-                            <Link href={'#'}>Privacy Policy</Link>
-                            <Link href={'#'}>Terms of Service</Link>
+                            <Link href={'/contact'}>Support</Link>
+                            <Link href={'/privacy-policy'}>Privacy Policy</Link>
+                            <Link href={'/terms-of-service'}>Terms of Service</Link>
                         </div>
                         <p className={'text-center text-white/40 !mt-8'}>
                             Copyright © 2022 ATHLETID Inc. All rights reserved.
