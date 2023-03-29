@@ -40,6 +40,7 @@ const ContactSupport = (props, ref) => {
                         "Différentes étapes de construction de l'application Athletid Network"
                     }
                     className={'self-end lg:w-[80%] w-full mx-auto'}
+                    sizes={'50vw'}
                     src={StatistiquesApplication}
                 />
             </div>

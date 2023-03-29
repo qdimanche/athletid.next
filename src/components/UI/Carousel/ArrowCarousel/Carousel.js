@@ -68,7 +68,7 @@ const Carousel = (props) => {
                             setIsNext(false)
                         }}
                     >
-                        <BsArrowLeft size={isLargeScreen ? 24: 16 } color={'black'}/>
+                        <BsArrowLeft width={"auto"} size={isLargeScreen ? 24: 16 } color={'black'}/>
                     </div>
                     <div className={'flex space-x-4 md:hidden'}>
                         {slidesContent.map((item, index) => (
@@ -103,7 +103,7 @@ const Carousel = (props) => {
                             setIsNext(true)
                         }}
                     >
-                        <BsArrowRight size={isLargeScreen ? 24: 16 } color={'black'}/>
+                        <BsArrowRight width={"auto"} size={isLargeScreen ? 24: 16 } color={'black'}/>
                     </div>
                 </div>
             </div>

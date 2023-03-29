@@ -9,6 +9,7 @@ const Responsability = (props) => {
                 alt={''}
                 height={40}
                 width={40}
+                sizes={"10vw"}
                 className={'mt-2 md:mb-4 lg:mt-2'}
             />
             <div className={'flex flex-col'}>

@@ -10,7 +10,7 @@ const HeaderAbout = () => {
                 <p className={'md:flex md:items-end'}>Athletid is with you every step of the way to help you get the most out of regular exercise.</p>
             </div>
             <div className={'h-[820px] md:h-[750px]  lg:h-[1000px] relative'}>
-                <Image layout={"fill"} src={TeamHeaderImageMobile} alt={""} className={'object-cover'}/>
+                <Image fill src={TeamHeaderImageMobile} alt={""} className={'object-cover'}/>
             </div>
 
         </div>

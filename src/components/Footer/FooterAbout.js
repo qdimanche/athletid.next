@@ -48,12 +48,13 @@ const Footer = () => {
                     >
                         <div
                             className={
-                                'absolute z-[3] h-full w-full gradient-linear-background-black md:hidden'
+                                'absolute z-[3] h-full w-full gradient-linear-background-black '
                             }
                         ></div>
                         <Image
                             src={FooterAboutImage}
-                            layout={'fill'}
+                            fill
+                            sizes={"33vw"}
                             className={'object-cover z-[1] object-top'}
                             alt={''}
                         />
@@ -68,6 +69,7 @@ const Footer = () => {
                     <Image
                         className={'md:mb-0 mb-8'}
                         src={'/assets/icons/white-logo.svg'}
+                        sizes={"10vw"}
                         alt={''}
                         width={isFromTablet ? 110 : 90}
                         height={isFromTablet ? 40 : 30}

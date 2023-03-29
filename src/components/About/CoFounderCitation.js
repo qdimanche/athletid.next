@@ -16,6 +16,7 @@ const CoFounderCitation = () => {
             height={50}
             width={50}
             alt={''}
+            sizes={"10vw"}
             className={'rounded-full '}
           />
           <div>

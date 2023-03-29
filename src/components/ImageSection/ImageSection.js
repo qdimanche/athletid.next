@@ -46,6 +46,7 @@ const ImageSection = (props) => {
                     }
                 >
                     <Image
+                        sizes={"33vw"}
                         src={images[1]}
                         width={isTablet ? 160 : 130}
                         height={200}
@@ -56,6 +57,7 @@ const ImageSection = (props) => {
                     />
                     <Image
                         src={images[2]}
+                        sizes={"10vw"}
                         width={isTablet  ? 160 : 130}
                         height={200}
                         className={'absolute bottom-0 right-0 md:bottom-0 lg:bottom-32 rounded-[8px]'}
@@ -69,6 +71,7 @@ const ImageSection = (props) => {
                 >
                     <Image
                         src={images[3]}
+                        sizes={"10vw"}
                         width={160}
                         height={218}
                         className={
@@ -78,6 +81,7 @@ const ImageSection = (props) => {
                     />
                     <Image
                         src={images[4]}
+                        sizes={"10vw"}
                         width={180}
                         height={218}
                         className={'absolute bottom-0 left-0 md:bottom-12 lg:bottom-40 rounded-[8px]'}

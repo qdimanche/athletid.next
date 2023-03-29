@@ -61,6 +61,7 @@ const Feature = (props) => {
                 src={imageSrc}
                 width={340}
                 height={340}
+                sizes={"33vw"}
                 className={'mx-auto rounded-medium bg-[#F2F2F2] mt-8'}
                 alt="Application Apco Dashboard Full"
             />

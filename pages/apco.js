@@ -9,11 +9,8 @@ import Carousel from '@/src/components/UI/Carousel/ArrowCarousel/Carousel'
 import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage'
 import Feature from '@/src/components/Feature/Feature'
 import {apcoCardContent} from '@/src/components/UI/Card/BasicCard/BasicCardData'
-import {useIsMobile} from "@/src/components/Hooks/useMediaQuery";
 
 const Apco = () => {
-
-    const isMobile = useIsMobile();
 
     return (
         <>

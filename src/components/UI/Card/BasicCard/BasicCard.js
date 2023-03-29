@@ -21,15 +21,16 @@ const BasicCard = ({className, ...props}) => {
     return (
         <div
             className={clsx(
-                `rounded-medium overflow-hidden relative h-[500px] relative text-white`,
+                `rounded-medium overflow-hidden relative w-full h-[500px] relative text-white`,
                 className
             )}
         >
             <Image
                 className={`object-cover  ${props.objectPosition}`}
                 src={props.srcBg}
+                fill
+                sizes={"70vw"}
                 alt={''}
-                layout={'fill'}
             />
             <div
                 className={

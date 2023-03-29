@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../UI/Button/Button'
 import Image from 'next/image'
 import CaptorVertical from '@/public/assets/images/captor-vertical.webp'
 import CaptorDiagonal from '@/public/assets/images/captor-diagonal.webp'
@@ -13,7 +12,7 @@ const Footer = () => {
     return (
         <footer
             className={
-                'mt-[92px] md:mt-[120px] bg-black text-white flex items-end pt-[90px] md:pt-[75px] lg:pt-[150px] pb-[34px]'
+                'mt-[92px] md:mt-[120px] bg-black text-white flex items-end pt-[90px] md:pt-[75px] lg:pt-[150px] pb-[34px] w-full'
             }
         >
             <div
@@ -45,7 +44,9 @@ const Footer = () => {
                         ></div>
                         <Image
                             src={isFromTablet ? CaptorDiagonal : CaptorVertical}
-                            layout={'fill'}
+                            fill
+                            sizes="(max-width: 768px) 100vw,
+                            50vw"
                             className={'absolute object-cover z-[1] object-top'}
                             alt={''}
                         />
@@ -54,15 +55,16 @@ const Footer = () => {
 
                 <div
                     className={
-                        'flex md:flex-row flex-col items-center md:items-start col-span-2 justify-between w-full space-y-4 md:space-y-0'
+                        'flex md:flex-row flex-col items-center md:items-start col-span-2 justify-between w-auto space-y-4 md:space-y-0 w-full'
                     }
                 >
                     <Image
-                        className={'md:mb-0 mb-8'}
+                        className={'md:mb-0 mb-8 w-auto'}
                         src={'/assets/icons/white-logo.svg'}
                         alt={''}
                         width={isFromTablet ? 110 : 90}
                         height={isFromTablet ? 40 : 30}
+                        sizes={"10vw"}
                     />
                     <div
                         className={

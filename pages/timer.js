@@ -3,19 +3,19 @@ import Feature from '@/src/components/Feature/Feature'
 import Testimonial from '@/src/components/Testimonial/Testimonial'
 import Head from 'next/head'
 import Format from '@/src/layout/format'
-import useMediaQuery from '@/src/components/Hooks/useMediaQuery'
-import ImgHeaderMobile from '@/public/assets/images/header-timer-cut.webp'
 import ImgHeader from '@/public/assets/images/timer-v2-header-desktop.webp'
+import ImgHeaderMobile from '@/public/assets/images/timer-v2-header-mobile.webp'
 import React from 'react'
 import KeyNumbers from '@/src/components/Timer/KeyNumbers'
 import FullHeightBgImage from '@/src/components/Timer/FullHeightBgImage'
 import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage'
 import Carousel from '@/src/components/UI/Carousel/ArrowCarousel/Carousel'
 import ImageSection from '@/src/components/ImageSection/ImageSection'
+import {useIsMobile} from "@/src/components/Hooks/useMediaQuery";
 
 const Timer = () => {
-    const isMobile = useMediaQuery('(max-width: 768px)')
-    const isTabletAndDesktop = useMediaQuery('(min-width: 768px)')
+
+    const isMobile = useIsMobile();
 
     return (
         <>
@@ -35,10 +35,10 @@ const Timer = () => {
                     subTitle={
                         'Your training partner, simple and elegant. \nYour new application is the most complete (12 different timers and stopwatches), it adapts to all types of training.'
                     }
-                    imageSrc={isMobile ? ImgHeaderMobile : isTabletAndDesktop ? ImgHeader :""}
+                    imageSrc={isMobile ? ImgHeaderMobile : ImgHeader}
                     buttons={"downloadButton"}
-                    imageClassName={'object-cover object-top md:object-left'}
-                    imageHeight={"h-full"}
+                    imageClassName={'object-cover object-center md:object-left'}
+                    imageHeight={"md:h-full"}
                 />
                 <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <KeyNumbers/>

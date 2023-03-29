@@ -72,7 +72,7 @@ const Header = (props) => {
 
                 <div
                     className={
-                        `h-[500px] ${props.imageHeight} w-screen md:w-[52%]   lg:-right-12 md:bottom-0 md:right-0 relative md:absolute`
+                        `h-[550px] ${props.imageHeight} w-screen md:w-[52%]   lg:-right-12 md:bottom-0 md:right-0 relative md:absolute mt-[32px] md:mt-0`
                     }
                 >
                     {props.imageSrc === '' ? (
@@ -80,9 +80,11 @@ const Header = (props) => {
                     ) : (
                         <Image
                             src={props.imageSrc}
-                            layout={'fill'}
-                            className={props.imageClassName}
+                            className={`${props.imageClassName} `}
                             alt={''}
+                            fill
+                            sizes={"(max-width:768px) 100vw, 50vw"}
+                            priority={true}
                         />
                     )}
                 </div>

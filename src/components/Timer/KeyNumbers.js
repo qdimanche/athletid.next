@@ -35,7 +35,7 @@ export default KeyNumbers
 function Number(props) {
     return (
         <div className="flex justify-center space-x-6 py-8 border-b border-black/6 md:border-none">
-            <Image src={props.src} height={30} width={props.width} alt={''}/>
+            <Image className={'w-auto'} src={props.src} height={30} width={props.width} alt={''}/>
             <div className={'flex flex-col space-y-2'}>
                 <p className={'text-sm'}>{props.text}</p>
                 <span className={'text-4xl md:text-3xl'}>{props.number}</span>

@@ -30,7 +30,6 @@ const CardImageBottomFull = () => {
                     <Image
                         className={'object-cover object-top'}
                         src={TimerDashboardDiagonal}
-                        layout={'fill'}
                         alt={''}/>
                 </div>
             </div>

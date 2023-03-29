@@ -2,14 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import IphoneFullHeightMobile from '@/public/assets/images/iphone-full-height-timer.webp'
 import IphoneFullHeight from '@/public/assets/images/iphone-full-height-timer-desktop.webp'
-import {useIsMobile} from "@/src/components/Hooks/useMediaQuery";
-import Button from "@/src/components/UI/Button/Button";
-import {FaApple} from "react-icons/fa";
-import {TiVendorAndroid} from "react-icons/ti";
+import {useIsMobile} from '@/src/components/Hooks/useMediaQuery'
+import Button from '@/src/components/UI/Button/Button'
+import {FaApple} from 'react-icons/fa'
+import {TiVendorAndroid} from 'react-icons/ti'
 
 const FullHeightBgImage = (props) => {
-
-    const isMobile = useIsMobile();
+    const isMobile = useIsMobile()
     return (
         <div className={'mt-[92px] md:mt-[120px]'}>
             <div
@@ -21,16 +20,25 @@ const FullHeightBgImage = (props) => {
                 <h2 style={{whiteSpace: 'pre-line'}}>{props.title}</h2>
             </div>
 
-            <div className={'h-[820px]  lg:h-[535px] relative md:rounded-medium md:overflow-hidden'}>
-                <div className={'absolute  z-[5] flex flex-col items-center lg:items-center lg:justify-center w-full px-4 pt-[72px] md:pt-4 lg:h-full lg:grid lg:grid-cols-2'}>
+            <div
+                className={
+                    'h-[820px]  lg:h-[535px] relative md:rounded-medium md:overflow-hidden'
+                }
+            >
+                <div
+                    className={
+                        'absolute  z-[5] flex flex-col items-center lg:items-center lg:justify-center w-full px-4 pt-[72px] md:pt-4 lg:h-full lg:grid lg:grid-cols-2'
+                    }
+                >
                     <div></div>
                     <div className={'lg:pr-0'}>
-                        <span
-                            className={`lg:text-left text-center text-white whitespace-pre-line `}
-                        >
-                            You too can reach<br/>
-                            your sports goals!
-                        </span>
+            <span
+                className={`lg:text-left text-center text-white whitespace-pre-line `}
+            >
+              You too can reach
+              <br/>
+              your sports goals!
+            </span>
                         <div className={`flex space-x-4 mt-6`}>
                             <Button
                                 variant={'white'}
@@ -56,10 +64,12 @@ const FullHeightBgImage = (props) => {
                     </div>
                 </div>
                 <Image
-                    layout={'fill'}
+                    fill
                     src={isMobile ? IphoneFullHeightMobile : IphoneFullHeight}
                     className={'object-cover object-center lg:object-left'}
                     alt={''}
+                    priority={true}
+                    sizes="100vw"
                 />
             </div>
         </div>

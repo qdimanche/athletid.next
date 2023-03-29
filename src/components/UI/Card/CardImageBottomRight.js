@@ -39,7 +39,6 @@ const CardImageBottomRight = () => {
                         'md:px-0  object-cover object-top md:object-right-top'
                     }
                     src={TimerDashboard}
-                    layout={'fill'}
                     alt={''}
                 />
             </div>

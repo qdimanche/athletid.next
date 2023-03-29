@@ -19,7 +19,9 @@ const HeaderApco = () => {
             >
                 <div className={'h-[1350px] xl:h-[1690px] relative '}>
                     <Image
-                        layout={'fill'}
+                        fill
+                        sizes={"100vw"}
+                        priority={true}
                         src={CaptorReverseLarge}
                         className={'object-cover object-top md:object-center w-full '}
                         alt={''}

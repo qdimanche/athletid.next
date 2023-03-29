@@ -13,7 +13,6 @@ const CardImageTopRight = () => {
                 <Image
                     className={'object-cover md:object-contain object-center md:object-top'}
                     src={TimerDashboardBottom}
-                    layout={"fill"}
                     alt={''}
                 />
             </div>

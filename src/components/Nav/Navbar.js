@@ -5,6 +5,7 @@ import HamburgerMenu from './Burger'
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import Image from 'next/image'
 import {useIsLargeScreen} from '@/src/components/Hooks/useMediaQuery'
+import Div100vh from "react-div-100vh";
 
 const Navbar = (props) => {
     const [click, setClick] = useState(false)
@@ -47,6 +48,7 @@ const Navbar = (props) => {
                             width={isLargeScreen ? 110 : 120}
                             height={isLargeScreen ? 38 : 120}
                             alt=""
+                            sizes={"10vw"}
                         />
                     </Link>
                 </div>
@@ -64,11 +66,11 @@ const Navbar = (props) => {
                         />
                     </div>
 
-                    <div
+                    <Div100vh
                         className={
                             click
-                                ? 'fixed bg-white duration-[1300ms] w-screen h-screen heightfix-ios top-0 left-0 bottom-0 overflow-hidden z-[400]'
-                                : 'bg-white invisible opacity-0 duration-[300ms] absolute w-screen h-screen top-0 left-0 bottom-0 overflow-visible'
+                                ? 'fixed bg-white duration-[1300ms] w-screen top-0 left-0 bottom-0 overflow-hidden z-[400]'
+                                : 'bg-white invisible opacity-0 duration-[300ms] absolute w-screen top-0 left-0 bottom-0 overflow-visible'
                         }
                     >
                         <div
@@ -132,7 +134,7 @@ const Navbar = (props) => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </Div100vh>
                 </div>
                 <div className={'z-[900] w-[2rem] lg:hidden'} onClick={handleClick}>
                     {click ? <HamburgerMenu/> : <HamburgerMenu/>}
