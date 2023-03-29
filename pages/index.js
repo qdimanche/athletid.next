@@ -38,9 +38,9 @@ export default function Home() {
                     }
                     imageSrc={ImgHeader}
                     imageWidth={' w-[500px] md:w-1/2 '}
-                    imageObjectPosition={'object-left-top'}
                     link={'/timer'}
-                    imageClassName={'object-cover object-top md:!object-left'}
+                    imageClassName={'object-cover object-top md:!object-left-top'}
+                    imageHeight={'md:h-3/4'}
                 />
                 <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <GridSection

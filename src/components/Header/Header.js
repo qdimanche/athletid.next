@@ -12,7 +12,7 @@ const Header = (props) => {
 
     return (
         <header
-            className={`relative flex justify-center bg-greyShade overflow-hidden  md:h-screen pt-[140px] md:pt-0`}
+            className={`relative flex justify-center bg-greyShade overflow-hidden  md:min-h-screen pt-[140px] md:pt-0`}
         >
             <div
                 className={
@@ -21,7 +21,7 @@ const Header = (props) => {
             >
                 <div
                     className={
-                        'flex flex-col items-center md:items-start md:justify-center max-w-[350px] md:max-w-full px-4'
+                        'flex flex-col items-center md:items-start md:justify-center max-w-[350px] md:max-w-full px-4 '
                     }
                 >
                     {props.buttons === 'downloadButton' && (
@@ -72,7 +72,7 @@ const Header = (props) => {
 
                 <div
                     className={
-                        'h-[500px] md:h-full w-screen md:w-[52%] lg:w-[650px] xl:w-[800px] 2xl:w-[1000px]  lg:-right-12 md:bottom-0 md:right-0 relative md:absolute'
+                        `h-[500px] ${props.imageHeight} w-screen md:w-[52%]   lg:-right-12 md:bottom-0 md:right-0 relative md:absolute`
                     }
                 >
                     {props.imageSrc === '' ? (

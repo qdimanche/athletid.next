@@ -4,16 +4,15 @@ import Button from '../UI/Button/Button'
 import HamburgerMenu from './Burger'
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import Image from 'next/image'
-import {useIsLargeScreen} from "@/src/components/Hooks/useMediaQuery";
+import {useIsLargeScreen} from '@/src/components/Hooks/useMediaQuery'
 
 const Navbar = (props) => {
     const [click, setClick] = useState(false)
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false)
 
     const handleClick = () => setClick(!click)
 
-    const isLargeScreen = useIsLargeScreen();
-
+    const isLargeScreen = useIsLargeScreen()
 
     useEffect(() => {
         click
@@ -24,22 +23,23 @@ const Navbar = (props) => {
     useEffect(() => {
         function handleScroll() {
             if (window.scrollY > 0) {
-                setIsScrolled(true);
+                setIsScrolled(true)
             } else {
-                setIsScrolled(false);
+                setIsScrolled(false)
             }
         }
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
-        <div className={`fixed z-[999] w-screen lg:py-6 py-4  top-0 ${isScrolled ? 'bg-white': ''} duration-500`}>
-            <div
-                className={'flex max-w-[1170px] px-4 mx-auto justify-between'}
-            >
+        <div
+            className={`fixed z-[999] w-screen lg:py-6 py-4  top-0 ${
+                isScrolled ? 'bg-white' : ''
+            } duration-500`}
+        >
+            <div className={'flex max-w-[1170px] px-4 mx-auto justify-between'}>
                 <div>
                     <Link href="/" className={``}>
                         <Image
@@ -51,15 +51,17 @@ const Navbar = (props) => {
                     </Link>
                 </div>
 
-                <div
-                    className={`justify-end items-center w-full flex`}
-                >
-                    <div className={"lg:block hidden space-x-[60px]"}>
+                <div className={`justify-end items-center w-full flex`}>
+                    <div className={'lg:block hidden space-x-[60px]'}>
                         <Link href="/">Home</Link>
                         <Link href="/timer">App Timer</Link>
                         <Link href="/apco">App Athletid</Link>
                         <Link href="/about">About</Link>
-                        <Button variant={'redOutline'} content={'Contact'} link={'/contact'}/>
+                        <Button
+                            variant={'redOutline'}
+                            content={'Contact'}
+                            link={'/contact'}
+                        />
                     </div>
 
                     <div
@@ -72,58 +74,13 @@ const Navbar = (props) => {
                         <div
                             className={
                                 click
-                                    ? 'lg:fixed-center-element absolute-vertical-center flex lg:space-x-40'
+                                    ? 'lg:fixed-center-element absolute-vertical-center flex lg:space-x-40 w-full web'
                                     : 'hidden'
                             }
                         >
                             <ul
                                 className={
-                                    'text-left apparition-from-bottom-hamburger-menu lg:block hidden '
-                                }
-                            >
-                                <li className={'text-[14px] font-bold'}>
-                                    <span>Contact</span>
-                                </li>
-                                <li className={'text-[20px] opacity-60 mb-8'}>
-                                    <a href={'mailto:contact@athletid.com'}>
-                                        contact@athletid.com
-                                    </a>
-                                </li>
-                                <li className={'text-[14px] font-bold'}>
-                                    <span>Nos réseaux</span>
-                                </li>
-                                <li className={'text-[20px] opacity-60'}>
-                                    <a
-                                        target="_blank"
-                                        href={'https://www.instagram.com/timerbyathletid/'}
-                                        rel="noreferrer"
-                                    >
-                                        Instagram
-                                    </a>
-                                </li>
-                                <li className={' text-[20px] opacity-60'}>
-                                    <a
-                                        target="_blank"
-                                        href={'https://www.linkedin.com/company/athletid/'}
-                                        rel="noreferrer"
-                                    >
-                                        Linkedin
-                                    </a>
-                                </li>
-                                <li className={' text-[20px] opacity-60'}>
-                                    <a
-                                        target="_blank"
-                                        href={'https://www.facebook.com/TimerByAthletid'}
-                                        rel="noreferrer"
-                                    >
-                                        Facebook
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul
-                                className={
-                                    'text-left apparition-from-bottom-hamburger-menu space-y-10'
+                                    'text-left space-y-4 mx-auto'
                                 }
                             >
                                 <li
@@ -131,21 +88,24 @@ const Navbar = (props) => {
                                 >
                                     Menu
                                 </li>
-                                <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                    <Link href="/">Accueil</Link>
+                                <li className={'text-[38px] opacity-60'}>
+                                    <Link href="/">Home</Link>
                                 </li>
-                                <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                    <Link href="/timer">Timer</Link>
+                                <li className={'text-[38px] opacity-60'}>
+                                    <Link href="/timer">App Timer</Link>
                                 </li>
-                                <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                    <Link href="/about">À propos</Link>
+                                <li className={'text-[38px] opacity-60'}>
+                                    <Link href="/apco">App Athletid</Link>
                                 </li>
-                                <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+                                <li className={'text-[38px] opacity-60'}>
+                                    <Link href="/about">About</Link>
+                                </li>
+                                <li className={'text-[38px] opacity-60'}>
                                     <Link href="/contact">Contact</Link>
                                 </li>
                                 <li
                                     className={
-                                        'lg:hidden flex justify-center space-x-8 z-300 !text-[1.3em] pt-4'
+                                        'lg:hidden flex  space-x-8 z-300 !text-[1.3em] pt-4'
                                     }
                                 >
                                     <a

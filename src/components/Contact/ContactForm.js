@@ -31,8 +31,8 @@ const ContactForm = () => {
 		
 		<div className={'pt-[142px] lg:pt-[216px]'}>
 			
-			<div className={'flex flex-col mb-12'}>
-				<h2 className={'mb-3 '}>Let’s talk
+			<div className={'flex flex-col mb-[72px]'}>
+				<h2 className={''}>Let’s talk
 					together!</h2>
 			</div>
 			

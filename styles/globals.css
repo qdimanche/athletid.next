@@ -14,7 +14,13 @@
 body {
     background-color: #F7F7F7;
     color: black;
-    min-height: -webkit-fill-available !important;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: -webkit-fill-available;
 }
 
 
@@ -117,6 +123,14 @@ input[data-autocompleted], input:autofill, input:-webkit-autofill, input:-intern
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
+    display: none;
+}
+
+.css-ahj2mt-MuiTypography-root {
+    font-family: "SF Pro", sans-serif;
 }
 
 
