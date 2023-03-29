@@ -42,6 +42,7 @@ const Apco = () => {
                                     srcBg={value.imageSrc}
                                     className={value.className}
                                     flipContent={value.flipContent}
+                                    flipContentTitle={value.flipContentTitle}
                                     buttons={"toggleButton"}
                                 />
                             )

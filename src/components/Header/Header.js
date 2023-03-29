@@ -83,7 +83,7 @@ const Header = (props) => {
                             className={`${props.imageClassName} `}
                             alt={''}
                             fill
-                            sizes={"(max-width:768px) 100vw, 50vw"}
+                            sizes={"(max-width:768px) 100vw, 60vw"}
                             priority={true}
                         />
                     )}

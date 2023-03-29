@@ -13,7 +13,7 @@ const Testimonial = (props) => {
         >
             <div
                 className={
-                    'flex flex-col items-center mx-auto mb-[72px] text-center'
+                    'flex flex-col items-center mx-auto mb-[72px] text-center max-w-[350px] md:max-w-full  mx-auto'
                 }
             >
                 <p className={'text-sm mb-4 text-black/20'}>{props.subTitle}</p>

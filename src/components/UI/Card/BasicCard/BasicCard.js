@@ -29,6 +29,7 @@ const BasicCard = ({className, ...props}) => {
                 className={`object-cover  ${props.objectPosition}`}
                 src={props.srcBg}
                 fill
+                priority={true}
                 sizes={"70vw"}
                 alt={''}
             />
@@ -57,27 +58,28 @@ const BasicCard = ({className, ...props}) => {
             {props.buttons === 'toggleButton' ? (
                 <>
                     <div
-                        className={`absolute h-full lg:w-full bg-white flex flex-col justify-center p-4 pt-0 transition duration-300 
+                        className={`absolute h-full lg:w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 
                 ${isClick ? 'opacity-1' : 'opacity-0'}
                 `}
                     >
-                        <p
+                        <div
                             className={`${
                                 isClick
-                                    ? 'opacity-1 transition delay-[100ms] duration-300'
+                                    ? 'opacity-1 transition delay-[100ms] leading-[20px]  duration-300'
                                     : 'opacity-0'
-                            }`}
+                            } text-black`}
                         >
-                            {props.flipContent}
-                        </p>
+                            <p className={'text-[16px] font-[500] mb-2'}>{props.flipContentTitle}</p>
+                            <p className={'text-[14px] whitespace-pre-line'}>{props.flipContent}</p>
+                        </div>
                     </div>
                     <ToggleButton
                         text={'lorem'}
                         variant={'red'}
-                        className={`absolute right-4 bottom-4 z-[100] !rounded-full !p-3 ${
+                        className={`absolute right-4 bottom-4 z-[100] !rounded-full ${
                             isClick ? 'rotate-45' : ''
                         }`}
-                        content={<AiOutlinePlus size={30}/>}
+                        content={<AiOutlinePlus size={24}/>}
                         onClick={() => {
                             setIsClick(true)
                             setCount(count + 1)
