@@ -40,9 +40,12 @@ const Apco = () => {
                                     title={value.title}
                                     subTitle={value.subTitle}
                                     srcBg={value.imageSrc}
+                                    paragraphWidth={value.paragraphWidth}
                                     className={value.className}
                                     flipContent={value.flipContent}
                                     flipContentTitle={value.flipContentTitle}
+                                    flipImageContent={value.flipImageContent}
+                                    imageHeight={value.imageHeight}
                                     buttons={"toggleButton"}
                                 />
                             )

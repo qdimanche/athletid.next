@@ -8,15 +8,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] Image optimization">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/arrow-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/flash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/construction-seance-full.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/woman-red-line.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/timer-v2-header-desktop.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/timer-v2-header-desktop.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/icons/arrowleftright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/icons/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderApco.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderApco.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testimonial/TestimonialCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/TestimonialCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Accordion/SimpleAccordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Accordion/SimpleAccordion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/Carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselBgImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,14 +142,8 @@
       <workItem from="1679587072215" duration="50000" />
       <workItem from="1679645379167" duration="21560000" />
       <workItem from="1679986840705" duration="18865000" />
-      <workItem from="1680074012380" duration="21653000" />
-    </task>
-    <task id="LOCAL-00011" summary="[+] Apco Page mobile completed">
-      <created>1677685134140</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1677685134141</updated>
+      <workItem from="1680074012380" duration="22228000" />
+      <workItem from="1680160193889" duration="11835000" />
     </task>
     <task id="LOCAL-00012" summary="[+] bug fix">
       <created>1677685345943</created>
@@ -470,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680100278705</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="[+] Image optimization">
+      <created>1680102491770</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1680102491771</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

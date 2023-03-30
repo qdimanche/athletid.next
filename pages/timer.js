@@ -51,7 +51,7 @@ const Timer = () => {
                 </div>
                 <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <Carousel
-                        title={'Our timers adapt to your objective.'}
+                        title={'Our timers adapt to \nyour objective.'}
                         subTitle={'Applications Haut de Gamme'}
                         imageData={'timer'}
                     />

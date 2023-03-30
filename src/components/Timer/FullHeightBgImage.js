@@ -2,13 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import IphoneFullHeightMobile from '@/public/assets/images/iphone-full-height-timer.webp'
 import IphoneFullHeight from '@/public/assets/images/iphone-full-height-timer-desktop.webp'
-import {useIsMobile} from '@/src/components/Hooks/useMediaQuery'
+import {useIsLargeScreen, useIsMobile} from '@/src/components/Hooks/useMediaQuery'
 import Button from '@/src/components/UI/Button/Button'
 import {FaApple} from 'react-icons/fa'
 import {TiVendorAndroid} from 'react-icons/ti'
 
 const FullHeightBgImage = (props) => {
-    const isMobile = useIsMobile()
+    const isLargeScreen = useIsLargeScreen()
     return (
         <div className={'mt-[92px] md:mt-[120px]'}>
             <div
@@ -65,7 +65,7 @@ const FullHeightBgImage = (props) => {
                 </div>
                 <Image
                     fill
-                    src={isMobile ? IphoneFullHeightMobile : IphoneFullHeight}
+                    src={isLargeScreen ?  IphoneFullHeight : IphoneFullHeightMobile}
                     className={'object-cover object-center lg:object-left'}
                     alt={''}
                     priority={true}

@@ -7,7 +7,7 @@ export default function CarouselSlide(props) {
         <Image
             src={props.image}
             fill
-            className={'object-cover object-center'}
+            className={`object-cover ${props.imagePosition}`}
             alt={''}
             sizes={"100vw"}
         />

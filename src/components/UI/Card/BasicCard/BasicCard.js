@@ -5,6 +5,7 @@ import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import {AiOutlinePlus} from 'react-icons/ai'
 import Button from '@/src/components/UI/Button/Button'
 import Tag from '@/src/components/UI/Tag'
+import WomanRedLine from "@/public/assets/images/woman-red-line.webp";
 
 const BasicCard = ({className, ...props}) => {
     const [isClick, setIsClick] = useState(false)
@@ -58,25 +59,32 @@ const BasicCard = ({className, ...props}) => {
             {props.buttons === 'toggleButton' ? (
                 <>
                     <div
-                        className={`absolute h-full lg:w-full bg-white flex flex-col justify-center p-8 pt-0 transition duration-300 
+                        className={`absolute h-full lg:w-full bg-white flex flex-col justify-center lg:p-[72px] p-[52px]  transition duration-300 
                 ${isClick ? 'opacity-1' : 'opacity-0'}
                 `}
                     >
                         <div
                             className={`${
                                 isClick
-                                    ? 'opacity-1 transition delay-[100ms] leading-[20px]  duration-300'
+                                    ? 'opacity-1 transition delay-[100ms] leading-[20px]  duration-300 flex items-center'
                                     : 'opacity-0'
-                            } text-black`}
+                            } text-black ${props.paragraphWidth}`}
                         >
-                            <p className={'text-[16px] font-[500] mb-2'}>{props.flipContentTitle}</p>
-                            <p className={'text-[14px] whitespace-pre-line'}>{props.flipContent}</p>
+                            <div>
+                                <p className={'text-[16px] font-[500] mb-2'}>{props.flipContentTitle}</p>
+                                <p className={'text-[14px] whitespace-pre-line'}>{props.flipContent}</p>
+                            </div>
+                            <div className={`w-auto h-[${props.imageHeight}] relative`}>
+                                {props.flipImageContent && (
+                                    <Image src={props.flipImageContent} fill alt={""} sizes={"100vw"} className={'object-contain md:block hidden'} />
+                                )}
+                            </div>
                         </div>
                     </div>
                     <ToggleButton
                         text={'lorem'}
                         variant={'red'}
-                        className={`absolute right-4 bottom-4 z-[100] !rounded-full ${
+                        className={`absolute right-[39px] bottom-[39px] z-[100] !rounded-full ${
                             isClick ? 'rotate-45' : ''
                         }`}
                         content={<AiOutlinePlus size={24}/>}

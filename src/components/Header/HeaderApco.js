@@ -2,13 +2,9 @@ import React from 'react'
 import Button from '@/src/components/UI/Button/Button'
 import Tag from '@/src/components/UI/Tag'
 import Image from 'next/image'
-import CaptorReverseMobile from '@/public/assets/images/captor-reverse-mobile.webp'
 import CaptorReverseLarge from '@/public/assets/images/captor-reverse-large.webp'
-import {useIsFromTablet, useIsMobile} from "@/src/components/Hooks/useMediaQuery";
 
 const HeaderApco = () => {
-
-    const isFromTablet = useIsFromTablet();
 
     return (
         <div className={'relative'}>
@@ -45,7 +41,7 @@ const HeaderApco = () => {
                         <Button
                             className={'text-[16px]'}
                             variant={'red'}
-                            link={'/'}
+                            link={'/contact'}
                             content={'Join the waiting list'}
                         />
                     </div>

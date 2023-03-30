@@ -125,13 +125,6 @@ input[data-autocompleted], input:autofill, input:-webkit-autofill, input:-intern
     to { transform: rotate(360deg); }
 }
 
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
-    display: none;
-}
-
-.css-ahj2mt-MuiTypography-root {
-    font-family: "SF Pro", sans-serif;
-}
 
 
 /*Responsive*/

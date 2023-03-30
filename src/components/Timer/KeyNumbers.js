@@ -9,22 +9,22 @@ const KeyNumbers = () => {
             }
         >
             <Number
-                src={'/assets/icons/arrowleftright.svg'}
-                text={'Lorem ipsum'}
+                src={'/assets/icons/arrow-up.svg'}
+                text={'Beta Users.'}
                 width={30}
-                number={'7,520,568'}
-            />{' '}
-            <Number
-                src={'/assets/icons/download.svg'}
-                text={'Lorem ipsum'}
-                width={20}
-                number={'7,520,568'}
+                number={'10,000'}
             />{' '}
             <Number
                 src={'/assets/icons/messages.svg'}
-                text={'Lorem ipsum'}
+                text={'Collaborative Professionals.'}
+                width={20}
+                number={'+500'}
+            />{' '}
+            <Number
+                src={'/assets/icons/flash.svg'}
+                text={'New Users/week.'}
                 width={30}
-                number={'7,520,568'}
+                number={'+800'}
             />
         </div>
     )

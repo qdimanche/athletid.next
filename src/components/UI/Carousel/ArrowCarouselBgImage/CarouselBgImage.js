@@ -1,7 +1,10 @@
 import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 import React, {useState} from 'react'
 import CarouselSlide from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselSlide'
-import {apcoImages, timerImages} from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems'
+import {
+    apcoImages,
+    timerImages,
+} from '@/src/components/UI/Carousel/ArrowCarouselBgImage/CarouselItems'
 
 const CarouselBgImage = (props) => {
     const [currentItemIndex, setCurrentItemIndex] = useState(0)
@@ -9,20 +12,22 @@ const CarouselBgImage = (props) => {
     const [isPrevious, setIsPrevious] = useState(false)
     const [isNext, setIsNext] = useState(false)
 
-    let images = [];
+    let slideContent = []
 
-    const {imageData : imageDataProps } = props ;
+    const {imageData: imageDataProps} = props
 
-    if (imageDataProps === "timer"){
-        images = [...timerImages];
-    }else if (imageDataProps === "apco"){
-        images = [...apcoImages];
+    if (imageDataProps === 'timer') {
+        slideContent = [...timerImages]
+    } else if (imageDataProps === 'apco') {
+        slideContent = [...apcoImages]
     }
-
 
     return (
         <div className={'mt-[92px] md:mt-[120px] h-[800px] md:h-[1000px] relative'}>
-            <CarouselSlide image={images[currentItemIndex]}/>
+            <CarouselSlide
+                imagePosition={slideContent[currentItemIndex].imagePosition}
+                image={slideContent[currentItemIndex].image}
+            />
 
             <div
                 className={
@@ -38,8 +43,8 @@ const CarouselBgImage = (props) => {
                             setCurrentItemIndex(currentItemIndex - 1)
                             setCount(count - 1)
                         } else {
-                            setCurrentItemIndex(images.length - 1)
-                            setCount(images.length - 1)
+                            setCurrentItemIndex(slideContent.length - 1)
+                            setCount(slideContent.length - 1)
                         }
                         setIsPrevious(true)
                         setIsNext(false)
@@ -52,7 +57,7 @@ const CarouselBgImage = (props) => {
                         isNext ? 'border-timeRed' : 'border-white'
                     }  rounded-full flex items-center justify-center`}
                     onClick={() => {
-                        if (currentItemIndex < images.length - 1) {
+                        if (currentItemIndex < slideContent.length - 1) {
                             setCurrentItemIndex(currentItemIndex + 1)
                             setCount(count + 1)
                         } else {

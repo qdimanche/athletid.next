@@ -17,7 +17,7 @@ const MasonryGrid = ({items, ...props}) => {
     const isMobile = useIsMobile();
 
     return (
-        <div className={'lg:px-0 px-4 max-w-[350px] md:max-w-[1280px] lg:max-w-[100vw] mx-auto'}>
+        <div className={'lg:px-0 px-4 max-w-[350px] md:max-w-[1170px] lg:max-w-[100vw] mx-auto'}>
             <div className={`lg:-mb-[2%] mt-[92px] lg:mt-[120px] mb-[72px]`}>
                 <div className={'text-center '}>
                     <div className={'flex flex-col items-center'} id={'titleMasonry'}>
@@ -31,7 +31,7 @@ const MasonryGrid = ({items, ...props}) => {
 
             <Masonry
                 breakpointCols={breakpointColumnsObj}
-                className="flex space-x-4 md:px-0 px-4 relative"
+                className="flex space-x-4  relative"
                 columnClassName="custom-grid-column"
             >
                 {items.slice(0, isTablet ? 9 : isMobile ? 6 : 20).map((item, index) => (

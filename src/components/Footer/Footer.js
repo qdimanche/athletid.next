@@ -35,7 +35,7 @@ const Footer = () => {
                         <Newsletter/>
                     </div>
                     <div
-                        className={'h-[300px] md:h-[400px] lg:h-[600px] w-full relative mb-8 mx-auto'}
+                        className={'h-[300px] md:h-[450px] lg:h-[600px] w-full relative mb-8 mx-auto'}
                     >
                         <div
                             className={

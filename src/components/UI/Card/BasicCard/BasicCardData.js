@@ -16,6 +16,9 @@ export const apcoCardContent = [
       'We have developed the first on-board system that recognizes the movements you make during your workout. With it, you can concretely see your progress and your evolution and follow all your training sessions. ',
     imageSrc: '/assets/images/captor-card.webp',
     className: 'md:col-span-2 !text-black',
+    paragraphWidth: 'md:grid md:grid-cols-2',
+    flipImageContent : '/assets/images/woman-red-line.webp',
+    imageHeight: '320px',
     buttons: 'toggleButton',
   },
   {
@@ -25,6 +28,9 @@ export const apcoCardContent = [
       'You can throw away your old workout book. Thanks to our powerful intelligent system, we can automatically write down your workout live.',
     imageSrc: '/assets/images/construction-entrainement-apco.webp',
     className: 'md:col-span-2',
+    paragraphWidth: 'md:grid md:grid-cols-2',
+    flipImageContent : '/assets/images/construction-seance-full.webp',
+    imageHeight: '386px',
     buttons: 'toggleButton',
   },
   {

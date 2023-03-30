@@ -6,10 +6,23 @@ import Typography from '@mui/material/Typography'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import styled from "styled-components";
 
+const CustomAccordion = styled(Accordion)(({ theme }) => {
+    return {
+        boxShadow: 'none', // this styles directly apply to accordion
+        border: `none`,
+        '&:before': {
+            display:'none',
+        },
+        '.MuiTypography-root' : {
+            fontFamily : 'SF Pro',
+        }
+    };
+});
+
 export default function SimpleAccordion() {
 
     return (
-        <Accordion className={'!shadow-none rounded-[8px]'}>
+        <CustomAccordion className={'!shadow-none rounded-[8px]'}>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon className={"text-black"}/>}
                 aria-controls="panel1a-content"
@@ -23,6 +36,6 @@ export default function SimpleAccordion() {
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </Typography>
             </AccordionDetails>
-        </Accordion>
+        </CustomAccordion>
     )
 }
