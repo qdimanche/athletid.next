@@ -6,9 +6,7 @@ import {Autoplay} from "swiper";
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-
 const Testimonial = (props) => {
-
 
     return (
         <div
@@ -23,11 +21,14 @@ const Testimonial = (props) => {
                 <h2 style={{whiteSpace: 'pre-line'}}>{props.title}</h2>
             </div>
 
-            <div className={"w-full overflow-hidden relative"}>
+            <div className={"w-full relative  mx-auto"}>
+
+
+
                 <Swiper
                     modules={[Autoplay]}
-                    className={'w-[200%] md:w-full absolute transform -translate-x-1/2 left-1/2'}
-                    spaceBetween={30}
+                    className={'w-[150%] md:max-w-[770px] md:mx-auto'}
+                    spaceBetween={60}
                     slidesPerView={3}
                     slidesPerGroup={1}
                     navigation
@@ -38,16 +39,20 @@ const Testimonial = (props) => {
                 >
                     {TestimonialCardData.slice(0, 12).map((val, ind) => {
                         return (
-                            <SwiperSlide key={ind}>
-                                <TestimonialCard
-                                    image={val.image}
-                                    name={val.name}
-                                    surname={val.surname}
-                                    publicationDate={val.publicationDate}
-                                    title={val.title}
-                                    comment={val.comment}
-                                    star={val.star}
-                                />
+                            <SwiperSlide key={ind} className={'flex'}>
+                                {({ isNext }) => (
+                                    <TestimonialCard
+                                        image={val.image}
+                                        name={val.name}
+                                        surname={val.surname}
+                                        publicationDate={val.publicationDate}
+                                        title={val.title}
+                                        zoom={isNext ? ' scale-125': 'scale-100'}
+                                        comment={val.comment}
+                                        star={val.star}
+                                    />
+                                )}
+
                             </SwiperSlide>
                         );
                     })}

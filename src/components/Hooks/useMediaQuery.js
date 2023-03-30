@@ -33,4 +33,8 @@ export const useIsLargeScreen = () => {
     return useMediaQuery("(min-width: 1024px)");
 }
 
+export const useIsExtraSmallScreen = () => {
+    return useMediaQuery("(max-width: 520px)");
+}
+
 export default useMediaQuery;

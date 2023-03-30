@@ -19,9 +19,7 @@ body {
     min-height: -webkit-fill-available;
 }
 
-html {
-    height: -webkit-fill-available;
-}
+
 
 
 svg {
@@ -77,6 +75,7 @@ input[data-autocompleted], input:autofill, input:-webkit-autofill, input:-intern
     -webkit-border-radius: 30px !important;
 }
 
+/*noinspection CssInvalidPropertyValue*/
 .safari-overflow-fix {
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
@@ -123,6 +122,10 @@ input[data-autocompleted], input:autofill, input:-webkit-autofill, input:-intern
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+
+.swiper-slide-active {
+    height: 300px !important;
 }
 
 
