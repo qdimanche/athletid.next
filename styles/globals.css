@@ -181,7 +181,7 @@ input[data-autocompleted], input:autofill, input:-webkit-autofill, input:-intern
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     h1 {
         font-size: 84px;

@@ -31,7 +31,7 @@ const BasicCard = ({className, ...props}) => {
                 src={props.srcBg}
                 fill
                 priority={true}
-                sizes={"70vw"}
+                sizes={"100vw"}
                 alt={''}
             />
             <div
