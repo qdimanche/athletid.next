@@ -24,7 +24,7 @@ export default function Home() {
                 <title>Athletid</title>
                 <meta
                     name="description"
-                    content="Musculation, Crossfit, Yoga, Powerlifitng, Fitness … Peu importe ta discipline nos solutions innovantes te guident vers tes objectifs !"
+                    content="Bodybuilding, Crossfit, Yoga, Powerlifitng, Fitness ... Whatever your discipline, our innovative solutions will guide you towards your goals!"
                 />
                 <meta property="og:title" content="Athletid"/>
                 <meta property="og:type" content="website"/>
@@ -40,7 +40,6 @@ export default function Home() {
                     imageWidth={' w-[500px] md:w-1/2 '}
                     link={'/timer'}
                     imageClassName={'object-cover object-top md:!object-left-top'}
-                    imageHeight={'md:h-3/4'}
                 />
                 <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <GridSection

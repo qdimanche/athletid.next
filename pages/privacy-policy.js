@@ -12,8 +12,8 @@ const PrivacyPolicy = () => {
 			
 			
 			<Format>
-				<div className={'max-w-[1280px] mx-auto px-8 flex flex-col lg:pt-32 pt-20 '}>
-					<h1 className={'mb-[20px] !whitespace-normal'}>Politique de confidentialité</h1>
+				<div className={'max-w-[350px] md:max-w-[1170px] pt-[142px] lg:pt-[216px] mx-auto px-4 flex flex-col '}>
+					<h1 className={'mb-[16px] md:mb-[32px]'}>Politique de confidentialité</h1>
 					<p className={''}>Chez ATHLETID, la protection de vos données personnelles est une priorité.
 						Lors de votre utilisation du site internet www.athletid.com (ci-après le « Site »), nous sommes
 						amenés à
@@ -25,15 +25,15 @@ const PrivacyPolicy = () => {
 						personnes physiques à l’égard du traitement des données à caractère personnel et à la libre
 						circulation
 						de ces données (ci-après le « RGPD »).</p>
-					<h2 className={'whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>1. Qui est le responsable de
+					<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>1. Qui est le responsable de
 						traitement
-						?</h2>
+						?</h3>
 					<p>Le responsable de traitement est la société ATHLETID, SAS, immatriculée au RCS de Lille sous le
 						n°913 916
 						912, ayant son siège social 60 rue Gabriel Péri 59320 Haubourdin. (ci-après « Nous »).</p>
-					<h2 className={'whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>2. Quelles données
+					<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>2. Quelles données
 						collectons-nous
-						?</h2>
+						?</h3>
 					<p>Une donnée à caractère personnel est une donnée qui permet d’identifier un individu directement
 						ou par
 						recoupement avec d’autres données.
@@ -54,15 +54,15 @@ const PrivacyPolicy = () => {
 					<p className={'mt-[20px]'}>Les données obligatoires sont indiquées lorsque vous nous fournissez vos
 						données.
 						Elles sont signalées par un astérisque et sont nécessaires pour vous fournir nos services.</p>
-					<h2 className={'whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>3. Sur quelles bases
+					<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>3. Sur quelles bases
 						légales, pour
 						quelles
 						finalités et
 						pendant
-						combien de temps conservons-nous vos données personnelles ?</h2>
+						combien de temps conservons-nous vos données personnelles ?</h3>
 					<div className={'grid lg:grid-cols-3 lg:space-x-[40px] lg:space-y-0 space-y-[30px]'}>
 						<div className={'flex flex-col'}>
-							<h3 className={'text-[1.5em] mb-3'}>Finalités</h3>
+							<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Finalités</h3>
 							<p className={'py-[20px] border-y border-y-[#F5F4F5]'}>Fournir nos services disponibles sur
 								notre
 								Site via votre compte</p>
@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
 								droits</p>
 						</div>
 						<div className={'flex flex-col'}>
-							<h3 className={'text-[1.5em] mb-3'}>Bases légales</h3>
+							<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Bases légales</h3>
 							<p className={'py-[20px] border-y border-y-[#F5F4F5]'}>Exécution des Conditions Générales
 								que vous
 								ou votre société avez souscrit avec Nous</p>
@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
 								demandes et à conserver un suivi de celles-ci</p>
 						</div>
 						<div className={'flex flex-col'}>
-							<h3 className={'text-[1.5em] mb-3'}>Durées de conservation</h3>
+							<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Durées de conservation</h3>
 							<p className={'py-[20px] border-y border-y-[#F5F4F5]'}>Vos données sont conservées pour
 								toute la
 								durée de votre compte.
@@ -153,11 +153,11 @@ const PrivacyPolicy = () => {
 						</div>
 					
 					</div>
-					<h2 className={'whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>5. Vos données sont-elles
+					<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>5. Vos données sont-elles
 						susceptibles
 						d’être transférées
 						hors de l’Union
-						européenne ?</h2>
+						européenne ?</h3>
 					<p>Vos données sont conservées et stockées pendant toute la durée des traitements sur les serveurs
 						de la société
 						HOSTINGER situés au Royaume Unis.</p>
@@ -187,9 +187,9 @@ const PrivacyPolicy = () => {
 							Chapitre V du RGPD.
 						</li>
 					</ul>
-					<h2 className={'whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>6. Quels sont vos droits sur
+					<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>6. Quels sont vos droits sur
 						vos données
-						?</h2>
+						?</h3>
 					
 					<p className={'mb-[20px]'}>Vous disposez des droits suivants s’agissant de vos données personnelles
 						:</p>
@@ -260,13 +260,13 @@ const PrivacyPolicy = () => {
 						cette
 						opposition, pour des motifs légitimes ou la défense de droits en justice.</p>
 					
-					<h2 className={'whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>7. Point de contact en
+					<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>7. Point de contact en
 						matière de
 						données
-						personnelles</h2>
+						personnelles</h3>
 					<p>Email de contact : contact@athletid.com
 						Adresse de contact : 60 Rue Gabriel Péri, 59320 Haubourdin</p>
-					<h2 className={'whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>8. Modifications</h2>
+					<h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>8. Modifications</h3>
 					<p>Nous pouvons modifier à tout moment la présente politique, afin notamment de nous conformer à
 						toutes
 						évolutions réglementaires, jurisprudentielles, éditoriales ou techniques. Ces modifications

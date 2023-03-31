@@ -14,7 +14,7 @@ const About = () => {
 		<Head>
 			<title>Athletid</title>
 			<meta name="description"
-			      content="Musculation, Crossfit, Yoga, Powerlifitng, Fitness … Peu importe ta discipline nos solutions innovantes te guident vers tes objectifs !"/>
+			      content="Bodybuilding, Crossfit, Yoga, Powerlifitng, Fitness ... Whatever your discipline, our innovative solutions will guide you towards your goals!"/>
 			<meta property="og:title" content="Athletid"/>
 			<meta property="og:type" content="website"/>
 		</Head>

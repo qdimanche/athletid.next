@@ -12,10 +12,10 @@ const TermsOfService = () => {
             </Head>
 
             <Format>
-                <div className={'max-w-[1280px] mx-auto px-8 flex flex-col lg:pt-32 pt-20'}>
-                    <h1 className={'mb-[20px] !whitespace-normal'}>Conditions Générales de vente et d’utilisation de l&apos;application
+                <div className={'max-w-[350px] md:max-w-[1170px] pt-[142px] lg:pt-[216px] mx-auto px-4 flex flex-col'}>
+                    <h1>Conditions Générales de vente et d’utilisation de l&apos;application
                         Athletid</h1>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 1 – Définitions</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 1 – Définitions</h3>
                     <ul className={"!list-disc"}>
                         <li>« Application » : l’application TIMER BY ATHLETID / ATHLETID SOCIAL NETWORK et l’ensemble de ses pages
                             et écrans, comprenant les accès par site web
@@ -34,7 +34,7 @@ const TermsOfService = () => {
                             l’application
                         </li>
                     </ul>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 2 – Applicabilité et objet</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 2 – Applicabilité et objet</h3>
                     <p>a) La présente application est éditée par la SAS ATHLETID, 60, rue Gabriel Péri 59320 HAUBOURDIN France,
                         immatriculée au RCS de Lille sous le n°913 916 912. La société peut être contactée directement par
                         courrier électronique à l’adresse suivante : contact.sn@athletid.com ou par courrier postal à l’adresse
@@ -76,23 +76,23 @@ const TermsOfService = () => {
                         à jour à tout moment et sans préavis.</p>
         
         
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 3 - Caractéristiques des
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 3 - Caractéristiques des
                         produits
-                        proposés</h2>
+                        proposés</h3>
                     <p>Les produits proposés sont ceux qui figurent dans le descriptif de l’application telle que publiée sur le
                         Store, et sur les sites édités par la société ATHLETID et ses filiales.
             
                         Le service clientèle de l’application est accessible par courrier électronique à l’adresse suivante:
                         contact.sn@athletid.com ou par courrier postal à l’adresse suivante : SAS ATHLETID, 60 rue Gabriel Péri
                         59320 HAUBOURDIN, auquel cas l’éditeur s’engage à apporter une réponse sous 7 jours.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 4 – Commande et Tarifs</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 4 – Commande et Tarifs</h3>
                     <p className={'mb-[20px]'}>Les services proposés par l’application sont gratuits.
                         L’accès aux contenus et services proposés par et sur l’application est susceptible d’être rendu payant,
                         ce qui pourra faire l’objet d’une modification des présentes conditions à tout moment par la SAS ATHLETID,
                         ce que l’utilisateur déclare, en les acceptant, comprendre.</p>
         
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 5 - Compte dans
-                        l&apos;application</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 5 - Compte dans
+                        l&apos;application</h3>
                     <p>L’utilisateur créant un compte sur l’application (membre) a la possibilité d’y accéder en se connectant
                         grâce aux identifiants fournis lors de son inscription et en utilisant des systèmes.
             
@@ -117,10 +117,10 @@ const TermsOfService = () => {
             
                         Le compte et les informations qui s’y rattachent (par exemple : coordonnées, informations de facturation,
                         historique du Compte et Souscriptions, etc.) sont strictement personnels.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 6 - Exonération de la
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 6 - Exonération de la
                         responsabilité de l’éditeur
                         dans le cadre de l’exécution du présent contrat
-                    </h2>
+                    </h3>
                     <p>En cas d’impossibilité d’accès à l’application, en raison de problèmes techniques ou de toutes natures,
                         l’utilisateur ne pourra se prévaloir d’un dommage et ne pourra prétendre à aucune indemnité.
             
@@ -134,9 +134,9 @@ const TermsOfService = () => {
             
                         De même la responsabilité de l’éditeur ne saurait être engagée si l’utilisation de ces sites ou
                         applications, par l’utilisateur, lui causait un préjudice.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>
                         Article 7 - Propriété des contenus et services
-                    </h2>
+                    </h3>
                     <p>Tous les titres, droits de propriété et droits de propriété intellectuelle relatifs aux Contenus et
                         Services et aux copies de ceux-ci sont la propriété de la SAS ATHLETID et/ou de ses concédants ou des
                         concédants de ses sociétés affiliées.
@@ -148,9 +148,9 @@ const TermsOfService = () => {
                         Les Contenus et Services contiennent certains éléments sous licence. Les concédants desdites licences
                         auprès de la SAS ATHLETID et de ses sociétés affiliées peuvent agir dans le but de protéger leurs
                         droits en cas de violation du présent Accord.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>
                         Restrictions d&apos;utilisation des contenus et services
-                    </h2>
+                    </h3>
                     <p>L’utilisateur n’êtes pas autorisé à utiliser les Contenus et Services de l’application à d’autres fins
                         que l’accès autorisé par la SAS ATHLETID, de ses sociétés affiliées, concédants ou des concédants de
                         ses sociétés affiliées, en fonction de ses achats et souscriptions.
@@ -185,9 +185,9 @@ const TermsOfService = () => {
             
                         (iii) ou, exploiter les Contenus et Services ou toute partie de ceux-ci à des fins commerciales, sans
                         préjudice des autorisations expresses contenues dans d’autres Sections du présent Accord.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>
                         Article 8 - Contribution des utilisateurs au contenu
-                    </h2>
+                    </h3>
                     <p>Les utilisateurs se voient offrir la faculté de contribuer aux contenus accessibles par l’application, par
                         la publication de commentaires et de mentions « j’aime ».
             
@@ -206,9 +206,9 @@ const TermsOfService = () => {
                         Les contributeurs sont informés que l’éditeur, représenté le cas échéant par les modérateurs, peut
                         choisir de publier la contribution en question sur les newsletters de l’application et sur les sites de tous
                         ses partenaires, à charge pour l’éditeur de citer le pseudonyme de l’auteur de la contribution.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>
                         Article 9 – Règles applicables à l’édition de contenus
-                    </h2>
+                    </h3>
                     <p className={'mb-[20px]'}>
                         En contrepartie de la fourniture des services de l’application, l’utilisateur s’engage à respecter les
                         présentes conditions, et s’interdit de :
@@ -254,16 +254,16 @@ const TermsOfService = () => {
                             publicités et contenus sponsorisés.
                         </li>
                     </ul>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>
                         Article 10 - Marques
-                    </h2>
+                    </h3>
                     <p>Les marques et logos contenus dans l’application sont déposés par la société ATHLETID, ou éventuellement
                         par une de ses filiales. Toute personne procédant à leurs représentations, reproductions, imbrications,
                         diffusions et rediffusions encourt les sanctions prévues aux articles L.713-2 et suivants du Code de la
                         propriété intellectuelle.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>
                         Article 11 - Limitation de responsabilité
-                    </h2>
+                    </h3>
                     <p>L’éditeur de l’application, notamment dans le processus de vente en ligne, n’est tenu que par une obligation
                         de moyens ; sa responsabilité ne pourra être engagée pour un dommage résultant de l’application tel que
                         la perte de données par intrusion, un ou plusieurs virus, l’interruption du service, ou tous autres
@@ -278,20 +278,20 @@ const TermsOfService = () => {
                         dommages-intérêts directs ou indirects, fortuits, consécutifs ou exemplaires qui peuvent être encourus
                         par l’utilisateur à travers de son utilisation de l’application, du site ou du logiciel, y compris pour
                         toute perte de données ou d’endommagement de votre appareil mobile, ordinateur, ou autre support.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 12 - Accès à l&apos;application par
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 12 - Accès à l&apos;application par
                         connexion
-                        Internet</h2>
+                        Internet</h3>
                     <p>La responsabilité de l’éditeur ne peut être engagée en raison d’une indisponibilité technique de la
                         connexion, qu’elle soit due notamment à un cas de force majeure, à une maintenance, à une mise à jour,
                         à une modification, à une intervention de l’hébergeur, à une grève interne ou externe, à une panne de
                         réseau, à une coupure d’alimentation électrique, ou encore à une mauvaise configuration ou utilisation
                         du périphérique de l’utilisateur.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 13 - Fermeture de compte</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 13 - Fermeture de compte</h3>
                     <p>Chaque membre est libre de fermer son compte sur l’application.
                         Pour ceci, l’utilisateur devra supprimer son compte dans les paramètres de l’application.
                         Aucune récupération de ses données ne sera alors possible.</p>
-                    <h2 className={'!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]'}>Article 14 - Droit applicable et
-                        médiation</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 14 - Droit applicable et
+                        médiation</h3>
                     <p>Les présentes conditions générales sont soumises à l’application du droit Français.
             
                         Elles peuvent être modifiées à tout moment par l’éditeur ou son mandataire.
@@ -313,7 +313,7 @@ const TermsOfService = () => {
                         Sauf disposition contraire, d’ordre public, toute action judiciaire relative à l’exécution du présent
                         contrat devra être soumise à la compétence des juridictions du ressort de la Cour d’appel saisie.</p>
         
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Médiation de la consommation</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Médiation de la consommation</h3>
                     <p>Selon l’article L.612-1 du Code de la consommation, il est rappelé que « tout consommateur a le droit de
                         recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable du litige qui
                         l’oppose à un professionnel. A cet effet, le professionnel garantit au consommateur le recours effectif à
@@ -332,23 +332,23 @@ const TermsOfService = () => {
             
                         Il est rappelé que la médiation n’est pas obligatoire mais uniquement proposée afin de résoudre les
                         litiges en évitant un recours à la justice.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Article 15 - Utilisation de Cookies et
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 15 - Utilisation de Cookies et
                         de
                         fichiers déposés
-                        sur le périphérique</h2>
+                        sur le périphérique</h3>
                     <p>L’utilisation des cookies et fichiers temporaires est visée à la politique de confidentialité.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Article 16 - Garantie des produits
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 16 - Garantie des produits
                         achetés
                         dans
-                        l&apos;application</h2>
+                        l&apos;application</h3>
                     <p>Tous les produits acquis sur l’application bénéficient des garanties légales suivantes, prévues par le
                         Code Civil.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Garantie de conformité :</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Garantie de conformité :</h3>
                     <p>Selon les articles L.217-4 et suivants du Code de la consommation, le vendeur est tenu de livrer un produit
                         conforme au contrat et de répondre des défauts de conformité existant pendant la délivrance du produit
                         conforme. La garantie de conformité pourra s’exercer si un défaut devait exister le jour de la prise de
                         possession du produit.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Garantie des vices cachés</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Garantie des vices cachés</h3>
                     <p>Selon les articles 1641 à 1649 du Code civil, le client pourra demander l’exercice de la garantie de vices
                         cachés si les défauts présentés n’apparaissaient pas lors de l’achat et sont suffisamment graves (le
                         défaut doit soit rendre le produit impropre à l’usage auquel il est destiné, soit diminuer cet usage dans
@@ -360,14 +360,14 @@ const TermsOfService = () => {
                         Toutes les réclamations ou demandes de remboursement doivent s’effectuer par courrier électronique à
                         l’adresse suivante : contact.timer@athletid.com ou par courrier postal à l’adresse suivante : SASU TIMER BY
                         ATHLETID – 60, rue Gabriel Péri 59320 HAUBOURDIN France.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Article 17 - Archivage</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 17 - Archivage</h3>
                     <p>La société ATHLETID et ses filiales archiveront les bons de commandes et les factures sur un support fiable
                         et durable constituant une copie fidèle.
             
                         Les registres informatisés seront considérés par les parties comme preuve des communications, commandes,
                         paiements et transactions intervenus entre les parties.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Article 18 - Encadrement des
-                        conditions</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 18 - Encadrement des
+                        conditions</h3>
                     <p>Si une disposition des Conditions générales est jugée illégale, nulle ou pour toute autre raison
                         inapplicable, alors cette disposition sera réputée divisible des Conditions et n’affectera pas la
                         validité et l’applicabilité des dispositions restantes. Ces présentes conditions décrivent l’ensemble de
@@ -377,20 +377,20 @@ const TermsOfService = () => {
                         électronique pourra être demandée dans des procédures judiciaires ou administratives en rapport avec les
                         conditions générales. Les parties conviennent que toute la correspondance relative à ces conditions
                         générales doit être rédigée dans la langue française.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Article 19 - Notifications</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 19 - Notifications</h3>
                     <p>Toute notification ou avis concernant les présentes conditions générales, les mentions légales ou la
                         charte de données personnelles doit être faite par écrit et doit être remis en mains propres, courrier
                         recommandé ou certifié, par Poste ou tout autre service de messagerie reconnu au niveau national qui
                         permet de suivre régulièrement ses forfaits, ou encore par mail aux adresses indiquées dans les mentions
                         légales de l’application, en précisant vos noms, prénoms, coordonnées et objet de l’avis.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Article 20 - Réclamations</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 20 - Réclamations</h3>
                     <p>Toute réclamation liée à l’utilisation de l’application, des pages de l’application sur des réseaux
                         sociaux éventuels ou les conditions générales, mentions légales ou charte de données personnelles doit
                         être déposée dans les 365 jours suivant le jour d’origine du problème source de réclamation, et ce
                         indépendamment de toute loi ou règle de droit contraire. Dans le cas où une telle réclamation n’aurait
                         pas été déposée dans les 365 jours suivants, une telle réclamation sera à jamais inapplicable en
                         justice.</p>
-                    <h2 className={"!whitespace-normal lg:text-[2.2em] mt-[40px] mb-[20px]"}>Article 21 - Inexactitudes</h2>
+                    <h3 className={'mb-[16px] md:mb-[32px] mt-[92px] md:mt-[120px]'}>Article 21 - Inexactitudes</h3>
                     <p>Il peut être possible que se trouvent, dans l’ensemble de l’application et des produits proposés, et dans
                         une partie restreinte, des contenus ou des commentaires ou des usages qui soient en désaccord avec les
                         présentes conditions générales, et/ou politique de confidentialité.

@@ -10,7 +10,7 @@ import 'swiper/css/navigation'
 const Testimonial = (props) => {
 
     return (
-        <div className={'lg:px-4 mt-[92px] md:mt-[120px] '}>
+        <div className={'mt-[92px] md:mt-[120px] md:px-4 md:max-w-[1170px] mx-auto  '}>
             <div
                 className={
                     'flex flex-col items-center mx-auto mb-[72px] text-center max-w-[350px] md:max-w-full  mx-auto'

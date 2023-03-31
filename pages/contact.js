@@ -9,9 +9,9 @@ const Contact = () => {
     return (
         <>
             <Head>
-                <title>Nous contacter</title>
+                <title>Contact us</title>
                 <meta name="description"
-                      content="Une question, un problème ou une simple envie de discuter ? Nous sommes là pour vous répondre !"/>
+                      content="Do you have a question, a problem or just want to talk? We are here to answer you!"/>
                 <meta property="og:title" content="Contact" />
                 <meta property="og:type" content="website" />
             </Head>

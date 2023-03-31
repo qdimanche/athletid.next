@@ -10,7 +10,7 @@ import {TiVendorAndroid} from 'react-icons/ti'
 const FullHeightBgImage = (props) => {
     const isLargeScreen = useIsLargeScreen()
     return (
-        <div className={'mt-[92px] md:mt-[120px]'}>
+        <div className={'mt-[92px] md:mt-[120px] md:px-4 '}>
             <div
                 className={
                     'flex flex-col items-center mb-[92px] md:mb-[120px] text-center px-4 max-w-[350px] md:max-w-full mx-auto'
