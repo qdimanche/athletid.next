@@ -27,6 +27,7 @@
     "next-compose-plugins": "^2.2.1",
     "next-i18next": "^13.0.3",
     "next-pwa": "^5.6.0",
+    "next-share": "^0.20.0",
     "next-sitemap": "^3.1.45",
     "next-videos": "^1.4.1",
     "prettier": "^2.8.4",

@@ -1,17 +1,8 @@
 import '@/styles/globals.css'
-import en from "../lang/en.json";
-import fr from "../lang/fr.json";
-import {useRouter} from "next/router";
-import {IntlProvider} from "react-intl";
 import Script from "next/script";
 import {getCookie} from "cookies-next";
 
-const messages = {
-	en, fr,
-};
-
 function App({Component, pageProps}) {
-	const {locale} = useRouter();
 	const consent = getCookie('localConsent');
 	
 	return <>
@@ -50,10 +41,9 @@ function App({Component, pageProps}) {
 				}}
 			/>
 		)}
-		
-		<IntlProvider locale={locale} messages={messages[locale]}>
-			<Component {...pageProps} />
-		</IntlProvider>
+
+		<Component {...pageProps} />
+
 	
 	
 	</>

@@ -8,17 +8,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] last bug fix for website v2">
+      <change afterPath="$PROJECT_DIR$/lib/fetcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/cardio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/dataCategories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/muscular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/popular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/posts/[postSlug].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/posts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/trending.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/wellness.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/diagonal-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/not-found.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/PopularPost.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/PostsSection/Post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/PostsSection/PostsSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/PostsSection/TabMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/_child/Error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/_child/RelatedPost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/privacy-policy.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy-policy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/terms-of-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/terms-of-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/fr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-i18next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,39 +76,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/quentindimanche/Projects/Travail/athletid.next/src/components/UI/Carousel/Buttons&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next/pages/api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/api" />
       <recent name="$PROJECT_DIR$/src/components/UI/Carousel/Buttons" />
       <recent name="$PROJECT_DIR$/src/layout" />
       <recent name="$PROJECT_DIR$/src/components/Footer" />
       <recent name="$PROJECT_DIR$/src/components/About" />
-      <recent name="$PROJECT_DIR$/src/components/Timer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/api" />
+      <recent name="$PROJECT_DIR$/src/components/Blog/PostsSection" />
       <recent name="$PROJECT_DIR$/public/assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/Header" />
       <recent name="$PROJECT_DIR$/src/components/Apco" />
-      <recent name="$PROJECT_DIR$/src/components/UI/Card/BasicCard" />
-      <recent name="$PROJECT_DIR$/src/components/UI/Button" />
     </key>
   </component>
   <component name="RunManager">
