@@ -19,9 +19,12 @@ module.exports = {
                 'greyShade' : 'rgba(0, 0, 0, 0.02)',
                 'timeRedHover' : '#D93A2F',
                 'blackShade' : '#242629',
-                'almostBlack' : '#25282B'
+                'almostBlack' : '#25282B',
+                'darkWhite' : '#EBEBEB',
+                'darkGrey' : '#C0C0C0'
             },
             borderRadius: {
+                'small' : '8px',
                 'medium': '20px'
             },
             margin: {
