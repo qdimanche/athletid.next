@@ -12,7 +12,7 @@ const KeyNumbers = () => {
                 src={'/assets/icons/arrow-up.svg'}
                 text={'Beta Users.'}
                 width={30}
-                number={'10,000'}
+                number={'2k'}
             />{' '}
             <Number
                 src={'/assets/icons/messages.svg'}

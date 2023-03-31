@@ -8,14 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] wording">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/Buttons/SwiperButtonNext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Carousel/Buttons/SwiperButtonPrev.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/apco-features-fullscreen-mobile.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/femme-casque-audio.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/femme-casque-audio.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apco.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/timer-v2-header-desktop.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/timer-v2-header-desktop.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/CompanyDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/CompanyDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderAbout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderApco.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderApco.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,14 +127,7 @@
       <workItem from="1679645379167" duration="21560000" />
       <workItem from="1679986840705" duration="18865000" />
       <workItem from="1680074012380" duration="22228000" />
-      <workItem from="1680160193889" duration="25824000" />
-    </task>
-    <task id="LOCAL-00014" summary="[+] bug fix">
-      <created>1677685731395</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1677685731395</updated>
+      <workItem from="1680160193889" duration="29144000" />
     </task>
     <task id="LOCAL-00015" summary="[+] bug fix">
       <created>1677686568482</created>
@@ -470,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680183514261</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="[+] wording">
+      <created>1680190866183</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1680190866184</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

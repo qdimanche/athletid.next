@@ -44,8 +44,9 @@ const Apco = () => {
                                     className={value.className}
                                     flipContent={value.flipContent}
                                     flipContentTitle={value.flipContentTitle}
-                                    flipImageContent={value.flipImageContent}
-                                    imageHeight={value.imageHeight}
+                                    flipImage={value.flipImage}
+                                    flipImageHeight={value.flipImageHeight}
+                                    flipImageWidth={value.flipImageWidth}
                                     buttons={"toggleButton"}
                                 />
                             )

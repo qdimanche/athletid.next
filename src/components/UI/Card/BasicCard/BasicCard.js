@@ -5,7 +5,6 @@ import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import {AiOutlinePlus} from 'react-icons/ai'
 import Button from '@/src/components/UI/Button/Button'
 import Tag from '@/src/components/UI/Tag'
-import WomanRedLine from "@/public/assets/images/woman-red-line.webp";
 
 const BasicCard = ({className, ...props}) => {
     const [isClick, setIsClick] = useState(false)
@@ -74,11 +73,12 @@ const BasicCard = ({className, ...props}) => {
                                 <p className={'text-[16px] font-[500] mb-2'}>{props.flipContentTitle}</p>
                                 <p className={'text-[14px] whitespace-pre-line'}>{props.flipContent}</p>
                             </div>
-                            <div className={`w-auto h-[${props.imageHeight}] relative`}>
-                                {props.flipImageContent && (
-                                    <Image src={props.flipImageContent} fill alt={""} sizes={"100vw"} className={'object-contain md:block hidden'} />
-                                )}
-                            </div>
+                            {props.flipImage && (
+                                <div className={`relative h-full w-full`}>
+                                    <Image src={props.flipImage}  alt={""} width={props.flipImageWidth} height={props.flipImageHeight} sizes={"50vw"} className={'md:block hidden mx-auto'} />
+                                </div>
+                            ) }
+
                         </div>
                     </div>
                     <ToggleButton

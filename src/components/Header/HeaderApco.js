@@ -10,9 +10,12 @@ const HeaderApco = () => {
         <div className={'relative'}>
             <div
                 className={
-                    'absolute w-full transform left-1/2 -translate-x-1/2 mx-auto'
+                    'absolute w-full transform left-1/2 -translate-x-1/2 mx-auto '
                 }
             >
+                <div className={'absolute h-full w-full white-inner-shadow z-[9]'}>
+
+                </div>
                 <div className={'h-[1350px] xl:h-[1690px] relative '}>
                     <Image
                         fill

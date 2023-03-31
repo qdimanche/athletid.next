@@ -37,8 +37,8 @@ const Timer = () => {
                     }
                     imageSrc={isMobile ? ImgHeaderMobile : ImgHeader}
                     buttons={"downloadButton"}
-                    imageClassName={'object-cover object-center md:object-left'}
-                    imageHeight={"md:h-full"}
+                    imageClassName={'object-cover object-center md:object-top'}
+                    imageHeight={"md:h-3/4"}
                 />
                 <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
                     <KeyNumbers/>

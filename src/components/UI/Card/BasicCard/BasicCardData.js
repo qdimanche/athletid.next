@@ -17,8 +17,9 @@ export const apcoCardContent = [
     imageSrc: '/assets/images/captor-card.webp',
     className: 'md:col-span-2 !text-black',
     paragraphWidth: 'md:grid md:grid-cols-2',
-    flipImageContent : '/assets/images/woman-red-line.webp',
-    imageHeight: '320px',
+    flipImage : '/assets/images/woman-red-line.webp',
+    flipImageHeight: 326,
+    flipImageWidth: 240 ,
     buttons: 'toggleButton',
   },
   {
@@ -29,8 +30,9 @@ export const apcoCardContent = [
     imageSrc: '/assets/images/construction-entrainement-apco.webp',
     className: 'md:col-span-2',
     paragraphWidth: 'md:grid md:grid-cols-2',
-    flipImageContent : '/assets/images/construction-seance-full.webp',
-    imageHeight: '386px',
+    flipImage : '/assets/images/construction-seance-full.webp',
+    flipImageHeight: 386,
+    flipImageWidth: 190 ,
     buttons: 'toggleButton',
   },
   {
