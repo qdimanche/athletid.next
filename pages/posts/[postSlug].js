@@ -42,7 +42,7 @@ function Article({title, img, author, description}) {
     return (
 
         <div className={''}>
-            <div className={'mt-[142px] md:mt-[216px] mb-[32px]'}>
+            <div className={'mt-[142px] md:mt-[216px] mb-[32px] md:mb-[64px]'}>
                 <h1 className={''}>{title}</h1>
             </div>
             <div className={'flex justify-between'}>
@@ -50,11 +50,11 @@ function Article({title, img, author, description}) {
                 <p className={'text-darkGrey pt-1'}>2 minutes read</p>
             </div>
 
-            <div className={'w-full h-[290px] relative rounded-small overflow-hidden mt-[24px]'}>
-                <Image sizes={"100vw"} fill src={img} className={'object-cover'} alt={""}/>
+            <div className={'w-full h-[290px] md:h-[1150px] relative rounded-small overflow-hidden mt-[24px] md:mt-[64px]'}>
+                <Image sizes={"100vw"} fill src={img} className={'object-cover md:object-top'} alt={""}/>
             </div>
 
-            <div className={'mt-[32px] pb-[64px] mb-[64px] border-b border-darkGrey'}>
+            <div className={'mt-[32px] md:mt-[64px] pb-[64px] mb-[64px] border-b border-darkGrey'}>
                 {description}
             </div>
         </div>);
