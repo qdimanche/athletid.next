@@ -30,7 +30,7 @@ export default function Page({fallback}) {
             <Format>
                 <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
                     <Article {...data}></Article>
-                    <RelatedPost/>
+                    <RelatedPost relatedCategory={data.category}/>
                 </div>
             </Format>
         </SWRConfig>
@@ -60,11 +60,13 @@ function Article({title, img, author, description}) {
         </div>);
 }
 
-function RelatedPost() {
-    const {data: relatedPostData, isLoading, isError} = fetcher('/api/posts');
+function RelatedPost(props) {
+    const {data: relatedPostData, isLoading, isError} = fetcher(`api/posts/categories/${props.relatedCategory}`);
 
     if (isLoading) return <Spinner/>;
     if (isError) return <ErrorComponent/>;
+
+    console.log(relatedPostData)
 
     return (
         <div className={'space-y-[68px] md:space-y-0 flex flex-col md:grid md:grid-cols-2 md:gap-[30px]'}>
