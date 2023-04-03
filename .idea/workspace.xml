@@ -7,11 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] page blog / tab menu almost done">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] last bug fix for website v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/PostsSection/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/PostsSection/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/PostsSection/PostsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/PostsSection/PostsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/PostsSection/TabMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/PostsSection/TabMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/PostsSection/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/PostsSection/PostsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/PostsSection/TabMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/RelatedPost.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="blog-version-2" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,39 +53,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/quentindimanche/Projects/Travail/athletid.next/src/components/UI/Carousel/Buttons&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pages/api" />
       <recent name="$PROJECT_DIR$/src/components/UI/Carousel/Buttons" />
       <recent name="$PROJECT_DIR$/src/layout" />
       <recent name="$PROJECT_DIR$/src/components/Footer" />
       <recent name="$PROJECT_DIR$/src/components/About" />
+      <recent name="$PROJECT_DIR$/src/components/Timer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pages/api" />
-      <recent name="$PROJECT_DIR$/src/components/Blog/PostsSection" />
       <recent name="$PROJECT_DIR$/public/assets/icons" />
       <recent name="$PROJECT_DIR$/src/components/Header" />
       <recent name="$PROJECT_DIR$/src/components/Apco" />
+      <recent name="$PROJECT_DIR$/src/components/UI/Card/BasicCard" />
+      <recent name="$PROJECT_DIR$/src/components/UI/Button" />
     </key>
   </component>
   <component name="RunManager">
@@ -123,7 +128,13 @@
       <workItem from="1679986840705" duration="18865000" />
       <workItem from="1680074012380" duration="22228000" />
       <workItem from="1680160193889" duration="32709000" />
-      <workItem from="1680505969758" duration="1078000" />
+    </task>
+    <task id="LOCAL-00017" summary="Redesign homepage">
+      <created>1677851196820</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677851196820</updated>
     </task>
     <task id="LOCAL-00018" summary="Redesign homepage">
       <created>1677856632816</created>
@@ -461,14 +472,7 @@
       <option name="project" value="LOCAL" />
       <updated>1680250697728</updated>
     </task>
-    <task id="LOCAL-00066" summary="[+] page blog / tab menu almost done">
-      <created>1680275248115</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1680275248115</updated>
-    </task>
-    <option name="localTasksCounter" value="67" />
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +527,6 @@
     <MESSAGE value="[+] Image flip content page timer" />
     <MESSAGE value="[+] wording" />
     <MESSAGE value="[+] last bug fix for website v2" />
-    <MESSAGE value="[+] page blog / tab menu almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] page blog / tab menu almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] last bug fix for website v2" />
   </component>
 </project>

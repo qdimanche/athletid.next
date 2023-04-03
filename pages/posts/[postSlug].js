@@ -1,97 +1,78 @@
-import Format from "../../src/layout/format"
-import Author from "@/src/components/Blog/_child/Author";
-import Image from "next/image";
-import getPost from "@/lib/helper"
-import fetcher from "@/lib/fetcher";
-import Spinner from "@/src/components/UI/Spinner/CircleSpinner";
-import ErrorComponent from "@/src/components/Blog/_child/Error";
-import {useRouter} from "next/router";
-import {SWRConfig} from "swr";
-import Head from "next/head";
-import {
-    FacebookIcon,
-    FacebookShareButton,
-    InstapaperIcon,
-    InstapaperShareButton, LinkedinIcon,
-    LinkedinShareButton,
-} from 'next-share';
-import RelatedPost from "@/src/components/Blog/_child/RelatedPost";
+import Format from '../../src/layout/format'
+import getPost from '@/lib/helper'
+import fetcher from '@/lib/fetcher'
+import Spinner from '@/src/components/UI/Spinner/CircleSpinner'
+import ErrorComponent from '@/src/components/Blog/_child/Error'
+import {useRouter} from 'next/router'
+import {SWRConfig} from 'swr'
+import Head from 'next/head'
+import React from 'react'
+import Author from '@/src/components/Blog/_child/Author'
+import Image from 'next/image'
+import {Post} from '@/src/components/Blog/ArchivePosts/Post'
 
 export default function Page({fallback}) {
-
-
     const router = useRouter()
     const {postSlug} = router.query
-    const {data, isLoading, isError} = fetcher(`api/posts/${postSlug}`);
-
+    const {data, isLoading, isError} = fetcher(`api/posts/${postSlug}`)
     if (isLoading) return <Spinner></Spinner>
     if (isError) return <ErrorComponent></ErrorComponent>
 
     return (
-
         <SWRConfig value={{fallback}}>
             <Head>
-                <title>{data.title.charAt(0).toUpperCase() + data.title.slice(1)}</title>
+                <title>
+                    {data.title.charAt(0).toUpperCase() + data.title.slice(1)}
+                </title>
                 <meta property="og:title" content="Athletid"/>
                 <meta property="og:type" content="article"/>
             </Head>
-            <Article {...data}></Article>
-        </SWRConfig>)
+            <Format>
+                <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
+                    <Article {...data}></Article>
+                    <RelatedPost/>
+                </div>
+            </Format>
+        </SWRConfig>
+    )
 }
 
-function Article({title, img, author, description, published, category}) {
+function Article({title, img, author, description}) {
 
     return (
 
-        <Format>
-            <div className={''}>
-                <div className={'grid lg:grid-cols-[2fr_1fr] grid-cols-1 max-w-[1100px] mx-auto gap-20 lg:my-40 my-20'}>
-                    <div className={'flex flex-col items-center lg:items-start  space-y-12'}>
-                        <span className={`font-normal opacity-50 !text-base lg:mt-0 mt-6`}>{published || ""}</span>
-                        <h1 className={'!whitespace-normal lg:text-left text-center'}>{title || "Titre"}</h1>
-                        <div
-                            className={`flex text-white bg-timeRed hover:bg-timeRedHover rounded-medium px-3 py-2 text-sm w-fit lg:order-last order-first`}>
-                            {category || "Inconnue"}
-                        </div>
-                    </div>
-                    <div className={'flex flex-col justify-between '}>
-                        <div className={'flex flex-col'}>
-                            <p className={'mb-3'}>Partager sur :</p>
-                            <div className={'flex space-x-3'}>
-                                <FacebookShareButton
-                                    url={`localhost/3000/posts/ ${title.replace(/\s+/g, '-').toLowerCase()}`}
-                                    quote={'next-share is a social share buttons for your next React apps.'}
-                                    hashtag={'#nextshare'}
-                                >
-                                    <FacebookIcon size={32} round/>
-                                </FacebookShareButton>
-                                <LinkedinShareButton
-                                    url={`localhost/3000/posts/ ${title.replace(/\s+/g, '-').toLowerCase()}`}
-                                    quote={'next-share is a social share buttons for your next React apps.'}
-                                    hashtag={'#nextshare'}
-                                >
-                                    <LinkedinIcon size={32} round/>
-                                </LinkedinShareButton>
-                            </div>
-
-                        </div>
-                        {author ? <Author {...author} ></Author> : <></>}
-                    </div>
-
-                </div>
-                <div className={'flex flex-col items-center'}>
-                    <div className="h-[600px] w-full relative overflow-hidden max-w-[1280px] mb-20">
-                        <Image layout={'fill'} className={'object-cover rounded-medium'} src={img || "/"} alt={""}/>
-                    </div>
-
-                    <div className="content text-gray-600 text-lg flex flex flex-col gap-4 max-w-[1024px]">
-                        <p className={'whitespace-pre-line'}> {description || 'Aucune description'}</p>
-                    </div>
-                </div>
-
-                <RelatedPost></RelatedPost>
+        <div className={''}>
+            <div className={'mt-[142px] md:mt-[216px] mb-[32px]'}>
+                <h1 className={''}>{title}</h1>
             </div>
-        </Format>);
+            <div className={'flex justify-between'}>
+                <Author {...author}></Author>
+                <p className={'text-darkGrey pt-1'}>2 minutes read</p>
+            </div>
+
+            <div className={'w-full h-[290px] relative rounded-small overflow-hidden mt-[24px]'}>
+                <Image sizes={"100vw"} fill src={img} className={'object-cover'} alt={""}/>
+            </div>
+
+            <div className={'mt-[32px] pb-[64px] mb-[64px] border-b border-darkGrey'}>
+                {description}
+            </div>
+        </div>);
+}
+
+function RelatedPost() {
+    const {data: relatedPostData, isLoading, isError} = fetcher('/api/posts');
+
+    if (isLoading) return <Spinner/>;
+    if (isError) return <ErrorComponent/>;
+
+    return (
+        <div className={'space-y-[68px] md:space-y-0 flex flex-col md:grid md:grid-cols-2 md:gap-[30px]'}>
+            {relatedPostData.slice(0, 2).map((value, index) => (
+                <Post key={index} data={value}/>
+            ))}
+        </div>
+    );
 }
 
 
