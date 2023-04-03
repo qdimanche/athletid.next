@@ -7,21 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="[+] related post (api/posts)">
-      <change afterPath="$PROJECT_DIR$/pages/api/posts/categories/[postCategory].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/posts/categories/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/icons/arrowdown.svg" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="improve code for singlePost">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/cardio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/dataCategories.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/muscular.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/popular.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/trending.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/wellness.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,13 +121,6 @@
       <workItem from="1679986840705" duration="18865000" />
       <workItem from="1680074012380" duration="22228000" />
       <workItem from="1680160193889" duration="32709000" />
-    </task>
-    <task id="LOCAL-00018" summary="Redesign homepage">
-      <created>1677856632816</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1677856632816</updated>
     </task>
     <task id="LOCAL-00019" summary="Redesign homepage">
       <created>1677856819445</created>
@@ -477,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680521778244</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="improve code for singlePost">
+      <created>1680533287845</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1680533287846</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+]bug fix" />
     <MESSAGE value="[+]Grid Layout" />
     <MESSAGE value="[+]Responsive design for card" />
     <MESSAGE value="[+] Home completed + Apco Page started" />
@@ -533,6 +520,7 @@
     <MESSAGE value="[+] wording" />
     <MESSAGE value="[+] last bug fix for website v2" />
     <MESSAGE value="[+] related post (api/posts)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] related post (api/posts)" />
+    <MESSAGE value="improve code for singlePost" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve code for singlePost" />
   </component>
 </project>
