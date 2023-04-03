@@ -65,7 +65,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 5,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -84,7 +84,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 7,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -103,7 +103,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 10,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -174,7 +174,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 5,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -193,7 +193,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 7,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -212,7 +212,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 10,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -283,7 +283,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 5,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -302,7 +302,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 7,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -321,7 +321,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 10,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -372,7 +372,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 3,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -405,7 +405,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 5,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -438,7 +438,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 7,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -471,7 +471,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 10,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -504,7 +504,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 14,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },
@@ -537,7 +537,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 5,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },    {
@@ -569,7 +569,7 @@ Alors ne culpabilise plus ! Au contraire, fais toi plaisir avec quelques carrés
       published: 'Jun 5,  2022',
       author: {
         name: 'Flying High',
-        img: '/assets/images/utilisateur-athletid.webp',
+        img: '/assets/images/man-gym.webp',
         designation: 'CEO and Founder',
       },
     },

@@ -3,12 +3,12 @@ import Spinner from '@/src/components/UI/Spinner/CircleSpinner'
 import Error from '@/src/components/Blog/_child/Error'
 import React, {useEffect, useState} from 'react'
 import ToggleButton from '@/src/components/UI/Button/ToggleButton'
-import {TabMenu} from '@/src/components/blog/PostsSection/TabMenu'
+import {TabMenu} from '@/src/components/Blog/ArchivePosts/TabMenu'
 import {dataCategories} from '@/pages/api/dataCategories'
-import {Post} from '@/src/components/Blog/PostsSection/Post'
+import {Post} from '@/src/components/Blog/ArchivePosts/Post'
 import {useIsMobile} from "@/src/components/Hooks/useMediaQuery";
 
-const PostsSection = () => {
+const ArchivePost = () => {
 
     const isMobile = useIsMobile();
 
@@ -56,4 +56,4 @@ const PostsSection = () => {
     )
 }
 
-export default PostsSection;
+export default ArchivePost;
