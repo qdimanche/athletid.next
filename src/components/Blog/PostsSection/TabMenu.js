@@ -6,7 +6,7 @@ export const TabMenu = (props) => {
     };
 
     return (
-        <div className={`flex space-x-4 border-b border-darkWhite' mb-[72px] md:mb-[120px] cursor-pointer`}>
+        <div className={`flex space-x-4 border-b border-darkWhite' mb-[72px] md:mb-[65px] cursor-pointer`}>
             <div onClick={() => handleTabClick(-1)} className={'relative pb-6'}>
                 <div className={`text-[14px] leading-[24px] ${props.activeTabIndex === -1 ? 'text-black font-[500]' : 'text-darkWhite'}`}>
                     View all
@@ -17,7 +17,7 @@ export const TabMenu = (props) => {
                 const isActive = props.activeTabIndex === index;
                 return (
                     <div key={index} onClick={() => handleTabClick(index)} className={'relative pb-6'}>
-                        <div className={`text-[14px] leading-[24px] ${isActive ? 'text-black font-[500]' : 'text-darkWhite'}`}>
+                        <div className={`text-[14px] leading-[24px] ${isActive ? 'text-black font-[500]' : 'text-darkGrey'}`}>
                             {value}
                         </div>
                         <div className={isActive ? 'border-b border-black bottom-0 absolute w-full' : ''}></div>
