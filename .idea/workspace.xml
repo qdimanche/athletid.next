@@ -121,14 +121,7 @@
       <workItem from="1680160193889" duration="32709000" />
       <workItem from="1680594386135" duration="189000" />
       <workItem from="1680594621289" duration="154000" />
-      <workItem from="1680773915573" duration="2876000" />
-    </task>
-    <task id="LOCAL-00026" summary="[+] bug fix">
-      <created>1679386673348</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1679386673348</updated>
+      <workItem from="1680773915573" duration="3250000" />
     </task>
     <task id="LOCAL-00027" summary="[+] desktop responsive page timer">
       <created>1679413865209</created>
@@ -466,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680776739279</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="change baseURL">
+      <created>1680776864419</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1680776864419</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
