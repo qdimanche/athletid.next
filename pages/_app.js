@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import Script from "next/script";
 import {getCookie} from "cookies-next";
 
+
 function App({Component, pageProps}) {
 	const consent = getCookie('localConsent');
 	
