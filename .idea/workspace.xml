@@ -8,7 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="change baseURL">
-      <change beforePath="$PROJECT_DIR$/lib/fetcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fetcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.preview" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,21 +124,7 @@
       <workItem from="1680160193889" duration="32709000" />
       <workItem from="1680594386135" duration="189000" />
       <workItem from="1680594621289" duration="154000" />
-      <workItem from="1680773915573" duration="1738000" />
-    </task>
-    <task id="LOCAL-00022" summary="Redesign homepage responsive">
-      <created>1677859347234</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1677859347234</updated>
-    </task>
-    <task id="LOCAL-00023" summary="[+] mobile responsive for page timer">
-      <created>1679324092379</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1679324092379</updated>
+      <workItem from="1680773915573" duration="2538000" />
     </task>
     <task id="LOCAL-00024" summary="[+] testimonial slider">
       <created>1679328058843</created>
@@ -468,7 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680775442399</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="change baseURL">
+      <created>1680775717903</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1680775717903</updated>
+    </task>
+    <task id="LOCAL-00072" summary="change baseURL">
+      <created>1680775806499</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1680775806500</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
