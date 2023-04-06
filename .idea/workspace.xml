@@ -7,9 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="change baseURL">
-      <change afterPath="$PROJECT_DIR$/.env.preview" afterDir="false" />
-    </list>
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="change baseURL" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,21 +121,7 @@
       <workItem from="1680160193889" duration="32709000" />
       <workItem from="1680594386135" duration="189000" />
       <workItem from="1680594621289" duration="154000" />
-      <workItem from="1680773915573" duration="11570000" />
-    </task>
-    <task id="LOCAL-00043" summary="image bug fix (responsive)">
-      <created>1679478997823</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1679478997823</updated>
-    </task>
-    <task id="LOCAL-00044" summary="image bug fix (responsive)">
-      <created>1679479099594</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1679479099594</updated>
+      <workItem from="1680773915573" duration="11858000" />
     </task>
     <task id="LOCAL-00045" summary="image bug fix (responsive)">
       <created>1679485215045</created>
@@ -468,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680785378302</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="change baseURL">
+      <created>1680785572185</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1680785572185</updated>
+    </task>
+    <task id="LOCAL-00093" summary="change baseURL">
+      <created>1680785675257</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1680785675257</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
