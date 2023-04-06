@@ -9,7 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="change baseURL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fetcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fetcher.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LrHFpofZrI2dCPLfLKSE7pCNAB" />
   <component name="ProjectLevelVcsManager">
@@ -124,14 +124,7 @@
       <workItem from="1680160193889" duration="32709000" />
       <workItem from="1680594386135" duration="189000" />
       <workItem from="1680594621289" duration="154000" />
-      <workItem from="1680773915573" duration="9210000" />
-    </task>
-    <task id="LOCAL-00040" summary="image bug fix (responsive)">
-      <created>1679478167600</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1679478167600</updated>
+      <workItem from="1680773915573" duration="10115000" />
     </task>
     <task id="LOCAL-00041" summary="image bug fix (responsive)">
       <created>1679478410989</created>
@@ -469,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680782383909</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="change baseURL">
+      <created>1680783310509</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1680783310509</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
