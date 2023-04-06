@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="change baseURL">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,14 +123,7 @@
       <workItem from="1680160193889" duration="32709000" />
       <workItem from="1680594386135" duration="189000" />
       <workItem from="1680594621289" duration="154000" />
-      <workItem from="1680773915573" duration="12769000" />
-    </task>
-    <task id="LOCAL-00047" summary="bug fixes apco page">
-      <created>1679503059607</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1679503059608</updated>
+      <workItem from="1680773915573" duration="12840000" />
     </task>
     <task id="LOCAL-00048" summary="Responsive bug fixes home page">
       <created>1679566438740</created>
@@ -469,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680786144263</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="change baseURL">
+      <created>1680787172199</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1680787172199</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
