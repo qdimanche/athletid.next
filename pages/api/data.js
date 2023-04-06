@@ -3,7 +3,7 @@ export default {
     {
       id: 1,
       title: 'Les bienfaits du chocolat',
-      slug: 'les-bienfaits-du-chocolat-test-test',
+      slug: 'les-bienfaits-du-choolat-test-test',
       subtitle:
         'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
       category: 'muscular',
