@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 
 export const Post = ({ data }) => {
-  const { title, img, description, slug } = data
+  const { title, img, description, slug, sections } = data
 
   return (
     <Link href={`/posts/${slug}`}>
@@ -23,7 +23,7 @@ export const Post = ({ data }) => {
           {title}
         </div>
         <p className={'text-[14px] leading-[24px] text-darkGrey mb-4'}>
-          {description.substring(1, 100) + ' ...'}
+          {sections[0].paragraph.substring(0, 100) + ' ...'}
         </p>
         <div className={'flex space-x-2'}>
           <div className={'text-[14px] leading-[17px]'}>Read post</div>

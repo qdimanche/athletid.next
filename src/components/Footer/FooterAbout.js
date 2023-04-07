@@ -36,7 +36,7 @@ const Footer = () => {
                         </p>
                         <Button
                             variant={'red'}
-                            link={'/'}
+                            link={'/contact'}
                             content={'Support the project'}
                             className={'!w-full md:!w-fit'}
                         />

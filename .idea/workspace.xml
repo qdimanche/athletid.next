@@ -7,9 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="change baseURL">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="toggle button size fix">
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/logo-athletid-black.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,14 +131,8 @@
       <workItem from="1680594386135" duration="189000" />
       <workItem from="1680594621289" duration="154000" />
       <workItem from="1680773915573" duration="12979000" />
-      <workItem from="1680851835874" duration="953000" />
-    </task>
-    <task id="LOCAL-00049" summary="Responsive bug fixes home page">
-      <created>1679576792242</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1679576792242</updated>
+      <workItem from="1680851835874" duration="987000" />
+      <workItem from="1680870014490" duration="6874000" />
     </task>
     <task id="LOCAL-00050" summary="new sizes and new styles">
       <created>1679586976424</created>
@@ -470,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680787216351</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="toggle button size fix">
+      <created>1680854712685</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1680854712686</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +508,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+]Responsive design for card" />
     <MESSAGE value="[+] Home completed + Apco Page started" />
     <MESSAGE value="[+] Apco Page mobile completed" />
     <MESSAGE value="Bug fix in responsive + Apco page completed" />
@@ -526,6 +532,7 @@
     <MESSAGE value="[+] related post (api/posts)" />
     <MESSAGE value="improve code for singlePost" />
     <MESSAGE value="change baseURL" />
-    <option name="LAST_COMMIT_MESSAGE" value="change baseURL" />
+    <MESSAGE value="toggle button size fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="toggle button size fix" />
   </component>
 </project>
