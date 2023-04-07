@@ -58,6 +58,7 @@ const Navbar = (props) => {
                         <Link href="/">Home</Link>
                         <Link href="/timer">App Timer</Link>
                         <Link href="/apco">App Athletid</Link>
+                        <Link href="/blog">Blog</Link>
                         <Link href="/about">About</Link>
                         <Button
                             variant={'redOutline'}
@@ -98,6 +99,9 @@ const Navbar = (props) => {
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
                                     <Link href="/apco">App Athletid</Link>
+                                </li>
+                                <li className={'text-[38px] opacity-60'}>
+                                    <Link href="/blog">Blog</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
                                     <Link href="/about">About</Link>
