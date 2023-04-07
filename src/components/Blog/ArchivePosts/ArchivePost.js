@@ -41,9 +41,9 @@ const ArchivePost = () => {
             {postsToShow < data.length && (
                 <ToggleButton
                     variant={'red'}
-                    className={' mx-auto mt-[68px] px-6 py-3 rounded-[30px]'}
+                    className={' mx-auto mt-[68px] py-4 px-8 rounded-[32px]'}
                     content={
-                    <div className={'flex space-x-[8px] items-center'}>
+                    <div className={'flex space-x-2 items-center'}>
                         <Image src={"/assets/icons/arrowdown.svg"} width={24} height={24} sizes={"10vw"} alt={""}/>
                         <p className={'text-[16px] leading-[19px]'}>Load more</p>
                     </div>
