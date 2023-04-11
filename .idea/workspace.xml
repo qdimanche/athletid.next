@@ -7,16 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="toggle button size fix">
-      <change afterPath="$PROJECT_DIR$/public/assets/icons/logo-athletid-black.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
-    </list>
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="News posts in data" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,21 +123,7 @@
       <workItem from="1680594621289" duration="154000" />
       <workItem from="1680773915573" duration="12979000" />
       <workItem from="1680851835874" duration="987000" />
-      <workItem from="1680870014490" duration="6874000" />
-    </task>
-    <task id="LOCAL-00050" summary="new sizes and new styles">
-      <created>1679586976424</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1679586976428</updated>
-    </task>
-    <task id="LOCAL-00051" summary="new sizes and new styles">
-      <created>1679587080611</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1679587080612</updated>
+      <workItem from="1680870014490" duration="7073000" />
     </task>
     <task id="LOCAL-00052" summary="new sizes and new styles">
       <created>1679587113374</created>
@@ -477,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680854712686</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="News posts in data">
+      <created>1680878790464</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1680878790464</updated>
+    </task>
+    <task id="LOCAL-00100" summary="News posts in data">
+      <created>1680878823204</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1680878823204</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+] Home completed + Apco Page started" />
     <MESSAGE value="[+] Apco Page mobile completed" />
     <MESSAGE value="Bug fix in responsive + Apco page completed" />
     <MESSAGE value="Redesign homepage" />
@@ -533,6 +523,7 @@
     <MESSAGE value="improve code for singlePost" />
     <MESSAGE value="change baseURL" />
     <MESSAGE value="toggle button size fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="toggle button size fix" />
+    <MESSAGE value="News posts in data" />
+    <option name="LAST_COMMIT_MESSAGE" value="News posts in data" />
   </component>
 </project>
