@@ -7,7 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="News posts in data" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="delete local api">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,13 +130,8 @@
       <workItem from="1680773915573" duration="12979000" />
       <workItem from="1680851835874" duration="987000" />
       <workItem from="1680870014490" duration="7073000" />
-    </task>
-    <task id="LOCAL-00052" summary="new sizes and new styles">
-      <created>1679587113374</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1679587113374</updated>
+      <workItem from="1681198416547" duration="392000" />
+      <workItem from="1681207790935" duration="7764000" />
     </task>
     <task id="LOCAL-00053" summary="new sizes and new styles">
       <created>1679652680537</created>
@@ -468,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680878823204</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="delete local api">
+      <created>1681198670287</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1681198670288</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +507,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+] Apco Page mobile completed" />
     <MESSAGE value="Bug fix in responsive + Apco page completed" />
     <MESSAGE value="Redesign homepage" />
     <MESSAGE value="Redesign homepage responsive" />
@@ -524,6 +531,7 @@
     <MESSAGE value="change baseURL" />
     <MESSAGE value="toggle button size fix" />
     <MESSAGE value="News posts in data" />
-    <option name="LAST_COMMIT_MESSAGE" value="News posts in data" />
+    <MESSAGE value="delete local api" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete local api" />
   </component>
 </project>
