@@ -10,6 +10,7 @@ import React from 'react'
 import Author from '@/src/components/Blog/_child/Author'
 import Image from 'next/image'
 import { Post } from '@/src/components/Blog/ArchivePosts/Post'
+import {IoIosTimer} from "react-icons/io";
 
 export default function Page({ fallback }) {
   const router = useRouter()
@@ -30,7 +31,7 @@ export default function Page({ fallback }) {
       <Format>
         <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
           <Article {...data}></Article>
-          <RelatedPost relatedCategory={data.category} />
+          <RelatedPost relatedCategory={data.category} id={data.id} />
         </div>
       </Format>
     </SWRConfig>
@@ -45,7 +46,10 @@ function Article({ title, img, author, sections }) {
       </div>
       <div className={'flex justify-between'}>
         <Author {...author}></Author>
-        <p className={'text-darkGrey pt-1'}>2 minutes read</p>
+          <div className={'flex space-x-4 pt-1'}>
+              <IoIosTimer size={20} color={'darkGrey'}/>
+              <p className={'text-darkGrey '}>2 minutes read</p>
+          </div>
       </div>
 
       <div
@@ -90,13 +94,18 @@ function RelatedPost(props) {
   if (isLoading) return <Spinner />
   if (isError) return <ErrorComponent />
 
+
+  const filteredRelatedPostData = relatedPostData.filter(
+        (post) => post.id !== props.id
+  )
+
   return (
     <div
       className={
         'space-y-[68px] md:space-y-0 flex flex-col md:grid md:grid-cols-2 md:gap-[30px]'
       }
     >
-      {relatedPostData.slice(0, 2).map((value, index) => (
+      {filteredRelatedPostData.slice(0, 2).map((value, index) => (
         <Post key={index} data={value} />
       ))}
     </div>

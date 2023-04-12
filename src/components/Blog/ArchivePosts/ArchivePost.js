@@ -13,7 +13,7 @@ const ArchivePost = () => {
     const isMobile = useIsMobile();
 
     let [countLoadMore, setCountLoadMore] = useState(0)
-    let [postsToShow, setPostsToShow] = useState(isMobile?3: 2)
+    let [postsToShow, setPostsToShow] = useState(6)
 
     const [categoryClick, setCategoryClick] = useState(null)
     const {data, isLoading, isError} = fetcher(
@@ -21,7 +21,7 @@ const ArchivePost = () => {
     )
     
     useEffect(() => {
-        countLoadMore && setPostsToShow((postsToShow += isMobile ? 3 : 2))
+        countLoadMore && setPostsToShow((postsToShow += 6))
     }, [countLoadMore])
 
     if (isLoading) return <Spinner></Spinner>
