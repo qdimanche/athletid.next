@@ -24,7 +24,7 @@ const Timer = () => {
         <meta property="og:type" content="website" />
         <meta
           name="description"
-          content="Tous les chronomètres et Timers sportifs sur une seule application, Intervalle, Tempo, AMRAP, EMOM, For Time, Respiration et bien d’autres !"
+          content="All sports timers and stopwatches in one application, Interval, Tempo, AMRAP, EMOM, For Time, Breathing and many more!"
         />
       </Head>
 

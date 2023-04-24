@@ -2,7 +2,7 @@ import React from 'react';
 import ContactForm from "../src/components/Contact/ContactForm";
 import Head from "next/head";
 import Format from "../src/layout/format"
-import Faq from "@/src/components/Contact/Faq";
+import Faq from "@/src/components/Contact/Faq/Faq";
 
 const Contact = () => {
 

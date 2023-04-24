@@ -35,14 +35,14 @@ function Consent() {
 			}`}
 		>
 			<div className={'md:text-left text-center'}>
-				Ce site utilise des cookies, veuillez les accepter si vous le souhaitez.
+				This site uses cookies, please accept them if you wish.
 			</div>
 			<div className="flex md:justify-end justify-center space-x-3 md:w-fit w-full md:mt-0 mt-3">
 				<button
 					onClick={(e) => denyCookie()}
 					className="px-2 py-1 bg-[#E63D31] text-white rounded-md"
 				>
-					Tout refuser
+					Decline all
 				</button>
 				<button
 					onClick={() => {
@@ -50,7 +50,7 @@ function Consent() {
 					}}
 					className="px-2 py-1 bg-black text-white rounded-md"
 				>
-					Tout accepter
+					Accept all
 				</button>
 				<button
 					onClick={(e) => {

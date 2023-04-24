@@ -7,30 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="same post in related post and minor bug fixes">
-      <change afterPath="$PROJECT_DIR$/pages/terms-of-service-timer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/FooterTimer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/formatTimer.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="bug fixes">
+      <change afterPath="$PROJECT_DIR$/src/components/Contact/Faq/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apco.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/athletid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/JoinTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/JoinTeam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Feature/Feature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Feature/Feature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderApco.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderApco.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSection/ImageSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/KeyNumbers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/CardImageTopRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Faq/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Feature/SubscriptionsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Feature/SubscriptionsData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Accordion/SimpleAccordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Accordion/SimpleAccordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Consent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Consent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,26 +53,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next/pages",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/quentindimanche/Projects/Travail/athletid.next/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/quentindimanche/Projects/Travail/athletid.next/node_modules/prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages" />
@@ -97,11 +82,11 @@
       <recent name="$PROJECT_DIR$/src/components/UI/Carousel/Buttons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Contact/Faq" />
       <recent name="$PROJECT_DIR$/public/assets/icons" />
       <recent name="$PROJECT_DIR$/public/assets/icons/Frame" />
       <recent name="$PROJECT_DIR$/pages/api/posts" />
       <recent name="$PROJECT_DIR$/pages/api/categories" />
-      <recent name="$PROJECT_DIR$/src/components/Header" />
     </key>
   </component>
   <component name="RunManager">
@@ -153,14 +138,8 @@
       <workItem from="1681207790935" duration="7764000" />
       <workItem from="1681837630449" duration="606000" />
       <workItem from="1682063259367" duration="2436000" />
-      <workItem from="1682321194291" duration="4917000" />
-    </task>
-    <task id="LOCAL-00053" summary="new sizes and new styles">
-      <created>1679652680537</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1679652680537</updated>
+      <workItem from="1682321194291" duration="5171000" />
+      <workItem from="1682328159633" duration="941000" />
     </task>
     <task id="LOCAL-00054" summary="new sizes and new styles">
       <created>1679652847283</created>
@@ -498,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681198670288</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="bug fixes">
+      <created>1682327894330</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1682327894330</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Bug fix in responsive + Apco page completed" />
     <MESSAGE value="Redesign homepage" />
     <MESSAGE value="Redesign homepage responsive" />
     <MESSAGE value="[+] mobile responsive for page timer" />
@@ -569,6 +554,7 @@
     <MESSAGE value="toggle button size fix" />
     <MESSAGE value="News posts in data" />
     <MESSAGE value="delete local api" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete local api" />
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
 </project>

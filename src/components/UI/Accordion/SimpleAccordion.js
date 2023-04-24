@@ -19,7 +19,7 @@ const CustomAccordion = styled(Accordion)(({ theme }) => {
     };
 });
 
-export default function SimpleAccordion() {
+export default function SimpleAccordion({...props}) {
 
     return (
         <CustomAccordion className={'!shadow-none rounded-[8px]'}>
@@ -28,12 +28,11 @@ export default function SimpleAccordion() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
             >
-                <Typography className={'!text-[16px] !leading-[20px] !font-[500]'}>Accordion 1</Typography>
+                <Typography className={'!text-[16px] !leading-[20px] !font-[500]'}>{props.title}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-                <Typography className={"text-[12px] md:text-[14px] leading-[14px] md:leading-[24px] text-[#C0C0C0]"}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                <Typography className={"text-[12px] md:text-[14px] leading-[14px] md:leading-[24px] text-[#C0C0C0] whitespace-pre-line"}>
+                    {props.content}
                 </Typography>
             </AccordionDetails>
         </CustomAccordion>
