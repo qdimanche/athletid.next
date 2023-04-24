@@ -16,7 +16,7 @@ const JoinTeam = () => {
           variant={'red'}
           targetBlank
           content={'Join us'}
-          link={'https://www.instagram.com/athletid/'}
+          link={'https://www.instagram.com/timerbyathletid/'}
           className={''}
         />
       </div>

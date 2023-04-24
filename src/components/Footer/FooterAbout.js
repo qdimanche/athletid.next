@@ -82,16 +82,16 @@ const Footer = () => {
                         <div className={'flex space-x-6'}>
                             <Link href={'/'}>Home</Link>
                             <Link href={'/timer'}>Timer</Link>
-                            <Link href={'/athletid'}>Apco</Link>
+                            <Link href={'/athletid'}>Athletid</Link>
                             <Link href={'/about'}>About</Link>
                             <Link href={'/contact'}>Contact</Link>
                         </div>
                         <div
                             className={'flex space-x-6 text-white/40 text-sm md:text-base'}
                         >
-                            <Link href={'#'}>Support</Link>
-                            <Link href={'#'}>Privacy Policy</Link>
-                            <Link href={'#'}>Terms of Service</Link>
+                            <Link href={'/contact'}>Support</Link>
+                            <Link href={'/privacy-policy'}>Privacy Policy</Link>
+                            <Link href={'/terms-of-service'}>Terms of Service</Link>
                         </div>
                         <p className={'text-center text-white/40 !mt-8'}>
                             Copyright © 2022 ATHLETID Inc. All rights reserved.

@@ -75,7 +75,7 @@ const Footer = () => {
                         <div className={'flex space-x-6'}>
                             <Link href={'/'}>Home</Link>
                             <Link href={'/timer'}>Timer</Link>
-                            <Link href={'/athletid'}>Apco</Link>
+                            <Link href={'/athletid'}>Athletid</Link>
                             <Link href={'/about'}>About</Link>
                             <Link href={'/contact'}>Contact</Link>
                         </div>

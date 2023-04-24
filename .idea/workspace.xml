@@ -7,15 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="bug fixes">
-      <change afterPath="$PROJECT_DIR$/src/components/Contact/Faq/index.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="update faq">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Faq/Faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Feature/SubscriptionsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Feature/SubscriptionsData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Accordion/SimpleAccordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Accordion/SimpleAccordion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Consent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Consent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/JoinTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/JoinTeam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterTimer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterTimer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,14 +136,8 @@
       <workItem from="1681837630449" duration="606000" />
       <workItem from="1682063259367" duration="2436000" />
       <workItem from="1682321194291" duration="5171000" />
-      <workItem from="1682328159633" duration="941000" />
-    </task>
-    <task id="LOCAL-00054" summary="new sizes and new styles">
-      <created>1679652847283</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1679652847283</updated>
+      <workItem from="1682328159633" duration="1105000" />
+      <workItem from="1682349171301" duration="180000" />
     </task>
     <task id="LOCAL-00055" summary="resize component home done">
       <created>1679665908700</created>
@@ -484,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682327894330</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="update faq">
+      <created>1682329149547</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1682329149548</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +528,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Redesign homepage" />
     <MESSAGE value="Redesign homepage responsive" />
     <MESSAGE value="[+] mobile responsive for page timer" />
     <MESSAGE value="[+] testimonial slider" />
@@ -555,6 +552,7 @@
     <MESSAGE value="News posts in data" />
     <MESSAGE value="delete local api" />
     <MESSAGE value="bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
+    <MESSAGE value="update faq" />
+    <option name="LAST_COMMIT_MESSAGE" value="update faq" />
   </component>
 </project>
