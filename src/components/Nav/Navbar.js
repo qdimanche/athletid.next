@@ -57,7 +57,7 @@ const Navbar = (props) => {
                     <div className={'lg:block hidden space-x-[60px]'}>
                         <Link href="/">Home</Link>
                         <Link href="/timer">App Timer</Link>
-                        <Link href="/apco">App Athletid</Link>
+                        <Link href="/athletid">App Athletid</Link>
                         <Link href="/blog">Blog</Link>
                         <Link href="/about">About</Link>
                         <Button
@@ -98,7 +98,7 @@ const Navbar = (props) => {
                                     <Link href="/timer">App Timer</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
-                                    <Link href="/apco">App Athletid</Link>
+                                    <Link href="/athletid">App Athletid</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
                                     <Link href="/blog">Blog</Link>

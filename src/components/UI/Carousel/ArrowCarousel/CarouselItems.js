@@ -28,15 +28,13 @@ export const apcoCarouselItems = [
   {
     title: 'Simple and \n' + 'practical. ',
     description:
-      'Designed to be light, easy to wear and to fit \n' +
-      'all your outfits.' +
-      'bodybuilding, powerlifting... \n' +
-      'Tempo, EMOM, AMRAP, For Time.',
+      'Designed to be light, easy to wear and to fit' +
+        'all your outfits.',
     image: '/assets/images/session-constructor-cut.webp',
   },
   {
     title: 'For fitness \n' +
-        'and yoga.',
+        'and bodybuilding.',
     description:
       'The first version of our system is dedicated \n' +
         'to theses two disciplines. Soon more...',

@@ -82,7 +82,7 @@ const Footer = () => {
                         <div className={'flex space-x-6 text-white/40 text-sm md:text-base'}>
                             <Link href={'/contact'}>Support</Link>
                             <Link href={'/privacy-policy'}>Privacy Policy</Link>
-                            <Link href={'/terms-of-service'}>Terms of Service</Link>
+                            <Link href={'/terms-of-service-timer'}>Terms of Service</Link>
                         </div>
                         <p className={'text-center text-white/40 !mt-8'}>
                             Copyright © 2022 ATHLETID Inc. All rights reserved.

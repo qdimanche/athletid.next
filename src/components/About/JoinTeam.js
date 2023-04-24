@@ -14,8 +14,9 @@ const JoinTeam = () => {
         </p>
         <Button
           variant={'red'}
+          targetBlank
           content={'Join us'}
-          link={'/contact'}
+          link={'https://www.instagram.com/athletid/'}
           className={''}
         />
       </div>

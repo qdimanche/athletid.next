@@ -9,6 +9,7 @@ const Button = ({className, children, ...props}) => {
     return (
         <Link
             href={props.link}
+            target={props.targetBlank? "_blank" : ""}
             className={clsx(
                 `duration-300  px-6 py-3 lg:px-8 transition lg:py-4 rounded-[30px] border-[1px] w-fit !text-base`,
                 variant === 'black' && 'bg-transparent  border-black',

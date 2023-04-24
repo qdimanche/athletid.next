@@ -22,7 +22,7 @@ const KeyNumbers = () => {
             />{' '}
             <Number
                 src={'/assets/icons/flash.svg'}
-                text={'New Users/week.'}
+                text={'New Users'}
                 width={30}
                 number={'+800'}
             />

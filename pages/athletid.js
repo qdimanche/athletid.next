@@ -10,7 +10,7 @@ import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/C
 import Feature from '@/src/components/Feature/Feature'
 import {apcoCardContent} from '@/src/components/UI/Card/BasicCard/BasicCardData'
 
-const Apco = () => {
+const Athletid = () => {
 
     return (
         <>
@@ -53,7 +53,9 @@ const Apco = () => {
                         })}
                     </GridSection>
                     <div className={"px-4 max-w-[1024px] mx-auto"}>
-                        <ImageSection imageData={'apco'}/>
+                        <ImageSection imageData={'apco'} title={"Control. Manage. Share."} subTitle={"The new hassle-free sports experience\n" +
+                            "designed for a new generation of athletes \n" +
+                            "all in the Athletid App."}/>
                     </div>
                     <Carousel
                         imageData={'apco'}/>
@@ -69,4 +71,4 @@ const Apco = () => {
     )
 }
 
-export default Apco
+export default Athletid

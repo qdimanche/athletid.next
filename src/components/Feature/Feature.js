@@ -24,9 +24,7 @@ const Feature = (props) => {
         subscriptions = [...apcoSubscriptions];
         title = "Our app and \n" +
             "tracking system."
-        subTitle = "Lorem ipsum dolor sit amet, consectetur \n" +
-            "adipiscing elit. Aliquam sit amet tortoriac\n" +
-            "culis, posuere enim at."
+        subTitle = "Currently available for bodybuilding & Fitness, we are training our algorithms to recognize Crossfit circuits and yoga postures."
         titleFeatures = "Athletid system 2023"
         imageSrc = "/assets/images/session-constructor-cut.webp"
     }
@@ -63,7 +61,7 @@ const Feature = (props) => {
                 height={340}
                 sizes={"33vw"}
                 className={'mx-auto rounded-medium bg-[#F2F2F2] mt-8'}
-                alt="Application Apco Dashboard Full"
+                alt="Application Athletid Dashboard Full"
             />
         </div>
     )

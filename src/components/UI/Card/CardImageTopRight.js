@@ -22,8 +22,8 @@ const CardImageTopRight = () => {
                         <span className={'md:text-left font-medium w-full lg:text-[30px] lg:leading-[34px]'}>Adapting.</span>
                         <span className={'md:text-left text-black/[16%] w-full lg:text-[30px] lg:leading-[34px]'}>
                             The app that<br/>
-                            all the sports<br/>
-                            timers.
+                            includes all the<br/>
+                            sports timers.
                         </span>
                     </div>
                 </div>

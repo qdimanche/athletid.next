@@ -36,7 +36,7 @@ const Footer = () => {
                         </p>
                         <Button
                             variant={'red'}
-                            link={'/contact'}
+                            link={'mailto:contact@athletid.com'}
                             content={'Support the project'}
                             className={'!w-full md:!w-fit'}
                         />
@@ -82,7 +82,7 @@ const Footer = () => {
                         <div className={'flex space-x-6'}>
                             <Link href={'/'}>Home</Link>
                             <Link href={'/timer'}>Timer</Link>
-                            <Link href={'/apco'}>Apco</Link>
+                            <Link href={'/athletid'}>Apco</Link>
                             <Link href={'/about'}>About</Link>
                             <Link href={'/contact'}>Contact</Link>
                         </div>

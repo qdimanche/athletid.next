@@ -42,7 +42,7 @@ const MasonryGrid = ({items, ...props}) => {
                             alt={""}
                             fill
                             src={item}
-                            sizes={"33vw"}
+                            sizes={"50vw"}
                             className={`rounded-medium object-cover`}
                         />
                     </div>
