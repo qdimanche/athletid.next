@@ -1,6 +1,20 @@
 export const faqContent = [
   {
-    title: 'What is Timer By Athletid?',
+    title: 'Lorem ipsum dolor sit amet',
+    content:
+      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet',
+    content:
+      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet',
+    content:
+      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  /*    title: 'What is Timer By Athletid?',
     content:
       'Timer By Athletid is a mobile app that gathers all sports timers and chronometers dedicated to bodybuilding, cardio, and well-being activities. Our unique features include tempo, breathing, meditation, intervals, EMOM, AMRAP, stopwatch, and timer.',
   },
@@ -67,5 +81,5 @@ export const faqContent = [
       "R : Vous pouvez généralement changer la langue de l'application dans les paramètres. Recherchez la section des paramètres de langue ou de localisation et sélectionnez la langue que vous souhaitez utiliser. Dans certains cas, vous devrez peut-être redémarrer l'application pour que les modifications prennent effet.\n" +
       "8. Comment signaler un bug ou une erreur dans l'application ?\n" +
       "R : Pour signaler un bug ou une erreur dans l'application, vous pouvez généralement envoyer un e-mail au support client ou utiliser le formulaire de contact sur le site web de l'application. Décrivez le problème que vous rencontrez aussi précisément que possible et joignez des captures d'écran si nécessaire.",
-  },
+  },*/
 ]

@@ -8,12 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="bug fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterAbout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact/Faq/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Faq/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,14 +134,7 @@
       <workItem from="1682321194291" duration="5171000" />
       <workItem from="1682328159633" duration="1105000" />
       <workItem from="1682349171301" duration="356000" />
-      <workItem from="1682408179436" duration="1016000" />
-    </task>
-    <task id="LOCAL-00056" summary="resize component timer done">
-      <created>1679672199240</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1679672199240</updated>
+      <workItem from="1682408179436" duration="1125000" />
     </task>
     <task id="LOCAL-00057" summary="[+] About and contact page">
       <created>1680015429797</created>
@@ -484,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682349436289</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="bug fixes">
+      <created>1682409805613</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1682409805614</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
