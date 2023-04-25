@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 
 const Result = () => {
-    return <p>Vous suivez désormais notre actualité !</p>
+    return <p>You are now following our news!</p>
 }
 
 const Newsletter = () => {
@@ -14,7 +14,7 @@ const Newsletter = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_tjei9r6', 'template_3hpzh1r', form.current, 'g92EDi7GAjJpn8a6u')
+        emailjs.sendForm('service_tlk1sli', 'template_7wlp3at', form.current, 'hcpAOjPdQ9nbt4P17')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -29,7 +29,7 @@ const Newsletter = () => {
     return (
 
         <div className={'w-full max-w-[430px]'}>
-            <div className={result ? '' : 'hidden'}> {result ? <Result/> : null} </div>
+            <div className={result ? 'mb-4' : 'hidden'}> {result ? <Result/> : null} </div>
             <form action="" ref={form} onSubmit={sendEmail}
                   className={'relative border border-white border rounded-[26px]'}>
                 <input type="email" name={'email'} placeholder={'Your e-mail'}

@@ -37,7 +37,7 @@ const Footer = () => {
                         <Button
                             variant={'red'}
                             link={'mailto:contact@athletid.com'}
-                            content={'Support the project'}
+                            content={'Contact us'}
                             className={'!w-full md:!w-fit'}
                         />
                     </div>
