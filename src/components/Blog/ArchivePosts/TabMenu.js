@@ -1,39 +1,26 @@
-import fetcher from '@/lib/fetcher'
-import Spinner from '@/src/components/UI/Spinner/CircleSpinner'
-import ErrorComponent from '@/src/components/Blog/_child/Error'
 import React from 'react'
 
 export const TabMenu = (props) => {
-
   const handleCategoryClick = (category) => {
     props.setCategoryClick(category)
   }
-
-  const { data, isLoading, isError } = fetcher(`api/posts`)
-  if (isLoading) return <Spinner></Spinner>
-  if (isError) return <ErrorComponent></ErrorComponent>
-
-  const categoriesNames = [...new Set(data.map(value => value.category))]
-
 
   return (
     <div
       className={`flex space-x-4 border-b border-darkWhite' mb-[72px] md:mb-[65px] cursor-pointer overflow-x-auto pb-6`}
     >
-      <div
-          className={'relative'}
-          onClick={() => handleCategoryClick(null)}
-      >
+      <div className={'relative'} onClick={() => handleCategoryClick(null)}>
         <div
-            className={`text-[14px] leading-[24px] whitespace-nowrap ${
-                props.categoryClick === null ? 'text-black font-[500]' : 'text-darkGrey'
-            }`}
+          className={`text-[14px] leading-[24px] whitespace-nowrap ${
+            props.categoryClick === null
+              ? 'text-black font-[500]'
+              : 'text-darkGrey'
+          }`}
         >
           View all
         </div>
       </div>
-      {categoriesNames.map((value, index) => {
-
+      {props.categories?.map((value, index) => {
         return (
           <div
             key={index}
@@ -42,7 +29,9 @@ export const TabMenu = (props) => {
           >
             <div
               className={`text-[14px] leading-[24px] ${
-                value === props.categoryClick ? 'text-black font-[500]' : 'text-darkGrey'
+                value === props.categoryClick
+                  ? 'text-black font-[500]'
+                  : 'text-darkGrey'
               }`}
             >
               {value}

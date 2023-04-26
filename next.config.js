@@ -1,4 +1,8 @@
-const withVideos = require('next-videos');
-const withPlugins = require('next-compose-plugins');
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        domains: ['res.cloudinary.com']
+    },
+}
 
-module.exports = async (phase) => withPlugins([withVideos])(phase, {undefined});
+module.exports = nextConfig

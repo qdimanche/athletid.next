@@ -3,7 +3,9 @@ import React from 'react'
 import Link from 'next/link'
 
 export const Post = ({ data }) => {
-  const { title, img, description, slug, sections } = data
+  const { name, img, slug, sections } = data
+
+  console.log(data)
 
   return (
     <Link href={`/posts/${slug}`}>
@@ -20,11 +22,11 @@ export const Post = ({ data }) => {
           />
         </div>
         <div className={'text-[20px] leading-[32px] mt-4 mb-2 underline'}>
-          {title}
+          {name}
         </div>
-        <p className={'text-[14px] leading-[24px] text-darkGrey mb-4'}>
+{/*        <p className={'text-[14px] leading-[24px] text-darkGrey mb-4'}>
           {sections[0].paragraph.substring(0, 100) + ' ...'}
-        </p>
+        </p>*/}
         <div className={'flex space-x-2'}>
           <div className={'text-[14px] leading-[17px]'}>Read post</div>
           <Image
