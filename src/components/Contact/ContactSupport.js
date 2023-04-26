@@ -19,12 +19,10 @@ const ContactSupport = (props, ref) => {
                     style={{whiteSpace: 'pre-line'}}
                     className={' md:text-left text-center'}
                 >
-                    Your ideas are <br/>
-                    our priorities!
+                    {props.title}
                 </h2>
                 <p className={'mt-3 mb-6 md:text-left text-center'}>
-                    Concerned about bringing you the best application, we are listening to
-                    all your suggestions to make our solution evolve.
+                    {props.subTitle}
                 </p>
                 <div className={'flex items-center space-x-4'}>
                     <Button

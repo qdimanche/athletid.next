@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import TimerDashboardDiagonal from "@/public/assets/images/timer-athletid-dashboard-diagonal.webp";
 
-const CardImageBottomFull = () => {
+const CardImageBottomFull = (props) => {
     return (
         <div
             className={
@@ -17,10 +17,10 @@ const CardImageBottomFull = () => {
                 <div className={'space-y-4 flex flex-col md:justify-between '}>
                     <div className={' md:mb-4 flex flex-col items-center'}>
                         <span className={'md:text-left font-medium w-full lg:text-[30px] lg:leading-[34px]' }>
-                            Simple & intuitive.
+                            {props.title}
                         </span>
                         <span className={'md:text-left text-black/[16%] w-full lg:text-[30px] lg:leading-[34px]'}>
-                            A pure design.
+                            {props.subTitle}
                         </span>
                     </div>
                 </div>

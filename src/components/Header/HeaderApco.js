@@ -44,7 +44,7 @@ const HeaderApco = () => {
                         <Button
                             className={'text-[16px]'}
                             variant={'red'}
-                            link={'/athletid/#footer'}
+                            link={'/athletid/#header'}
                             content={'Join the waiting list'}
                         />
                     </div>

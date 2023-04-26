@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import Script from "next/script";
 import {getCookie} from "cookies-next";
+import { appWithTranslation } from 'next-i18next'
 
 
 function App({Component, pageProps}) {
@@ -44,10 +45,7 @@ function App({Component, pageProps}) {
 		)}
 
 		<Component {...pageProps} />
-
-	
-	
 	</>
 }
 
-export default App;
+export default appWithTranslation(App)
