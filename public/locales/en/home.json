@@ -1,7 +1,8 @@
 {
   "header": {
     "title": "A unique sport experience.",
-    "subTitle": "Create a solid training routine with our applications and tracking system."
+    "subTitle": "Create a solid training routine with our applications and tracking system.",
+    "button": "Discover our apps"
   },
   "gridSection1": {
     "title": "Consistency is the key, \n let's build it together.",
@@ -61,5 +62,14 @@
   "contactSupport": {
     "title": "Your ideas are \nour priorities!",
     "subTitle": "Concerned about bringing you the best application, we are listening to all your suggestions to make our solution evolve."
+  },
+  "buttons": {
+    "discover": "Discover",
+    "contact" : "Contact"
+  },
+  "tags": {
+    "soon-available": "Soon available",
+    "available": "Available"
   }
+
 }

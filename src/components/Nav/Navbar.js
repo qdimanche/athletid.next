@@ -6,8 +6,10 @@ import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import Image from 'next/image'
 import {useIsLargeScreen} from '@/src/components/Hooks/useMediaQuery'
 import Div100vh from "react-div-100vh";
+import {useTranslation} from "next-i18next";
 
 const Navbar = (props) => {
+    const { t } = useTranslation('navbar')
     const [click, setClick] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
 
@@ -55,11 +57,11 @@ const Navbar = (props) => {
 
                 <div className={`justify-end items-center w-full flex`}>
                     <div className={'lg:block hidden space-x-[60px]'}>
-                        <Link href="/">Home</Link>
+                        <Link href="/">{t("links.home")}</Link>
                         <Link href="/timer">App Timer</Link>
                         <Link href="/athletid">App Athletid</Link>
                         <Link href="/blog">Blog</Link>
-                        <Link href="/about">About</Link>
+                        <Link href="/about">{t("links.about")}</Link>
                         <Button
                             variant={'redOutline'}
                             content={'Contact'}
@@ -92,7 +94,7 @@ const Navbar = (props) => {
                                     Menu
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
-                                    <Link href="/">Home</Link>
+                                    <Link href="/">{t("links.about")}</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
                                     <Link href="/timer">App Timer</Link>
@@ -104,7 +106,7 @@ const Navbar = (props) => {
                                     <Link href="/blog">Blog</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
-                                    <Link href="/about">About</Link>
+                                    <Link href="/about">{t("links.about")}</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
                                     <Link href="/contact">Contact</Link>

@@ -1,0 +1,91 @@
+{
+  "header": {
+    "title": "The future of fitness \nand wellness"
+  },
+  "gridSection": {
+    "title": "The most powerful training tracking and analysis system",
+    "subTitle": "Progress every day"
+  },
+  "apcoCardContent": [
+    {
+      "title": "All you need.",
+      "subTitle": "In one app.",
+      "flipContentTitle": "1 app for all your needs.",
+      "flipContent": "Discover new workouts, get inspired, share your progress and passion or follow your progress with accurate and complete statistics on your activity. \nYou can even access the services and programs of certified professionals from the marketplace.",
+      "imageSrc": "/assets/images/apco-rock-background.webp ",
+      "buttons": "toggleButton"
+    },
+    {
+      "title": "Recognize the exercises.",
+      "flipContentTitle": "Unique in the world.",
+      "flipContent": "We have developed the first on-board system that recognizes the movements you make during your workout. With it, you can concretely see your progress and your evolution and follow all your training sessions. ",
+      "imageSrc": "/assets/images/captor-card.webp ",
+      "className": "md:col-span-2 !text-black",
+      "paragraphWidth": "md:grid md:grid-cols-2",
+      "flipImage": "/assets/images/woman-red-line.webp ",
+      "flipImageHeight": 326,
+      "flipImageWidth": 240,
+      "buttons": "toggleButton"
+    },
+    {
+      "title": "Automatic writing of the \n training log.",
+      "flipContentTitle": "No more handwriting",
+      "flipContent": "You can throw away your old workout book. Thanks to our powerful intelligent system, we can automatically write down your workout live.",
+      "imageSrc": "/assets/images/construction-entrainement-apco.webp ",
+      "className": "md:col-span-2",
+      "paragraphWidth": "md:grid md:grid-cols-2",
+      "flipImage": "/assets/images/construction-seance-full.webp ",
+      "flipImageHeight": 386,
+      "flipImageWidth": 190,
+      "buttons": "toggleButton"
+    },
+    {
+      "title": "All your stats.",
+      "subTitle": "Customizable.",
+      "flipContentTitle": "Your goals, your stats.",
+      "flipContent": "Customize your logbook to view statistics tailored to your goals.\nYou can share your progress with your friends and see where they are in their goals to encourage and support them.  ",
+      "imageSrc": "/assets/images/statistiques.webp ",
+      "buttons": "toggleButton"
+    }
+  ],
+  "imageSection": {
+    "title": "Control. Manage. Share.",
+    "subTitle": "The new hassle-free sports experience\ndesigned for a new generation of athletes \nall in the Athletid App."
+  },
+  "carouselItems": [
+    {
+      "title": "Simple and \npractical.",
+      "description": "Designed to be light, easy to wear and to fit all your outfits.",
+      "image": "/assets/images/session-constructor-cut.webp"
+    },
+    {
+      "title": "For fitness \nand bodybuilding.",
+      "description": "The first version of our system is dedicated \nto theses two disciplines. Soon more...",
+      "image": "/assets/images/statistiques-cut.webp"
+    },
+    {
+      "title": "A space for \nyour passion.",
+      "description": "Kindness, motivation and respect. Are the \nkey words to share together a common passion.",
+      "image": "/assets/images/feed.webp"
+    }
+  ],
+  "feature": {
+    "title": "Our app and\ntracking system.",
+    "subTitle": "Currently available for bodybuilding & Fitness, we are training our algorithms to recognize Crossfit circuits and yoga postures.",
+    "titleFeatures": "Athletid system 2023",
+    "subscriptions": [
+      {
+        "subscriptionTitle": "2000+ exercises",
+        "subscriptionType": "Available"
+      },
+      {
+        "subscriptionTitle": "200+ free workouts",
+        "subscriptionType": "Available"
+      },
+      {
+        "subscriptionTitle": "Crossfit training",
+        "subscriptionType": "Soon"
+      }
+    ]
+  }
+}

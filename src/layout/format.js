@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Consent from '@/src/components/UI/Consent'
 
 export default function format({children}) {
+
     return (
         <>
             <Head>
@@ -33,7 +34,8 @@ export default function format({children}) {
             </Head>
             <Navbar/>
             <main className={'relative'}>{children}</main>
-            <Footer/>
+            <Footer
+            />
             <Consent/>
         </>
     )

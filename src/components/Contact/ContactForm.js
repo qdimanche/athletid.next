@@ -1,17 +1,22 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import {useTranslation} from "next-i18next";
 
 const Result = () => {
+
+  const { t } = useTranslation('contact')
+
   return (
     <p className={'mt-2'}>
-      Your message has been sent. Our team will contact you soon.
+      {t("contact:form.result")}
     </p>
   )
 }
 
 const ContactForm = () => {
-  const form = useRef()
 
+  const { t } = useTranslation('contact')
+  const form = useRef()
   const [result, showResult] = useState(false)
 
   const sendEmail = (e) => {
@@ -39,8 +44,8 @@ const ContactForm = () => {
   return (
     <div className={'pt-[142px] lg:pt-[216px]'}>
       <div className={'flex flex-col mb-[72px]'}>
-        <h2 className={''}>Let’s talk together!</h2>
-        <p className={'mt-4'}>Here you can chat with real humans</p>
+        <h2 className={''}>{t('contact:title')}</h2>
+        <p className={'mt-4'}>{t('contact:subTitle')}</p>
       </div>
 
       <div className={'rounded-medium'}>
@@ -51,28 +56,33 @@ const ContactForm = () => {
           onSubmit={sendEmail}
         >
           <div className={'flex flex-col'}>
-            <label>Your name</label>
+            <label>{t('contact:form.name.label')}</label>
             <input
               className={'focus:ring-1 focus:ring-white'}
               type="text"
               required
               name="fullName"
-              placeholder={'Your name...'}
+              placeholder={t('contact:form.name.placeholder')}
             />
           </div>
 
           <div className={'flex flex-col'}>
-            <label>Your email</label>
-            <input type="mail" name="email" required placeholder={'Your email...'} />
+            <label>{t('contact:form.email.label')}</label>
+            <input
+              type="mail"
+              name="email"
+              required
+              placeholder={t('contact:form.email.placeholder')}
+            />
           </div>
 
           <div className={'flex flex-col'}>
-            <label>Object</label>
+            <label>{t('contact:form.object.label')}</label>
             <input
               type="text"
               name="object"
               required
-              placeholder={'Sports advices, customer service...'}
+              placeholder={t('contact:form.object.placeholder')}
             />
           </div>
 
@@ -89,7 +99,7 @@ const ContactForm = () => {
           <div className={'w-full flex justify-end'}>
             <input
               type="submit"
-              value="Send your message"
+              value={t('contact:form.button')}
               required
               className={
                 '!bg-timeRed hover:!bg-timeRedHover !transition !duration-300  !px-6 py-3 !rounded-[26px] text-white'

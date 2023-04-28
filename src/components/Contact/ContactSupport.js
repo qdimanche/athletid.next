@@ -2,8 +2,12 @@ import React from 'react'
 import Button from '../UI/Button/Button'
 import Image from 'next/image'
 import StatistiquesApplication from '@/public/assets/images/statistiques-application-athletid.webp'
+import {useTranslation} from "next-i18next";
 
 const ContactSupport = (props, ref) => {
+
+    const { t } = useTranslation('home')
+
     return (
         <div
             className={
@@ -27,7 +31,7 @@ const ContactSupport = (props, ref) => {
                 <div className={'flex items-center space-x-4'}>
                     <Button
                         variant={'black'}
-                        content={'Contact'}
+                        content={t("buttons.contact")}
                         link={'mailto:contact@athletid.com'}
                     />
                 </div>

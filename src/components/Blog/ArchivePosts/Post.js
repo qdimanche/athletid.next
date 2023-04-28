@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
+import {useTranslation} from "next-i18next";
 
 export const Post = ({ data }) => {
   const { name, img, slug, sections } = data
-
-  console.log(data)
+  const {t} = useTranslation("blog")
 
   return (
     <Link href={`/posts/${slug}`}>
@@ -28,7 +28,7 @@ export const Post = ({ data }) => {
           {sections[0].paragraph.substring(0, 100) + ' ...'}
         </p>*/}
         <div className={'flex space-x-2'}>
-          <div className={'text-[14px] leading-[17px]'}>Read post</div>
+          <div className={'text-[14px] leading-[17px]'}>{t("blog:buttons.read-post")}</div>
           <Image
             src={'/assets/icons/diagonal-arrow.svg'}
             width={7}

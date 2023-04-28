@@ -1,0 +1,55 @@
+{
+  "header": {
+    "title": "Construisez une routine sportive solide et durable.",
+    "subTitle": "Athletid est à vos côtés à chaque étape pour vous aider à tirer le meilleur parti d’un entraînement régulier."
+  },
+  "responsabilyContent": [
+    {
+      "title": "Protection \ndes données.",
+      "subTitle": "Nous travaillons à la mise en place d'un système utilisant la technologie blockchain pour donner à chacun la pleine propriété de ses données personnelles.",
+      "icon": "/assets/icons/shield.svg"
+    },
+    {
+      "title": "Eco-\nresponsable.",
+      "subTitle": "Dans le souci de protéger notre planète, nous travaillons pour assurer que notre système de suivi soit composé d'un maximum de matériaux recyclés.",
+      "icon": "/assets/icons/leaf.svg"
+    },
+    {
+      "title": "Une marque \nengagée.",
+      "subTitle": "Nous nous engageons à verser entre 1 et 3% de nos bénéfices chaque année à une association œuvrant pour une cause liée au sport.",
+      "icon": "/assets/icons/heart.svg"
+    }
+  ],
+  "companyDescription": {
+    "title": "Ensemble, créons l’entraînement de demain. ",
+    "subTitle": "Nous connaissons tous les bienfaits du sport et pourtant... Paradoxalement, nous avons tous un proche ou quelqu'un de notre entourage qui a déjà abandonné ses objectifs sportifs.",
+    "content": [
+      "Nous devrions tous être en mesure d'atteindre nos objectifs sportifs et avoir les moyens de construire une routine solide. La mission d'Athletid est de vous accompagner dans cette direction grâce à un univers complet et connecté. ",
+      "Grâce à nos innovations technologiques, tout le monde pourra suivre son évolution, trouver la motivation, l'expertise et les outils dont il a besoin à chaque étape de son entraînement (avant, pendant, après).",
+      "Avec une vue à 360 degrés des disciplines de la musculation et du yoga, nous concevons et développons les solutions dont vous avez besoin qui s'intègrent parfaitement dans votre vie quotidienne et vous aident à atteindre vos objectifs. Nos applications de timers sportifs et de suivi sont des innovations mondiales conçues par des professionnels et des athlètes qui ont travaillé ensemble pour répondre au mieux aux problématiques réelles des sportifs.",
+      "Si vous avez des recommandations, des besoins ou d'autres demandes concernant vos pratiques, nos produits ou si vous souhaitez simplement discuter de nos innovations avec nous, nous serons heureux de prendre le temps de vous écouter."
+    ]
+  },
+  "coFounderCitation": {
+    "citation": "“Athletid a été créé pour augmenter la régularité et l'engagement athlétique des amateurs de fitness, de yoga et de sports connexes, afin qu'ils puissent profiter pleinement des bienfaits du sport.”",
+    "roles": "Co-Fondateurs"
+  },
+  "keyNumbers": [
+    {
+      "text": "Le premier objectif de notre projet est d'aider plus de dix millions d'athlètes à créer une routine solide grâce à nos solutions innovantes.",
+      "number": "10M+"
+    },
+    {
+      "text": "Créer le premier univers dédié à la fitness et au yoga, qui sont aujourd'hui abandonnés de toutes solutions pour faciliter leur pratique.",
+      "number": "1er"
+    },
+    {
+      "text": "Le nombre d'exercices que notre système de reconnaissance intelligent sera en mesure de reconnaître.",
+      "number": "2k+"
+    }
+  ],
+  "joinTeam": {
+    "title": "Rejoindre la\n communauté.",
+    "subTitle": "Vous êtes passionné par l'entraînement, le dépassement de soi et le bien-être ? Alors Athletid est fait pour vous ! Peu importe votre niveau d'expérience, vos objectifs ou votre discipline, vous trouverez ici ce dont vous avez besoin pour vous épanouir pleinement dans votre activité."
+  }
+}

@@ -1,15 +1,19 @@
 import React from 'react'
 import SimpleAccordion from '@/src/components/UI/Accordion/SimpleAccordion'
 import { faqContent } from '@/src/components/Contact/Faq/index'
+import {useTranslation} from "next-i18next";
 
 const Faq = () => {
+
+    const {t} = useTranslation("contact")
+
   return (
     <div className={'mt-[72px]'}>
       <div className={'text-center mb-[72px]'}>
         <p className={'text-sm text-black/20 '}>FAQs</p>
-        <h2 className={'my-2'}>Frequently asked questions</h2>
+        <h2 className={'my-2'}>{t("contact:faq.title")}</h2>
         <p className={'text-sm text-black/20'}>
-          Have questions ? We’re here to help
+            {t("contact:faq.subTitle")}
         </p>
       </div>
       <div className={'space-y-3.5'}>

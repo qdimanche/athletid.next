@@ -6,8 +6,10 @@ import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import Image from 'next/image'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
 import Error from '@/src/components/Blog/_child/Error'
+import {useTranslation} from "next-i18next";
 
 const ArchivePost = () => {
+  const { t } = useTranslation('blog')
   let [countLoadMore, setCountLoadMore] = useState(0)
   let [postsToShow, setPostsToShow] = useState(6)
   const [categories, setCategories] = useState(null)
@@ -58,7 +60,7 @@ const ArchivePost = () => {
         setPostsCategory(posts)
       }
     } else {
-      console.log('le probleme vient de la')
+      console.log('error')
     }
   }, [categoryClick, posts])
 
@@ -98,7 +100,7 @@ const ArchivePost = () => {
                 sizes={'10vw'}
                 alt={''}
               />
-              <p className={'text-[16px] leading-[19px]'}>Load more</p>
+              <p className={'text-[16px] leading-[19px]'}>{t("blog:buttons.load-more")}</p>
             </div>
           }
           link={'/'}

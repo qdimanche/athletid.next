@@ -1,9 +1,12 @@
 import React from 'react'
+import {useTranslation} from "next-i18next";
 
 export const TabMenu = (props) => {
   const handleCategoryClick = (category) => {
     props.setCategoryClick(category)
   }
+  const { t } = useTranslation('blog')
+
 
   return (
     <div
@@ -17,7 +20,7 @@ export const TabMenu = (props) => {
               : 'text-darkGrey'
           }`}
         >
-          View all
+          {t("blog:buttons.view-all")}
         </div>
       </div>
       {props.categories?.map((value, index) => {

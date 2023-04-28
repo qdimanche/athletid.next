@@ -27,7 +27,7 @@ const FullHeightBgImage = (props) => {
             >
                 <div
                     className={
-                        'absolute  z-[5] flex flex-col items-center lg:items-center lg:justify-center w-full px-4 pt-[72px] md:pt-4 lg:h-full lg:grid lg:grid-cols-2'
+                        'absolute  z-[5] flex flex-col items-center lg:items-center lg:justify-center w-full px-4 pt-4 lg:h-full lg:grid lg:grid-cols-2'
                     }
                 >
                     <div></div>
@@ -35,9 +35,7 @@ const FullHeightBgImage = (props) => {
             <span
                 className={`lg:text-left text-center text-white whitespace-pre-line `}
             >
-              You too can reach
-              <br/>
-              your sports goals!
+                {props.imageTitle}
             </span>
                         <div className={`flex space-x-4 mt-6`}>
                             <Button

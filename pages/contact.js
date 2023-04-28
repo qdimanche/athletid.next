@@ -3,6 +3,7 @@ import ContactForm from "../src/components/Contact/ContactForm";
 import Head from "next/head";
 import Format from "../src/layout/format"
 import Faq from "@/src/components/Contact/Faq/Faq";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 const Contact = () => {
 
@@ -31,3 +32,11 @@ const Contact = () => {
 };
 
 export default Contact;
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['contact', 'footer', 'navbar', 'uiComponents'])),
+        },
+    }
+}

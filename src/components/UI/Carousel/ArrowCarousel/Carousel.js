@@ -1,10 +1,6 @@
 import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 import React, {useState} from 'react'
 import CarouselSlide from '@/src/components/UI/Carousel/ArrowCarousel/CarouselSlide'
-import {
-    apcoCarouselItems,
-    timerCarouselItems,
-} from '@/src/components/UI/Carousel/ArrowCarousel/CarouselItems'
 import {useIsLargeScreen} from '@/src/components/Hooks/useMediaQuery'
 
 const Carousel = (props) => {
@@ -15,15 +11,7 @@ const Carousel = (props) => {
     const [isPrevious, setIsPrevious] = useState(false)
     const [isNext, setIsNext] = useState(false)
 
-    let slidesContent = []
-
-    const {imageData: propsImageData} = props
-
-    if (propsImageData === 'timer') {
-        slidesContent = [...timerCarouselItems]
-    } else if (propsImageData === 'apco') {
-        slidesContent = [...apcoCarouselItems]
-    }
+    let slidesContent = props.imageData
 
     return (
         <div className={'mt-[92px] md:mt-[120px]'}>

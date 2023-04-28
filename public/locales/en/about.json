@@ -1,0 +1,58 @@
+{
+  "header": {
+    "title": "Build a solid and durable sports routine.",
+    "subTitle": "Athletid is with you every step of the way to help you get the most out of regular exercise."
+  },
+  "responsabilyContent" : [
+  {
+    "title": "Data \nprotection",
+    "subTitle":
+    "We are working on setting up a system using blockchain technology to give everyone full ownership of their personal data.",
+    "icon": "/assets/icons/shield.svg"
+  },
+  {
+    "title": "Eco-\nresponsible.",
+    "subTitle":
+    "In an effort to protect our planet, we are working to ensure that our tracking system is composed of a maximum of recycled materials.",
+    "icon": "/assets/icons/leaf.svg"
+  },
+  {
+    "title": "A committed \nbrand ",
+    "subTitle":
+    "We are committed to donating between 1 and 3% of our profits each year to an association working for a sports-related cause.",
+    "icon": "/assets/icons/heart.svg"
+  }
+],
+  "companyDescription":{
+    "title": "Together let&apos;s create tomorrow&apos;s training.",
+    "subTitle": "We all know the benefits of sport and yet... Paradoxically, we all\nknow someone close to us or someone we know who has already given up on his or her sporting goals.",
+    "content": [
+      "We should all be able to achieve our athletic goals and have the means to build a solid routine.",
+      "Athletid&apos;s mission is to accompany you in this direction thanks to a complete and connected universe. Thanks to our technological innovations, everyone will be able to follow their evolution, find the motivation, the expertise and the tools they need at each stage of their training (before, during, after).",
+      " With a 360-degree view of the bodybuilding and yoga disciplines, we design and develop the solutions you need that fit seamlessly into your daily life and help you achieve your goals. Our stopwatch and tracking system are global innovations designed by professionals and athletes who have worked together to best address real issues.",
+      "If you have any recommendations, needs or other requests regarding your practices, our products or simply want to discuss our innovations with us, we will be happy to take the time to listen."
+    ]
+  },
+  "coFounderCitation": {
+    "citation": "\"Athletid was created to increase the regularity and athletic commitment of fitness, yoga and related sports enthusiasts, so they can get the full benefits of the sport.\"",
+    "roles": "Co-Founders"
+  },
+  "keyNumbers": [
+    {
+      "text": "The first objective of our project is to help more than ten million athletes create a solid routine through our innovative solutions.",
+      "number": "10M+"
+    },
+    {
+      "text": "Create the first universe dedicated to fitness and yoga which are today abandoned of all solutions to facilitate their practice.",
+      "number": "1st"
+    },
+    {
+      "text": "The number of exercises that our intelligent recognition system will be able to recognize.",
+      "number": "2k+"
+    }
+  ],
+  "joinTeam": {
+    "title": "Join the\n community.",
+    "subTitle": "You are passionate about training, surpassing yourself and well-being? Then Athletid is for you! Regardless of your level of experience, your goals or your discipline, you will find here what you need to fully develop in your activity."
+  }
+}

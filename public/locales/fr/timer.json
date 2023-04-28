@@ -1,0 +1,78 @@
+{
+  "header": {
+    "title": "La meilleure app de timers sportifs.",
+    "subTitle": "Votre partenaire d'entraînement, simple et élégant. Notre nouvelle application est la plus complète du marché avec 12 différents chronomètres et compteurs. Elle s'adapte à tous les types d'entraînement, que vous soyez débutant ou professionnel."
+  },
+  "keyNumbers": [
+    {
+      "text": "Beta \ntesteurs.",
+      "number": "2k",
+      "src": "/assets/icons/arrow-up.svg",
+      "width": 30
+    },
+    {
+      "text": "Professionels.",
+      "number": "+500",
+      "src": "/assets/icons/messages.svg",
+      "width": 20
+    },
+    {
+      "text": "Nouveaux \nutilisateurs",
+      "number": "+800",
+      "src": "/assets/icons/flash.svg",
+      "width": 30
+    }
+  ],
+  "fullHeightBgImage": {
+    "title": "Conçue par \ndes athlètes \npour les athlètes.",
+    "subTitle": "Suivi simplifié de l'entraînement.",
+    "imageTitle": "Vous aussi,\n atteignez vos\n objectifs sportifs !"
+  },
+  "carousel": {
+    "title": "Nos Timers s'adaptent \nà vos objectifs."
+  },
+  "carouselItems": [
+    {
+      "title": "Objectif \nmusculaire.",
+      "description": "Que vous pratiquiez le fitness, le crossfit, la musculation, le powerlifting ou d'autres disciplines sportives, notre application est faite pour vous.\nTempo, EMOM, AMRAP, For Time.",
+      "image": "/assets/images/timer-cardio.webp"
+    },
+    {
+      "title": "Objectif cardio. ",
+      "description": "Que vous pratiquiez la course à pied, le cyclisme, la natation ou d'autres disciplines sportives, notre application est faite pour vous.\nIntervalle, EMOM, Minuteur, Chronomètre.",
+      "image": "/assets/images/timer-interval.webp"
+    },
+    {
+      "title": "Objectif bien-être. ",
+      "description": "Que vous pratiquiez le yoga, le pilates, la méditation, l'étirement ou d'autres disciplines sportives, notre application est faite pour vous.\nRespiration, Sonothérapie, Minuteur, Chronomètre.",
+      "image": "/assets/images/timer-breathing.webp"
+    }
+  ],
+  "imageSection": {
+    "title": "Accessible à tous.",
+    "subTitle": "Notre application a été conçue en collaboration avec des athlètes et des experts du monde entier. Elle vous accompagne quel que soit votre niveau, votre discipline ou vos objectifs sportifs."
+  },
+  "feature": {
+    "title": "La plus puissante \net complète.",
+    "subTitle": "Essayez-la gratuitement dès maintenant et découvrez notre constructeur d'entraînement complet. Construisez et enregistrez rapidement et facilement votre programme d'entraînement.",
+    "titleFeatures": "Timer par Athletid 2023",
+    "subscriptions": [
+      {
+        "subscriptionTitle": "Timers classiques",
+        "subscriptionType": "Gratuit"
+      },
+      {
+        "subscriptionTitle": "Enregistrer ces entraînements favoris",
+        "subscriptionType": "Gratuit"
+      },
+      {
+        "subscriptionTitle": "Timer avancés et\nséance complète",
+        "subscriptionType": "Premium"
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "Vous aimez déjà votre nouvelle app timer. ",
+    "subTitle": "Ensemble construisons la meilleure application !"
+  }
+}

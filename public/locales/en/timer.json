@@ -1,0 +1,78 @@
+{
+  "header": {
+    "title": "The best sport\ntimer app.",
+    "subTitle": "Your training partner, simple and elegant. Your new application is the most complete (12 different timers and stopwatches), it adapts to all types of training."
+  },
+  "keyNumbers": [
+    {
+      "text": "Beta \nUsers.",
+      "number": "2k",
+      "src": "/assets/icons/arrow-up.svg",
+      "width": 30
+    },
+    {
+      "text": "Collaborative \nProfessionals.",
+      "number": "+500",
+      "src": "/assets/icons/messages.svg",
+      "width": 20
+    },
+    {
+      "text": "New \nUsers",
+      "number": "+800",
+      "src": "/assets/icons/flash.svg",
+      "width": 30
+    }
+  ],
+  "fullHeightBgImage": {
+    "title": "Designed by athletes\nfor athletes.",
+    "subTitle": "Simplified workout follow-up.",
+    "imageTitle": "You too can reach\nyour sports goals!"
+  },
+  "carousel": {
+    "title": "Our timers adapt to\nyour objective."
+  },
+  "carouselItems": [
+    {
+      "title": "Muscular\nobjective",
+      "description": "For the practices of fitness,crossfit,\n bodybuilding, powerlifting... \nTempo, EMOM, AMRAP, For Time.",
+      "image": "/assets/images/timer-cardio.webp"
+    },
+    {
+      "title": "Cardio\n",
+      "description": "For the practices of running, cycling, \nswiming...\nInterval, EMOM, Timer, Stopwatch.",
+      "image": "/assets/images/timer-interval.webp"
+    },
+    {
+      "title": "Wellness\nobjective",
+      "description": "For the practices of yoga, pilates, \nmeditation, stretching... \nBreathing, Sonotherapy, Timer, Stopwatch.",
+      "image": "/assets/images/timer-breathing.webp"
+    }
+  ],
+  "imageSection": {
+    "title": "Accessible to everyone",
+    "subTitle": "Designed in collaboration with athletes and experts from around the world.\nYour Timer application accompanies you whatever your level, your\ndiscipline or your goals."
+  },
+  "feature": {
+    "title": "The most powerfull\nand complet.",
+    "subTitle": "Try it for free now and discover the complete workout \nbuilder. Build and save your workout quickly and easily.",
+    "titleFeatures": "Timer By Athletid 2023",
+    "subscriptions": [
+      {
+        "subscriptionTitle": "Classic Timers",
+        "subscriptionType": "Free"
+      },
+      {
+        "subscriptionTitle": "Save Sessions",
+        "subscriptionType": "Free"
+      },
+      {
+        "subscriptionTitle": "Advanced Timers \n& Full Session",
+        "subscriptionType": "Premium"
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "Many of you already \nlove the app! ",
+    "subTitle": "Together to build the best app."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "header": {
+    "title": "Le futur du fitness\net du bien-être"
+  },
+  "gridSection": {
+    "title": "Le système de suivi et d'analyse de l’entraînement le plus puissant.",
+    "subTitle": "Progresse chaque jour "
+  },
+  "apcoCardContent": [
+    {
+      "title": "Tout ce dont tu as besoin.",
+      "subTitle": "Dans une seule application.",
+      "flipContentTitle": "1 application pour tous tes besoins.",
+      "flipContent": "Découvrez de nouveaux entraînements, inspirez-vous, partagez vos progrès et votre passion ou suivez vos performances avec des statistiques précises et complètes sur votre activité. Avec notre application, vous pouvez même accéder aux services et programmes de professionnels certifiés",
+      "imageSrc": "/assets/images/apco-rock-background.webp ",
+      "buttons": "toggleButton"
+    },
+    {
+      "title": "Reconnaissance des exercices. ",
+      "flipContentTitle": "Unique au monde.",
+      "flipContent": "Nous avons développé le premier système embarqué qui reconnaît les mouvements que vous effectuez pendant votre entraînement. Grâce à lui, vous pouvez concrètement voir vos progrès et votre évolution et suivre toutes vos séances d'entraînement.",
+      "imageSrc": "/assets/images/captor-card.webp ",
+      "className": "md:col-span-2 !text-black",
+      "paragraphWidth": "md:grid md:grid-cols-2",
+      "flipImage": "/assets/images/woman-red-line.webp ",
+      "flipImageHeight": 326,
+      "flipImageWidth": 240,
+      "buttons": "toggleButton"
+    },
+    {
+      "title": "Écriture automatique du journal d’entraînement. ",
+      "flipContentTitle": "Finies les écritures manuscrites !",
+      "flipContent": "Vous pouvez dire adieu à votre vieux carnet d'entraînement. Grâce à notre puissant système intelligent, nous pouvons automatiquement enregistrer votre entraînement en temps réel.",
+      "imageSrc": "/assets/images/construction-entrainement-apco.webp ",
+      "className": "md:col-span-2",
+      "paragraphWidth": "md:grid md:grid-cols-2",
+      "flipImage": "/assets/images/construction-seance-full.webp ",
+      "flipImageHeight": 386,
+      "flipImageWidth": 190,
+      "buttons": "toggleButton"
+    },
+    {
+      "title": "Toutes tes stats.",
+      "subTitle": "Personnalisable.",
+      "flipContentTitle": "Vos objectifs, vos statistiques ! ",
+      "flipContent": "Personnalisez votre carnet d'entraînement pour visualiser des statistiques adaptées à vos objectifs. Partagez vos progrès avec vos amis et suivez les leurs pour les encourager et les soutenir.",
+      "imageSrc": "/assets/images/statistiques.webp ",
+      "buttons": "toggleButton"
+    }
+  ],
+  "imageSection": {
+    "title": "Contrôlez. Gérez.\n Partagez.",
+    "subTitle": "Une nouvelle expérience sportive sans tracas, conçue pour une nouvelle génération d'athlètes, tout dans l'application Athletid."
+  },
+  "carouselItems": [
+    {
+      "title": "Simple et \npratique.",
+      "description": "Conçu pour être léger, facile à porter et pour s'adapter à toutes vos tenues.\n",
+      "image": "/assets/images/session-constructor-cut.webp"
+    },
+    {
+      "title": "Pour le fitness et\nla musculation.",
+      "description": "La première version de notre système est dédiée à ces deux disciplines. Bientôt plus…",
+      "image": "/assets/images/statistiques-cut.webp"
+    },
+    {
+      "title": "Un espace pour\nvotre passion",
+      "description": "Gentillesse, motivation et respect. Ce sont les maitres mots pour partager ensemble une passion commune.",
+      "image": "/assets/images/feed.webp"
+    }
+  ],
+  "feature": {
+    "title": "Notre app\net système de tracking",
+    "subTitle": "Actuellement disponible pour la musculation et le fitness, nous entraînons nos algorithmes à reconnaître les circuits Crossfit et les postures de yoga.",
+    "titleFeatures": "Sytème Athletid 2023",
+    "subscriptions": [
+      {
+        "subscriptionTitle": "+2000 exercices",
+        "subscriptionType": "Disponible"
+      },
+      {
+        "subscriptionTitle": "+200 entraînements gratuits ",
+        "subscriptionType": "Disponible"
+      },
+      {
+        "subscriptionTitle": "Crossfit & Yoga",
+        "subscriptionType": "Bientôt disponible"
+      }
+    ]
+  }
+}

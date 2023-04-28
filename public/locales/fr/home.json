@@ -1,11 +1,74 @@
 {
   "header": {
     "title": "Une expérience sportive unique.",
-    "subTitle": "Créez une routine d'entraînement solide grâce à nos applications et notre système de tracking.\n"
+    "subTitle": "Créez une routine d'entraînement solide grâce à nos applications et notre système de tracking.\n",
+    "button": "Découvrir nos applications"
   },
-
   "gridSection1": {
-    "title": "Consistency is the key, \n let's build it together.",
-    "subTitle": "Timer by Athletid"
+    "title": "La clé, c'est la régularité.\nConstruisons-la ensemble.",
+    "subTitle": "Timer par Athletid"
+  },
+  "cardImageBottomRight": {
+    "title": "Timer par Athletid",
+    "subTitle": "Entraînez-vous l'esprit libre."
+  },
+  "cardImageTopRight": {
+    "title": "Adaptable.",
+    "subTitle": "L'application qui\nregroupe tous les\ntimers sportifs. "
+  },
+  "cardImageBottomFull": {
+    "title": "Simple et intuitive.",
+    "subTitle": "Un design épuré."
+  },
+  "gridSection2": {
+    "title": "Tenir ton journal d'entraînement \nn'a jamais été aussi facile.",
+    "subTitle": "Fais la différence"
+  },
+  "homeCardContent": [
+    {
+      "title": "Reconnaissance \nintelligente\ndes mouvements.",
+      "imageSrcMobile": "/assets/images/apco-features-fullscreen-mobile.webp",
+      "imageSrc": "/assets/images/apco-features-fullscreen.webp",
+      "tag": true,
+      "textButton": true,
+      "link": "/athletid",
+      "paragraphWidth": "w-3/4 md:w-1/3",
+      "className": "md:col-span-2",
+      "buttonClassName": "md:left-4"
+    },
+    {
+      "title": "Le pouvoir des données.",
+      "subTitle": "Mesurez votre progression.",
+      "subTitleClassName": "!text-black opacity-[16%] ",
+      "imageSrc": "/assets/images/captor-card.webp ",
+      "textButton": true,
+      "link": "/athletid ",
+      "className": "!text-black ",
+      "paragraphWidth": "w-2/3",
+      "buttonClassName": "md:left-4"
+    },
+    {
+      "title": "Motivation et inspiration.",
+      "subTitle": "Un environnement pour \nvotre réussite.",
+      "imageSrc": "/assets/images/apco-rock-background.webp ",
+      "buttonClassName": "hidden",
+      "link": ""
+    }
+  ],
+  "masonryGrid": {
+    "title": "Accompagnement. \nInnovation. Progrès.",
+    "subTitle": "Construisons ensemble l'univers qui vous propulsera vers vos objectifs."
+  },
+  "contactSupport": {
+    "title": "Vos idées \nsont notre \npriorité !",
+    "subTitle": "Nous mettons tout en œuvre pour vous offrir la meilleure application possible, en écoutant attentivement vos suggestions pour faire évoluer notre solution."
+  },
+  "buttons": {
+    "discover": "Découvrir",
+    "contact" : "Contacter"
+  },
+  "tags": {
+    "soon-available": "Bientôt disponible",
+    "available": "Disponible"
   }
 }

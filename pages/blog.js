@@ -3,6 +3,7 @@ import Head from "next/head";
 import Format from "../src/layout/format"
 import HeaderBlog from "@/src/components/Blog/HeaderBlog";
 import ArchivePost from "@/src/components/Blog/ArchivePosts/ArchivePost";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 const Blog = () => {
     return (
@@ -26,3 +27,11 @@ const Blog = () => {
 };
 
 export default Blog;
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['blog', 'footer', 'navbar', 'uiComponents'])),
+        },
+    }
+}

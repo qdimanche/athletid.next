@@ -1,33 +1,30 @@
 import React from 'react'
 import Image from 'next/image'
 import clsx from "clsx";
+import keyNumbers from "@/src/components/Timer/KeyNumbers";
+import {useTranslation} from "next-i18next";
 
 const KeyNumbers = () => {
+
+    const { t } = useTranslation('about')
+    const keyNumbersContent = t('about:keyNumbers', { returnObjects: true })
+
     return (
+
         <div
             className={
-                'max-w-[350px] md:max-w-[1050px] md:max-w-full mx-auto mt-[92px] md:mt-[126px] md:grid md:grid-cols-3 md:justify-between md:gap-[72px] '
+                'max-w-[350px] md:max-w-[1050px] mx-auto mt-[92px] md:mt-[126px] md:grid md:grid-cols-3 md:justify-between md:gap-[72px] '
             }
         >
-            <Number
-                src={'/assets/icons/arrowleftright.svg'}
-                text={'The first objective of our project is to help more than ten million athletes create a solid routine through our innovative solutions.'}
-                width={30}
-                number={'10M+'}
-            />{' '}
-            <Number
-                src={'/assets/icons/download.svg'}
-                text={'Create the first universe dedicated to fitness and yoga which are today abandoned of all solutions to facilitate their practice.'}
-                width={20}
-                number={'1st'}
-            />{' '}
-            <Number
-                src={'/assets/icons/messages.svg'}
-                text={'The number of exercises that our intelligent recognition system will be able to recognize.'}
-                width={30}
-                number={'2k+'}
-                className={"border-none"}
-            />
+            {keyNumbersContent.map((value, index) => {
+                return (
+                    <Number
+                        key={index}
+                        text={value.text}
+                        number={value.number}
+                    />
+                )
+            })}
         </div>
     )
 }

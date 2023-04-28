@@ -1,0 +1,24 @@
+{
+  "title": "Let’s talk together!",
+  "subTitle": "Here you can chat with real humans",
+  "form": {
+    "name":{
+      "label": "Your name",
+      "placeholder": "Your name..."
+    },
+    "email": {
+      "label": "Your email",
+      "placeholder": "Your email..."
+    },
+    "object": {
+      "label": "Object",
+      "placeholder": "Sports advices, customer service..."
+    },
+    "button": "Send your message",
+    "result": "Your message has been sent. Our team will contact you soon."
+  },
+  "faq":{
+    "title": "Frequently asked questions",
+    "subTitle": "Have questions ? We’re here to help."
+  }
+}

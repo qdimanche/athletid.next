@@ -67,9 +67,6 @@ export default function Home() {
             subTitle={t('gridSection2.subTitle')}
           >
             {homeCardContent.map((value, index) => {
-              console.log(
-                value.imageSrcMobile ? value.imageSrcMobile : value.imageSrc
-              )
               return (
                 <BasicCard
                   key={index}
@@ -97,7 +94,10 @@ export default function Home() {
           items={MasonryImages}
         />
         <div className={'px-4  max-w-[350px] md:max-w-[1170px] mx-auto '}>
-          <ContactSupport />
+          <ContactSupport
+            title={t('contactSupport.title')}
+            subTitle={t('contactSupport.subTitle')}
+          />
         </div>
       </Format>
     </>
@@ -107,7 +107,7 @@ export default function Home() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home'])),
+      ...(await serverSideTranslations(locale, ['home', 'footer', 'navbar', 'uiComponents'])),
     },
   }
 }
