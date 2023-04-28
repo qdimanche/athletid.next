@@ -1,80 +1,33 @@
 import fetcher from '@/lib/fetcher'
+import Spinner from '@/src/components/UI/Spinner/CircleSpinner'
+import Error from '@/src/components/Blog/_child/Error'
 import React, { useEffect, useState } from 'react'
+import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import { TabMenu } from '@/src/components/Blog/ArchivePosts/TabMenu'
 import { Post } from '@/src/components/Blog/ArchivePosts/Post'
-import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import Image from 'next/image'
-import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
-import Error from '@/src/components/Blog/_child/Error'
-import {useTranslation} from "next-i18next";
+import { useTranslation } from 'next-i18next'
 
 const ArchivePost = () => {
   const { t } = useTranslation('blog')
   let [countLoadMore, setCountLoadMore] = useState(0)
   let [postsToShow, setPostsToShow] = useState(6)
-  const [categories, setCategories] = useState(null)
-  const [posts, setPosts] = useState(null)
-  const [postsCategory, setPostsCategory] = useState(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [isError, setIsError] = useState(false)
+
   const [categoryClick, setCategoryClick] = useState(null)
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true)
-
-      await fetcher(`api/posts`)
-        .then(({ data, isError }) => {
-          setPosts(data)
-          setIsError(isError)
-        })
-        .catch((error) => {
-          setIsError(true)
-        })
-        .finally(() => {
-          setIsLoading(false)
-        })
-
-      await fetcher(`api/categories`)
-        .then(({ data, isError }) => {
-          setCategories(data)
-          setIsError(isError)
-        })
-        .catch((error) => {
-          setIsError(true)
-        })
-        .finally(() => {
-          setIsLoading(false)
-        })
-    }
-    fetchData()
-  }, [])
-
-  useEffect(() => {
-    if (posts) {
-      if (categoryClick) {
-        setPostsCategory(
-          posts.filter((value) => value.category === categoryClick)
-        )
-      } else {
-        setPostsCategory(posts)
-      }
-    } else {
-      console.log('error')
-    }
-  }, [categoryClick, posts])
+  const { data, isLoading, isError } = fetcher(
+    `api/posts/categories${categoryClick === null ? '' : `/${categoryClick}`}`
+  )
 
   useEffect(() => {
     countLoadMore && setPostsToShow((postsToShow += 6))
   }, [countLoadMore])
 
-  if (isLoading) return <CircleSpinner></CircleSpinner>
+  if (isLoading) return <Spinner></Spinner>
   if (isError) return <Error></Error>
 
   return (
     <div className={'mt-[72px] md:mt-[120px]'}>
       <TabMenu
-        categories={categories}
         categoryClick={categoryClick}
         setCategoryClick={setCategoryClick}
       />
@@ -83,11 +36,11 @@ const ArchivePost = () => {
           'space-y-[68px] md:space-y-0 flex flex-col md:grid md:grid-cols-2 md:gap-[30px]'
         }
       >
-        {postsCategory?.slice(0, postsToShow).map((value, index) => {
+        {data.slice(0, postsToShow).map((value, index) => {
           return <Post data={value} key={index} />
         })}
       </div>
-      {postsToShow < postsCategory?.length && (
+      {postsToShow < data.length && (
         <ToggleButton
           variant={'red'}
           className={' mx-auto mt-[68px] py-4 px-8 !rounded-full'}
@@ -100,7 +53,9 @@ const ArchivePost = () => {
                 sizes={'10vw'}
                 alt={''}
               />
-              <p className={'text-[16px] leading-[19px]'}>{t("blog:buttons.load-more")}</p>
+              <p className={'text-[16px] leading-[19px]'}>
+                {t('blog:buttons.load-more')}
+              </p>
             </div>
           }
           link={'/'}

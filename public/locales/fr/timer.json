@@ -50,7 +50,7 @@
   ],
   "imageSection": {
     "title": "Accessible à tous.",
-    "subTitle": "Notre application a été conçue en collaboration avec des athlètes et des experts du monde entier. Elle vous accompagne quel que soit votre niveau, votre discipline ou vos objectifs sportifs."
+    "subTitle": "Notre application a été conçue en collaboration avec des athlètes et\ndes experts du monde entier. Elle vous accompagne quel que soit votre niveau,\nvotre discipline ou vos objectifs sportifs."
   },
   "feature": {
     "title": "La plus puissante \net complète.",
@@ -72,7 +72,7 @@
     ]
   },
   "testimonial": {
-    "title": "Vous aimez déjà votre nouvelle app timer. ",
+    "title": "Vous aimez déjà \nvotre nouvelle app timer. ",
     "subTitle": "Ensemble construisons la meilleure application !"
   }
 }
