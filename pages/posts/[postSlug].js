@@ -1,55 +1,74 @@
 import Format from '../../src/layout/format'
 import getPost from '@/lib/helper'
+import getPosts from '@/lib/helper'
 import fetcher from '@/lib/fetcher'
-import Spinner from '@/src/components/UI/Spinner/CircleSpinner'
-import ErrorComponent from '@/src/components/Blog/_child/Error'
 import { useRouter } from 'next/router'
 import { SWRConfig } from 'swr'
 import Head from 'next/head'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Author from '@/src/components/Blog/_child/Author'
 import Image from 'next/image'
-import { Post } from '@/src/components/Blog/ArchivePosts/Post'
-import {IoIosTimer} from "react-icons/io";
+import { IoIosTimer } from 'react-icons/io'
 
 export default function Page({ fallback }) {
-  const router = useRouter()
-  const { postSlug } = router.query
-  const { data, isLoading, isError } = fetcher(`api/posts/${postSlug}`)
-  if (isLoading) return <Spinner></Spinner>
-  if (isError) return <ErrorComponent></ErrorComponent>
+  let router = useRouter()
+  let { postSlug } = router.query
+  const [post, setPost] = useState(null)
+  const [sections, setSections] = useState(null)
+  const [postWithSections, setPostsWithSections] = useState(null)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const postData = await fetcher(`api/posts/${postSlug}`)
+      const sectionData = await fetcher(`api/sections/${postSlug}`)
+      setPost(postData.data);
+      setSections(sectionData.data);
+    }
+
+     fetchData().then();
+  }, [postSlug])
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const sectionData = await fetcher(`api/sections/${post.id}`)
+      setSections(sectionData.data)
+    }
+    fetchData().then()
+  },[post])
+
+  console.log(sections)
 
   return (
     <SWRConfig value={{ fallback }}>
       <Head>
-        <title>
-          {data.title.charAt(0).toUpperCase() + data.title.slice(1)}
-        </title>
+        <title>{post?.name}</title>
         <meta property="og:title" content="Athletid" />
         <meta property="og:type" content="article" />
       </Head>
       <Format>
         <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
-          <Article {...data}></Article>
-          <RelatedPost relatedCategory={data.category} id={data.id} />
+          <Article {...post} sections={sections} ></Article>
+          {/*          <RelatedPost relatedCategory={post.category} id={post.id} />*/}
         </div>
       </Format>
     </SWRConfig>
   )
 }
 
-function Article({ title, img, author, sections }) {
-  return (
+function Article({ name, img, author, ...props }) {
+
+    return (
     <div className={''}>
       <div className={'mt-[142px] md:mt-[216px] mb-[32px] md:mb-[64px]'}>
-        <h1 className={''}>{title}</h1>
+        <h1 className={''}>{name}</h1>
       </div>
       <div className={'flex justify-between'}>
         <Author {...author}></Author>
-          <div className={'flex space-x-4 pt-1'}>
-              <IoIosTimer size={20} color={'darkGrey'}/>
-              <p className={'text-darkGrey '}>2 minutes read</p>
-          </div>
+        <div className={'flex space-x-4 pt-1'}>
+          <IoIosTimer size={20} color={'darkGrey'} />
+          <p className={'text-darkGrey '}>2 minutes read</p>
+        </div>
       </div>
 
       <div
@@ -66,37 +85,34 @@ function Article({ title, img, author, sections }) {
         />
       </div>
 
-      <div
-        className={
-          'mt-[32px] md:mt-[64px]  mb-[64px] border-b border-darkGrey'
-        }
+    <div
+        className={'mt-[32px] md:mt-[64px]  mb-[64px] border-b border-darkGrey'}
       >
-          {sections.map((section, index) => {
-              return (
-                  <div key={index} className={'mb-16'}>
-                      <h3 className={'mb-8'}>{section.subTitle}</h3>
-                      <p className={'whitespace-pre-line'}>{section.paragraph}</p>
-                  </div>
-              )
-          })}
+        {props.sections.map((section, index) => {
+          return (
+            <div key={index} className={'mb-16'}>
+              <h3 className={'mb-8'}>{section.subTitle}</h3>
+              <p className={'whitespace-pre-line'}>{section.paragraph}</p>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
 }
 
-function RelatedPost(props) {
+/*function RelatedPost(props) {
   const {
     data: relatedPostData,
     isLoading,
     isError,
-  } = fetcher(`api/posts/categories/${props.relatedCategory}`)
+  } = fetcher(`/api/posts/categories/${props.relatedCategory}`)
 
   if (isLoading) return <Spinner />
   if (isError) return <ErrorComponent />
 
-
   const filteredRelatedPostData = relatedPostData.filter(
-        (post) => post.id !== props.id
+    (post) => post.id !== props.id
   )
 
   return (
@@ -110,7 +126,7 @@ function RelatedPost(props) {
       ))}
     </div>
   )
-}
+}*/
 
 export async function getStaticProps({ params }) {
   const posts = await getPost(params.postSlug)
@@ -125,18 +141,12 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getPost()
+  const posts = await getPosts()
+  if (posts) {
+    const paths = posts.map((post) => ({
+      params: { postSlug: post.slug },
+    }))
 
-  const paths = posts.map((value) => {
-    return {
-      params: {
-        postSlug: value.slug,
-      },
-    }
-  })
-
-  return {
-    paths,
-    fallback: false,
+    return { paths, fallback: false }
   }
 }

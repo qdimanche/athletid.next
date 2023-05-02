@@ -58,7 +58,7 @@ const ArchivePost = () => {
         setPostsCategory(posts)
       }
     } else {
-      console.log('le probleme vient de la')
+      console.log('Error, impossible to set PostsCategory')
     }
   }, [categoryClick, posts])
 

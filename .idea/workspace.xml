@@ -7,16 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="update faq">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="add french and english translations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fetcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fetcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="blog-version-2" />
+        <entry key="$PROJECT_DIR$" value="translations" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,9 +137,16 @@
       <workItem from="1682321194291" duration="5171000" />
       <workItem from="1682328159633" duration="1105000" />
       <workItem from="1682349171301" duration="356000" />
-      <workItem from="1682408179436" duration="1170000" />
-      <workItem from="1682429144208" duration="4559000" />
-      <workItem from="1682493497621" duration="6665000" />
+      <workItem from="1682408179436" duration="1125000" />
+      <workItem from="1683031328190" duration="45000" />
+      <workItem from="1683036079869" duration="3597000" />
+    </task>
+    <task id="LOCAL-00057" summary="[+] About and contact page">
+      <created>1680015429797</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1680015429798</updated>
     </task>
     <task id="LOCAL-00058" summary="[+] Faq section">
       <created>1680085607664</created>
@@ -482,14 +484,7 @@
       <option name="project" value="LOCAL" />
       <updated>1682409805614</updated>
     </task>
-    <task id="LOCAL-00106" summary="update faq">
-      <created>1682409928069</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1682409928069</updated>
-    </task>
-    <option name="localTasksCounter" value="107" />
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,8 +553,8 @@
     <MESSAGE value="toggle button size fix" />
     <MESSAGE value="News posts in data" />
     <MESSAGE value="delete local api" />
-    <MESSAGE value="bug fixes" />
     <MESSAGE value="update faq" />
-    <option name="LAST_COMMIT_MESSAGE" value="update faq" />
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
 </project>
