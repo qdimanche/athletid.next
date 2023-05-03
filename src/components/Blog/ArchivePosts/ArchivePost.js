@@ -35,7 +35,9 @@ const ArchivePost = () => {
 
       await fetcher(`api/categories`)
         .then(({ data, isError }) => {
-          setCategories(data)
+          const filteredCategoriesSet = new Set(data);
+          const filteredCategories = [...filteredCategoriesSet]
+          setCategories(filteredCategories)
           setIsError(isError)
         })
         .catch((error) => {
