@@ -1,11 +1,22 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+import fetcher from '@/lib/fetcher'
 
 export const Post = ({ data }) => {
-  const { name, img, slug, sections } = data
+  const [sections, setSections] = useState(null)
 
-  console.log(data)
+  const { name, img, slug, id } = data
+
+  useEffect(() => {
+    const fetchData = async () => {
+      if (id) {
+        const sectionData = await fetcher(`api/sections/${id}`)
+        setSections(sectionData.data)
+      }
+    }
+    fetchData().then()
+  }, [id])
 
   return (
     <Link href={`/posts/${slug}`}>
@@ -24,9 +35,9 @@ export const Post = ({ data }) => {
         <div className={'text-[20px] leading-[32px] mt-4 mb-2 underline'}>
           {name}
         </div>
-{/*        <p className={'text-[14px] leading-[24px] text-darkGrey mb-4'}>
-          {sections[0].paragraph.substring(0, 100) + ' ...'}
-        </p>*/}
+        <p className={'text-[14px] leading-[24px] text-darkGrey mb-4'}>
+          {sections ? sections[0]?.paragraph.substring(0, 100) + ' ...' : ''}
+        </p>
         <div className={'flex space-x-2'}>
           <div className={'text-[14px] leading-[17px]'}>Read post</div>
           <Image
