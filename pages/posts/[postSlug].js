@@ -88,14 +88,14 @@ export default function Page({ fallback }) {
   )
 }
 
-function Article({ name, img, author, ...props }) {
+function Article({ name, img, authorIrd, ...props }) {
   return (
     <div className={''}>
       <div className={'mt-[142px] md:mt-[216px] mb-[32px] md:mb-[64px]'}>
         <h1 className={''}>{name}</h1>
       </div>
       <div className={'flex justify-between'}>
-        <Author {...author}></Author>
+        <Author {...authorIrd}></Author>
         <div className={'flex space-x-4 pt-1'}>
           <IoIosTimer size={20} color={'darkGrey'} />
           <p className={'text-darkGrey '}>2 minutes read</p>

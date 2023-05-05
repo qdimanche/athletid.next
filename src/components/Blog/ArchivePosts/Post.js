@@ -24,6 +24,7 @@ export const Post = ({ data }) => {
         <div
           className={'h-[380px] w-full relative rounded-small overflow-hidden'}
         >
+
           <Image
             src={img}
             fill

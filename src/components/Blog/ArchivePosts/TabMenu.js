@@ -20,11 +20,11 @@ export const TabMenu = (props) => {
           View all
         </div>
       </div>
-      {props.categories?.map((value, index) => {
+      {props.categories.map((value, index) => {
         return (
           <div
             key={index}
-            onClick={() => handleCategoryClick(value)}
+            onClick={() => handleCategoryClick(value.id)}
             className={'relative  '}
           >
             <div
@@ -34,7 +34,7 @@ export const TabMenu = (props) => {
                   : 'text-darkGrey'
               }`}
             >
-              {value}
+              {value.name}
             </div>
           </div>
         )
