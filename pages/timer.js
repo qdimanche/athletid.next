@@ -2,7 +2,7 @@ import Header from '@/src/components/Header/Header'
 import Feature from '@/src/components/Feature/Feature'
 import Testimonial from '@/src/components/Testimonial/Testimonial'
 import Head from 'next/head'
-import FormatTimer from '@/src/layout/formatTimer'
+import Format from '@/src/layout/format'
 import ImgHeader from '@/public/assets/images/timer-v2-header-desktop.webp'
 import ImgHeaderMobile from '@/public/assets/images/timer-v2-header-mobile.webp'
 import React from 'react'
@@ -12,9 +12,14 @@ import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/C
 import Carousel from '@/src/components/UI/Carousel/ArrowCarousel/Carousel'
 import ImageSection from '@/src/components/ImageSection/ImageSection'
 import { useIsMobile } from '@/src/components/Hooks/useMediaQuery'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
 const Timer = () => {
   const isMobile = useIsMobile()
+  const { t } = useTranslation('timer')
+  const carouselItems = t('timer:carouselItems', { returnObjects: true })
+  const subscriptions = t('timer:feature.subscriptions', { returnObjects: true })
 
   return (
     <>
@@ -28,11 +33,11 @@ const Timer = () => {
         />
       </Head>
 
-      <FormatTimer>
+      <Format>
         <Header
-          title={'The best sport\n' + 'timer app.'}
+          title={t('timer:header.title')}
           subTitle={
-            'Your training partner, simple and elegant. \nYour new application is the most complete (12 different timers and stopwatches), it adapts to all types of training.'
+            t('timer:header.subTitle')
           }
           imageSrc={isMobile ? ImgHeaderMobile : ImgHeader}
           buttons={'downloadButton'}
@@ -40,50 +45,57 @@ const Timer = () => {
           imageHeight={'md:h-3/4'}
         />
         <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
-          <KeyNumbers />
+          <KeyNumbers/>
         </div>
         <div className={'md:px-4 md:max-w-[1170px] mx-auto '}>
           <FullHeightBgImage
-            title={'Designed by athletes \nfor athletes.'}
-            subTitle={'Simplified workout follow-up.'}
+            title={t("timer:fullHeightBgImage.title")}
+            subTitle={t("timer:fullHeightBgImage.subTitle")}
+            imageTitle={t("timer:fullHeightBgImage.imageTitle")}
           />
         </div>
         <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto '}>
           <Carousel
-            title={'Our timers adapt to \nyour objective.'}
-            imageData={'timer'}
+            title={t("timer:carousel.title")}
+            imageData={carouselItems}
           />
         </div>
         <CarouselBgImage imageData={'timer'} />
         <div className={'px-4 max-w-[350px] md:max-w-[1170px] mx-auto'}>
           <ImageSection
             imageData={'timer'}
-            title={'Accessible to everyone\n'}
+            title={t("timer:imageSection.title")}
             subTitle={
-              'Designed in collaboration with athletes and experts from around the world.\n' +
-              'Your Timer application accompanies you whatever your level, your\n' +
-              'discipline or your goals.'
+              t("timer:imageSection.subTitle")
             }
           />
           <Feature
-            title={'The most powerfull\n' + 'and complet.'}
+            title={t('timer:feature.title')}
             subTitle={
-              'Try it for free now and discover the complete workout \n' +
-              'builder. Build and save your workout quickly and easily.'
+              t('timer:feature.subTitle')
             }
-            titleFeatures={'Timer By Athletid 2023'}
-            subscriptions={'timer'}
+            titleFeatures={t('timer:feature.titleFeatures')}
+            subscriptions={subscriptions}
+            imageSrc={"/assets/images/training-recap.webp"}
           />
         </div>
         <div className={'md:px-4 md:max-w-[1170px] mx-auto '}>
           <Testimonial
-            title={'Many of you already \n' + 'love the app! '}
-            subTitle={'Together to build the best app.'}
+            title={t('timer:testimonial.title')}
+            subTitle={t('timer:testimonial.subTitle')}
           />
         </div>
-      </FormatTimer>
+      </Format>
     </>
   )
 }
 
 export default Timer
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['timer', 'home', 'footer', 'navbar', 'uiComponents'])),
+    },
+  }
+}

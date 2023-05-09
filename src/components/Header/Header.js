@@ -6,9 +6,11 @@ import {FaApple} from 'react-icons/fa'
 import {TiVendorAndroid} from 'react-icons/ti'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
 import {useIsMobile} from '@/src/components/Hooks/useMediaQuery'
+import {useTranslation} from "next-i18next";
 
 const Header = (props) => {
     const isMobile = useIsMobile()
+    const { t } = useTranslation('uiComponents')
 
     return (
         <header
@@ -25,7 +27,7 @@ const Header = (props) => {
                     }
                 >
                     {props.buttons === 'downloadButton' && (
-                        <Tag variant={'black'} text={'Available'}/>
+                        <Tag variant={'black'} text={t('uiComponents:tags.available')}/>
                     )}
                     <h1
                         className={`md:text-left text-center text-black white whitespace-pre-line my-3`}
@@ -64,7 +66,7 @@ const Header = (props) => {
                         <Button
                             variant={isMobile ? 'redOutline' : 'red'}
                             link={props.link}
-                            content={'Discover our apps '}
+                            content={t('home:header.button')}
                             className={'mt-6 md:!mt-16'}
                         />
                     )}

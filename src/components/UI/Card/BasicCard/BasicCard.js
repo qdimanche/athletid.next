@@ -5,10 +5,12 @@ import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import {AiOutlinePlus} from 'react-icons/ai'
 import Button from '@/src/components/UI/Button/Button'
 import Tag from '@/src/components/UI/Tag'
+import {useTranslation} from "next-i18next";
 
 const BasicCard = ({className, ...props}) => {
     const [isClick, setIsClick] = useState(false)
     const [count, setCount] = useState(0)
+    const { t } = useTranslation('home')
 
     useEffect(() => {
         if (count % 2 === 0) {
@@ -41,7 +43,7 @@ const BasicCard = ({className, ...props}) => {
                 }
             >
                 {props.tag && (
-                    <Tag variant={'white'} text={'Soon available'} className={'mb-4'}/>
+                    <Tag variant={'white'} text={t("tags.soon-available")} className={'mb-4'}/>
                 )}
                 <span className={`whitespace-pre-line text-4xl font-medium`}>
           {props.title}
@@ -102,7 +104,7 @@ const BasicCard = ({className, ...props}) => {
                         'absolute right-4 bottom-4 z-[100]',
                         props.buttonClassName
                     )}
-                    content={'Discover'}
+                    content={t("buttons.discover")}
                 />
             )}
         </div>

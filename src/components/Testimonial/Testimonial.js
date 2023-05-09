@@ -20,10 +20,10 @@ const Testimonial = (props) => {
                 <h2 style={{whiteSpace: 'pre-line'}}>{props.title}</h2>
             </div>
 
-            <div className={'w-full relative  mx-auto relative'}>
+            <div className={'w-full relative  mx-auto '}>
                 <Swiper
                     modules={[Autoplay, Navigation]}
-                    className={'w-[150%] md:max-w-[770px] md:mx-auto'}
+                    className={'w-[150%] transform left-[-25%] md:left-0 md:max-w-[770px] md:mx-auto'}
                     spaceBetween={60}
                     slidesPerView={3}
                     slidesPerGroup={1}

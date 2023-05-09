@@ -3,20 +3,24 @@ import Tag from '@/src/components/UI/Tag'
 import Button from '@/src/components/UI/Button/Button'
 import Image from 'next/image'
 import TimerDashboard from '@/public/assets/images/homeTimer.webp'
+import {useTranslation} from "next-i18next";
 
-const CardImageBottomRight = () => {
+const CardImageBottomRight = (props) => {
+
+    const { t } = useTranslation('home')
+
     return (
         <div
             className={
-                'rounded-medium overflow-hidden bg-greyShade  flex flex-col justify-between lg:flex-row  relative  h-[500px] md:h-[400px] p-4 md:pb-0 lg:pb-8'
+                'rounded-medium overflow-hidden bg-greyShade  flex flex-col justify-between lg:flex-row  relative  h-[500px] md:h-[400px] p-4 pb-0 lg:pb-8'
             }
         >
             <div className={'flex md:items-start md:flex-col md:justify-between'}>
                 <div className={'flex flex-col md:justify-between justify-center'}>
                     <div className={' md:mb-4 flex flex-col lg:w-full'}>
-                        <Tag text={'Available'} variant={'black'}/>
-                        <span className={'font-medium whitespace-no-wrap mt-4 mb-2  md:text-4xl xl:text-[44px]'}>Timer by Athletid</span>
-                        <span className={'font-medium text-black/20 whitespace-no-wrap md:text-4xl xl:text-[44px]'}>Train with a free mind.</span>
+                        <Tag text={t("tags.available")} variant={'black'}/>
+                        <span className={'font-medium whitespace-no-wrap mt-4 mb-2  md:text-4xl xl:text-[44px]'}>{props.title}</span>
+                        <span className={'font-medium text-black/20 whitespace-no-wrap md:text-4xl xl:text-[44px]'}>{props.subTitle}</span>
                     </div>
                 </div>
                 <div>
@@ -25,7 +29,7 @@ const CardImageBottomRight = () => {
                         text={'Lorem'}
                         variant={'red'}
                         link={'/timer'}
-                        content={"Discover"}
+                        content={t("buttons.discover")}
                     />
                 </div>
             </div>
@@ -36,7 +40,7 @@ const CardImageBottomRight = () => {
             >
                 <Image
                     className={
-                        'md:px-0  object-cover object-top md:object-right-top'
+                        'md:px-0  absolute md:relative  bottom-0 object-cover object-bottom md:object-right-top'
                     }
                     src={TimerDashboard}
                     alt={''}

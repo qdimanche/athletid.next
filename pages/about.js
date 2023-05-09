@@ -7,6 +7,7 @@ import CompanyDescription from "@/src/components/About/CompanyDescription";
 import CoFounderCitation from "@/src/components/About/CoFounderCitation";
 import KeyNumbers from "@/src/components/About/KeyNumbers";
 import JoinTeam from "@/src/components/About/JoinTeam";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 const About = () => {
 	
@@ -34,4 +35,18 @@ const About = () => {
 };
 
 export default About;
+
+export async function getStaticProps({ locale }) {
+	return {
+		props: {
+			...(await serverSideTranslations(locale, [
+				'about',
+				'footer',
+				'footerAbout',
+				'navbar',
+				'uiComponents',
+			])),
+		},
+	}
+}
 

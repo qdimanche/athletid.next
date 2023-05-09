@@ -1,0 +1,13 @@
+{
+  "buttons": {
+    "discover": "Découvrir",
+    "contact" : "Contacter",
+    "contact-us": "Contactez nous",
+    "join-the-waiting-list": "Rejoignez la liste d'attente",
+    "join-us": "Rejoignez nous"
+  },
+  "tags": {
+    "soon-available": "Bientôt disponible",
+    "available": "Disponible"
+  }
+}

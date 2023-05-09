@@ -1,0 +1,24 @@
+{
+  "title": "Discutons ensemble !",
+  "subTitle": "Ici vous pouvez échanger avec de vrais humain. ",
+  "form": {
+    "name":{
+      "label": "Votre nom",
+      "placeholder": "Votre nom..."
+    },
+    "email": {
+      "label": "Votre email",
+      "placeholder": "Votre email..."
+    },
+    "object": {
+      "label": "Objet",
+      "placeholder": "Conseils sportifs, service à la clientèle..."
+    },
+    "button": "Envoyez votre message",
+    "result": "Votre message a été envoyé. Notre équipe vous contactera prochainement."
+  },
+  "faq":{
+    "title": "Questions fréquemment posées",
+    "subTitle": "Vous avez des questions ? Nous sommes là pour vous aider."
+  }
+}

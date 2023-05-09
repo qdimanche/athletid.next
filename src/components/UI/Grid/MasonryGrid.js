@@ -2,7 +2,8 @@ import React from 'react'
 import Masonry from 'react-masonry-css'
 import Image from 'next/image'
 import Button from "@/src/components/UI/Button/Button";
-import {useIsMobile, useIsTablet} from "@/src/components/Hooks/useMediaQuery";
+import useMediaQuery, {useIsMobile, useIsTablet} from "@/src/components/Hooks/useMediaQuery";
+import {useTranslation} from "next-i18next";
 
 const breakpointColumnsObj = {
     default: 7,
@@ -15,6 +16,7 @@ const MasonryGrid = ({items, ...props}) => {
 
     const isTablet = useIsTablet();
     const isMobile = useIsMobile();
+    const { t } = useTranslation('home')
 
     return (
         <div className={'lg:px-0 px-4 max-w-[350px] md:max-w-[1170px] lg:max-w-[100vw] mx-auto'}>
@@ -24,7 +26,7 @@ const MasonryGrid = ({items, ...props}) => {
                         <h2 style={{whiteSpace: "pre-line"}} className={''}>{props.titleMasonry}</h2>
                         <p style={{whiteSpace: "pre-line"}}
                            className={'mt-3 mb-6'}>{props.subTitleMasonry}</p>
-                        <Button variant={"black"} content={"Discover"} link={"/about"}/>
+                        <Button variant={"black"} content={t("buttons.discover")} link={"/about"}/>
                     </div>
                 </div>
             </div>

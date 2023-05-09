@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import Script from "next/script";
 import {getCookie} from "cookies-next";
-import React from "react";
+import { appWithTranslation } from 'next-i18next'
 
 
 function App({Component, pageProps}) {
@@ -28,13 +28,6 @@ function App({Component, pageProps}) {
 			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MHQLFD3');`,
 			}}
 		/>
-		<Script id={"localize"} async src="https://global.localizecdn.com/localize.js"></Script>
-		<Script id={"localize-options"}>
-			{`!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","getSourceLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off","hideWidget","showWidget"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);`}
-		</Script>
-		<Script id={"localize-init"}>
-			{`Localize.initialize({ key: 'N7rxM86vzuhso', rememberLanguage: true, });`}
-		</Script>
 		
 		{consent === true && (
 			<Script
@@ -52,10 +45,7 @@ function App({Component, pageProps}) {
 		)}
 
 		<Component {...pageProps} />
-
-	
-	
 	</>
 }
 
-export default App;
+export default appWithTranslation(App)

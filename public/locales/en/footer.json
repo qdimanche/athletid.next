@@ -1,0 +1,16 @@
+{
+  "title": "Join the\nwaiting list.",
+  "subTitle": "Our sensors are under development. If you are interested, you can register for free on the waiting list and receive information about the launch date.",
+  "links": {
+    "home" : "Home",
+    "about": "About",
+    "privacy-policy": "Privacy Policy",
+    "terms-of-service": "Terms of Service"
+  },
+  "copyright": "Copyright © 2022 ATHLETID Inc. All rights reserved.",
+  "newsletter": {
+    "placeholder": "Your e-mail",
+    "button": "Send",
+    "result": "You are now following our news!"
+  }
+}

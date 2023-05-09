@@ -1,0 +1,75 @@
+{
+  "header": {
+    "title": "A unique sport experience.",
+    "subTitle": "Create a solid training routine with our applications and tracking system.",
+    "button": "Discover our apps"
+  },
+  "gridSection1": {
+    "title": "Consistency is the key, \n let's build it together.",
+    "subTitle": "Timer by Athletid"
+  },
+  "cardImageBottomRight": {
+    "title": "Timer by Athletid",
+    "subTitle": "Train with a free mind."
+  },
+  "cardImageTopRight": {
+    "title": "Adapting.",
+    "subTitle": "The app that \nincludes all the\nsports timers."
+  },
+  "cardImageBottomFull": {
+    "title": "Simple & intuitive.",
+    "subTitle": "A pure design."
+  },
+  "gridSection2": {
+    "title": "Keeping a training log \nhas never been easier.",
+    "subTitle": "Make the difference"
+  },
+  "homeCardContent": [
+    {
+      "title": "Intelligent motion\nrecognition.",
+      "imageSrcMobile": "/assets/images/apco-features-fullscreen-mobile.webp",
+      "imageSrc": "/assets/images/apco-features-fullscreen.webp",
+      "tag": true,
+      "textButton": true,
+      "link": "/athletid",
+      "paragraphWidth": "w-3/4 md:w-1/3",
+      "className": "md:col-span-2",
+      "buttonClassName": "md:left-4"
+    },
+    {
+      "title": "The power of data. ",
+      "subTitle": "Mesure your progress. ",
+      "subTitleClassName": "!text-black opacity-[16%] ",
+      "imageSrc": "/assets/images/captor-card.webp ",
+      "textButton": true,
+      "link": "/athletid ",
+      "className": "!text-black ",
+      "paragraphWidth": "w-2/3",
+      "buttonClassName": "md:left-4"
+    },
+    {
+      "title": "Motivation & inspiration.",
+      "subTitle": "An environment for your \nsuccess.",
+      "imageSrc": "/assets/images/apco-rock-background.webp ",
+      "buttonClassName": "hidden",
+      "link": ""
+    }
+  ],
+  "masonryGrid": {
+    "title": "Accompanying. \nInnovating. Progress",
+    "subTitle": "Let's build together the universe that will propel you towards your goals."
+  },
+  "contactSupport": {
+    "title": "Your ideas are \nour priorities!",
+    "subTitle": "Concerned about bringing you the best application, we are listening to all your suggestions to make our solution evolve."
+  },
+  "buttons": {
+    "discover": "Discover",
+    "contact" : "Contact"
+  },
+  "tags": {
+    "soon-available": "Soon available",
+    "available": "Available"
+  }
+
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Ne manquez pas le départ.",
+  "subTitle": "Soyez parmi les premiers informés de notre lancement ! Inscrivez-vous gratuitement sur la liste d'attente pour nos capteurs en développement.",
+  "links": {
+    "home" : "Accueil",
+    "about": "À propos",
+    "privacy-policy": "Politique de confidentialité",
+    "terms-of-service": "CGV CGU"
+  },
+  "copyright": "Copyright © 2022 ATHLETID Inc. Tous droits réservés.",
+  "newsletter": {
+    "placeholder": "Votre e-mail",
+    "button": "Envoyer",
+    "result": "Vous suivez maintenant nos mails !"
+  }
+}

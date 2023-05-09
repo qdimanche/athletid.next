@@ -4,9 +4,11 @@ import FooterAboutImage from '@/public/assets/images/footer-about-image.webp'
 import Link from 'next/link'
 import {useIsFromTablet} from '@/src/components/Hooks/useMediaQuery'
 import React from "react";
+import {useTranslation} from "next-i18next";
 
 const Footer = () => {
     const isFromTablet = useIsFromTablet()
+    const { t } = useTranslation('footerAbout')
 
     return (
         <footer
@@ -26,18 +28,15 @@ const Footer = () => {
                         }
                     >
                         <h2 className={''}>
-                            Do you have a <br/>
-                            question?
+                            {t("footerAbout:title")}
                         </h2>
                         <p className={'mt-4 mb-6'}>
-                            Our team will do its best to answer your questions and help you in
-                            the creation of a sport routine. Do not hesitate to follow us on
-                            the networks to support the project!
+                            {t("footerAbout:subTitle")}
                         </p>
                         <Button
                             variant={'red'}
                             link={'mailto:contact@athletid.com'}
-                            content={'Contact us'}
+                            content={t("uiComponents:buttons.contact-us")}
                             className={'!w-full md:!w-fit'}
                         />
                     </div>
@@ -54,7 +53,7 @@ const Footer = () => {
                         <Image
                             src={FooterAboutImage}
                             fill
-                            sizes={"33vw"}
+                            sizes={"70vw"}
                             className={'object-cover z-[1] object-top'}
                             alt={''}
                         />
@@ -79,22 +78,22 @@ const Footer = () => {
                             'flex  flex-col items-center md:items-end md:justify-end space-y-3 md:space-x-6'
                         }
                     >
-                        <div className={'flex space-x-6'}>
-                            <Link href={'/'}>Home</Link>
+                        <div className={'flex space-x-6 text-sm'}>
+                            <Link href={'/'}>{t('footer:links.home')}</Link>
                             <Link href={'/timer'}>Timer</Link>
                             <Link href={'/athletid'}>Athletid</Link>
-                            <Link href={'/about'}>About</Link>
-                            <Link href={'/contact'}>Contact</Link>
+                            <Link href={'/blog'}>Blog</Link>
+                            <Link href={'/about'}>{t('footer:links.about')}</Link>
                         </div>
                         <div
-                            className={'flex space-x-6 text-white/40 text-sm md:text-base'}
+                            className={'flex justify-between w-full text-white/40 text-sm md:text-base'}
                         >
-                            <Link href={'/contact'}>Support</Link>
-                            <Link href={'/privacy-policy'}>Privacy Policy</Link>
-                            <Link href={'/terms-of-service'}>Terms of Service</Link>
+                            <Link href={'/contact'}>Contact</Link>
+                            <Link href={'/privacy-policy'}>{t('footer:links.privacy-policy')}</Link>
+                            <Link href={'/terms-of-service'}>{t('footer:links.terms-of-service')}</Link>
                         </div>
                         <p className={'text-center text-white/40 !mt-8'}>
-                            Copyright © 2022 ATHLETID Inc. All rights reserved.
+                            {t('footer:copyright')}
                         </p>
                     </div>
                 </div>
