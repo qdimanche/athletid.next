@@ -7,28 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="update category tab menu">
-      <change beforePath="$PROJECT_DIR$/.idea/athletid.next.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/athletid.next.iml" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="bug fixing with tab menu">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/KeyNumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/KeyNumbers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderAbout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselSlide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/FeatureCarousel/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/FeatureCarousel/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Timeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/formatTimer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/formatTimer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,14 +144,7 @@
       <workItem from="1683185834710" duration="1197000" />
       <workItem from="1683271034752" duration="656000" />
       <workItem from="1683288833387" duration="14024000" />
-      <workItem from="1683618326689" duration="4918000" />
-    </task>
-    <task id="LOCAL-00061" summary="[+] Image flip content page timer">
-      <created>1680173438833</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1680173438834</updated>
+      <workItem from="1683618326689" duration="5578000" />
     </task>
     <task id="LOCAL-00062" summary="[+] wording">
       <created>1680183514261</created>
@@ -507,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683304278343</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="bug fixing with tab menu">
+      <created>1683624521155</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1683624521156</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,6 +501,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/translations" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/blog-version-2" />
@@ -539,7 +526,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/blog-version-2" />
+                        <option value="origin/translations" />
                       </list>
                     </value>
                   </entry>
@@ -553,7 +540,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+] bug fix" />
     <MESSAGE value="[+] desktop responsive page timer" />
     <MESSAGE value="image bug fix (responsive)" />
     <MESSAGE value="bug fixes apco page" />
@@ -578,6 +564,7 @@
     <MESSAGE value="connect sections api" />
     <MESSAGE value="connect sections paragraph" />
     <MESSAGE value="update category tab menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="update category tab menu" />
+    <MESSAGE value="bug fixing with tab menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixing with tab menu" />
   </component>
 </project>
