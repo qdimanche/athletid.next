@@ -1,7 +1,6 @@
 import Navbar from '@/src/components/Nav/Navbar'
 import Head from 'next/head'
 import Consent from '@/src/components/UI/Consent'
-import FooterAbout from "@/src/components/Footer/FooterAbout";
 import FooterTimer from "@/src/components/Footer/FooterTimer";
 
 export default function format({children}) {

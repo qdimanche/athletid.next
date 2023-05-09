@@ -1,7 +1,6 @@
 import React from 'react'
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
-import Link from 'next/link'
 
 const Button = ({className, children, ...props}) => {
     const {variant} = props

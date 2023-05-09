@@ -8,6 +8,7 @@ import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import Image from 'next/image'
 
 const ArchivePost = () => {
+
   let [countLoadMore, setCountLoadMore] = useState(0)
   let [postsToShow, setPostsToShow] = useState(6)
   const [categories, setCategories] = useState([])
@@ -31,6 +32,7 @@ const ArchivePost = () => {
   const [isError, setIsError] = useState(false)
   const [categoryClick, setCategoryClick] = useState(null)
 
+
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true)
@@ -46,7 +48,7 @@ const ArchivePost = () => {
         setIsLoading(false)
       }
     }
-    fetchData()
+    fetchData().then()
   }, [])
 
   useEffect(() => {
@@ -67,7 +69,7 @@ const ArchivePost = () => {
       if (categoryClick) {
         posts.map((post) => {
           if (post.categoryId === categoryClick) {
-            setPostsInfosToShow((prevState) => [post])
+            setPostsInfosToShow([post])
           }
         })
       } else {
@@ -101,7 +103,7 @@ const ArchivePost = () => {
           return <Post data={value} key={index} />
         })}
       </div>
-      {postsToShow < postsCategory?.length && (
+      {postsToShow <  postsInfosToShow.length && (
         <ToggleButton
           variant={'red'}
           className={' mx-auto mt-[68px] py-4 px-8 !rounded-full'}

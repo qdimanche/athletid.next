@@ -3,6 +3,7 @@ import Head from "next/head";
 import Format from "../src/layout/format"
 import HeaderBlog from "@/src/components/Blog/HeaderBlog";
 import ArchivePost from "@/src/components/Blog/ArchivePosts/ArchivePost";
+import Script from "next/script";
 
 const Blog = () => {
     return (

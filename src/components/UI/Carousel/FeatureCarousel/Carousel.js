@@ -82,6 +82,7 @@ export const CarouselFeature = (props) => {
             <div className={'space-y-6'}>
                 <div className={'h-[350px] w-[300px] relative mx-auto'}>
                     <Image
+                        alt={""}
                         layout={'fill'}
                         src={TimerScreen01}
                         className={'object-cover object-top'}
@@ -94,6 +95,7 @@ export const CarouselFeature = (props) => {
             <div className={'space-y-6'}>
                 <div className={'h-[350px] w-[300px] relative mx-auto'}>
                     <Image
+                        alt={""}
                         layout={'fill'}
                         src={TimerScreen02}
                         className={'object-cover object-top'}
@@ -106,6 +108,7 @@ export const CarouselFeature = (props) => {
             <div className={'space-y-6'}>
                 <div className={'h-[350px] w-[300px] relative mx-auto'}>
                     <Image
+                        alt={""}
                         layout={'fill'}
                         src={TimerScreen03}
                         className={'object-cover object-top'}

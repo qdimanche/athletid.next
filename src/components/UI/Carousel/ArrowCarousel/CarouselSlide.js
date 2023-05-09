@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import clsx from "clsx";
 
 export default function CarouselSlide({className, ...props }) {
   const { title, description, image } = props

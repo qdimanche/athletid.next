@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from "next/image";
-import TeamHeaderImageMobile from "@/public/assets/images/teamHeaderMobile.webp"
 import TeamHeader from "@/public/assets/images/teamHeader.webp"
 import {useIsMobile} from "@/src/components/Hooks/useMediaQuery";
 

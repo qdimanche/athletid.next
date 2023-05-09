@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Exemple from '../../../public/assets/images/application-athletid-reseau-professionnel.webp'
 import {VscDebugStart} from 'react-icons/vsc'
 import {FiSearch} from 'react-icons/fi'
 import {MdOutlineWbSunny, MdTimer} from 'react-icons/md'

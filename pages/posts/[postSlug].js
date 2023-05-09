@@ -35,7 +35,7 @@ export default function Page({ fallback }) {
         .finally(() => setIsLoading(false))
     }
 
-    fetchData()
+    fetchData().then()
   }, [postSlug])
 
   useEffect(() => {

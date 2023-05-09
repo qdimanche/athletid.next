@@ -24,14 +24,18 @@ export const Post = ({ data }) => {
         <div
           className={'h-[380px] w-full relative rounded-small overflow-hidden'}
         >
-
-          <Image
-            src={img}
-            fill
-            sizes={'100vw'}
-            className={'object-cover'}
-            alt={''}
-          />
+          {img ? (
+            <Image
+              src={img}
+              fill
+              priority
+              sizes={'100vw'}
+              className={'object-cover'}
+              alt={''}
+            />
+          ) : (
+            <></>
+          )}
         </div>
         <div className={'text-[20px] leading-[32px] mt-4 mb-2 underline'}>
           {name}

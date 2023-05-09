@@ -2,7 +2,7 @@ import React from 'react'
 import Masonry from 'react-masonry-css'
 import Image from 'next/image'
 import Button from "@/src/components/UI/Button/Button";
-import useMediaQuery, {useIsMobile, useIsTablet} from "@/src/components/Hooks/useMediaQuery";
+import {useIsMobile, useIsTablet} from "@/src/components/Hooks/useMediaQuery";
 
 const breakpointColumnsObj = {
     default: 7,

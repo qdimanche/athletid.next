@@ -7,13 +7,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="connect sections paragraph">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="update category tab menu">
+      <change beforePath="$PROJECT_DIR$/.idea/athletid.next.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/athletid.next.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/KeyNumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/KeyNumbers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/Post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/TabMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderAbout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/FullHeightBgImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/ToggleButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselSlide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/ArrowCarousel/CarouselSlide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Carousel/FeatureCarousel/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Carousel/FeatureCarousel/Carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Grid/MasonryGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/formatTimer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/formatTimer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +56,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2LrHFpofZrI2dCPLfLKSE7pCNAB" />
   <component name="ProjectLevelVcsManager">
@@ -146,14 +161,8 @@
       <workItem from="1683185793235" duration="1000" />
       <workItem from="1683185834710" duration="1197000" />
       <workItem from="1683271034752" duration="656000" />
-      <workItem from="1683288833387" duration="13904000" />
-    </task>
-    <task id="LOCAL-00060" summary="[+] Image optimization">
-      <created>1680102491770</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1680102491771</updated>
+      <workItem from="1683288833387" duration="14024000" />
+      <workItem from="1683618326689" duration="4918000" />
     </task>
     <task id="LOCAL-00061" summary="[+] Image flip content page timer">
       <created>1680173438833</created>
@@ -491,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683117389285</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="update category tab menu">
+      <created>1683304278343</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1683304278343</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +553,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+] testimonial slider" />
     <MESSAGE value="[+] bug fix" />
     <MESSAGE value="[+] desktop responsive page timer" />
     <MESSAGE value="image bug fix (responsive)" />
@@ -562,6 +577,7 @@
     <MESSAGE value="bug fixes" />
     <MESSAGE value="connect sections api" />
     <MESSAGE value="connect sections paragraph" />
-    <option name="LAST_COMMIT_MESSAGE" value="connect sections paragraph" />
+    <MESSAGE value="update category tab menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="update category tab menu" />
   </component>
 </project>

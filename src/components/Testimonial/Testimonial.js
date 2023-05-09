@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import TestimonialCard from './TestimonialCard'
 import TestimonialCardData from './TestimonialCardData'
 import {Swiper, SwiperSlide} from 'swiper/react'

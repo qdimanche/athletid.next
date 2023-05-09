@@ -29,7 +29,7 @@ export const TabMenu = (props) => {
           >
             <div
               className={`text-[14px] leading-[24px] ${
-                value === props.categoryClick
+                value.id === props.categoryClick
                   ? 'text-black font-[500]'
                   : 'text-darkGrey'
               }`}
