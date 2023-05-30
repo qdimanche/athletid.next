@@ -12,17 +12,17 @@
       "subTitle": "Dans une seule application.",
       "flipContentTitle": "1 application pour tous tes besoins.",
       "flipContent": "Découvrez de nouveaux entraînements, inspirez-vous, partagez vos progrès et votre passion ou suivez vos performances avec des statistiques précises et complètes sur votre activité. Avec notre application, vous pouvez même accéder aux services et programmes de professionnels certifiés",
-      "imageSrc": "/assets/images/apco-rock-background.webp ",
+      "imageKey": "apcoRockBackground",
       "buttons": "toggleButton"
     },
     {
       "title": "Reconnaissance des exercices. ",
       "flipContentTitle": "Unique au monde.",
       "flipContent": "Nous avons développé le premier système embarqué qui reconnaît les mouvements que vous effectuez pendant votre entraînement. Grâce à lui, vous pouvez concrètement voir vos progrès et votre évolution et suivre toutes vos séances d'entraînement.",
-      "imageSrc": "/assets/images/captor-card.webp ",
+      "imageKey": "captorWhiteBackground",
       "className": "md:col-span-2 !text-black",
       "paragraphWidth": "md:grid md:grid-cols-2",
-      "flipImage": "/assets/images/woman-red-line.webp ",
+      "imageKeyFlip": "womanRedLine",
       "flipImageHeight": 326,
       "flipImageWidth": 240,
       "buttons": "toggleButton"
@@ -31,10 +31,10 @@
       "title": "Écriture automatique du journal d’entraînement. ",
       "flipContentTitle": "Finies les écritures manuscrites !",
       "flipContent": "Vous pouvez dire adieu à votre vieux carnet d'entraînement. Grâce à notre puissant système intelligent, nous pouvons automatiquement enregistrer votre entraînement en temps réel.",
-      "imageSrc": "/assets/images/construction-entrainement-apco.webp ",
+      "imageKey": "constructionEntrainementApco",
       "className": "md:col-span-2",
       "paragraphWidth": "md:grid md:grid-cols-2",
-      "flipImage": "/assets/images/construction-seance-full.webp ",
+      "imageKeyFlip": "constructionSeanceFull",
       "flipImageHeight": 386,
       "flipImageWidth": 190,
       "buttons": "toggleButton"
@@ -44,7 +44,7 @@
       "subTitle": "Personnalisable.",
       "flipContentTitle": "Vos objectifs, vos statistiques ! ",
       "flipContent": "Personnalisez votre carnet d'entraînement pour visualiser des statistiques adaptées à vos objectifs. Partagez vos progrès avec vos amis et suivez les leurs pour les encourager et les soutenir.",
-      "imageSrc": "/assets/images/statistiques.webp ",
+      "imageKey": "stats",
       "buttons": "toggleButton"
     }
   ],

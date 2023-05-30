@@ -88,6 +88,8 @@ export default function Home() {
               const imagePath = getImagePath(value.imageKey)
               const imagePathMobile = getImagePath(value.imageKeyMobile)
 
+              console.log(imagePath)
+
               return  (
                 <BasicCard
                   key={index}
@@ -95,7 +97,7 @@ export default function Home() {
                   tag={value.tag}
                   title={value.title}
                   subTitle={value.subTitle}
-                  srcBg={
+                  imageKey={
                     isMobile && imagePathMobile ? imagePathMobile : imagePath
                   }
                   paragraphWidth={value.paragraphWidth}

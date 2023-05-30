@@ -23,8 +23,8 @@ const Athletid = () => {
   const getLanguageFromURL = () => {
     const { locale } = router
 
-    if (locale === 'fr') {
-      return 'fr'
+    if (locale === 'fr' || router.pathname.startsWith('/fr/')) {
+      return 'fr';
     }
     return 'en'
   }
@@ -58,8 +58,10 @@ const Athletid = () => {
             subTitle={t('athletid:gridSection.subTitle')}
           >
             {apcoCardContent.map((value, index) => {
-              const imagePath = getImagePath(value.imageKey)
-              const imagePathFlip = getImagePath(value.imageKeyFlip)
+              const imagePath = getImagePath(value.imageKey);
+              const imagePathFlip = getImagePath(value.imageKeyFlip);
+              console.log(value);
+
               return (
                 <BasicCard
                   key={index}
