@@ -15,13 +15,15 @@ import BasicCard from '@/src/components/UI/Card/BasicCard/BasicCard'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import imagePaths from "@/imagePaths";
+import {useRouter} from "next/router";
 
 export default function Home() {
   const isMobile = useIsMobile()
+  const router = useRouter();
   const { t } = useTranslation('home')
   const homeCardContent = t('homeCardContent', { returnObjects: true })
   const getImagePath = (imageKey) => {
-    return imagePaths[lang][imageKey];
+    return imagePaths[router.locale][imageKey];
   };
 
   return (
