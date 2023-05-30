@@ -27,8 +27,7 @@
   "homeCardContent": [
     {
       "title": "Reconnaissance \nintelligente\ndes mouvements.",
-      "imageSrcMobile": "/assets/images/apco-features-fullscreen-mobile.webp",
-      "imageSrc": "/assets/images/apco-features-fullscreen.webp",
+      "imageKey": "apcoFeaturesFullscreenMobile",
       "tag": true,
       "textButton": true,
       "link": "/athletid",
@@ -40,7 +39,7 @@
       "title": "Le pouvoir des données.",
       "subTitle": "Mesurez votre progression.",
       "subTitleClassName": "!text-black opacity-[16%] ",
-      "imageSrc": "/assets/images/captor-white-background.webp ",
+      "imageKey": "captorWhiteBackground",
       "textButton": true,
       "link": "/athletid ",
       "className": "!text-black ",
@@ -50,7 +49,7 @@
     {
       "title": "Motivation et inspiration.",
       "subTitle": "Un environnement pour \nvotre réussite.",
-      "imageSrc": "/assets/images/apco-rock-background.webp ",
+      "imageKey": "apcoRockBackground",
       "buttonClassName": "hidden",
       "link": ""
     }

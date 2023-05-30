@@ -73,7 +73,7 @@ export default function Home() {
             subTitle={t('gridSection2.subTitle')}
           >
             {homeCardContent.map((value, index) => {
-              const imagePath = getImagePath(value.imageSrc);
+              const imagePath = getImagePath(value.imageKey);
 
               return (
                 <BasicCard
