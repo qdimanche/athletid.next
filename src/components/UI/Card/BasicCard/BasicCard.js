@@ -23,13 +23,13 @@ const BasicCard = ({ className, ...props }) => {
   return (
     <div
       className={clsx(
-        `rounded-medium overflow-hidden  h-[500px] relative text-white`,
+        `rounded-medium overflow-hidden  w-full h-[500px] relative text-white`,
         className
       )}
     >
       <Image
         className={`object-cover  ${props.objectPosition}`}
-        src={props.srcBg}
+        src={props.imageKey}
         fill
         priority={true}
         sizes={'100vw'}
@@ -86,7 +86,7 @@ const BasicCard = ({ className, ...props }) => {
               {props.flipImage && (
                 <div className={`relative h-full w-full`}>
                   <Image
-                    src={props.flipImage}
+                    src={props.imageKeyFlip}
                     alt={''}
                     width={props.flipImageWidth}
                     height={props.flipImageHeight}

@@ -10,12 +10,30 @@ import CarouselBgImage from '@/src/components/UI/Carousel/ArrowCarouselBgImage/C
 import Feature from '@/src/components/Feature/Feature'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import imagePaths from "@/imagePaths";
+import {useRouter} from "next/router";
 
 const Athletid = () => {
   const { t } = useTranslation('home')
+  const router = useRouter();
   const apcoCardContent = t('athletid:apcoCardContent', { returnObjects: true })
   const carouselItems = t('athletid:carouselItems', { returnObjects: true })
   const subscriptions = t('athletid:feature.subscriptions', { returnObjects: true })
+
+  const getLanguageFromURL = () => {
+    const { locale } = router
+
+    if (locale === 'fr') {
+      return 'fr'
+    }
+    return 'en'
+  }
+
+  const language = getLanguageFromURL()
+
+  const getImagePath = (imageKey) => {
+    return imagePaths[language][imageKey]
+  }
 
   return (
     <>
@@ -40,12 +58,15 @@ const Athletid = () => {
             subTitle={t('athletid:gridSection.subTitle')}
           >
             {apcoCardContent.map((value, index) => {
+              const imagePath = getImagePath(value.imageKey)
+              const imagePathFlip = getImagePath(value.imageKeyFlip)
               return (
                 <BasicCard
                   key={index}
                   title={value.title}
                   subTitle={value.subTitle}
-                  srcBg={value.imageSrc}
+                  imageKey={imagePath}
+                  imageKeyFlip={imagePathFlip}
                   paragraphWidth={value.paragraphWidth}
                   className={value.className}
                   flipContent={value.flipContent}

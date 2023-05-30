@@ -23,23 +23,20 @@ export default function Home() {
   const { t } = useTranslation('home')
   const homeCardContent = t('homeCardContent', { returnObjects: true })
 
-
   const getLanguageFromURL = () => {
-    const { locale } = router;
+    const { locale } = router
 
     if (locale === 'fr') {
-      return 'fr';
+      return 'fr'
     }
-    return 'en';
-  };
+    return 'en'
+  }
 
-  const language = getLanguageFromURL();
-
-  console.log(language)
+  const language = getLanguageFromURL()
 
   const getImagePath = (imageKey) => {
-    return imagePaths[language][imageKey];
-  };
+    return imagePaths[language][imageKey]
+  }
 
   return (
     <>
@@ -91,7 +88,7 @@ export default function Home() {
               const imagePath = getImagePath(value.imageKey)
               const imagePathMobile = getImagePath(value.imageKeyMobile)
 
-              return (
+              return  (
                 <BasicCard
                   key={index}
                   link={value.link}
@@ -106,7 +103,7 @@ export default function Home() {
                   subTitleClassName={value.subTitleClassName}
                   buttonClassName={value.buttonClassName}
                 />
-              )
+              );
             })}
           </GridSection>
         </div>
