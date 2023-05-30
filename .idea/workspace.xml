@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="correct paths for images" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="correct paths for images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/captor-card.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/captor-white-background.webp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,13 +144,6 @@
       <workItem from="1683271034752" duration="656000" />
       <workItem from="1683288833387" duration="14024000" />
       <workItem from="1683618326689" duration="5578000" />
-    </task>
-    <task id="LOCAL-00067" summary="improve code for singlePost">
-      <created>1680533287845</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1680533287846</updated>
     </task>
     <task id="LOCAL-00068" summary="improve code for singlePost">
       <created>1680533756009</created>
@@ -485,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685436465780</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="correct paths for images">
+      <created>1685436813863</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1685436813863</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
