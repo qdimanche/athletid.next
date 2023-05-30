@@ -7,33 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="correct paths for images">
-      <change afterPath="$PROJECT_DIR$/imagePaths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/about.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/athletid.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/athletid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/blog.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/blog.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/common.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/contact.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/contact.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/footer.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/footer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/footerAbout.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/footerAbout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/home.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/navbar.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/navbar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/timer.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/timer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/en/uiComponents.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/uiComponents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/about.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/athletid.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/athletid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/blog.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/blog.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/common.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/contact.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/contact.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/footer.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/footer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/footerAbout.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/footerAbout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/home.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/navbar.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/navbar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/timer.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/timer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/fr/uiComponents.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/uiComponents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="correct paths for images" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,13 +141,6 @@
       <workItem from="1683271034752" duration="656000" />
       <workItem from="1683288833387" duration="14024000" />
       <workItem from="1683618326689" duration="5578000" />
-    </task>
-    <task id="LOCAL-00072" summary="change baseURL">
-      <created>1680775806499</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1680775806500</updated>
     </task>
     <task id="LOCAL-00073" summary="change baseURL">
       <created>1680776498848</created>
@@ -511,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685438712355</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="correct paths for images">
+      <created>1685441107994</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1685441107994</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

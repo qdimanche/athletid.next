@@ -14,6 +14,7 @@ import CardImageBottomFull from '@/src/components/UI/Card/CardImageBottomFull'
 import BasicCard from '@/src/components/UI/Card/BasicCard/BasicCard'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import imagePaths from "@/imagePaths";
 
 export default function Home() {
   const isMobile = useIsMobile()
