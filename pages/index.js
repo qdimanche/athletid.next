@@ -14,16 +14,31 @@ import CardImageBottomFull from '@/src/components/UI/Card/CardImageBottomFull'
 import BasicCard from '@/src/components/UI/Card/BasicCard/BasicCard'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
-import imagePaths from "@/imagePaths";
-import {useRouter} from "next/router";
+import imagePaths from '@/imagePaths'
+import { useRouter } from 'next/router'
 
 export default function Home() {
   const isMobile = useIsMobile()
-  const router = useRouter();
+  const router = useRouter()
   const { t } = useTranslation('home')
   const homeCardContent = t('homeCardContent', { returnObjects: true })
+
+
+  const getLanguageFromURL = () => {
+    const { locale } = router;
+
+    if (locale === 'fr') {
+      return 'fr';
+    }
+    return 'en';
+  };
+
+  const language = getLanguageFromURL();
+
+  console.log(language)
+
   const getImagePath = (imageKey) => {
-    return imagePaths[router.locale][imageKey];
+    return imagePaths[language][imageKey];
   };
 
   return (
@@ -73,7 +88,8 @@ export default function Home() {
             subTitle={t('gridSection2.subTitle')}
           >
             {homeCardContent.map((value, index) => {
-              const imagePath = getImagePath(value.imageKey);
+              const imagePath = getImagePath(value.imageKey)
+              const imagePathMobile = getImagePath(value.imageKeyMobile)
 
               return (
                 <BasicCard
@@ -82,7 +98,9 @@ export default function Home() {
                   tag={value.tag}
                   title={value.title}
                   subTitle={value.subTitle}
-                  srcBg={imagePath}
+                  srcBg={
+                    isMobile && imagePathMobile ? imagePathMobile : imagePath
+                  }
                   paragraphWidth={value.paragraphWidth}
                   className={value.className}
                   subTitleClassName={value.subTitleClassName}
@@ -111,7 +129,12 @@ export default function Home() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home', 'footer', 'navbar', 'uiComponents'])),
+      ...(await serverSideTranslations(locale, [
+        'home',
+        'footer',
+        'navbar',
+        'uiComponents',
+      ])),
     },
   }
 }

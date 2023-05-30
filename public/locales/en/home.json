@@ -26,18 +26,19 @@
   },
   "homeCardContent": [
     {
-      "title": "Intelligent motion recognition.",
-      "imageKey": "apcoFeaturesFullscreenMobile",
+      "title": "Intelligent motion\nrecognition.",
+      "imageKeyMobile": "apcoFeaturesFullscreenMobile",
+      "imageKey": "apcoFeaturesFullscreen",
       "tag": true,
       "textButton": true,
       "link": "/athletid",
       "paragraphWidth": "w-3/4 md:w-1/3",
-      "className": "md:col-span-2",
+      "className": "md:!col-span-2",
       "buttonClassName": "md:left-4"
     },
     {
       "title": "The power of data. ",
-      "subTitle": "Measure your progress. ",
+      "subTitle": "Mesure your progress. ",
       "subTitleClassName": "!text-black opacity-[16%] ",
       "imageKey": "captorWhiteBackground",
       "textButton": true,
@@ -48,7 +49,7 @@
     },
     {
       "title": "Motivation & inspiration.",
-      "subTitle": "An environment for your success.",
+      "subTitle": "An environment for your \nsuccess.",
       "imageKey": "apcoRockBackground",
       "buttonClassName": "hidden",
       "link": ""
@@ -64,10 +65,11 @@
   },
   "buttons": {
     "discover": "Discover",
-    "contact": "Contact"
+    "contact" : "Contact"
   },
   "tags": {
     "soon-available": "Soon available",
     "available": "Available"
   }
+
 }

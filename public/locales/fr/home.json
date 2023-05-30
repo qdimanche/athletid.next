@@ -27,7 +27,8 @@
   "homeCardContent": [
     {
       "title": "Reconnaissance \nintelligente\ndes mouvements.",
-      "imageKey": "apcoFeaturesFullscreenMobile",
+      "imageKeyMobile": "apcoFeaturesFullscreenMobile",
+      "imageKey": "apcoFeaturesFullscreen",
       "tag": true,
       "textButton": true,
       "link": "/athletid",

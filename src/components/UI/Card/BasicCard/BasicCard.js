@@ -23,7 +23,7 @@ const BasicCard = ({ className, ...props }) => {
   return (
     <div
       className={clsx(
-        `rounded-medium overflow-hidden  w-full h-[500px] relative text-white`,
+        `rounded-medium overflow-hidden  h-[500px] relative text-white`,
         className
       )}
     >
