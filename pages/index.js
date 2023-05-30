@@ -19,6 +19,9 @@ export default function Home() {
   const isMobile = useIsMobile()
   const { t } = useTranslation('home')
   const homeCardContent = t('homeCardContent', { returnObjects: true })
+  const getImagePath = (imageKey) => {
+    return imagePaths[lang][imageKey];
+  };
 
   return (
     <>
@@ -67,6 +70,8 @@ export default function Home() {
             subTitle={t('gridSection2.subTitle')}
           >
             {homeCardContent.map((value, index) => {
+              const imagePath = getImagePath(value.imageSrc);
+
               return (
                 <BasicCard
                   key={index}
@@ -74,11 +79,7 @@ export default function Home() {
                   tag={value.tag}
                   title={value.title}
                   subTitle={value.subTitle}
-                  srcBg={
-                    value.imageSrcMobile && isMobile
-                      ? value.imageSrcMobile
-                      : value.imageSrc
-                  }
+                  srcBg={imagePath}
                   paragraphWidth={value.paragraphWidth}
                   className={value.className}
                   subTitleClassName={value.subTitleClassName}
