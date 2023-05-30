@@ -142,13 +142,6 @@
       <workItem from="1683288833387" duration="14024000" />
       <workItem from="1683618326689" duration="5578000" />
     </task>
-    <task id="LOCAL-00066" summary="[+] related post (api/posts)">
-      <created>1680521778243</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1680521778244</updated>
-    </task>
     <task id="LOCAL-00067" summary="improve code for singlePost">
       <created>1680533287845</created>
       <option name="number" value="00067" />
@@ -485,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685435872867</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="correct paths for images">
+      <created>1685436465780</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1685436465780</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

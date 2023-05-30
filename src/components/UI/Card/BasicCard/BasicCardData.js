@@ -14,7 +14,7 @@ export const apcoCardContent = [
     flipContentTitle: 'Unique in the world.',
     flipContent:
         'We have developed the first on-board system that recognizes the movements you make during your workout. With it, you can concretely see your progress and your evolution and follow all your training sessions. ',
-    imageSrc: '/assets/images/captor-card.webp',
+    imageSrc: '/assets/images/captor-white-background.webp',
     className: 'md:col-span-2 !text-black',
     paragraphWidth: 'md:grid md:grid-cols-2',
     flipImage : '/assets/images/woman-red-line.webp',
@@ -62,7 +62,7 @@ export const homeCardContent = [
     title: 'The power of data.',
     subTitle: 'Mesure your progress.',
     subTitleClassName: '!text-black opacity-[16%]',
-    imageSrc: '/assets/images/captor-card.webp',
+    imageSrc: '/assets/images/captor-white-background.webp',
     textButton: true,
     link: '/athletid',
     className: '!text-black',
