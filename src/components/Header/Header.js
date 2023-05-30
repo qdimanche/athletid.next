@@ -43,7 +43,7 @@ const Header = (props) => {
                         <div className={`flex space-x-4 whitespace-nowrap`}>
                             <Button
                                 variant={'black'}
-                                link={''}
+                                link={'https://apps.apple.com/fr/app/timer-by-athletid/id1660216893?l=en'}
                                 content={
                                     <div className={'flex space-x-2 items-center'}>
                                         <FaApple color={'black'} size={20}/>
@@ -53,7 +53,7 @@ const Header = (props) => {
                             />
                             <Button
                                 variant={'black'}
-                                link={''}
+                                link={'https://play.google.com/store/apps/details?id=com.athletid.timerapp'}
                                 content={
                                     <div className={'flex space-x-2 items-center'}>
                                         <TiVendorAndroid color={'black'} size={22}/>
