@@ -7,9 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="bug fixing with tab menu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Card/BasicCard/BasicCardData.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="correct paths for images">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,13 +143,6 @@
       <workItem from="1683271034752" duration="656000" />
       <workItem from="1683288833387" duration="14024000" />
       <workItem from="1683618326689" duration="5578000" />
-    </task>
-    <task id="LOCAL-00064" summary="[+] last bug fix for website v2">
-      <created>1680250689663</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1680250689664</updated>
     </task>
     <task id="LOCAL-00065" summary="[+] last bug fix for website v2">
       <created>1680250697728</created>
@@ -488,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685434209555</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="correct paths for images">
+      <created>1685435300863</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1685435300863</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+] desktop responsive page timer" />
     <MESSAGE value="image bug fix (responsive)" />
     <MESSAGE value="bug fixes apco page" />
     <MESSAGE value="Responsive bug fixes home page" />
@@ -564,6 +562,7 @@
     <MESSAGE value="connect sections paragraph" />
     <MESSAGE value="update category tab menu" />
     <MESSAGE value="bug fixing with tab menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixing with tab menu" />
+    <MESSAGE value="correct paths for images" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct paths for images" />
   </component>
 </project>
