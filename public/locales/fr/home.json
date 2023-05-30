@@ -40,7 +40,7 @@
       "title": "Le pouvoir des données.",
       "subTitle": "Mesurez votre progression.",
       "subTitleClassName": "!text-black opacity-[16%] ",
-      "imageSrc": "/assets/images/captor-card.webp ",
+      "imageSrc": "/assets/images/captor-white-background.webp ",
       "textButton": true,
       "link": "/athletid ",
       "className": "!text-black ",
