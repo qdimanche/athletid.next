@@ -12,6 +12,7 @@ import { IoIosTimer } from 'react-icons/io'
 import { Post } from '@/src/components/Blog/ArchivePosts/Post'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
 import Error from '@/src/components/Blog/_child/Error'
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function Page({ fallback }) {
   let router = useRouter()
@@ -37,6 +38,7 @@ export default function Page({ fallback }) {
 
     fetchData().then()
   }, [postSlug])
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -146,25 +148,40 @@ function RelatedPost(props) {
   )
 }
 
-export async function getStaticProps({ params }) {
-  const posts = await getPost(params.postSlug)
+export async function getStaticProps({ params , locale}) {
+    const posts = await getPost(params.postSlug);
 
-  return {
-    props: {
-      fallback: {
-        'api/posts': posts,
-      },
-    },
-  }
+    return {
+        props: {
+            fallback: {
+                'api/posts': posts,
+            },
+            ...(await serverSideTranslations(locale, [
+                'blog',
+                'footer',
+                'navbar',
+                'uiComponents',
+            ])),
+        },
+    };
 }
 
-export async function getStaticPaths() {
-  const posts = await getPosts()
-  if (posts) {
-    const paths = posts.map((post) => ({
-      params: { postSlug: post.slug },
-    }))
+export async function getStaticPaths({ locales }) {
+    const posts = await getPosts();
 
-    return { paths, fallback: false }
-  }
+    const paths = [];
+
+    for (const locale of locales) {
+        for (const post of posts) {
+            paths.push({ params: { postSlug: post.slug }, locale });
+        }
+    }
+
+    return {
+        paths,
+        fallback: false
+    };
 }
+
+
+
