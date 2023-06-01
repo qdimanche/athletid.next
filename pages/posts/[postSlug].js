@@ -65,7 +65,7 @@ export default function Page({ fallback }) {
   useEffect(() => {
     if (posts && post) {
       setRelatedPosts(
-        posts.filter((item) => item.categories === post.categories)
+        posts.filter((item) => item.categories === post.categories && item.name !== post.name)
       )
     }
   }, [post, posts])
