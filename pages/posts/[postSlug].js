@@ -24,6 +24,7 @@ export default function Page({ fallback }) {
   const [isLoading, setIsLoading] = useState(true)
   const [isError, setIsError] = useState(false)
 
+
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true)
@@ -45,7 +46,7 @@ export default function Page({ fallback }) {
       if (post) {
         await fetcher(`api/sections/${post.id}`)
           .then(({ data, isError }) => {
-            setSections(data)
+            setSections(data.sort((a, b) => a.order - b.order))
             setIsError(isError)
           })
           .catch(() => setIsError(true))
@@ -72,6 +73,8 @@ export default function Page({ fallback }) {
 
   if (isLoading) return <CircleSpinner></CircleSpinner>
   if (isError) return <Error></Error>
+
+    console.log(sections)
 
   return (
     <SWRConfig value={{ fallback }}>

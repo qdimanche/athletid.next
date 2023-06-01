@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="correct paths for post">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="bug fix with related posts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
     </list>
@@ -147,14 +147,9 @@
       <workItem from="1685454106308" duration="55000" />
       <workItem from="1685454827839" duration="5768000" />
       <workItem from="1685518111558" duration="2679000" />
-      <workItem from="1685614234185" duration="168000" />
-    </task>
-    <task id="LOCAL-00080" summary="change baseURL">
-      <created>1680778978443</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1680778978443</updated>
+      <workItem from="1685614234185" duration="2151000" />
+      <workItem from="1685625926224" duration="1209000" />
+      <workItem from="1685631116664" duration="544000" />
     </task>
     <task id="LOCAL-00081" summary="change baseURL">
       <created>1680779223419</created>
@@ -492,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685520830953</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="bug fix with related posts">
+      <created>1685614431173</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1685614431174</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +545,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="bug fixes apco page" />
     <MESSAGE value="Responsive bug fixes home page" />
     <MESSAGE value="new sizes and new styles" />
     <MESSAGE value="resize component home done" />
@@ -568,6 +569,7 @@
     <MESSAGE value="bug fixing with tab menu" />
     <MESSAGE value="correct paths for images" />
     <MESSAGE value="correct paths for post" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct paths for post" />
+    <MESSAGE value="bug fix with related posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix with related posts" />
   </component>
 </project>
