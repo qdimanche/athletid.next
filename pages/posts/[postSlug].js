@@ -12,7 +12,7 @@ import { IoIosTimer } from 'react-icons/io'
 import { Post } from '@/src/components/Blog/ArchivePosts/Post'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
 import Error from '@/src/components/Blog/_child/Error'
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Page({ fallback }) {
   let router = useRouter()
@@ -20,10 +20,10 @@ export default function Page({ fallback }) {
   const [post, setPost] = useState(null)
   const [sections, setSections] = useState(null)
   const [posts, setPosts] = useState(null)
+  const [author, setAuthor] = useState(null)
   const [relatedPosts, setRelatedPosts] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
   const [isError, setIsError] = useState(false)
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -39,7 +39,6 @@ export default function Page({ fallback }) {
 
     fetchData().then()
   }, [postSlug])
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -58,6 +57,13 @@ export default function Page({ fallback }) {
           })
           .catch(() => setIsError(true))
           .finally(() => setIsLoading(false))
+
+        await fetcher(`api/users/${post.authorId}`).then(
+          ({ data, isError }) => {
+            setAuthor(data)
+            setIsError(isError)
+          }
+        )
       }
     }
     fetchData().then()
@@ -66,7 +72,10 @@ export default function Page({ fallback }) {
   useEffect(() => {
     if (posts && post) {
       setRelatedPosts(
-        posts.filter((item) => item.categories === post.categories && item.name !== post.name)
+        posts.filter(
+          (item) =>
+            item.categories === post.categories && item.name !== post.name
+        )
       )
     }
   }, [post, posts])
@@ -74,7 +83,7 @@ export default function Page({ fallback }) {
   if (isLoading) return <CircleSpinner></CircleSpinner>
   if (isError) return <Error></Error>
 
-    console.log(sections)
+
 
   return (
     <SWRConfig value={{ fallback }}>
@@ -85,7 +94,7 @@ export default function Page({ fallback }) {
       </Head>
       <Format>
         <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
-          <Article {...post} sections={sections}></Article>
+          <Article {...post} author={author} sections={sections}></Article>
           <RelatedPost sections={sections} relatedPosts={relatedPosts} />
         </div>
       </Format>
@@ -93,14 +102,14 @@ export default function Page({ fallback }) {
   )
 }
 
-function Article({ name, img, authorIrd, ...props }) {
+function Article({ name, img, ...props }) {
   return (
     <div className={''}>
       <div className={'mt-[142px] md:mt-[216px] mb-[32px] md:mb-[64px]'}>
         <h1 className={''}>{name}</h1>
       </div>
       <div className={'flex justify-between'}>
-        <Author {...authorIrd}></Author>
+        <Author author={props.author} />
         <div className={'flex space-x-4 pt-1'}>
           <IoIosTimer size={20} color={'darkGrey'} />
           <p className={'text-darkGrey '}>2 minutes read</p>
@@ -151,40 +160,37 @@ function RelatedPost(props) {
   )
 }
 
-export async function getStaticProps({ params , locale}) {
-    const posts = await getPost(params.postSlug);
+export async function getStaticProps({ params, locale }) {
+  const posts = await getPost(params.postSlug)
 
-    return {
-        props: {
-            fallback: {
-                'api/posts': posts,
-            },
-            ...(await serverSideTranslations(locale, [
-                'blog',
-                'footer',
-                'navbar',
-                'uiComponents',
-            ])),
-        },
-    };
+  return {
+    props: {
+      fallback: {
+        'api/posts': posts,
+      },
+      ...(await serverSideTranslations(locale, [
+        'blog',
+        'footer',
+        'navbar',
+        'uiComponents',
+      ])),
+    },
+  }
 }
 
 export async function getStaticPaths({ locales }) {
-    const posts = await getPosts();
+  const posts = await getPosts()
 
-    const paths = [];
+  const paths = []
 
-    for (const locale of locales) {
-        for (const post of posts) {
-            paths.push({ params: { postSlug: post.slug }, locale });
-        }
+  for (const locale of locales) {
+    for (const post of posts) {
+      paths.push({ params: { postSlug: post.slug }, locale })
     }
+  }
 
-    return {
-        paths,
-        fallback: false
-    };
+  return {
+    paths,
+    fallback: false,
+  }
 }
-
-
-
