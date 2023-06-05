@@ -172,6 +172,8 @@ export async function getStaticProps({ params, locale }) {
         'navbar',
         'uiComponents',
       ])),
+        ...(await serverSideTranslations(locale, ['footer', 'navbar', 'uiComponents'])),
+
     },
     revalidate: 60,
   }

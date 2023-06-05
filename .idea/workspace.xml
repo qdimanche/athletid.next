@@ -7,14 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="add dynamic authors">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="add search bar">
       <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/blog.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/blog.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/fr/blog.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/blog.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/SearchBar/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/SearchResults/SearchResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/SearchResults/SearchResult.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +151,7 @@
       <workItem from="1685631116664" duration="768000" />
       <workItem from="1685691933614" duration="55000" />
       <workItem from="1685703839028" duration="1809000" />
-      <workItem from="1685953037852" duration="12467000" />
-    </task>
-    <task id="LOCAL-00084" summary="change baseURL">
-      <created>1680780908619</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1680780908619</updated>
+      <workItem from="1685953037852" duration="12823000" />
     </task>
     <task id="LOCAL-00085" summary="change baseURL">
       <created>1680780949367</created>
@@ -502,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685959628758</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="add search bar">
+      <created>1685974427658</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1685974427658</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new sizes and new styles" />
     <MESSAGE value="resize component home done" />
     <MESSAGE value="resize component timer done" />
     <MESSAGE value="[+] About and contact page" />
@@ -578,6 +571,7 @@
     <MESSAGE value="correct paths for post" />
     <MESSAGE value="bug fix with related posts" />
     <MESSAGE value="add dynamic authors" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dynamic authors" />
+    <MESSAGE value="add search bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add search bar" />
   </component>
 </project>
