@@ -1,26 +1,38 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { useTranslation } from 'next-i18next'
+import { BsSearch } from 'react-icons/bs'
 
 const SearchBar = () => {
+  const { t } = useTranslation('blog')
+
   const [searchQuery, setSearchQuery] = useState('')
   const router = useRouter()
   const onSearch = (event) => {
     event.preventDefault()
 
     const encodedSearchQuery = encodeURI(searchQuery)
-    router.push(`/search?q=${encodedSearchQuery}`);
+    router.push(`/search?q=${encodedSearchQuery}`)
   }
 
   return (
-    <form className={'flex justify-center w-2/3'} onSubmit={onSearch}>
-      <input
-        value={searchQuery}
-        onChange={(event) => setSearchQuery(event.target.value)}
-        className={'focus:ring-1 focus:ring-white'}
-        type="text"
-        required
-        placeholder={'Search something...'}
-      />
+    <form className={'flex'} onSubmit={onSearch}>
+      <div className={'relative w-1/3'}>
+        <input
+          value={searchQuery}
+          onChange={(event) => setSearchQuery(event.target.value)}
+          className={'focus:ring-1 focus:ring-white w-full'}
+          type="text"
+          required
+          placeholder={t('blog:searchForm.placeholder')}
+        />
+        <BsSearch
+          size={16}
+          color={'black'}
+          onClick={onSearch}
+          className={'absolute transform -translate-y-1/2 top-1/2 right-[10px] cursor-pointer'}
+        />
+      </div>
     </form>
   )
 }

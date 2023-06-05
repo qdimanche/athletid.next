@@ -83,8 +83,6 @@ export default function Page({ fallback }) {
   if (isLoading) return <CircleSpinner></CircleSpinner>
   if (isError) return <Error></Error>
 
-
-
   return (
     <SWRConfig value={{ fallback }}>
       <Head>
@@ -175,6 +173,7 @@ export async function getStaticProps({ params, locale }) {
         'uiComponents',
       ])),
     },
+    revalidate: 60,
   }
 }
 

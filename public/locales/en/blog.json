@@ -5,5 +5,8 @@
     "load-more": "Load more",
     "view-all": "View all",
     "read-post": "Read post"
+  },
+  "searchForm": {
+    "placeholder": "Search..."
   }
 }

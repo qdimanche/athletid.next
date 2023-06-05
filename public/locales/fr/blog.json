@@ -5,5 +5,8 @@
     "load-more": "Charger plus",
     "view-all": "Voir tout",
     "read-post": "Lire l'article"
+  },
+  "searchForm": {
+    "placeholder": "Rechercher..."
   }
 }
