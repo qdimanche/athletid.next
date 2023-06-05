@@ -7,11 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="bug fix with related posts">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="add dynamic authors">
+      <change afterPath="$PROJECT_DIR$/pages/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Search/SearchBar/SearchBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Search/SearchResults/SearchResult.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/_child/Author.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +79,11 @@
       <recent name="$PROJECT_DIR$/src/components/UI/Carousel/Buttons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Search" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/Contact/Faq" />
       <recent name="$PROJECT_DIR$/public/assets/icons" />
-      <recent name="$PROJECT_DIR$/public/assets/icons/Frame" />
     </key>
   </component>
   <component name="RunManager">
@@ -153,14 +154,8 @@
       <workItem from="1685625926224" duration="1209000" />
       <workItem from="1685631116664" duration="768000" />
       <workItem from="1685691933614" duration="55000" />
-      <workItem from="1685703839028" duration="1164000" />
-    </task>
-    <task id="LOCAL-00082" summary="change baseURL">
-      <created>1680779327010</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1680779327010</updated>
+      <workItem from="1685703839028" duration="1809000" />
+      <workItem from="1685953037852" duration="6096000" />
     </task>
     <task id="LOCAL-00083" summary="change baseURL">
       <created>1680779458903</created>
@@ -498,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685632427587</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="add dynamic authors">
+      <created>1685705050267</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1685705050268</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +551,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Responsive bug fixes home page" />
     <MESSAGE value="new sizes and new styles" />
     <MESSAGE value="resize component home done" />
     <MESSAGE value="resize component timer done" />
@@ -574,6 +575,7 @@
     <MESSAGE value="correct paths for images" />
     <MESSAGE value="correct paths for post" />
     <MESSAGE value="bug fix with related posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix with related posts" />
+    <MESSAGE value="add dynamic authors" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dynamic authors" />
   </component>
 </project>
