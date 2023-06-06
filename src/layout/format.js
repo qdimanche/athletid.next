@@ -5,6 +5,7 @@ import Consent from '@/src/components/UI/Consent'
 
 export default function format({children}) {
 
+
     return (
         <>
             <Head>

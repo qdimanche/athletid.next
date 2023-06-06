@@ -8,5 +8,11 @@
   },
   "searchForm": {
     "placeholder": "Search..."
+  },
+  "filters": {
+    "sort": {
+      "dateAscending" : "From the oldest",
+      "dateDescending": "From the latest"
+    }
   }
 }

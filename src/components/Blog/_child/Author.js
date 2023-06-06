@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function Author(props) {
   return (
-    <div className={'flex space-x-[8px] items-center'}>
+    <div className={'flex space-x-4 items-center'}>
       <div
         className={'h-[40px] w-[40px] relative rounded-full overflow-hidden'}
       >

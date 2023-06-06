@@ -1,7 +1,7 @@
 {
   "buttons": {
     "discover": "Découvrir",
-    "contact" : "Contacter",
+    "contact": "Contacter",
     "contact-us": "Contactez nous",
     "join-the-waiting-list": "Rejoignez la liste d'attente",
     "join-us": "Rejoignez nous"
@@ -9,5 +9,12 @@
   "tags": {
     "soon-available": "Bientôt disponible",
     "available": "Disponible"
+  },
+  "consent": {
+    "sentence": "Ce site utilise des cookies, veuillez les accepter si vous le souhaitez.",
+    "buttons": {
+      "accept": "Tout accepter",
+      "decline": "Tout décliner"
+    }
   }
 }

@@ -14,7 +14,7 @@ const Header = (props) => {
 
     return (
         <header
-            className={`relative flex justify-center bg-greyShade overflow-hidden  md:min-h-[500px] md:h-screen  pt-[140px] md:pt-0`}
+            className={`relative flex justify-center bg-greyShade overflow-hidden  md:min-h-[500px] md:min-h-screen  py-[140px]`}
         >
             <div
                 className={

@@ -13,9 +13,18 @@ import { Post } from '@/src/components/Blog/ArchivePosts/Post'
 import CircleSpinner from '@/src/components/UI/Spinner/CircleSpinner'
 import Error from '@/src/components/Blog/_child/Error'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import {
+  EmailIcon,
+  EmailShareButton,
+  FacebookIcon,
+  FacebookShareButton,
+  LinkedinIcon,
+  LinkedinShareButton,
+} from 'next-share'
 
 export default function Page({ fallback }) {
   let router = useRouter()
+  const currentUrl = process.env.NEXT_PUBLIC_SITE_URL + router.asPath
   let { postSlug } = router.query
   const [post, setPost] = useState(null)
   const [sections, setSections] = useState(null)
@@ -24,6 +33,7 @@ export default function Page({ fallback }) {
   const [relatedPosts, setRelatedPosts] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
   const [isError, setIsError] = useState(false)
+  const [url, setUrl] = useState('')
 
   useEffect(() => {
     const fetchData = async () => {
@@ -92,7 +102,12 @@ export default function Page({ fallback }) {
       </Head>
       <Format>
         <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
-          <Article {...post} author={author} sections={sections}></Article>
+          <Article
+            {...post}
+            url={currentUrl}
+            author={author}
+            sections={sections}
+          ></Article>
           <RelatedPost sections={sections} relatedPosts={relatedPosts} />
         </div>
       </Format>
@@ -100,23 +115,36 @@ export default function Page({ fallback }) {
   )
 }
 
-function Article({ name, img, ...props }) {
+function Article({ name, img, url, ...props }) {
   return (
     <div className={''}>
-      <div className={'mt-[142px] md:mt-[216px] mb-[32px] md:mb-[64px]'}>
+      <div className={'mt-[142px] md:mt-[216px] mb-[64px]'}>
         <h1 className={''}>{name}</h1>
       </div>
-      <div className={'flex justify-between'}>
+      <div className={'flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between'}>
         <Author author={props.author} />
-        <div className={'flex space-x-4 pt-1'}>
-          <IoIosTimer size={20} color={'darkGrey'} />
-          <p className={'text-darkGrey '}>2 minutes read</p>
+        <div className={'flex md:flex-col justify-between items-center md:items-start md:justify-start md:space-y-4'}>
+          <div className={'flex space-x-4 pt-1 order-last md:order-fist'}>
+            <IoIosTimer size={20} color={'darkGrey'} />
+            <p className={'text-darkGrey '}>2 minutes read</p>
+          </div>
+          <div className={'flex space-x-4 order-first md:order-last'}>
+            <FacebookShareButton url={url ? url : ''}>
+              <FacebookIcon size={32} round />
+            </FacebookShareButton>
+            <LinkedinShareButton url={url ? url : ''}>
+              <LinkedinIcon size={32} round />
+            </LinkedinShareButton>
+            <EmailShareButton url={url ? url : ''}>
+              <EmailIcon size={32} round />
+            </EmailShareButton>
+          </div>
         </div>
       </div>
 
       <div
         className={
-          'w-full h-[290px] md:h-[575px] relative rounded-small overflow-hidden mt-[24px] md:mt-[64px]'
+          'w-full h-[290px] md:h-[575px] relative rounded-small overflow-hidden mt-[64px]'
         }
       >
         <Image
@@ -172,8 +200,6 @@ export async function getStaticProps({ params, locale }) {
         'navbar',
         'uiComponents',
       ])),
-        ...(await serverSideTranslations(locale, ['footer', 'navbar', 'uiComponents'])),
-
     },
     revalidate: 60,
   }

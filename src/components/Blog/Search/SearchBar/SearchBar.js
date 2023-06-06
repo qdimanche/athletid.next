@@ -17,7 +17,7 @@ const SearchBar = () => {
 
   return (
     <form className={'flex'} onSubmit={onSearch}>
-      <div className={'relative w-1/3'}>
+      <div className={'relative md:w-1/3 w-full'}>
         <input
           value={searchQuery}
           onChange={(event) => setSearchQuery(event.target.value)}

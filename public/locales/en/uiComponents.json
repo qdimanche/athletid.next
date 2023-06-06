@@ -9,5 +9,12 @@
   "tags": {
     "soon-available": "Soon available",
     "available": "Available"
+  },
+  "consent": {
+    "sentence": "This site uses cookies, please accept them if you wish.",
+    "buttons": {
+      "accept": "Accept all",
+      "decline": "Decline all"
+    }
   }
 }
