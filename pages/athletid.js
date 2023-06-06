@@ -60,8 +60,6 @@ const Athletid = () => {
             {apcoCardContent.map((value, index) => {
               const imagePath = getImagePath(value.imageKey);
               const imagePathFlip = getImagePath(value.imageKeyFlip);
-              console.log(value);
-
               return (
                 <BasicCard
                   key={index}

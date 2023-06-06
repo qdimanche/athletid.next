@@ -8,7 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="add search bar">
-      <change beforePath="$PROJECT_DIR$/pages/posts/[postSlug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/[postSlug].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Blog/Filter/SortFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/athletid.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/athletid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/ArchivePosts/ArchivePost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/Search/SearchBar/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/SearchResults/SearchResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/Search/SearchResults/SearchResult.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "searchBar",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -75,11 +83,11 @@
       <recent name="$PROJECT_DIR$/src/components/UI/Carousel/Buttons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Blog" />
       <recent name="$PROJECT_DIR$/src/components/Search" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/Contact/Faq" />
-      <recent name="$PROJECT_DIR$/public/assets/icons" />
     </key>
   </component>
   <component name="RunManager">
@@ -533,7 +541,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/translations" />
+                        <option value="origin/searchBar" />
                       </list>
                     </value>
                   </entry>

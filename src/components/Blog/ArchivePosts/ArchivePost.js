@@ -6,9 +6,9 @@ import { TabMenu } from '@/src/components/Blog/ArchivePosts/TabMenu'
 import { Post } from '@/src/components/Blog/ArchivePosts/Post'
 import ToggleButton from '@/src/components/UI/Button/ToggleButton'
 import Image from 'next/image'
+import SortFilter from '@/src/components/Blog/Filter/SortFilter'
 
 const ArchivePost = () => {
-
   let [countLoadMore, setCountLoadMore] = useState(0)
   let [postsToShow, setPostsToShow] = useState(6)
   const [categories, setCategories] = useState([])
@@ -31,7 +31,7 @@ const ArchivePost = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [isError, setIsError] = useState(false)
   const [categoryClick, setCategoryClick] = useState(null)
-
+  const [ascendingOrder, setAscendingOrder] = useState(false)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,7 +40,11 @@ const ArchivePost = () => {
         const categoriesResponse = await fetcher('api/categories')
         const postsResponse = await fetcher('api/posts')
         setCategories(categoriesResponse.data)
-        setPosts(postsResponse.data)
+        setPosts(
+            postsResponse.data.sort(
+                (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)
+            )
+        )
         setIsError(false)
       } catch (error) {
         setIsError(true)
@@ -59,13 +63,13 @@ const ArchivePost = () => {
 
   useEffect(() => {
     const matchingCategories = categories.filter((category) =>
-      postsCategory.some((postCategory) => postCategory.id === category.id)
+        postsCategory.some((postCategory) => postCategory.id === category.id)
     )
     setCategoriesFound(matchingCategories)
   }, [categories, postsCategory])
 
   useEffect(() => {
-    if (posts) {
+    if (posts && posts.filter((post) => post.status === 'PUBLISHED')) {
       if (categoryClick) {
         posts.map((post) => {
           if (post.categoryId === categoryClick) {
@@ -84,48 +88,74 @@ const ArchivePost = () => {
     setPostsToShow(6 + countLoadMore * 6)
   }, [countLoadMore])
 
+  useEffect(() => {
+    if (ascendingOrder === false) {
+      setPostsInfosToShow((prevState) =>
+          Array.isArray(prevState)
+              ? [...prevState].sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+              : []
+      );
+    } else {
+      setPostsInfosToShow((prevState) =>
+          Array.isArray(prevState)
+              ? [...prevState].sort((a, b) => new Date(a.updatedAt) - new Date(b.updatedAt))
+              : []
+      );
+    }
+  }, [ascendingOrder]);
+
+  const handleSortToggle = () => {
+    setAscendingOrder((prevState) => !prevState)
+  }
+
+  console.log(ascendingOrder)
+
   if (isLoading) return <CircleSpinner></CircleSpinner>
   if (isError) return <Error></Error>
 
   return (
-    <div className={'mt-[72px] md:mt-[120px]'}>
-      <TabMenu
-        categories={categories}
-        categoryClick={categoryClick}
-        setCategoryClick={setCategoryClick}
-      />
-      <div
-        className={
-          'space-y-[68px] md:space-y-0 flex flex-col md:grid md:grid-cols-2 md:gap-[30px]'
-        }
-      >
-        {postsInfosToShow?.slice(0, postsToShow).map((value, index) => {
-          return <Post data={value} key={index} />
-        })}
-      </div>
-      {postsToShow <  postsInfosToShow.length && (
-        <ToggleButton
-          variant={'red'}
-          className={' mx-auto mt-[68px] py-4 px-8 !rounded-full'}
-          content={
-            <div className={'flex space-x-2 items-center'}>
-              <Image
-                src={'/assets/icons/arrowdown.svg'}
-                width={24}
-                height={24}
-                sizes={'10vw'}
-                alt={''}
-              />
-              <p className={'text-[16px] leading-[19px]'}>Load more</p>
-            </div>
-          }
-          link={'/'}
-          onClick={() => {
-            setCountLoadMore((countLoadMore += 1))
-          }}
+      <div className={'mt-[72px] md:mt-[120px]'}>
+        <SortFilter
+            onSortToggle={handleSortToggle}
+            ascendingOrder={ascendingOrder}
         />
-      )}
-    </div>
+        <TabMenu
+            categories={categories}
+            categoryClick={categoryClick}
+            setCategoryClick={setCategoryClick}
+        />
+        <div
+            className={
+              'space-y-[68px] md:space-y-0 flex flex-col md:grid md:grid-cols-2 md:gap-[30px]'
+            }
+        >
+          {postsInfosToShow?.slice(0, postsToShow).map((value, index) => {
+            return <Post data={value} key={index} />
+          })}
+        </div>
+        {postsToShow < postsInfosToShow.length && (
+            <ToggleButton
+                variant={'red'}
+                className={' mx-auto mt-[68px] py-4 px-8 !rounded-full'}
+                content={
+                  <div className={'flex space-x-2 items-center'}>
+                    <Image
+                        src={'/assets/icons/arrowdown.svg'}
+                        width={24}
+                        height={24}
+                        sizes={'10vw'}
+                        alt={''}
+                    />
+                    <p className={'text-[16px] leading-[19px]'}>Load more</p>
+                  </div>
+                }
+                link={'/'}
+                onClick={() => {
+                  setCountLoadMore((countLoadMore += 1))
+                }}
+            />
+        )}
+      </div>
   )
 }
 

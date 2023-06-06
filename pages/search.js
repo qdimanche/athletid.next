@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchResult from "@/src/components/Search/SearchResults/SearchResult";
+import SearchResult from "@/src/components/Blog/Search/SearchResults/SearchResult";
 import Format from "@/src/layout/format"
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import HeaderBlog from "@/src/components/Blog/HeaderBlog";

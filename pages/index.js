@@ -88,8 +88,6 @@ export default function Home() {
               const imagePath = getImagePath(value.imageKey)
               const imagePathMobile = getImagePath(value.imageKeyMobile)
 
-              console.log(imagePath)
-
               return  (
                 <BasicCard
                   key={index}
