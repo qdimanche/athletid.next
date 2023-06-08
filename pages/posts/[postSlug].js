@@ -97,7 +97,7 @@ export default function Page({ fallback }) {
     <SWRConfig value={{ fallback }}>
       <Head>
         <title>{post?.name}</title>
-        <meta property="og:title" content="Athletid" />
+        <meta property="og:title" content={post?.name} />
         <meta property="og:type" content="article" />
       </Head>
       <Format>
