@@ -57,11 +57,11 @@ const Navbar = (props) => {
 
                 <div className={`justify-end items-center w-full flex`}>
                     <div className={'lg:block hidden space-x-[60px]'}>
-                        <Link href="/">{t("links.home")}</Link>
+                        <Link href="/">{t("navbar:links.home")}</Link>
                         <Link href="/timer">App Timer</Link>
                         <Link href="/athletid">App Athletid</Link>
                         <Link href="/blog">Blog</Link>
-                        <Link href="/about">{t("links.about")}</Link>
+                        <Link href="/about">{t("navbar:links.about")}</Link>
                         <Button
                             variant={'redOutline'}
                             content={'Contact'}
@@ -94,7 +94,7 @@ const Navbar = (props) => {
                                     Menu
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
-                                    <Link href="/">{t("links.about")}</Link>
+                                    <Link href="/">{t("navbar:links.about")}</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
                                     <Link href="/timer">App Timer</Link>
@@ -106,7 +106,7 @@ const Navbar = (props) => {
                                     <Link href="/blog">Blog</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
-                                    <Link href="/about">{t("links.about")}</Link>
+                                    <Link href="/about">{t("navbar:links.about")}</Link>
                                 </li>
                                 <li className={'text-[38px] opacity-60'}>
                                     <Link href="/contact">Contact</Link>
