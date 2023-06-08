@@ -29,8 +29,8 @@ const Footer = () => {
               'flex flex-col md:items-start md:justify-center items-center md:text-left text-center mb-[72px] md:mb-0'
             }
           >
-            <h2 className={'whitespace-pre-line'}>{t('title')}</h2>
-            <p className={'mt-4 mb-6'}>{t('subTitle')}</p>
+            <h2 className={'whitespace-pre-line'}>{t('footer:title')}</h2>
+            <p className={'mt-4 mb-6'}>{t('footer:subTitle')}</p>
             <Newsletter />
           </div>
           <div
@@ -73,18 +73,18 @@ const Footer = () => {
             }
           >
             <div className={'flex space-x-6'}>
-              <Link href={'/'}>{t('links.home')}</Link>
+              <Link href={'/'}>{t('footer:links.home')}</Link>
               <Link href={'/timer'}>Timer</Link>
               <Link href={'/athletid'}>Athletid</Link>
               <Link href={'/blog'}>Blog</Link>
-              <Link href={'/about'}>{t('links.about')}</Link>
+              <Link href={'/about'}>{t('footer:links.about')}</Link>
             </div>
             <div
               className={'flex justify-between w-full text-white/40 text-sm md:text-base'}
             >
               <Link href={'/contact'}>Contact</Link>
-              <Link href={'/privacy-policy'}>{t('links.privacy-policy')}</Link>
-              <Link href={'/terms-of-service'}>{t('links.terms-of-service')}</Link>
+              <Link href={'/privacy-policy'}>{t('footer:links.privacy-policy')}</Link>
+              <Link href={'/terms-of-service'}>{t('footer:links.terms-of-service')}</Link>
             </div>
             <p className={'text-center text-white/40 !mt-8'}>
               {t('copyright')}
