@@ -7,8 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="add next export to build script">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="add dynamic search bar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/about.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/HeaderBlog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/Search/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/Search/SearchBar/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/Search/SearchResults/SearchResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/Search/SearchResults/SearchResult.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,14 +159,7 @@
       <workItem from="1685691933614" duration="55000" />
       <workItem from="1685703839028" duration="1809000" />
       <workItem from="1685953037852" duration="12823000" />
-      <workItem from="1686212590605" duration="3746000" />
-    </task>
-    <task id="LOCAL-00092" summary="change baseURL">
-      <created>1680785572185</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1680785572185</updated>
+      <workItem from="1686212590605" duration="7473000" />
     </task>
     <task id="LOCAL-00093" summary="change baseURL">
       <created>1680785675257</created>
@@ -497,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686301378769</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="add next export to build script">
+      <created>1686301991911</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1686301991912</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +555,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+] Faq section" />
     <MESSAGE value="[+] Image optimization" />
     <MESSAGE value="[+] Image flip content page timer" />
     <MESSAGE value="[+] wording" />
@@ -573,6 +579,7 @@
     <MESSAGE value="[+] sort filter" />
     <MESSAGE value="delete fr translations" />
     <MESSAGE value="add next export to build script" />
-    <option name="LAST_COMMIT_MESSAGE" value="add next export to build script" />
+    <MESSAGE value="add dynamic search bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dynamic search bar" />
   </component>
 </project>

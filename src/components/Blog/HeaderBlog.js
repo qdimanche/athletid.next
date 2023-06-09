@@ -2,7 +2,6 @@ import React from 'react'
 import 'swiper/css'
 import {useTranslation} from "next-i18next";
 import SearchBar from "@/src/components/Blog/Search/SearchBar/SearchBar";
-
 const HeaderBlog = () => {
 
     const { t } = useTranslation('blog')

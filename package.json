@@ -31,6 +31,7 @@
     "i18next-localstorage-backend": "^4.1.1",
     "i18next-locize-backend": "^6.2.1",
     "locize-cli": "^7.14.0",
+    "lodash": "^4.17.21",
     "next": "13.1.2",
     "next-compose-plugins": "^2.2.1",
     "next-i18next": "^13.2.2",
@@ -55,7 +56,8 @@
     "styled-components": "^5.3.9",
     "swiper": "^9.1.1",
     "swr": "^2.0.3",
-    "tw-elements": "^1.0.0-alpha13"
+    "tw-elements": "^1.0.0-alpha13",
+    "use-debounce": "^9.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
