@@ -7,8 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="delete fr translations">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="add next export to build script">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,14 +152,7 @@
       <workItem from="1685691933614" duration="55000" />
       <workItem from="1685703839028" duration="1809000" />
       <workItem from="1685953037852" duration="12823000" />
-      <workItem from="1686212590605" duration="3470000" />
-    </task>
-    <task id="LOCAL-00091" summary="change baseURL">
-      <created>1680785378302</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1680785378302</updated>
+      <workItem from="1686212590605" duration="3746000" />
     </task>
     <task id="LOCAL-00092" summary="change baseURL">
       <created>1680785572185</created>
@@ -498,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686219857117</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="add next export to build script">
+      <created>1686301378769</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1686301378769</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+] About and contact page" />
     <MESSAGE value="[+] Faq section" />
     <MESSAGE value="[+] Image optimization" />
     <MESSAGE value="[+] Image flip content page timer" />
@@ -574,6 +572,7 @@
     <MESSAGE value="add search bar" />
     <MESSAGE value="[+] sort filter" />
     <MESSAGE value="delete fr translations" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete fr translations" />
+    <MESSAGE value="add next export to build script" />
+    <option name="LAST_COMMIT_MESSAGE" value="add next export to build script" />
   </component>
 </project>

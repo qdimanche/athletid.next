@@ -201,7 +201,6 @@ export async function getStaticProps({ params, locale }) {
         'uiComponents',
       ])),
     },
-    revalidate: 60,
   }
 }
 
