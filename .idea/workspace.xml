@@ -9,7 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="delete fr translations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,21 +153,7 @@
       <workItem from="1685691933614" duration="55000" />
       <workItem from="1685703839028" duration="1809000" />
       <workItem from="1685953037852" duration="12823000" />
-      <workItem from="1686212590605" duration="2163000" />
-    </task>
-    <task id="LOCAL-00089" summary="change baseURL">
-      <created>1680783310509</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1680783310509</updated>
-    </task>
-    <task id="LOCAL-00090" summary="change baseURL">
-      <created>1680784085487</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1680784085487</updated>
+      <workItem from="1686212590605" duration="3470000" />
     </task>
     <task id="LOCAL-00091" summary="change baseURL">
       <created>1680785378302</created>
@@ -498,7 +484,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686218020029</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="delete fr translations">
+      <created>1686219169863</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1686219169863</updated>
+    </task>
+    <task id="LOCAL-00139" summary="delete fr translations">
+      <created>1686219857117</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1686219857117</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
