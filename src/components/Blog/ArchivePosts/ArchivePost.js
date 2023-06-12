@@ -33,6 +33,8 @@ const ArchivePost = () => {
   const [categoryClick, setCategoryClick] = useState(null)
   const [ascendingOrder, setAscendingOrder] = useState(false)
 
+  console.log(postsInfosToShow)
+
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true)
@@ -71,18 +73,15 @@ const ArchivePost = () => {
   useEffect(() => {
     if (posts && posts.filter((post) => post.status === 'PUBLISHED')) {
       if (categoryClick) {
-        posts.map((post) => {
-          if (post.categoryId === categoryClick) {
-            setPostsInfosToShow([post])
-          }
-        })
+        const postsInCategory = posts.filter((post) => post.categoryId === categoryClick);
+        setPostsInfosToShow(postsInCategory);
       } else {
-        setPostsInfosToShow(posts)
+        setPostsInfosToShow(posts);
       }
     } else {
-      console.log('Error, impossible to set PostsCategory')
+      console.log('Error, impossible to set PostsCategory');
     }
-  }, [categoryClick, posts])
+  }, [categoryClick, posts]);
 
   useEffect(() => {
     setPostsToShow(6 + countLoadMore * 6)

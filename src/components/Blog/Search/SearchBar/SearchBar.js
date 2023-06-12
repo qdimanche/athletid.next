@@ -48,7 +48,7 @@ const SearchBar = () => {
         <div className="relative md:w-1/3 w-full">
           <input
               ref={searchInputRef}
-              value={searchQuery}
+              value={searchQuery ? searchQuery : ""}
               onChange={handleInputChange}
               className="focus:ring-1 focus:ring-white w-full"
               type="text"
