@@ -33,8 +33,6 @@ const ArchivePost = () => {
   const [categoryClick, setCategoryClick] = useState(null)
   const [ascendingOrder, setAscendingOrder] = useState(false)
 
-  console.log(postsInfosToShow)
-
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true)
