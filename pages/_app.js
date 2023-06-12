@@ -2,11 +2,14 @@ import '@/styles/globals.css'
 import Script from "next/script";
 import {getCookie} from "cookies-next";
 import { appWithTranslation } from 'next-i18next'
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+
 
 
 function App({Component, pageProps}) {
 	const consent = getCookie('localConsent');
-	
+
+
 	return <>
 		<link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
 		<Script
@@ -43,8 +46,17 @@ function App({Component, pageProps}) {
 				}}
 			/>
 		)}
+		<GoogleReCaptchaProvider
+			reCaptchaKey={process.env.RECAPTCH_SITE_KEY}
+			scriptProps={{
+				async: false,
+				defer: false,
+				appendTo: "head",
+				nonce: undefined,
+			}}
+		>		<Component {...pageProps} />
 
-		<Component {...pageProps} />
+		</GoogleReCaptchaProvider>
 	</>
 }
 
