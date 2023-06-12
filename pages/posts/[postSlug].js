@@ -90,6 +90,8 @@ export default function Page({ fallback }) {
     }
   }, [post, posts])
 
+  console.log(sections)
+
   if (isLoading) return <CircleSpinner></CircleSpinner>
   if (isError) return <Error></Error>
 
