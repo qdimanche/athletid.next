@@ -231,9 +231,25 @@ function RelatedPost(props) {
 
 export async function getStaticProps({ params, locale }) {
   const posts = await getPost(params.postSlug)
+  const post = posts[0]
+
+  const sectionsResponse = await fetcher(`api/sections/${post.id}`)
+  const sections = sectionsResponse.data.sort((a, b) => a.order - b.order)
+
+  const authorResponse = await fetcher(`api/users/${post.authorId}`)
+  const author = authorResponse.data
+
+  const relatedPostsResponse = await fetcher('api/posts')
+  const relatedPosts = relatedPostsResponse.data.filter(
+      (item) => item.categories === post.categories && item.name !== post.name
+  )
 
   return {
     props: {
+      post,
+      sections,
+      author,
+      relatedPosts,
       fallback: {
         'api/posts': posts,
       },
