@@ -96,28 +96,7 @@ export default function Page({ fallback }) {
   return (
     <SWRConfig value={{ fallback }}>
       <Head>
-        <title>{post?.name}</title>
-        <meta
-          name="description"
-          content={
-            sections !== null
-              ? sections[0].paragraph.substring(0, 250) + ' ...'
-              : ''
-          }
-        />
-        <meta property="og:title" content={post?.name} />
-        <meta
-          property="og:description"
-          content={
-            sections !== null
-              ? sections[0].paragraph.substring(0, 250) + ' ...'
-              : ''
-          }
-        />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={currentUrl} />
-        <meta property="og:image" content={post?.img} />
-        <meta property="og:image:secure_url" content={post?.img} />
       </Head>
       <Format>
         <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
@@ -231,25 +210,9 @@ function RelatedPost(props) {
 
 export async function getStaticProps({ params, locale }) {
   const posts = await getPost(params.postSlug)
-  const post = posts[0]
-
-  const sectionsResponse = await fetcher(`api/sections/${post.id}`)
-  const sections = sectionsResponse.data.sort((a, b) => a.order - b.order)
-
-  const authorResponse = await fetcher(`api/users/${post.authorId}`)
-  const author = authorResponse.data
-
-  const relatedPostsResponse = await fetcher('api/posts')
-  const relatedPosts = relatedPostsResponse.data.filter(
-      (item) => item.categories === post.categories && item.name !== post.name
-  )
 
   return {
     props: {
-      post,
-      sections,
-      author,
-      relatedPosts,
       fallback: {
         'api/posts': posts,
       },
@@ -277,5 +240,38 @@ export async function getStaticPaths({ locales }) {
   return {
     paths,
     fallback: false,
+  }
+}
+
+export async function generateMetadata({ params, searchParams }, parent) {
+  // read route params
+  const post = await getPost(params.postSlug)
+
+  const sectionsResponse = await fetcher(`api/sections/${post.id}`)
+  const sections = sectionsResponse.data.sort((a, b) => a.order - b.order)
+  const currentUrl = process.env.NEXT_PUBLIC_SITE_URL + router.asPath
+
+
+  const authorResponse = await fetcher(`api/users/${post.authorId}`)
+  const author = authorResponse.data
+
+  const relatedPostsResponse = await fetcher('api/posts')
+  const relatedPosts = relatedPostsResponse.data.filter(
+      (item) => item.categories === post.categories && item.name !== post.name
+  )
+
+
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || []
+
+  return {
+    title: post?.title,
+    description: sections[0]?.paragraph.substring(0,100) + "...",
+    openGraph: {
+      url: currentUrl,
+      title: post?.title,
+      description: sections[0]?.paragraph.substring(0,100) + "...",
+      images: [post?.img, ...previousImages],
+    },
   }
 }
