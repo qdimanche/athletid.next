@@ -90,8 +90,6 @@ export default function Page({ fallback }) {
     }
   }, [post, posts])
 
-  console.log(sections)
-
   if (isLoading) return <CircleSpinner></CircleSpinner>
   if (isError) return <Error></Error>
 
@@ -99,8 +97,27 @@ export default function Page({ fallback }) {
     <SWRConfig value={{ fallback }}>
       <Head>
         <title>{post?.name}</title>
+        <meta
+          name="description"
+          content={
+            sections !== null
+              ? sections[0].paragraph.substring(0, 250) + ' ...'
+              : ''
+          }
+        />
         <meta property="og:title" content={post?.name} />
+        <meta
+          property="og:description"
+          content={
+            sections !== null
+              ? sections[0].paragraph.substring(0, 250) + ' ...'
+              : ''
+          }
+        />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content={post?.img} />
+        <meta property="og:image:secure_url" content={post?.img} />
       </Head>
       <Format>
         <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
