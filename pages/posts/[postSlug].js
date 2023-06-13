@@ -123,9 +123,17 @@ function Article({ name, img, url, ...props }) {
       <div className={'mt-[142px] md:mt-[216px] mb-[64px]'}>
         <h1 className={''}>{name}</h1>
       </div>
-      <div className={'flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between'}>
+      <div
+        className={
+          'flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between'
+        }
+      >
         <Author author={props.author} />
-        <div className={'flex md:flex-col justify-between items-center md:items-start md:justify-start md:space-y-4'}>
+        <div
+          className={
+            'flex md:flex-col justify-between items-center md:items-start md:justify-start md:space-y-4'
+          }
+        >
           <div className={'flex space-x-4 pt-1 order-last md:order-fist'}>
             <IoIosTimer size={20} color={'darkGrey'} />
             <p className={'text-darkGrey '}>2 minutes read</p>
@@ -166,6 +174,22 @@ function Article({ name, img, url, ...props }) {
             <div key={index} className={'mb-16'}>
               <h3 className={'mb-8'}>{section.subTitle}</h3>
               <p className={'whitespace-pre-line'}>{section.paragraph}</p>
+
+              {section.img && (
+                <div
+                  className={
+                    'w-full h-[290px] md:h-[575px] relative rounded-small overflow-hidden mt-[64px]'
+                  }
+                >
+                  <Image
+                    sizes={'100vw'}
+                    fill
+                    src={section.img}
+                    className={'object-cover'}
+                    alt={''}
+                  />
+                </div>
+              )}
             </div>
           )
         })}
