@@ -3,8 +3,14 @@ import Footer from '@/src/components/Footer/Footer'
 import Head from 'next/head'
 import Consent from '@/src/components/UI/Consent'
 
-export default function format({children}) {
+export const metadata = {
+    title: {
+        template: '%s | Acme',
+        default: 'Acme',
+    },
+}
 
+export default function format({children}) {
 
     return (
         <>

@@ -1,6 +1,5 @@
 import Format from '../../src/layout/format'
-import getPost from '@/lib/helper'
-import getPosts from '@/lib/helper'
+import getPosts, { getUniquePost } from '@/lib/helper'
 import fetcher from '@/lib/fetcher'
 import { useRouter } from 'next/router'
 import { SWRConfig } from 'swr'
@@ -22,7 +21,7 @@ import {
   LinkedinShareButton,
 } from 'next-share'
 
-export default function Page({ fallback }) {
+export default function Page({ staticPost, fallback, staticSections }) {
   let router = useRouter()
   const currentUrl = process.env.NEXT_PUBLIC_SITE_URL + router.asPath
   let { postSlug } = router.query
@@ -93,12 +92,26 @@ export default function Page({ fallback }) {
   if (isLoading) return <CircleSpinner></CircleSpinner>
   if (isError) return <Error></Error>
 
+  console.log(staticSections)
+
   return (
     <SWRConfig value={{ fallback }}>
-      <Head>
-        <meta property="og:type" content="article" />
-      </Head>
       <Format>
+        <Head>
+          <title>{staticPost?.name}</title>
+          <meta
+            property={'description'}
+            content={staticSections[0]?.paragraph.substring(0, 100) + '...'}
+          />
+          <meta
+            property={'og:description'}
+            content={staticSections[0]?.paragraph.substring(0, 100) + '...'}
+          />
+          <meta property="og:type" content="article" />
+          <meta property={'og:title'} content={staticPost?.name} />
+          <meta property="og:url" content={currentUrl} />
+          <meta property="og:image" content={staticPost?.img} />
+        </Head>
         <div className={'max-w-[350px] md:max-w-[1170px] mx-auto px-4'}>
           <Article
             {...post}
@@ -209,13 +222,20 @@ function RelatedPost(props) {
 }
 
 export async function getStaticProps({ params, locale }) {
-  const posts = await getPost(params.postSlug)
+  const posts = await getPosts(params.postSlug)
+
+  const staticPost = await getUniquePost(params.postSlug)
+
+  const sectionsResponse = await fetcher(`api/sections/${staticPost.id}`)
+  const staticSections = sectionsResponse.data.sort((a, b) => a.order - b.order)
 
   return {
     props: {
       fallback: {
         'api/posts': posts,
       },
+      staticPost,
+      staticSections,
       ...(await serverSideTranslations(locale, [
         'blog',
         'footer',
@@ -240,38 +260,5 @@ export async function getStaticPaths({ locales }) {
   return {
     paths,
     fallback: false,
-  }
-}
-
-export async function generateMetadata({ params, searchParams }, parent) {
-  // read route params
-  const post = await getPost(params.postSlug)
-
-  const sectionsResponse = await fetcher(`api/sections/${post.id}`)
-  const sections = sectionsResponse.data.sort((a, b) => a.order - b.order)
-  const currentUrl = process.env.NEXT_PUBLIC_SITE_URL + router.asPath
-
-
-  const authorResponse = await fetcher(`api/users/${post.authorId}`)
-  const author = authorResponse.data
-
-  const relatedPostsResponse = await fetcher('api/posts')
-  const relatedPosts = relatedPostsResponse.data.filter(
-      (item) => item.categories === post.categories && item.name !== post.name
-  )
-
-
-  // optionally access and extend (rather than replace) parent metadata
-  const previousImages = (await parent).openGraph?.images || []
-
-  return {
-    title: post?.title,
-    description: sections[0]?.paragraph.substring(0,100) + "...",
-    openGraph: {
-      url: currentUrl,
-      title: post?.title,
-      description: sections[0]?.paragraph.substring(0,100) + "...",
-      images: [post?.img, ...previousImages],
-    },
   }
 }
