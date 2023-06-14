@@ -89,8 +89,6 @@ export default function Page({ staticPost, fallback, staticSections }) {
     }
   }, [post, posts])
 
-  if (isLoading) return <CircleSpinner></CircleSpinner>
-  if (isError) return <Error></Error>
 
   console.log(staticSections)
 
