@@ -3,11 +3,27 @@ import Script from "next/script";
 import {getCookie} from "cookies-next";
 import { appWithTranslation } from 'next-i18next'
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import {useEffect} from "react";
+import {useRouter} from "next/router";
 
 
 
 function App({Component, pageProps}) {
 	const consent = getCookie('localConsent');
+	const router = useRouter()
+
+	useEffect(() => {
+		import('react-facebook-pixel')
+			.then((x) => x.default)
+			.then((ReactPixel) => {
+				ReactPixel.init('932967824455350') // facebookPixelId
+				ReactPixel.pageView()
+
+				router.events.on('routeChangeComplete', () => {
+					ReactPixel.pageView()
+				})
+			})
+	}, [router.events])
 
 
 	return <>
