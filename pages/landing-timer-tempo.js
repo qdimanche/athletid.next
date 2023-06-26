@@ -37,7 +37,7 @@ const Timer = () => {
 
       <Format>
         <Header />
-        <div className={'px-4 max-w-[400px] md:max-w-[1170px] mx-auto '}>
+        <div className={'px-4 max-w-[370px] md:max-w-[1170px] mx-auto '}>
           <DownloadApp
             title={
               <div>
@@ -50,12 +50,12 @@ const Timer = () => {
           <Ratings />
         </div>
         <AnimatedBanner />
-        <div className={'px-4 max-w-[400px] md:max-w-[1170px] mx-auto '}>
+        <div className={'px-4 max-w-[370px] md:max-w-[1170px] mx-auto '}>
           <Features />
           <VideoFeatures />
         </div>
         <Carousel />
-        <div className={'px-4 max-w-[400px] md:max-w-[1170px] mx-auto '}>
+        <div className={'px-4 max-w-[370px] md:max-w-[1170px] mx-auto '}>
           <AppFeatureWithButtons />
           <Subscriptions />
           <DownloadApp
