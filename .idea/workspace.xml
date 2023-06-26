@@ -7,9 +7,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="change meta infos">
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="change faqinfos">
+      <change afterPath="$PROJECT_DIR$/pages/landing-timer-tempo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/dowload-appstore.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/download-appstore.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/download-googleplay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/logo-timer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimer/create-your-training.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimer/favorite-training.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimer/select-your-timer.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimer/session.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/athlet-v2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/athlet-v3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/athlet.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/favorite-training-timer.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/jimmy-mabillon-fitness.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/julien-nivaud-fitness.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/tempo-timer-header.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/timer-user-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/timer-user-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/timer-user-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/AnimatedBanner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/AppFeatureWithButtons/AppFeatureWithButtons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/AppFeatureWithButtons/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/DownloadApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/Features.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/ImageCarousel/Carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/ImageCarousel/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/Ratings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/Reviews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/Subscriptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/VideoFeatures.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/Faq/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Faq/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +110,11 @@
       <recent name="$PROJECT_DIR$/src/components/UI/Carousel/Buttons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/LandingTimer" />
+      <recent name="$PROJECT_DIR$/public/assets/images" />
       <recent name="$PROJECT_DIR$/src/components/Blog" />
       <recent name="$PROJECT_DIR$/src/components/Search" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/components/Contact/Faq" />
     </key>
   </component>
   <component name="RunManager">
@@ -163,14 +197,10 @@
       <workItem from="1686728118338" duration="1127000" />
       <workItem from="1686729284823" duration="10370000" />
       <workItem from="1686814739519" duration="6870000" />
-      <workItem from="1686924045137" duration="435000" />
-    </task>
-    <task id="LOCAL-00105" summary="bug fixes">
-      <created>1682409805613</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1682409805614</updated>
+      <workItem from="1686924045137" duration="589000" />
+      <workItem from="1687267260655" duration="231000" />
+      <workItem from="1687772911592" duration="3188000" />
+      <workItem from="1687776122786" duration="11783000" />
     </task>
     <task id="LOCAL-00106" summary="connect sections api">
       <created>1683045138880</created>
@@ -508,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686751807044</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="change faqinfos">
+      <created>1686924916225</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1686924916226</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[+] wording" />
     <MESSAGE value="[+] last bug fix for website v2" />
     <MESSAGE value="[+] related post (api/posts)" />
     <MESSAGE value="improve code for singlePost" />
@@ -584,6 +620,7 @@
     <MESSAGE value="add dynamic search bar" />
     <MESSAGE value="add image to sections" />
     <MESSAGE value="change meta infos" />
-    <option name="LAST_COMMIT_MESSAGE" value="change meta infos" />
+    <MESSAGE value="change faqinfos" />
+    <option name="LAST_COMMIT_MESSAGE" value="change faqinfos" />
   </component>
 </project>

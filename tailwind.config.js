@@ -17,6 +17,7 @@ module.exports = {
         extend: {
             colors: {
                 'timeRed': '#E63D31',
+                'timeGreen': '#4DAF00',
                 'greyShade' : 'rgba(0, 0, 0, 0.02)',
                 'timeRedHover' : '#D93A2F',
                 'blackShade' : '#242629',
