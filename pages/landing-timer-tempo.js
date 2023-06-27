@@ -4,7 +4,6 @@ import React from 'react'
 import Header from '@/src/components/LandingTimer/Header'
 import { useIsMobile } from '@/src/components/Hooks/useMediaQuery'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
 import DownloadApp from '@/src/components/LandingTimer/DownloadApp'
 import AnimatedBanner from '@/src/components/LandingTimer/AnimatedBanner'
 import Features from '@/src/components/LandingTimer/Features'
@@ -12,16 +11,11 @@ import VideoFeatures from '@/src/components/LandingTimer/VideoFeatures'
 import Carousel from '@/src/components/LandingTimer/ImageCarousel/Carousel'
 import AppFeatureWithButtons from '@/src/components/LandingTimer/AppFeatureWithButtons/AppFeatureWithButtons'
 import Subscriptions from '@/src/components/LandingTimer/Subscriptions'
-import Ratings from '@/src/components/LandingTimer/Ratings'
 import Reviews from '@/src/components/LandingTimer/Reviews'
+import QrCode from '@/src/components/LandingTimer/QrCode'
 
 const Timer = () => {
   const isMobile = useIsMobile()
-  const { t } = useTranslation('timer')
-  const carouselItems = t('timer:carouselItems', { returnObjects: true })
-  const subscriptions = t('timer:feature.subscriptions', {
-    returnObjects: true,
-  })
 
   return (
     <>
@@ -37,22 +31,21 @@ const Timer = () => {
 
       <Format>
         <Header />
-        <div className={'px-4 max-w-[370px] md:max-w-[1170px] mx-auto '}>
-          <DownloadApp
-            title={
-              <div>
-                Your training partner, simple and elegant. Timer by Athletid is
-                the most complete application (12 different timers and
-                stopwatches), adaptable to all types of training.
-              </div>
-            }
-          />
-          <Ratings />
-        </div>
         <AnimatedBanner />
         <div className={'px-4 max-w-[370px] md:max-w-[1170px] mx-auto '}>
           <Features />
           <VideoFeatures />
+          {!isMobile && (
+            <DownloadApp
+              className={'md:!mt-[50px] md:mb-[100px]'}
+              title={
+                <div className={'flex space-x-1'}>
+                  <div className={'font-semibold'}>Download our app</div>
+                  <div>right now on your phone</div>
+                </div>
+              }
+            />
+          )}
         </div>
         <Carousel />
         <div className={'px-4 max-w-[370px] md:max-w-[1170px] mx-auto '}>
@@ -60,14 +53,16 @@ const Timer = () => {
           <Subscriptions />
           <DownloadApp
             title={
-              <div>
-                <div className={'font-semibold'}>Download our app</div>
-                <div>right now on your phone</div>
-              </div>
+              isMobile && (
+                <div>
+                  <div className={'font-semibold'}>Download our app</div>
+                  <div>right now on your phone</div>
+                </div>
+              )
             }
           />
         </div>
-        <Reviews/>
+        <Reviews />
       </Format>
     </>
   )

@@ -3,6 +3,7 @@
 @import 'tailwindcss/utilities';
 @import "tailwindcss/screens";
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,6 +28,14 @@ svg {
 p, li{
     font-size: 12px;
 }
+
+.circle-text {
+    display: inline-block;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    white-space: nowrap;
+}
+
 
 input, textarea {
     border-radius: 10px;
