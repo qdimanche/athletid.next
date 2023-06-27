@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Format from '@/src/layout/format'
+import Format from '@/src/layout/formatLanding'
 import React from 'react'
 import Header from '@/src/components/LandingTimer/Header'
 import { useIsMobile } from '@/src/components/Hooks/useMediaQuery'
@@ -11,7 +11,7 @@ import VideoFeatures from '@/src/components/LandingTimer/VideoFeatures'
 import Carousel from '@/src/components/LandingTimer/ImageCarousel/Carousel'
 import AppFeatureWithButtons from '@/src/components/LandingTimer/AppFeatureWithButtons/AppFeatureWithButtons'
 import Subscriptions from '@/src/components/LandingTimer/Subscriptions'
-import Reviews from '@/src/components/LandingTimer/Reviews'
+import Reviews from '@/src/components/LandingTimer/Reviews/Reviews'
 import QrCode from '@/src/components/LandingTimer/QrCode'
 
 const Timer = () => {

@@ -18,19 +18,23 @@ const DownloadApp = (props) => {
         }
       >
         <div className={''}>{props.title}</div>
-          <div className={'md:flex md:flex-row md:space-x-[24px] space-y-[24px] md:space-y-0'}>
-              <Image
-                  src={'/assets/icons/download-appstore.svg'}
-                  width={168}
-                  height={50}
-                  alt={'Download on App Store'}
-              />
-              <Image
-                  src={'/assets/icons/download-googleplay.svg'}
-                  width={168}
-                  height={50}
-                  alt={'Download on Google Play'}
-              />
+          <div className={'flex md:flex-row flex-col md:space-x-[24px] space-y-[24px] md:space-y-0'}>
+              <Link target={"_blank"} href={"https://apps.apple.com/fr/app/timer-by-athletid/id1660216893?l=en"}>
+                  <Image
+                      src={'/assets/icons/download-appstore.svg'}
+                      width={168}
+                      height={50}
+                      alt={'Download on App Store'}
+                  />
+              </Link>
+              <Link target={"_blank"} className={'mt-[24px] md:mt-0'} href={"https://play.google.com/store/apps/details?id=com.athletid.timerapp"}>
+                  <Image
+                      src={'/assets/icons/download-googleplay.svg'}
+                      width={168}
+                      height={50}
+                      alt={'Download on Google Play'}
+                  />
+              </Link>
           </div>
       </div>
     </div>

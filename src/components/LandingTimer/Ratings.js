@@ -25,7 +25,7 @@ const Ratings = (props) => {
         </div>
         {!isMobile && (
           <Link
-            href={'#'}
+            href={'#reviews'}
             className={'bg-black rounded-full w-[190px] h-[60px] relative '}
           >
             <div className={' p-[6px] flex justify-between'}>

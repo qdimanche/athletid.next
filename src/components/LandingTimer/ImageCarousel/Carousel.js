@@ -5,7 +5,7 @@ import {Images} from "@/src/components/LandingTimer/ImageCarousel/index";
 
 const Carousel = () => {
     return (
-      <Marquee className={"mt-[56px] -space-x-4"}>
+      <Marquee autoFill={true} className={"mt-[56px] -space-x-4"}>
           {Images.map((value, index) => {
              return (
                  <div key={index} className={'w-[300px] h-[300px] relative'}>

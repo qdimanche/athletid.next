@@ -8,7 +8,7 @@ const Result = () => {
     return <p>{t('newsletter.result')}</p>
 }
 
-const Newsletter = () => {
+const Newsletter = (props) => {
 
     const { t } = useTranslation('footer')
     const form = useRef();
@@ -39,14 +39,14 @@ const Newsletter = () => {
           action=""
           ref={form}
           onSubmit={sendEmail}
-          className={'relative border border-white  rounded-[26px]'}
+          className={`relative border ${props.variant && "!border-black"} border-white  rounded-[26px]`}
         >
           <input
             type="email"
             name={'email'}
             placeholder={t('newsletter.placeholder')}
             className={
-              'w-full  z-1 left-0 lg:px-6 !bg-transparent  border-black/10 text-white !mt-0 '
+              `w-full  z-1 left-0 lg:px-6 !bg-transparent ${props.variant && "!border-transparent !bg-white rounded-[26px]"} border-black/10 text-white !mt-0 `
             }
             autoComplete={'off'}
           />
