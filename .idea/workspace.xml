@@ -7,19 +7,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Styling landing page for timer">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/timer-dashboard-footer.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/FooterLanding.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingTimer/Reviews/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/formatLanding.js" afterDir="false" />
+    <list default="true" id="e6069cd2-7a16-4473-8589-34069efbff6a" name="Changes" comment="Add footer for landing page">
+      <change afterPath="$PROJECT_DIR$/pages/landing-timer-yoga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimerYoga/yoga1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimerYoga/yoga2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimerYoga/yoga3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimerYoga/yoga4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/LandingTimerYoga/yoga5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/yoga-timer-header.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/yoga-with-mockup.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Nav/NavbarLanding.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/landing-timer-tempo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/landing-timer-tempo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/tempo-timer-header.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/tempo-timer-header.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Newsletter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingTimer/DownloadApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingTimer/DownloadApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingTimer/Features.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingTimer/Features.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingTimer/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingTimer/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingTimer/ImageCarousel/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingTimer/ImageCarousel/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingTimer/Ratings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingTimer/Ratings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingTimer/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingTimer/Reviews/Reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingTimer/ImageCarousel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingTimer/ImageCarousel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/formatLanding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/formatLanding.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next/src/layout",
+    "last_opened_file_path": "/Users/quentindimanche/Projects/Travail/athletid.next/src/components/Nav",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,11 +84,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/layout" />
+      <recent name="$PROJECT_DIR$/src/components/Nav" />
       <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/src/layout" />
       <recent name="$PROJECT_DIR$/src/components/Footer" />
       <recent name="$PROJECT_DIR$/pages/api/categories" />
-      <recent name="$PROJECT_DIR$/pages/api/posts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/LandingTimer/Reviews" />
@@ -176,14 +181,9 @@
       <workItem from="1686924045137" duration="589000" />
       <workItem from="1687267260655" duration="231000" />
       <workItem from="1687772911592" duration="3188000" />
-      <workItem from="1687776122786" duration="30875000" />
-    </task>
-    <task id="LOCAL-00109" summary="update category tab menu">
-      <created>1683304278343</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1683304278343</updated>
+      <workItem from="1687776122786" duration="31524000" />
+      <workItem from="1687937615282" duration="3451000" />
+      <workItem from="1687956372750" duration="84000" />
     </task>
     <task id="LOCAL-00110" summary="bug fixing with tab menu">
       <created>1683624521155</created>
@@ -521,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687861203102</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Add footer for landing page">
+      <created>1687876975423</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1687876975425</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="improve code for singlePost" />
     <MESSAGE value="change baseURL" />
     <MESSAGE value="toggle button size fix" />
     <MESSAGE value="News posts in data" />
@@ -597,6 +603,7 @@
     <MESSAGE value="change faqinfos" />
     <MESSAGE value="Add landing page for timer" />
     <MESSAGE value="Styling landing page for timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling landing page for timer" />
+    <MESSAGE value="Add footer for landing page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add footer for landing page" />
   </component>
 </project>

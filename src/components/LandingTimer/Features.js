@@ -1,10 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import Athlet from '@/public/assets/images/athlet.webp'
-import AthletDesktop from '@/public/assets/images/LandingTimer/design-by-ahtlet-desktop.webp'
 import {useIsMobile} from "@/src/components/Hooks/useMediaQuery";
 
-const Features = () => {
+const Features = (props) => {
 
     const isMobile = useIsMobile();
 
@@ -23,9 +21,9 @@ const Features = () => {
             <div
                 className={'h-[240px] md:h-[750px] w-full relative rounded-small overflow-hidden'}
             >
-                <Image src={Athlet} fill className={'object-contain'} alt={'Athlet'} />
+                <Image src={props.imgMobile} fill className={'object-cover'} alt={'Athlet'} />
             </div> :
-            <Image src={AthletDesktop} className={"h-[75Opx] w-full"} alt={'Athlet'} />
+            <Image src={props.img} className={"h-[75Opx] w-full"} alt={'Athlet'} />
         }
 
     </div>

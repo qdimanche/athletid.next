@@ -12,7 +12,9 @@ import Carousel from '@/src/components/LandingTimer/ImageCarousel/Carousel'
 import AppFeatureWithButtons from '@/src/components/LandingTimer/AppFeatureWithButtons/AppFeatureWithButtons'
 import Subscriptions from '@/src/components/LandingTimer/Subscriptions'
 import Reviews from '@/src/components/LandingTimer/Reviews/Reviews'
-import QrCode from '@/src/components/LandingTimer/QrCode'
+import TempoCardio from '@/public/assets/images/tempo-timer-header.webp'
+import Athlet from '@/public/assets/images/athlet.webp'
+import AthletDesktop from '@/public/assets/images/LandingTimer/design-by-ahtlet-desktop.webp'
 
 const Timer = () => {
   const isMobile = useIsMobile()
@@ -30,10 +32,32 @@ const Timer = () => {
       </Head>
 
       <Format>
-        <Header />
+        <Header
+          img={TempoCardio}
+          title={
+            <h1 className={'my-[24px] text-center'}>
+              Are you no longer able to <br />
+              <div className={'flex justify-center'}>
+                <div>to make</div>
+                <div className={'text-timeRed font-semibold mx-2'}>
+                  progress
+                </div>
+                ?
+              </div>
+            </h1>
+          }
+          downloadAppTitle={
+            <div>
+              Your new application use the power of Tempo to maximize your
+              results.<br/> This unique feature will guide you through each exercise
+              by providing you with the <br/>execution speed for each phase of the
+              movement!
+            </div>
+          }
+        />
         <AnimatedBanner />
         <div className={'px-4 max-w-[370px] md:max-w-[1170px] mx-auto '}>
-          <Features />
+          <Features img={AthletDesktop} imgMobile={Athlet}/>
           <VideoFeatures />
           {!isMobile && (
             <DownloadApp

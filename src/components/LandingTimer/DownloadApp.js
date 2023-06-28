@@ -11,7 +11,7 @@ const DownloadApp = (props) => {
     const isMobile = useIsMobile();
     
   return (
-    <div className={clsx('md:mt-[25px] max-w-[370px] md:max-w-FUll mx-auto', props.className)}>
+    <div className={clsx('md:mt-[25px] max-w-[370px] md:max-w-full mx-auto', props.className)}>
       <div
         className={
           'flex flex-col space-y-[24px]  items-center text-center'

@@ -1,11 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import TempoCardio from '@/public/assets/images/tempo-timer-header.webp'
 import DownloadApp from '@/src/components/LandingTimer/DownloadApp'
 import { useIsMobile } from '@/src/components/Hooks/useMediaQuery'
 import Ratings from '@/src/components/LandingTimer/Ratings'
 
-const Header = () => {
+const Header = (props) => {
   const isMobile = useIsMobile()
 
   return (
@@ -18,7 +17,7 @@ const Header = () => {
           'relative h-[270px] md:h-[620px] w-screen  md:order-last md:mt-[100px]'
         }
       >
-        <Image src={TempoCardio} fill className={'object-cover'} alt={''} />
+        <Image src={props.img} fill className={'object-cover'} alt={''} />
       </div>
       <div
         className={
@@ -33,25 +32,9 @@ const Header = () => {
           alt={'Logo timer'}
         />
         <div>Timer by Athletid</div>
-        <h1 className={'my-[24px]'}>
-          <div className={'flex'}>
-            The <div className={'text-timeRed font-semibold mx-2'}>best</div>{' '}
-            sport
-          </div>
-          timer app
-        </h1>
+        {props.title}
       </div>
-      <DownloadApp
-        className={'md:order-2'}
-        title={
-          <div>
-            Your training partner, simple and elegant.
-            <br /> Timer by Athletid is the most complete application <br />
-            (12 different timers and stopwatches),
-            <br /> adaptable to all types of training.
-          </div>
-        }
-      />
+      <DownloadApp className={'md:order-2'} title={props.downloadAppTitle} />
       <Ratings className={'order-3'} />
     </div>
   )

@@ -1,4 +1,4 @@
-import Navbar from '@/src/components/Nav/Navbar'
+import NavbarLanding from '@/src/components/Nav/NavbarLanding'
 import Footer from '@/src/components/Footer/Footer'
 import Head from 'next/head'
 import Consent from '@/src/components/UI/Consent'
@@ -19,7 +19,7 @@ export default function format({children}) {
                 <meta property="og:image:width" content="800"/>
                 <meta property="og:image:height" content="530"/>
             </Head>
-            <Navbar/>
+            <NavbarLanding/>
             <main className={'relative'}>{children}</main>
             <FooterLanding
             />
